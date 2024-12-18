@@ -142,7 +142,7 @@ Here's some info on the `update_manager` section if you need it. https://docs.ma
 
 This new feature is a quality of life system that's useful if you'd like some help from the macros to create & manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to extract the new versions from your updated macros.
 
-This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. It will extract the required `Demon_User_Files` from the main `Demon Klipper Essentials` directory & place them in a new directory outside of the managed main directory, this is directly inside your printer's `config` directory. It will also notify you of any version changes to these files after future updates & then give you the option to move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them.
+This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. It will extract the required `Demon_User_Files` from the main `Demon Klipper Essentials Unified` directory & place them in a new directory outside of the managed main directory, this is directly inside your printer's `config` directory. It will also notify you of any version changes to these files after future updates & then move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them.
 
 This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
 
