@@ -108,6 +108,14 @@ If you feel your demon_vars.cfg file is not working you can reinstall it directl
 ```
 cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
 ```
+
+# Define Respond Section
+
+These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` file, please make sure it is included. If you set these macros up correctly you wont need to add it to your printer.cfg, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually.
+
+```
+[respond]
+```
 ****************************************************************************************************************************
 
 # Macro Layout Import/Restore
@@ -123,14 +131,6 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 
 ****************************************************************************************************************************
-
-# Define Respond Section
-
-These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` that you just included above, so if you set these macros up correctly you wont need to add it, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually.
-
-```
-[respond]
-```
 
 # Define Force Move Section
 
