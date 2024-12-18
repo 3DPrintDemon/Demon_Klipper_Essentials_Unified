@@ -15,21 +15,44 @@ This link GOOD!
 
 ******************************
 
-You must download & `[include]` these additional files along with these Demon Macros or they will NOT work correctly.
+### OPTIONAL - Kiauh G-code Shell Command Extension - OPTIONAL!
+While not vital to Demon Klipper Essentials it will provide additional functionality to the system & quality of life features, if you wish not to use it then don't install it & don't include the new `Extract_Demon_User_Files_x.cfg`, you'll just have to deal with some file management tasks manually. 
 
+If you do install the shell command extension & want the system to help manage your `User Files` be aware that it gives Klipper access to system level shell commands that have a very small potential for misuse if you download macros or files from any dubious or malicious sources! Also don't mess with the Demon `.sh` files unless you know what you're doing as you can seriously break stuff if you get things wrong!
+These macros only use the G-code Shell Commands to help to keep your `User Files` up to date & in a directory were you can edit & manage them without creating a "dirty" status on the main Demon Klipper Essentials install.
+
+- https://github.com/dw-0/kiauh/tree/master
+
+Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Command) to install the extension.
+
+![Shell Install](https://github.com/user-attachments/assets/d4897e79-f019-4c67-8474-ed8ca28b3612)
+
+###### NOTE: Please take extra care of your system & protect it from misuse after installing the Kiauh G-code Shell Command Extension! Responsibility for this is solely on you.
+
+******************************
+You must download & `[include]` these additional files along with these Demon Macros or they will NOT work correctly.
 
 These additional macros are prerequisites:
 
-### **FOR ALL MACHINES FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.**
+## **FOR ALL MACHINES FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.**
 - https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
+
+![AdptPurge](https://github.com/user-attachments/assets/d5f3cadd-08bc-4b60-b769-df9b5a433911)
+
+******************************
 
 ### **For VORON PRINTERS or other machines with toolhead Neopixels**
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+
+![SBLED](https://github.com/user-attachments/assets/e61dc581-7e97-4388-9bfe-c14e7df68d09)
+
   
 ###### Note: You will need to choose the "sb_leds" or "toolhead_leds" file versions. 
 
 ###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+
+******************************
 
 ### **For SOVOL SV08 PRINTERS**
 ![DEMON_Display_Menu](https://github.com/user-attachments/assets/eb7965ac-fcd2-4fd4-9487-7cbcaf2828e7)
