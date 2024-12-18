@@ -37,3 +37,5 @@ ssh pi@192.168.1.95
 - Press return again to login.
 
 You're now ready to begin issuing commands to install the macros.
+
+### [Head Back to Where You Were...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#not-sure-how-to-ssh)
