@@ -5,7 +5,8 @@ If you feel these macros are valuable enough to download & use please consider h
 
 # Option 1. INSTALL THE MACROS VIA NEW SSH INSTALLER!
 
-### [Back To Installer Section...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#install-the-macros-via-the-new-ssh-installer)
+Use the new Demon SSH Installer as your install method...
+### [Back To Recommended Installer Section...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#install-the-macros-via-the-new-ssh-installer)
 
 ****************************************************************************************************************************
 
