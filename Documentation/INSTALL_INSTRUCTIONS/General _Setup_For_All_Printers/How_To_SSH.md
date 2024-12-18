@@ -6,7 +6,7 @@ If you feel these macros are valuable enough to download & use please consider h
 
 # HOW TO SSH!
 
-Be sure to use something Putty or MacOS Terminal to log into your system via SSH, you'll need to know how to do this, you'll need your printer's IP address along with its account name & password.
+Be sure to use something Putty or MacOS Terminal to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
 
 Open a new SSH terminal & write in the below example but replacing the objects between the `< >` (NOT including the `<>` less/more than or xx symbols.) with your printer's information. 
 
@@ -28,8 +28,12 @@ So basically the command will be something that will look like....
 ssh pi@192.168.1.95
 ```
 
+Once you have input the correct account name & IP address as above 
+
 Press return
 
-Then it'll ask you for your password. Enter it, it wont be displayed on screen but it will be working.
+Then the terminal will ask you for your password. Enter it, it wont be displayed on screen but it will be working.
 
 Press return again to login.
+
+You're now ready to begin issuing commands to install the macros.
