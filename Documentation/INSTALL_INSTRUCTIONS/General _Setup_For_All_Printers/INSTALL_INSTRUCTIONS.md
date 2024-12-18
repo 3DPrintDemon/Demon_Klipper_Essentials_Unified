@@ -177,6 +177,7 @@ max_extrude_only_velocity: 15
 **This is for parking the toolhead when you pause or cancel a print.** 
 
 You should be sure to `[include mainsail.cfg]` as we will be using this! 
+When inclding this file you pay very close attention to any sections defined within it! They must not be duplicated within your printer.cfg file, for instance the pause/resume section will casue problems if its defined twice in your system!!
 
 You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` & paste it all into a new editable `my_macros.cfg` file for example, as that `Mainsail.cfg` is read only & you can't make any changes to it.
 
