@@ -146,7 +146,7 @@ This new system uses the `Kiauh` `G-code Shell Command Extension` optional insta
 
 This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
 
-To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the prerequisites section. Then you need to add these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
+To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add *ONE* of these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
 
 If you have a Raspberry Pi based system:
 ```
