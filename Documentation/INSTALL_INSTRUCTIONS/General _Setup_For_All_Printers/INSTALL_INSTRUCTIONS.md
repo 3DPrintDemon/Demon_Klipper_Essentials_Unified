@@ -202,43 +202,6 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 ****************************************************************************************************************************
 
-# Define Force Move Section
-
-be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
-```
-[force_move]
-enable_force_move: true
-```
-
-# Idle Timeout printer.cfg 
-
-To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
-```
-[idle_timeout]
-gcode:
-    _DEMON_IDLE_TIMEOUT
-timeout: 3600
-```
-
-This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file
-
-****************************************************************************************************************************
-
-# Load & Unload Macros
-
-
-###### NOTE: Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
-
-All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 20 or below will pass the check. 
-
-Be sure your `printer.cfg` file `[extruder]` section contains...
-
-```
-max_extrude_only_velocity: 15
-```
-
-****************************************************************************************************************************
-
 # Mainsail.cfg Usage
 
 **This is for parking the toolhead when you pause or cancel a print.** 
@@ -297,6 +260,43 @@ Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're 
 BE SURE TO SAVE & RESTART!
 
 ![Mainsail_Client_Var](https://github.com/user-attachments/assets/03d025db-8a73-4b9a-909c-236b64362663)
+
+****************************************************************************************************************************
+
+# Define Force Move Section
+
+be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
+```
+[force_move]
+enable_force_move: true
+```
+
+# Idle Timeout printer.cfg 
+
+To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
+```
+[idle_timeout]
+gcode:
+    _DEMON_IDLE_TIMEOUT
+timeout: 3600
+```
+
+This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file
+
+****************************************************************************************************************************
+
+# Load & Unload Macros
+
+
+###### NOTE: Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
+
+All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 20 or below will pass the check. 
+
+Be sure your `printer.cfg` file `[extruder]` section contains...
+
+```
+max_extrude_only_velocity: 15
+```
 
 ****************************************************************************************************************************
 
