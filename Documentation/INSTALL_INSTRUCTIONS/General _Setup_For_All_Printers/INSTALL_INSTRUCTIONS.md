@@ -121,6 +121,73 @@ These macros make use of the `respond` command so please make sure your printer.
 ```
 ****************************************************************************************************************************
 
+# Demon Klipper Essentials Mainsail Updates
+
+To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
+
+```
+[update_manager Demon_Klipper_Essentials_Unified]
+type: git_repo
+path: ~/printer_data/config/Demon_Klipper_Essentials_Unified
+origin: https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
+primary_branch: main
+is_system_service: False
+managed_services: klipper
+```
+Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
+
+****************************************************************************************************************************
+
+# NEW FEATURE: Demon User Files Updater
+
+This new feature is a quality of life system that's useful if you'd like some help from the macros to create & manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to extract the new versions from your updated macros.
+
+This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. It will extract the required `Demon_User_Files` from the main `Demon Klipper Essentials` directory & place them in a new directory outside of the managed main directory, this is directly inside your printer's `config` directory. It will also notify you of any version changes to these files after future updates & then give you the option to move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them.
+
+This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
+
+To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the prerequisites section. Then you need to add these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
+
+If you have a Raspberry Pi based system:
+```
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Rpi.cfg]
+```
+If you have a Biqu based system:
+```
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Biqu.cfg]
+```
+If you have a Sovol based system:
+```
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Sovol.cfg]
+```
+If you have a MKS based system:
+```
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_MKS.cfg]
+```
+
+Then once you restart your system you'll be greeted by new system prompts telling you what needs to be done to get your system ready for use & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
+
+![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
+
+
+Once you have extracted the default user files the system will tell you to include the directory they're in. Use this command, but obviously DON'T add it to your `printer.cfg` BEFORE you `EXTRACT` the files or you'll get an error saying the directory does not exist. Then it wont work.
+
+```
+[include ./Demon_User_Files/*cfg]
+```
+****************************************************************************************************************************
+### Manual User File Placement
+
+If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
+
+Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory.
+
+Now use the include...
+```
+[include ./Demon_User_Files/*cfg]
+```
+****************************************************************************************************************************
+
 # Macro Layout Import/Restore
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
