@@ -85,7 +85,7 @@ Then, paste the include command into your printer.cfg file
 
 This will bring these files into your system.
 
-Other ways to install are here
+[Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
 ****************************************************************************************************************************
 
