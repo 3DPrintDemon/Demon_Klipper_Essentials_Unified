@@ -83,9 +83,26 @@ Then, paste the include command into your printer.cfg file
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 ```
 
-This will bring these files into your system.
+This will bring these files into your system. Although it's best not to do this right away. It's better to do it after you have setup your printer.cfg a little more with the steps in the section below.
 
 [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Other_Ways_To_Install.md)
+
+****************************************************************************************************************************
+
+# Define Save Variables Section
+
+Add this to your `printer.cfg` preferably BEFORE you include the macros.
+
+```
+[save_variables]
+filename: ~/demon_vars.cfg
+```
+If this file is not present on your first reboot but you have already added the `[save_variables]` section you'll see this error:
+
+![EOF Error](https://github.com/user-attachments/assets/b67bb757-e83e-4d0c-9267-a80c3c3f5944)
+
+
+Don't worry though this is just telling you the system created the file but it does not have the required saved variable within the file. Simply home the printer to create the variable within the file to clear the error. Unless you're running `Klicky Probe` then please [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe) as simply homing the printer wont clear the error unless you have edited the Klicky macros first.
 
 ****************************************************************************************************************************
 
@@ -100,6 +117,51 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 ![Macro_Layout](https://github.com/user-attachments/assets/d062ceed-75b6-498c-9bc3-27778f27c6dc)
 
+
+****************************************************************************************************************************
+
+# Define Respond Section
+
+These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` that you just included above, so if you set these macros up correctly you wont need to add it, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually.
+
+```
+[respond]
+```
+
+# Define Force Move Section
+
+be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
+```
+[force_move]
+enable_force_move: true
+```
+
+# Idle Timeout printer.cfg 
+
+To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
+```
+[idle_timeout]
+gcode:
+    _DEMON_IDLE_TIMEOUT
+timeout: 3600
+```
+
+This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file
+
+****************************************************************************************************************************
+
+# Load & Unload Macros
+
+
+###### NOTE: Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
+
+All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 20 or below will pass the check. 
+
+Be sure your `printer.cfg` file `[extruder]` section contains...
+
+```
+max_extrude_only_velocity: 15
+```
 
 ****************************************************************************************************************************
 
@@ -160,78 +222,6 @@ Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're 
 BE SURE TO SAVE & RESTART!
 
 ![Mainsail_Client_Var](https://github.com/user-attachments/assets/03d025db-8a73-4b9a-909c-236b64362663)
-
-****************************************************************************************************************************
-
-# IDLE_TIMEOUT printer.cfg 
-
-To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
-```
-[idle_timeout]
-gcode:
-    _DEMON_IDLE_TIMEOUT
-timeout: 3600
-```
-
-This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file
-
-
-****************************************************************************************************************************
-
-# Define Respond Section
-
-These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` that you just included above, so if you set these macros up correctly you wont need to add it, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually.
-
-```
-[respond]
-```
-
-# Define Force Move Section
-
-be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
-```
-[force_move]
-enable_force_move: true
-```
-
-# Define Save Variables Section
-
-SSH into your printer & paste in
-```
-cd ~
-wget https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Vars/demon_vars.cfg -O demon_vars.cfg --backups=0
-```
-This will install the required variables file in the correct location.
-
-
-Then add this to your `printer.cfg`
-
-```
-[save_variables]
-filename: ~/demon_vars.cfg
-```
-If this file is not present on your first reboot but you have already added the `[save_variables]` section you'll see this error:
-
-![EOF Error](https://github.com/user-attachments/assets/b67bb757-e83e-4d0c-9267-a80c3c3f5944)
-
-
-Dont worry though this is just telling you the system created the file but it does not have the required saved variable within the file. Simply home the printer to create the variable within the file to clear the error. Unless you're running `Klicky Probe` then please [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe) as simply homing the printer wont clear the error unless you have edited the Klicky macros first.
-
-****************************************************************************************************************************
-
-
-# LOAD/UNLOAD Macros
-
-
-###### NOTE: Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
-
-All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 20 or below will pass the check. 
-
-Be sure your `printer.cfg` file `[extruder]` section contains...
-
-```
-max_extrude_only_velocity: 15
-```
 
 ****************************************************************************************************************************
 
