@@ -42,15 +42,13 @@ This link GOOD!
 - Disable your current macros for START_PRINT & END_PRINT, plus any others you dont need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Your_Current_Macro_Files.md)
 
 
-****************************************************************************************************************************
 
-# Did you already do this???
+### Did you already do this???
 
 - Don't miss this out, you need them! [INSTALL PREREQUISITES](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
 
-****************************************************************************************************************************
 
-# Not Sure How to SSH?
+### Not Sure How to SSH?
 
 - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/How_To_SSH.md)
 
