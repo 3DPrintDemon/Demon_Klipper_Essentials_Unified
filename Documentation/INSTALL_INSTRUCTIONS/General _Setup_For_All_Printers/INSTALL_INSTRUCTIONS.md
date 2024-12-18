@@ -56,45 +56,36 @@ This link GOOD!
 
 ****************************************************************************************************************************
 
-# INSTALL THE MACROS MANUALLY
+# INSTALL THE MACROS VIA THE NEW SSH INSTALLER!
 
-Copy the files here into a folder called `Demon_Klipper_Essentials_Unified` in your config folder on your printer. 
+Enjoy the ease of installing the `Demon Klipper Essentials Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
 
-###### NOTE: If you download the zip file via the button at the top of the repo your downloaded folder will be called:
-```
-Demon_Klipper_Essentials_Unified-main
-```
-You must delete the `-main` part of the name so it reads `Demon_Klipper_Essentials_Unified` ONLY. 
+This installer will look at your machine & see if you have a previous version of `Demon Klipper Essentials Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon Klipper Essentials Unified` to the original location on your system saving the old version for you. 
 
-Then copy that renamed folder to your printer.
+Not only that but the installer will also create numbered backups for any previous `Demon_Klipper_Essentials` directories, so you can use the installer over & over & keep all old versions in a local archive on your machine!
 
-Then, paste into your printer.cfg
-```
-[include ./Demon_Klipper_Essentials_Unified/*.cfg]
-```
+Lastly the installer will automatically install the latest `demon_vars.cfg` file in the correct place, overwriting any previous ones. So you don't have to worry about that!
 
-This will include all files in a folder called Demon_KLIPPER_Essentials_Unified in your `~/config` folder.
+Copy the code block below & paste it into your SSH terminal 
+
 ****************************************************************************************************************************
 
-# INSTALL THE MACROS VIA SSH TO CLONE THE REPO DIRECTLY
-
-Use Putty or MacOS Terminal to log into your system via SSH
-
+### SSH INSTALLER HERE:
 ```
-cd ~/printer_data/config
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
+Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
 
-```
-git clone https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
-```
+****************************************************************************************************************************
 
-Then, paste into your printer.cfg
+Then, paste the include command into your printer.cfg file
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 ```
 
-This will bring these files into your system, be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
+This will bring these files into your system.
 
+Other ways to install are here
 
 ****************************************************************************************************************************
 
