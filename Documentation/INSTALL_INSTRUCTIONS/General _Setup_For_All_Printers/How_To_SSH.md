@@ -6,7 +6,7 @@ If you feel these macros are valuable enough to download & use please consider h
 
 # HOW TO SSH!
 
-Be sure to use something like Putty or MacOS Terminal to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
+Be sure to use something like WinSCP or Putty on WindowsPC or Terminal on MacOS to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
 
 - Open a new SSH terminal & write in the below example but replacing the objects between the `< >` (NOT including the `<>` less/more than or xx symbols.) with your printer's information. 
 
