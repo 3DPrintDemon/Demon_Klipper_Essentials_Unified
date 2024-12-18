@@ -23,10 +23,10 @@ NOT including the <> less/more than symbols or the xx on the end.
 This can be found from your WiFI router in most cases.
 ```
 ```
-EXAMPLE
+
 So basically the command will be something that will look like....
 
-
+EXAMPLE
 ssh pi@192.168.1.95
 ```
 
