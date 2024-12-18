@@ -6,7 +6,7 @@ If you feel these macros are valuable enough to download & use please consider h
 
 # HOW TO SSH!
 
-Be sure to use something Putty or MacOS Terminal to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
+Be sure to use something like Putty or MacOS Terminal to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
 
 - Open a new SSH terminal & write in the below example but replacing the objects between the `< >` (NOT including the `<>` less/more than or xx symbols.) with your printer's information. 
 
@@ -21,7 +21,9 @@ NOT including the <> less/more than symbols or the xx on the end.
 <192.168.1.xx> = your printer's full IP address replacing the example numbers with yours.
 
 This can be found from your WiFI router in most cases.
-
+```
+```
+EXAMPLE
 So basically the command will be something that will look like....
 
 
