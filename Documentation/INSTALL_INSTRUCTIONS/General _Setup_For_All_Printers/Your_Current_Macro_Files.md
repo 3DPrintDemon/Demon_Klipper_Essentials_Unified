@@ -8,7 +8,7 @@ If you feel these macros are valuable enough to download & use please consider h
 
 # Note's on Your Current Macro File Handling
 
-Be sure to comment out & NOT delete your current START & END PRINT Macros just yet!
+Be sure to comment out your current START & END PRINT Macros &/or macro set & NOT delete them just yet! You dont want any Levelling (Z-Tilt or QGL) macros other calibration sets running.
 
 The best way to do this is to comment out the old macro file include command in your `printer.cfg` by placing a hash in front of the command.
 ```
@@ -24,4 +24,4 @@ OR....
 ```
 Cmd+/ on MacOS
 ```
-Now Click `Save` & Exit the file, no need to restart just yet, unless you want to.
+Now click `Save` & exit the file, no need to restart just yet, unless you want to.
