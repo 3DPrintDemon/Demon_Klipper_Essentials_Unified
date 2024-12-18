@@ -67,6 +67,7 @@ Lastly the installer will automatically install the latest `demon_vars.cfg` file
 Copy the code block below & paste it into your SSH terminal 
 
 ****************************************************************************************************************************
+****************************************************************************************************************************
 
 ### SSH INSTALLER HERE:
 ```
@@ -74,6 +75,7 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 ```
 Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
 
+****************************************************************************************************************************
 ****************************************************************************************************************************
 
 Then, paste the include command into your printer.cfg file
