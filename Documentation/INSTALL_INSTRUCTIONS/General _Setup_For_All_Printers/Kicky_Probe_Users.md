@@ -30,7 +30,7 @@ On line 577 in my file.
 
 This will call the macro that recognises your XY drivers & passes that info to the Demon Homing macro. For printers NOT using `Klicky Probe`, you don’t need to do this!
 
-### Head back to where you were...
+### [Head back to where you were...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe)
 
 ****************************************************************************************************************************
 
