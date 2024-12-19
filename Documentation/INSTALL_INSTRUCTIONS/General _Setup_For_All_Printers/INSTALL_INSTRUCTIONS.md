@@ -107,11 +107,15 @@ cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_V
 
 # Define Respond Section
 
-These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` file, please make sure it is included. If you set these macros up correctly you wont need to add it to your printer.cfg, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually.
+These macros make use of the `respond` command so please make sure your printer.cfg has this defined for use in the system. This is command is already defined in the your `Mainsail.cfg` file, please make sure it is included. If you set these macros up correctly you wont need to add it to your printer.cfg, however if you choose not to use the `Mainsail.cfg` you will need to add the section manually. 
 
 ```
 [respond]
 ```
+
+If you *ARE* going to use the `Mainsail.cfg` set it up now! Click here to do that!
+LINK TO PLACE
+
 ****************************************************************************************************************************
 
 # NEW FEATURE: Demon User Files Updater
