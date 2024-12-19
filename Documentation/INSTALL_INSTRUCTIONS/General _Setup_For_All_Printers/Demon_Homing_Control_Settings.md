@@ -35,7 +35,7 @@ Found in the demon_user_settings_v2.9.cfg onwards
 
 `z_endstop_location_y` = If you're using a separate non-Klicky Probe Z endstop switch of any sort set Y axis location
 
-### Head back to where you were...
+[### Head back to where you were...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-homing-control-settings)
 
 ****************************************************************************************************************************
 
