@@ -423,11 +423,8 @@ When testing homing for the first time be EXTREMELY CAREFUL & be ready to hit EM
 
 If for any reason you wish to revert back to your normal homing system, simply comment all back in from your old system & disable the `demon_homing_control_v1.2.cfg` file by commenting out its full content apart from the file version number at the bottom. Make your selection & then by then `ctrl+/` on wondows or `cmd+/` on MacOS.
 
-****************************************************************************************************************************
-
-
-# DEMON HOMING CONTROL SETTINGS 
-Found in the demon_user_settings_v2.9.cfg
+## DEMON HOMING CONTROL SETTINGS 
+Found in the demon_user_settings_v2.9.cfg onwards.
 
 [Settings list here...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Demon_Homing_Control_Settings.md)
 
@@ -472,6 +469,7 @@ https://github.com/3DPrintDemon/Eddy/releases/tag/Eddy_Coil_with_EBB36_Edited_cf
 
 You have to modify your slicer's `Machine Gcode` that is sent to the printer.
 
+### Orca Slicer
 To modifiy the `Machine Gcode` in Orca Slicer [click here...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
 
@@ -496,6 +494,8 @@ This link GOOD!
 
 ****************************************************************************************************************************
 # If You're Using A Sovol SV08 Printer
+
+For model specific configuration click below.
 
 - [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
