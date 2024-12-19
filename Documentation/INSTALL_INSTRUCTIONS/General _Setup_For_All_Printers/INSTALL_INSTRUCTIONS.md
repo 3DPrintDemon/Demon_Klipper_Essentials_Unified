@@ -396,7 +396,7 @@ be sure to comment out or un-include & disable any old homing or sensorless homi
 
 ## UNLESS you’re using `Klicky Probe`!!! 
 
-For printers using `Klicky Probe` you need to do [this to get things to work correctly!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Kicky_Probe_Users.md)
+For printers using `Klicky Probe` [you need to do this to get things to work correctly!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Kicky_Probe_Users.md)
 
 ****************************************************************************************************************************
 
