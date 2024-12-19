@@ -159,7 +159,9 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 # Include Now!
 
-Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run.
+Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
+
+Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 [include ./Demon_User_Files/*cfg]
