@@ -37,7 +37,7 @@ This link GOOD!
 
 # Preparing Your Current System
 
-- Make a Backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
+- Make a backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
 
 - Disable your current macros for START_PRINT & END_PRINT, plus any others you dont need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Your_Current_Macro_Files.md)
 
@@ -78,12 +78,13 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 ****************************************************************************************************************************
 ****************************************************************************************************************************
 
-Then, paste the include command into your printer.cfg file
+Then, paste the include commands into your printer.cfg file
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
+[include ./Demon_User_Files/*cfg]
 ```
 
-This will bring these files into your system. Although it's best not to do this right away. It's better to do it after you have setup your printer.cfg a little more with the steps in the section below.
+This will bring these files into your system. Although it's best not to do this right away. It's better to do it after you have setup your printer.cfg a little more with the steps in the sections below. Include files when you're here!
 
 [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
@@ -119,23 +120,6 @@ These macros make use of the `respond` command so please make sure your printer.
 ```
 [respond]
 ```
-****************************************************************************************************************************
-
-# Demon Klipper Essentials Mainsail Updates
-
-To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
-
-```
-[update_manager Demon_Klipper_Essentials_Unified]
-type: git_repo
-path: ~/printer_data/config/Demon_Klipper_Essentials_Unified
-origin: https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
-primary_branch: main
-is_system_service: False
-managed_services: klipper
-```
-Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
-
 ****************************************************************************************************************************
 
 # NEW FEATURE: Demon User Files Updater
@@ -187,6 +171,41 @@ Now use the include...
 [include ./Demon_User_Files/*cfg]
 ```
 ****************************************************************************************************************************
+
+# Include Now!
+
+Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run.
+```
+[include ./Demon_Klipper_Essentials_Unified/*.cfg]
+[include ./Demon_User_Files/*cfg]
+```
+
+If you're using the `Demon User Files Updater` after the restart your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
+
+These filea are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain prestine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
+
+****************************************************************************************************************************
+
+# Demon Klipper Essentials Mainsail Updates
+
+To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
+
+![Update Manager](https://github.com/user-attachments/assets/efa9ab69-3e2d-4ee9-a909-a98c7f0e8864)
+
+```
+[update_manager Demon_Klipper_Essentials_Unified]
+type: git_repo
+path: ~/printer_data/config/Demon_Klipper_Essentials_Unified
+origin: https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
+primary_branch: main
+is_system_service: False
+managed_services: klipper
+```
+Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
+
+****************************************************************************************************************************
+
+
 
 # Macro Layout Import/Restore
 
