@@ -15,6 +15,15 @@ This link GOOD!
 
 ******************************
 
+# Sovol SV08 machine specific prerequisites installer here...
+```
+wget -O  https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
+```
+###### NOTE: Do not use this unless you have a Sovol SV08 printer!! Seriously its not for you, move along, nothing to see here! ;-p
+******************************
+
+# ALL PRINTERS...
+
 ### OPTIONAL - Kiauh G-code Shell Command Extension - OPTIONAL!
 While not vital to Demon Klipper Essentials it will provide additional functionality to the system & quality of life features, if you wish not to use it then don't install it & don't include the new `Extract_Demon_User_Files_x.cfg`, you'll just have to deal with some file management tasks manually. 
 
