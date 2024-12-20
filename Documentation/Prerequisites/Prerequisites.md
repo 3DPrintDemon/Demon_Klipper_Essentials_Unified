@@ -17,7 +17,7 @@ This link GOOD!
 
 # Sovol SV08 machine specific prerequisites installer here...
 ```
-wget -O  https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
 ```
 ###### NOTE: Do not use this unless you have a Sovol SV08 printer!! Seriously its not for you, move along, nothing to see here! ;-p
 ******************************
