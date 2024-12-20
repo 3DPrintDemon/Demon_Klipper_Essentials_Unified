@@ -41,6 +41,7 @@ Heres the SSH command to install the main package!
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
+###### NOTE: Don't forget to restart Klipper & reload your web browser window so new items will show & work correctly after installation!
 
 ****************************************************************************************************************************
 # Edit your printer.cfg 
