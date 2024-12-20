@@ -23,49 +23,46 @@ This link GOOD!
 
 ******************************
 
-# IF YOU'RE USING A SOVOL SV08 PRINTER! 
+# IF YOU'RE USING A SOVOL SV08 PRINTER!
 
-![DEMON_Display_Menu](https://github.com/user-attachments/assets/eb7965ac-fcd2-4fd4-9487-7cbcaf2828e7)
 
-BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 
-- https://github.com/3DPrintDemon/SV08/releases/tag/v1.0
-- https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
-- https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
-- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
-  
-###### Note: These files are required for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+### NEW SOVOL SV08 PREREQUISTIES INSTALLER!!
 
-## OPTIONAL INSTALL for stock system!!
-![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
+Heres the SSH command to run the SV08 Prerequisites installer! Install all the extra stuff at once!
 
-- [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
+```
+wget -O  https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
+```
 
-## Other Great Upgrade Options For All SV08's
-Here is my SV08 nozzle cleaning & purge bucket!
+### HERE'S THE MAIN Demon_Klipper_Essentials_Unified MACROS SSH INSTALLER!!
 
-- https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
-
-Anti-vibration feet
-
-- https://www.printables.com/model/867321-sovol-sv08-low-profile-vibration-isolation-feet
-
-M12 Probe mount
-
-- https://www.printables.com/model/870302-sovol-sv08-m12-inductive-probe-mount-lj12a3-4-zax
-
-DIN rail mount
-
- - https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
+Heres the SSH command to install the main package!
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
+```
 
 ****************************************************************************************************************************
-
 # Edit your printer.cfg 
+
+[DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+
+Include these...
+```
+[include ./KAMP_LiTE/*.cfg]
+[include ./Heat_Soak_Sovol_SV08.cfg]
+[include ./RGB_LEDs.cfg]
+# [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Sovol.cfg]
+# [include ./demon_SV08_ML_display_v1.0.cfg]
+```
 
 Be sure your `printer.cfg` file `[extruder]` section contains...
 
 ```
 max_extrude_only_velocity: 15
+```
+```
+max_extrude_cross_section: 5
 ```
 This is used by the load/unload macros & is converted into feedrate of mm/s & is limited to 20
 
@@ -270,6 +267,42 @@ initial_GREEN: 0.4
 initial_BLUE: 0.7  
 ```
 
+
+
+****************************************************************************************************************************
+
+![DEMON_Display_Menu](https://github.com/user-attachments/assets/eb7965ac-fcd2-4fd4-9487-7cbcaf2828e7)
+
+BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
+
+- https://github.com/3DPrintDemon/SV08/releases/tag/v1.0
+- https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
+- https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
+- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+  
+###### Note: These files are required for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+
+## OPTIONAL INSTALL for stock system!!
+![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
+
+- [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
+
+## Other Great Upgrade Options For All SV08's
+Here is my SV08 nozzle cleaning & purge bucket!
+
+- https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
+
+Anti-vibration feet
+
+- https://www.printables.com/model/867321-sovol-sv08-low-profile-vibration-isolation-feet
+
+M12 Probe mount
+
+- https://www.printables.com/model/870302-sovol-sv08-m12-inductive-probe-mount-lj12a3-4-zax
+
+DIN rail mount
+
+ - https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
 
 ****************************************************************************************************************************
 
