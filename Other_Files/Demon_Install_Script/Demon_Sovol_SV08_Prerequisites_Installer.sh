@@ -9,8 +9,6 @@ U="$USER"
 CDIR="/home/$U/printer_data/config"
 DDIR="/home/$U/klipper/klippy/extras/display"
 KDIR="/home/$U/printer_data/config/KAMP_LiTE"
-# $RGB="/home/$U/printer_data/config/RGB_LEDs.cfg"
-# $HSS="/home/$U/printer_data/config/Heat_Soak_Sovol_SV08.cfg"
 
 DIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified"
 PDIR="/home/$U/printer_data/config/Previous_Demon_Macros"
@@ -28,7 +26,6 @@ else
     echo "KAMP_LiTE directory already exists."
 fi
 
-# if [ ! -f "/home/$U/printer_data/config/RGB_LEDs.cfg" ]; then
 if [ ! -f "$CDIR/RGB_LEDs.cfg" ]; then
     echo "RGB_LEDs.cfg file does not exist."
     cd $CDIR
@@ -38,7 +35,6 @@ if [ ! -f "$CDIR/RGB_LEDs.cfg" ]; then
     echo "RGB_LEDs.cfg file already exists."
 fi
 
-# if [ ! -f "/home/$U/printer_data/config/Heat_Soak_Sovol_SV08.cfg" ]; then
 if [ ! -f "$CDIR/Heat_Soak_Sovol_SV08.cfg" ]; then
     echo "Heat_Soak_Sovol_SV08.cfg file does not exist."
     cd $CDIR
@@ -64,7 +60,6 @@ case $choice in
         cd $CDIR
         echo "SV08 Demon Stock Display Config installer actions complete"
     else
-        # if [ ! -f "/home/$U/printer_data/config/demon_SV08_ML_display_v1.0.cfg" ]; then
          if [ ! -f "$CDIR/demon_SV08_ML_display_v1.0.cfg" ]; then
             echo "It seems you do not have a stock system, installing Demon_SV08_Mainline_v1.0.cfg please remember to include it in your printer.cfg!"
             cd $CDIR 
