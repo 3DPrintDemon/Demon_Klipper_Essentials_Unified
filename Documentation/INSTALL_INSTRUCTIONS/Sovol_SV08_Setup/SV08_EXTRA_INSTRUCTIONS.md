@@ -32,7 +32,7 @@ This link GOOD!
 Heres the SSH command to run the SV08 Prerequisites installer! Install all the extra stuff at once!
 
 ```
-wget -O  https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
 ```
 
 ### HERE'S THE MAIN Demon_Klipper_Essentials_Unified MACROS SSH INSTALLER!!
