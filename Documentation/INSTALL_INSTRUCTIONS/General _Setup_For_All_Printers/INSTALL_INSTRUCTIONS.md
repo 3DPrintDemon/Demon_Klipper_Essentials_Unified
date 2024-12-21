@@ -81,9 +81,9 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 # The File Structure Has Changed for v2.9.4 Onwards
 
-There is a new setup in the file structure of these macros. There is now a second directory that needs to be created & populated with user settings cfg files. If using the G-code shell extension option this is done for you after you include the files & restart Klipper. This is done so to keep the main install's "clean" status intact in the Update Manager. This directory is created by the `Demon User Files Updater` & will give you the option to `EXTRACT` the directoy & files. However if you choose not to use it, or if there is an issue you need to know what the functional system looks like. 
+There is a new setup in the file structure of these macros. There is now a second directory that needs to be created & populated with user settings cfg files. If using the G-code shell extension option this is done for you after you include the files & restart Klipper. This is done so to keep the main install's "clean" status intact in the Update Manager. This directory is created by the `Demon User Files Updater` & will give you the option to `EXTRACT` the directory & files. However if you choose not to use it, or if there is an issue you need to know what the functional system looks like. 
 
-#### After the initail install you'll have only the `Demon Klipper Essentials Unified` directory.
+#### After the initial install you'll have only the `Demon Klipper Essentials Unified` directory.
 
 #### You will need to work down through all sections between here & `Include Now!` 
 
