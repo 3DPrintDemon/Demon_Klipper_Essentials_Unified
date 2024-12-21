@@ -69,7 +69,7 @@ Copy the code block below & paste it into your SSH terminal
 ****************************************************************************************************************************
 ****************************************************************************************************************************
 
-### SSH INSTALLER HERE:
+# SSH INSTALLER HERE:
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
@@ -78,6 +78,35 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
 ****************************************************************************************************************************
+
+# The File Structure Has Changed for v2.9.4 Onwards
+
+There is a new setup in the file structure of these macros. There is now a second directory that needs to be created & populated with user settings cfg files. If using the G-code shell extension option this is done for you after you include the files & restart Klipper. This is done so to keep the main install's "clean" status intact in the Update Manager. This directory is created by the `Demon User Files Updater` & will give you the option to `EXTRACT` the directoy & files. However if you choose not to use it, or if there is an issue you need to know what the functional system looks like. 
+
+#### After the initail install you'll have only the `Demon Klipper Essentials Unified` directory.
+
+#### You will need to work down through all sections between here & `Include Now!` 
+
+
+****************************************************************************************************************************
+
+The image below is what your config directory should look like after the initial install & when at the stage where the new directory called `Demon_User_Files` has been extracted - explained later on. 
+
+If this is not present the system is not ready for use! It also needs to be inluded in to the system - explained later on.
+
+![Demon_Config_DIR](https://github.com/user-attachments/assets/781d77c2-477b-45bd-8b88-82252f8d6a90)
+
+Then if you check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
+
+![Demon_User_Files](https://github.com/user-attachments/assets/5dfb557a-f68a-4cff-ab9d-01fb89b32fa5)
+
+If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
+
+If you still don't see any of the files or the directory & you used the `Demon User Files Updater` jump down to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#new-feature-demon-user-files-updater) to check you have included the correct `Demon User Files Updater` file for your user account.
+
+Or if using manual placement click [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#manual-user-file-placement)
+
+
 ****************************************************************************************************************************
 
 # Define Save Variables Section
@@ -129,6 +158,12 @@ This new system uses the `Kiauh` `G-code Shell Command Extension` optional insta
 
 To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add *ONE* of these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
 
+****************************************************************************************************************************
+
+#### If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+
+****************************************************************************************************************************
+
 ###### NOTE: if you have a non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work. 
 
 If you have a Raspberry Pi based system:
@@ -164,10 +199,17 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
 
 Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
+
+It is vitally important that you have the `demon_vars.cfg` in-place before you include these files, If you used the new SSH installer it will have been placed for you.
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 [include ./Demon_User_Files/*cfg]
 ```
+Your full include list should look like this example from my Voron 2.4 - the additional files for your printer may well be different version to mine depending on your machine & setup
+
+
+![Demon_Includes_Example_Voron2 4](https://github.com/user-attachments/assets/fbd1d41f-ebaf-4e91-98a4-4e4cce8de8f5)
+
 
 If you're using the `Demon User Files Updater` after the restart your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
 
