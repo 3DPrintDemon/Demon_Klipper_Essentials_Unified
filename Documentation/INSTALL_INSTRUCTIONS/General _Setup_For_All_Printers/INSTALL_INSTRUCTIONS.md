@@ -92,7 +92,7 @@ There is a new setup in the file structure of these macros. There is now a secon
 
 The image below is what your config directory should look like after the initial install & when at the stage where the new directory called `Demon_User_Files` has been extracted - explained later on. 
 
-If this is not present the system is not ready for use! It also needs to be inluded in to the system - explained later on.
+If this directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
 
 ![Demon_Config_DIR](https://github.com/user-attachments/assets/781d77c2-477b-45bd-8b88-82252f8d6a90)
 
