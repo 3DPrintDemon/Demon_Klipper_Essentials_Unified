@@ -129,6 +129,8 @@ This new system uses the `Kiauh` `G-code Shell Command Extension` optional insta
 
 To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add *ONE* of these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
 
+###### NOTE: if you have a non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work. 
+
 If you have a Raspberry Pi based system:
 ```
 [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Rpi.cfg]
