@@ -111,7 +111,8 @@ If your directory is empty please click the reload button for your web browser t
 
 # Define Save Variables Section
 
-Add this to your `printer.cfg` preferably BEFORE you include the macros.
+Add this to your `printer.cfg` preferably BEFORE you include the macros. 
+IMPORTANT! Be sure to comment out any other [save_variables] already in your printer.cfg
 
 ```
 [save_variables]
