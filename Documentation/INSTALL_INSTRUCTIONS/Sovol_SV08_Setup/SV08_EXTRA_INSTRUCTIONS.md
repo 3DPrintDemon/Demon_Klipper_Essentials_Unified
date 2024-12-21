@@ -48,12 +48,19 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
-#### IMPORTANT: Be sure to comment out the Sovol [save_variables] section in the printer.cfg file
+#### IMPORTANT: Be sure to comment out the Sovol/Mainline [save_variables] section in the printer.cfg file!!
 
-If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour on restarts!
+If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour asking to extract files on restarts! You must define the Demon one ONLY!
+
+Stock Sovol...
 ```
 # [save_variables]
 # filename =/home/sovol/printer_data/config/saved_variables.cfg
+```
+Mainline...
+```
+# [save_variables]
+# Filename = ~/printer_data/config/saved_variables.cfg
 ```
 
 Now be sure to include these...
