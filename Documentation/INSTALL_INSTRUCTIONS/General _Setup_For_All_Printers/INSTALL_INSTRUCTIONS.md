@@ -113,7 +113,7 @@ If your directory is empty please click the reload button for your web browser t
 
 Add this to your `printer.cfg` preferably BEFORE you include the macros. 
 
-#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg
+#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system will keep asking to extract the files every restart because it can't update the demon_vars.cfg status variable.
 
 ```
 [save_variables]
@@ -162,7 +162,7 @@ To use this awesome new feature you have to have the `Kiauh` `G-code Shell Comma
 
 ****************************************************************************************************************************
 
-#### IMPORTANT: If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN! The system will keep asking to extract the files but wont be able to.
+#### IMPORTANT: If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
 
 ****************************************************************************************************************************
 
