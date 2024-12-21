@@ -162,7 +162,7 @@ To use this awesome new feature you have to have the `Kiauh` `G-code Shell Comma
 
 ****************************************************************************************************************************
 
-#### If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+#### If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN! The system will keep asking to extract the files but wont be able to.
 
 ****************************************************************************************************************************
 
