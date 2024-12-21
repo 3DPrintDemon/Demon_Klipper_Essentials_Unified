@@ -192,14 +192,8 @@ Then once you restart your system you'll be greeted by new system prompts tellin
 
 If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
 
-Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like this...
+Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like [this...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards)
 
-![Demon_Config_DIR](https://github.com/user-attachments/assets/781d77c2-477b-45bd-8b88-82252f8d6a90)
-
-
-![Demon_User_Files](https://github.com/user-attachments/assets/5dfb557a-f68a-4cff-ab9d-01fb89b32fa5)
-
-There could also be a system created archive directory (Previous_Versions) if you had these files here before...
 
 ****************************************************************************************************************************
 
