@@ -50,7 +50,7 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 #### IMPORTANT: Be sure to comment out the Sovol [save_variables] section in the printer.cfg file
 
-If you don't do this & you use the G-code shell command extension it will cause looping behaviour on restarts!
+If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour on restarts!
 ```
 # [save_variables]
 # filename =/home/sovol/printer_data/config/saved_variables.cfg
