@@ -102,11 +102,11 @@ Then if you check inside the `Demon_User_Files` directory you should see these 3
 
 If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
 
-If you still don't see any of the files or the directory & you used the `Demon User Files Updater` jump down to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#new-feature-demon-user-files-updater) to check you have included the correct `Demon User Files Updater` file for your user account.
+###### NOTE: If you still don't see any of the files or the directory & you used the `Demon User Files Updater` jump down to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#new-feature-demon-user-files-updater) to check you have included the correct `Demon User Files Updater` file for your user account.
 
-Or if using manual placement click [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#manual-user-file-placement)
+###### NOTE: Or if using manual placement click [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#manual-user-file-placement)
 
-
+...Now back to the current step in the process
 ****************************************************************************************************************************
 
 # Define Save Variables Section
