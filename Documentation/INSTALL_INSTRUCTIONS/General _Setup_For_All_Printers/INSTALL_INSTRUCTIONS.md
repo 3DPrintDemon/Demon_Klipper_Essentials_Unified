@@ -58,7 +58,7 @@ This link GOOD!
 
 Enjoy the ease of installing the `Demon Klipper Essentials Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
 
-This installer will look at your machine & see if you have a previous version of `Demon Klipper Essentials Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon Klipper Essentials Unified` to the original location on your system saving the old version for you. 
+This installer will look at your machine & see if you have a previous version of `Demon_Klipper_Essentials_Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon Klipper Essentials Unified` to the original location on your system saving the old version for you. 
 
 Not only that but the installer will also create numbered backups for any previous `Demon_Klipper_Essentials` directories, so you can use the installer over & over & keep all old versions in a local archive on your machine!
 
