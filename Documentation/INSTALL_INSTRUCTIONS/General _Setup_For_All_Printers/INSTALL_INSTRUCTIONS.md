@@ -149,7 +149,7 @@ If you have a MKS based system:
 Then once you restart your system you'll be greeted by new system prompts telling you what needs to be done to get your system ready for use & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
 
 ****************************************************************************************************************************
-### Manual User File Placement
+# Manual User File Placement
 
 If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
 
@@ -178,6 +178,12 @@ These filea are placed here outside of the main `Demon Klipper Essentials Unifie
 # Demon Klipper Essentials Mainsail Updates
 
 To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
+
+Also please note that if you do not use the new installer to update but instead jusy rely on Update Manager to update from v2.9.3 or lower you must run this ssh script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for v2.9.4 
+
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
+```
 
 ![Update Manager](https://github.com/user-attachments/assets/efa9ab69-3e2d-4ee9-a909-a98c7f0e8864)
 
