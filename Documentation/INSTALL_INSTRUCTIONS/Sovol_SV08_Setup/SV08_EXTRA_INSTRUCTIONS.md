@@ -48,7 +48,15 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
-Include these...
+#### IMPORTANT: Be sure to comment out the stock Sovol [save_variables] section at the bottom of the printer.cfg file
+
+If you don't do this & you use the G-code shell command extension it will cause looping behaviour on restarts!
+```
+# [save_variables]
+# filename =/home/sovol/printer_data/config/saved_variables.cfg
+```
+
+Now be sure to include these...
 ```
 [include ./KAMP_LiTE/*.cfg]
 [include ./Heat_Soak_Sovol_SV08.cfg]
