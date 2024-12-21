@@ -56,11 +56,11 @@ This link GOOD!
 
 # INSTALL THE MACROS VIA THE NEW SSH INSTALLER!
 
-Enjoy the ease of installing the `Demon Klipper Essentials Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
+Enjoy the ease of installing the `Demon_Klipper_Essentials_Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
 
-This installer will look at your machine & see if you have a previous version of `Demon_Klipper_Essentials_Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon Klipper Essentials Unified` to the original location on your system saving the old version for you. 
+This installer will look at your machine & see if you have a previous version of `Demon_Klipper_Essentials_Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon_Klipper_Essentials_Unified` to the original location on your system saving the old version for you. 
 
-Not only that but the installer will also create numbered backups for any previous `Demon_Klipper_Essentials` directories, so you can use the installer over & over & keep all old versions in a local archive on your machine!
+Not only that but the installer will also create numbered backups for any previous `Demon_Klipper_Essentials_Unified` directories, so you can use the installer over & over & keep all old versions in a local archive on your machine!
 
 Lastly the installer will automatically install the latest `demon_vars.cfg` file in the correct place, overwriting any previous ones. So you don't have to worry about that!
 
@@ -83,7 +83,7 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 There is a new setup in the file structure of these macros. There is now a second directory that needs to be created & populated with user settings cfg files. If using the G-code shell extension option this is done for you after you include the files & restart Klipper. This is done so to keep the main install's "clean" status intact in the Update Manager. This directory is created by the `Demon User Files Updater` & will give you the option to `EXTRACT` the directory & files. However if you choose not to use it, or if there is an issue you need to know what the functional system looks like. 
 
-#### After the initial install you'll have only the `Demon Klipper Essentials Unified` directory.
+#### After the initial install you'll have only the `Demon_Klipper_Essentials_Unified` directory.
 
 #### You will need to work down through all sections between here & `Include Now!` 
 
