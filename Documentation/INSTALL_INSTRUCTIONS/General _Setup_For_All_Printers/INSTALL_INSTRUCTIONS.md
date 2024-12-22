@@ -216,9 +216,9 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 If you're using the `Demon User Files Updater` after the restart your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
 
-These filea are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain prestine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
+These files are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain prestine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
 
-###### NOTE: Dont home yet unless you have the `force_move` section defined & know the default homing settings are suitable for your machine!
+###### NOTE: Don't home the printer yet unless you have the `force_move` section defined & know the default homing settings are suitable for your machine!
 
 ****************************************************************************************************************************
 
@@ -328,7 +328,6 @@ You will need to change this if you have a long chain or use neopixels elsewhere
 
 
 ![LED Chain Settings](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/d452e81e-5847-4b16-a752-760f587ffc4d)
-
 
 ****************************************************************************************************************************
 
@@ -518,6 +517,25 @@ https://github.com/3DPrintDemon/Eddy/releases/tag/Eddy_Coil_with_EBB36_Edited_cf
 
 
 ****************************************************************************************************************************
+
+# FIRST HOMING!
+
+#### WARNING! Be sure you have included the files correctly & have set everything up as well as possible.
+
+If you are sure you have covered all items general and model/setup specific you can attempt your first homing! Be sure to double check your probe &/or Z endstop is working correctly!
+
+When you try to home the printer for the first time cover the EMERGENCY STOP button incase something goes wrong. Also pay attention to the console in Mainsail, it should output a sequence like this...
+
+
+![Homing_Console](https://github.com/user-attachments/assets/ef5239ec-4bc5-4a99-a613-7817498e0ea3)
+
+If the console only shows `G28` for example there is an issue with your demon_homing_control file, please abort homing & check the system!
+
+Improper setup of this feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
+No liability or responsibility will be accpeted for any damage caused by the use of these macros.
+
+****************************************************************************************************************************
+
 # Orca Slicer Setup
 
 You have to modify your slicer's `Machine Gcode` that is sent to the printer.
