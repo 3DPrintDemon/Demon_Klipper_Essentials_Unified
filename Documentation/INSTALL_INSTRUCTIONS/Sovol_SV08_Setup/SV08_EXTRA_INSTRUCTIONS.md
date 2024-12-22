@@ -43,6 +43,8 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 ```
 ###### NOTE: Don't forget to restart Klipper & reload your web browser window so new items will show & work correctly after installation!
 
+### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) as well!
+
 ****************************************************************************************************************************
 # Edit your printer.cfg 
 
@@ -61,6 +63,14 @@ Comment out - Mainline...
 ```
 # [save_variables]
 # Filename = ~/printer_data/config/saved_variables.cfg
+```
+Add this to your `printer.cfg` BEFORE you include the macros. 
+
+#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system can't update the demon_vars.cfg variable file.
+
+```
+[save_variables]
+filename: ~/demon_vars.cfg
 ```
 
 Now be sure to include these...
