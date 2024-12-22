@@ -518,7 +518,7 @@ https://github.com/3DPrintDemon/Eddy/releases/tag/Eddy_Coil_with_EBB36_Edited_cf
 
 ****************************************************************************************************************************
 
-# FIRST HOMING!
+# FIRST HOMING TEST!
 
 #### WARNING! Be sure you have included the files correctly & have set everything up as well as possible.
 
