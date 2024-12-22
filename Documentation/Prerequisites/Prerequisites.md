@@ -34,7 +34,8 @@ These macros only use the G-code Shell Commands to help to keep your `User Files
 
 Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Command) to install the extension.
 
-NOTE: If using the new V6 alpha release these options change to "E" for extenions, then option 1 for (G-code shell command), then option 1 to instsll. 
+###### NOTE: If using the new V6 alpha release these options change to "E" for extensions, then option 1 for (G-code shell command), then option 1 to install. 
+###### NOTE: BE aware the V6 release of Kiauh is alpha stage software! Be cautious using it.
 
 ![Shell Install](https://github.com/user-attachments/assets/d4897e79-f019-4c67-8474-ed8ca28b3612)
 
