@@ -19,7 +19,7 @@
  else
      echo "Directory $DIR already exists, copying files." 
      
-     if [[ `ls -A "$DIR"` ]]; then
+     if [ "$(ls -A $DIR)" ]; then
          echo "Directory $DIR is not empty"
      
          if [ ! -d "$PDIR" ]; then
