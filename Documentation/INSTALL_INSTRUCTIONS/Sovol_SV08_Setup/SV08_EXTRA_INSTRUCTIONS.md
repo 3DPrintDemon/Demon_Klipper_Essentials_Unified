@@ -52,12 +52,12 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour asking to extract files on restarts! You must define the Demon one ONLY!
 
-Stock Sovol...
+Comment out - Stock Sovol...
 ```
 # [save_variables]
 # filename =/home/sovol/printer_data/config/saved_variables.cfg
 ```
-Mainline...
+Comment out - Mainline...
 ```
 # [save_variables]
 # Filename = ~/printer_data/config/saved_variables.cfg
