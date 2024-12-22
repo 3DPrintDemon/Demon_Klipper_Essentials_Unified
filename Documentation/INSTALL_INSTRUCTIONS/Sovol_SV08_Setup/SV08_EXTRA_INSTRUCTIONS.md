@@ -29,6 +29,8 @@ This link GOOD!
 
 ### NEW SOVOL SV08 PREREQUISTIES INSTALLER!!
 
+Choose to install the Kiuah G-code Shell command extension [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional) Do this first!
+
 Heres the SSH command to run the SV08 Prerequisites installer! Install all the extra stuff at once!
 
 ```
