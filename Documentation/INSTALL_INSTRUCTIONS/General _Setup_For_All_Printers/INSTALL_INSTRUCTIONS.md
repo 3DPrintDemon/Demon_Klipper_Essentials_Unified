@@ -58,11 +58,13 @@ This link GOOD!
 
 Enjoy the ease of installing the `Demon_Klipper_Essentials_Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
 
+- ### ***NOW WITH AUTO DEMON_USER_FILES EXTRACTION!!***
+
 This installer will look at your machine & see if you have a previous version of `Demon_Klipper_Essentials_Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon_Klipper_Essentials_Unified` to the original location on your system saving the old version for you. 
 
 Not only that but the installer will also create numbered backups for any previous `Demon_Klipper_Essentials_Unified` directories, so you can use the installer over & over & keep all old versions in a local archive on your machine!
 
-Lastly the installer will automatically install the latest `demon_vars.cfg` file in the correct place, overwriting any previous ones. So you don't have to worry about that!
+Lastly the installer will automatically install the latest `demon_vars.cfg` file in the correct place, overwriting any previous ones. Plus it now auto extracts the Demon_User_Files too! So you don't have to worry about that!
 
 Copy the code block below & paste it into your SSH terminal 
 
@@ -70,10 +72,15 @@ Copy the code block below & paste it into your SSH terminal
 ****************************************************************************************************************************
 
 # SSH INSTALLER HERE:
+
+It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
+
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
-Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
+Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly. 
+
+### Do NOT inculde them yet as there's some important stuff to do first!
 
 [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
@@ -81,30 +88,21 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 # The File Structure Has Changed for v2.9.4 Onwards
 
-There is a new setup in the file structure of these macros. There is now a second directory that needs to be created & populated with user settings cfg files. If using the G-code shell extension option this is done for you after you include the files & restart Klipper. This is done so to keep the main install's "clean" status intact in the Update Manager. This directory is created by the `Demon User Files Updater` & will give you the option to `EXTRACT` the directory & files. However if you choose not to use it, or if there is an issue you need to know what the functional system looks like. 
+There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
 
-#### After the initial install you'll have only the `Demon_Klipper_Essentials_Unified` directory.
+#### After the initial install of `Demon_Klipper_Essentials_Unified`.
 
-#### You will need to work down through all sections between here & `Include Now!` 
+The image below is what your config directory should look like after the initial install has completed. 
 
-
-****************************************************************************************************************************
-
-The image below is what your config directory should look like after the initial install & when at the stage where the new directory called `Demon_User_Files` has been extracted - explained later on. 
-
-If this directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
+If the `Demon_User_Files` directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
 
 ![Demon_Config_DIR](https://github.com/user-attachments/assets/781d77c2-477b-45bd-8b88-82252f8d6a90)
 
-Then if you check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
+Check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
 
 ![Demon_User_Files](https://github.com/user-attachments/assets/5dfb557a-f68a-4cff-ab9d-01fb89b32fa5)
 
 If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
-
-###### NOTE: If you still don't see any of the files or the directory & you used the `Demon User Files Updater` jump down to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#new-feature-demon-user-files-updater) to check you have included the correct `Demon User Files Updater` file for your user account.
-
-###### NOTE: Or if using manual placement click [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#manual-user-file-placement)
 
 ...Now back to the current step in the process
 ****************************************************************************************************************************
@@ -113,7 +111,7 @@ If your directory is empty please click the reload button for your web browser t
 
 Add this to your `printer.cfg` preferably BEFORE you include the macros. 
 
-#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system will keep asking to extract the files every restart because it can't update the demon_vars.cfg status variable.
+#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system can't update the demon_vars.cfg variable file.
 
 ```
 [save_variables]
@@ -152,9 +150,9 @@ These macros make use of the `respond` command & is already defined in the your 
 
 # NEW FEATURE: Demon User Files Updater
 
-This new feature is a quality of life system that's useful if you'd like some help from the macros to create & manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to extract the new versions from your updated macros.
+This new feature is a quality of life system that's useful if you'd like the macros to help manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to auto extract the new versions from your updated macros.
 
-This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. It will extract the required `Demon_User_Files` from the main `Demon Klipper Essentials Unified` directory & place them in a new directory outside of the managed main directory, this is directly inside your printer's `config` directory. It will also notify you of any version changes to these files after future updates & then move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them. This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
+This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. If your user files need updating it will prompt you to extract the required files from the main `Demon Klipper Essentials Unified` directory & place them in the new directory `Demon_User_Files` outside of the managed main directory, this is directly inside your printer's `config` directory. It will also move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them. This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
 
 ![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
 
@@ -185,7 +183,7 @@ If you have a MKS based system:
 [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_MKS.cfg]
 ```
 
-Then once you restart your system you'll be greeted by new system prompts telling you what needs to be done to get your system ready for use & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
+Then once you restart your system you'll be greeted by new system prompts telling you if anyhting needs to be done to get your system ready for use, & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
 
 ****************************************************************************************************************************
 # Manual User File Placement
@@ -203,7 +201,7 @@ Now is a good time to use the include commands to bring the files into your syst
 
 Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
 
-It is vitally important that you have the `demon_vars.cfg` in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the steps, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
+It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 [include ./Demon_User_Files/*cfg]
@@ -214,7 +212,7 @@ Your full include list should look like this example from my Voron 2.4 - the add
 ![Demon_Includes_Example_Voron2 4](https://github.com/user-attachments/assets/fbd1d41f-ebaf-4e91-98a4-4e4cce8de8f5)
 
 
-If you're using the `Demon User Files Updater` after the restart your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
+If you're using the `Demon User Files Updater` after the restart & if any file needs updating your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
 
 These files are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain prestine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
 
