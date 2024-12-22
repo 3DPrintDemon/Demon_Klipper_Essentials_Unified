@@ -531,7 +531,7 @@ When you try to home the printer for the first time cover the EMERGENCY STOP but
 
 If the console only shows `G28` for example there is an issue with your demon_homing_control file, please abort homing & check the system!
 
-Improper setup of this feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
+Improper setup of the macros & the demon_homing_control feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
 No liability or responsibility will be accpeted for any damage caused by the use of these macros.
 
 ****************************************************************************************************************************
