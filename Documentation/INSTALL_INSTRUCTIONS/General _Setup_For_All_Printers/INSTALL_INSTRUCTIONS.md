@@ -204,7 +204,7 @@ Copy the code block below & paste it at the top of your `printer.cfg` file & the
 It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
-[include ./Demon_User_Files/*cfg]
+[include ./Demon_User_Files/*.cfg]
 ```
 Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
 
