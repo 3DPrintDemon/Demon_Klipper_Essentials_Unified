@@ -110,7 +110,7 @@ The utility will scan & evaulate your printer.cfg & moonraker.conf files to chec
 
 ![DD-2](https://github.com/user-attachments/assets/fd922242-8130-4ab5-9120-ca11dd40ca3f)
 
-The system will also give you big red warnings with clear explainations when things are not correct!
+The system will also give you big red warnings with clear explanations when things are not correct!
 
 ![DD-3](https://github.com/user-attachments/assets/c6baeeb2-0a58-44b7-a6f8-988f10f4d6ca)
 
