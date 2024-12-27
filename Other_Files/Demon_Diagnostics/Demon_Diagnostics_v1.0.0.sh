@@ -40,16 +40,16 @@ SHSKB=$(egrep -ic '^\[include Heat_Soak' $DIR/printer.cfg)
 SMYMC=$(grep -Fxc "[include ./My_Macros.cfg]" $DIR/printer.cfg)
 SMYMCB=$(grep -Fxc "[include My_Macros.cfg]" $DIR/printer.cfg)
 
-SSMF=$(grep -Fxc "./[include Macro.cfg]" $DIR/printer.cfg)
+SSMF=$(grep -Fxc "[include ./Macro.cfg]" $DIR/printer.cfg)
 SSMFB=$(grep -Fxc "[include Macro.cfg]" $DIR/printer.cfg)
-SSMLMF=$(grep -Fxc "./[include sovol-macros.cfg]" $DIR/printer.cfg)
+SSMLMF=$(grep -Fxc "[include ./sovol-macros.cfg]" $DIR/printer.cfg)
 SSMLMFB=$(grep -Fxc "[include sovol-macros.cfg]" $DIR/printer.cfg)
 
-SNPCTRL=$(grep -Fxc "./[include Neopixel_Control.cfg]" $DIR/printer.cfg)
+SNPCTRL=$(grep -Fxc "[include ./Neopixel_Control.cfg]" $DIR/printer.cfg)
 SNPCTRLB=$(grep -Fxc "[include Neopixel_Control.cfg]" $DIR/printer.cfg)
-SRGBLED=$(grep -Fxc "./[include RGB_LEDs.cfg]" $DIR/printer.cfg)
+SRGBLED=$(grep -Fxc "[include ./RGB_LEDs.cfg]" $DIR/printer.cfg)
 SRGBLEDB=$(grep -Fxc "[include RGB_LEDs.cfg]" $DIR/printer.cfg)
-SSBLED=$(grep -Fxc "./[include stealthburner_leds.cfg]" $DIR/printer.cfg)
+SSBLED=$(grep -Fxc "[include ./stealthburner_leds.cfg]" $DIR/printer.cfg)
 SSBLEDB=$(grep -Fxc "[include stealthburner_leds.cfg]" $DIR/printer.cfg)
 
 # printer.cfg Searches
