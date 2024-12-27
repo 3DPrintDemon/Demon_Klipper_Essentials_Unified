@@ -668,6 +668,7 @@ if [ "$SPFM" -eq 1 ]; then
         echo
         echo "${red}##########################################################################################################"
         echo "WARNING: The enable_force_move section is either NOT set correctly or is missing!"
+        echo "Make sure the setting is enable_force_move: True ...& does not read true with a small t"
         echo "##########################################################################################################${reset}"
         echo
     fi
