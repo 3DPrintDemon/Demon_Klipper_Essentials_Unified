@@ -300,7 +300,7 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
 ```
 [force_move]
-enable_force_move: true
+enable_force_move: True
 ```
 
 # Idle Timeout printer.cfg 
