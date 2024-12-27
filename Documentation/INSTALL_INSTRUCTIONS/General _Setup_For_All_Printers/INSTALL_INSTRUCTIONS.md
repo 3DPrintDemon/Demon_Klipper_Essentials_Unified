@@ -97,7 +97,7 @@ Each time you run it the utility will scan your system in its current state & it
 sh ./printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics_v1.0.0.sh
 ```
 
-The scrpit will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
+The script will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
 
 Your ssh terminal will tell you what you need to do to complete the install correctly & not miss anything. It'll warn you if anything is wrong.
 Run it at each stage of your install as many times as you like to make sure you're getting everything done! 
@@ -106,7 +106,7 @@ Run it at each stage of your install as many times as you like to make sure you'
 
 ![DD-1](https://github.com/user-attachments/assets/72157cce-aa52-4d07-b358-7312a2865e12)
 
-The utility will scan & evaulate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
+The utility will scan & evaluate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
 
 ![DD-2](https://github.com/user-attachments/assets/fd922242-8130-4ab5-9120-ca11dd40ca3f)
 
