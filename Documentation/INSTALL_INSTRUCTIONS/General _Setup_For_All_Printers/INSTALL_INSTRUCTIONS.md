@@ -58,7 +58,7 @@ This link GOOD!
 
 Enjoy the ease of installing the `Demon_Klipper_Essentials_Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
 
-- ### ***NOW WITH AUTO DEMON_USER_FILES EXTRACTION!!***
+- ### ***NOW WITH DEMON_USER_FILES AUTO EXTRACTION!!***
 
 This installer will look at your machine & see if you have a previous version of `Demon_Klipper_Essentials_Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon_Klipper_Essentials_Unified` to the original location on your system saving the old version for you. 
 
@@ -75,14 +75,48 @@ Copy the code block below & paste it into your SSH terminal
 
 It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
 
+### RUN FROM YOUR SSH TERMINAL TO START YOUR INSTALL!
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
 Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly. 
 
-### Do NOT inculde them yet as there's some important stuff to do first!
+## DO NOT include them yet as there's some important stuff to do first!
 
 [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General%20_Setup_For_All_Printers/Other_Ways_To_Install.md)
+
+****************************************************************************************************************************
+
+# NEW FEATURE: Demon_Diagnostics!
+
+Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
+Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everyhting setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
+
+### RUN FROM YOUR SSH TERMINAL WITH THIS COMMAND!
+```
+sh ./printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics_v1.0.0.sh
+```
+
+The scrpit will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
+
+Your ssh terminal will tell you what you need to do to complete the install correctly & not miss anything. It'll warn you if anything is wrong.
+Run it at each stage of your install as many times as you like to make sure you're getting everything done! 
+
+### The goal is to make as many GREEN lines as possible!
+
+![DD-1](https://github.com/user-attachments/assets/72157cce-aa52-4d07-b358-7312a2865e12)
+
+The utility will scan & evaulate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
+
+![DD-2](https://github.com/user-attachments/assets/fd922242-8130-4ab5-9120-ca11dd40ca3f)
+
+The system will also give you big red warnings with clear explainations when things are not correct!
+
+![DD-3](https://github.com/user-attachments/assets/c6baeeb2-0a58-44b7-a6f8-988f10f4d6ca)
+
+### NOTE: THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
+
+It just scans them safely & leaves them unedited & unchanged!
 
 ****************************************************************************************************************************
 
