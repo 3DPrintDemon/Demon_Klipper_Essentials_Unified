@@ -56,7 +56,7 @@ This link GOOD!
 
 # INSTALL THE MACROS VIA THE NEW SSH INSTALLER!
 
-Enjoy the ease of installing the `Demon_Klipper_Essentials_Unified` macro pack with a sinlge commamnd! - Additional installs & prerequisites still required!
+Enjoy the ease of installing the `Demon_Klipper_Essentials_Unified` macro pack with a sinlge command! - Additional installs & prerequisites still required!
 
 - ### ***NOW WITH DEMON_USER_FILES AUTO EXTRACTION!!***
 
@@ -90,7 +90,7 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 # NEW FEATURE: Demon_Diagnostics!
 
 Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
-Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everyhting setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
+Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everything setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
 
 ### RUN FROM YOUR SSH TERMINAL WITH THIS COMMAND!
 ```
