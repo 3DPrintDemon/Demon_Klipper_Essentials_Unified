@@ -381,7 +381,7 @@ For Klipper's Adaptive Mesh feature to work you must have:
 Add this to your `moonraker.conf` file:
 ```
 [file_manager]
-enable_object_processing: true
+enable_object_processing: True
 ```
 
 Add this to your `printer.cfg` file:
