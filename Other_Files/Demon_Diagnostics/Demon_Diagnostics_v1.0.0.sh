@@ -64,7 +64,7 @@ SPMXE=$(egrep -c '^max_extrude_cross_section' $DIR/printer.cfg)
 SPMXEV=$(egrep -c '^max_extrude_only_velocity' $DIR/printer.cfg)
 SPEXOB=$(grep -Fxc "[exclude_object]" $DIR/printer.cfg)
 SPFMN=$(grep -Fxc "[file_manager]" $DIR/moonraker.conf)
-SPFMNT=$(grep -Fxc "enable_object_processing: true" $DIR/moonraker.conf)
+SPFMNT=$(grep -Fxc "enable_object_processing: True" $DIR/moonraker.conf)
 
 
 
@@ -826,7 +826,8 @@ if [ "$SPFMN" -eq 1 ]; then
     elif [ "$SPFMNT" -eq 0 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The enable_object_processing is NOT defined in the moonraker.conf file."
+        echo "WARNING: The enable_object_processing is either NOT set correctly or is missing!"
+        echo "Make sure the setting is enable_object_processing: True ...& does not read true with a small t"
         echo "##########################################################################################################${reset}"
         echo
     fi
