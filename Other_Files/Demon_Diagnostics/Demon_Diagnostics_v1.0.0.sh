@@ -37,7 +37,7 @@ SMNSL=$(grep -Fxc "[include ./mainsail.cfg]" $DIR/printer.cfg)
 SMNSLB=$(grep -Fxc "[include mainsail.cfg]" $DIR/printer.cfg)
 SHSK=$(egrep -ic '^\[include ./Heat_Soak' $DIR/printer.cfg)
 SHSKB=$(egrep -ic '^\[include Heat_Soak' $DIR/printer.cfg)
-SMYMC=$(grep -Fxc "./[include My_Macros.cfg]" $DIR/printer.cfg)
+SMYMC=$(grep -Fxc "[include ./My_Macros.cfg]" $DIR/printer.cfg)
 SMYMCB=$(grep -Fxc "[include My_Macros.cfg]" $DIR/printer.cfg)
 
 SSMF=$(grep -Fxc "./[include Macro.cfg]" $DIR/printer.cfg)
