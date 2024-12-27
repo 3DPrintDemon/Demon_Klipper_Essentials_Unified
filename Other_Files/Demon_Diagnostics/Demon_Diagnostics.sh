@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.0
+# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.1
 
 # Time/Date
 TIME="$(date)"
