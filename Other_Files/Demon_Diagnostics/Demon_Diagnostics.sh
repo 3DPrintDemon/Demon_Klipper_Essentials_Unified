@@ -727,8 +727,8 @@ fi
 echo "--------------------------------------------------------------------------------------------------------------"
 echo
 
-# max_exdrude_cross_section Checks
-echo "${blue}Checking max_exdrude_cross_section printer.cfg Section${reset}"
+# max_extrude_cross_section Checks
+echo "${blue}Checking max_extrude_cross_section printer.cfg Section${reset}"
 echo
 if [ "$SPXTRDR" -eq 0 ]; then
     echo "${blue}The extruder section is NOT defined in the printer.cfg file, check bypassed.${reset}"
@@ -759,8 +759,8 @@ fi
 echo "--------------------------------------------------------------------------------------------------------------"
 echo
 
-# max_exdrude_velocity Checks
-echo "${blue}Checking max_exdrude_velocity printer.cfg Section${reset}"
+# max_extrude_velocity Checks
+echo "${blue}Checking max_extrude_velocity printer.cfg Section${reset}"
 echo
 if [ "$SPXTRDR" -eq 0 ]; then
     echo "${blue}The extruder section is NOT defined in the printer.cfg file, check bypassed.${reset}"
