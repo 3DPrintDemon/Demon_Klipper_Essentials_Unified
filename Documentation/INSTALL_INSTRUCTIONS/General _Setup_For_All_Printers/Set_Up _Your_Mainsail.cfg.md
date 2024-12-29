@@ -14,7 +14,9 @@ You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIEN
 ```
 My_Macros.cfg
 ```
- & use... 
+Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `ctrl+/` on PC or `cmd+/` on MacOS.
+
+Then use... 
 ```
 [include My_Macros.cfg]
 ```
@@ -22,9 +24,8 @@ to include it in your `printer.cfg`.
 
 As `Mainsail.cfg` is read only & you can't make any changes to it.
 
-Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `ctrl+/` on PC or `cmd+/` on MacOS.
 
-Then setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
+Once you setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
 
 You can define a specific cancel print location too if you wish! Set your X Y loaction with these:
 ```
