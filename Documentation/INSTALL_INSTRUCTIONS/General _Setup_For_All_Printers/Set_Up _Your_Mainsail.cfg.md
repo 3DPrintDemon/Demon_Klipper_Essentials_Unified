@@ -9,7 +9,9 @@
 You should be sure to `[include mainsail.cfg]` as we will be using this! 
 When inclding this file you pay very close attention to any sections defined within it! They must not be duplicated within your printer.cfg file, for instance the pause/resume section will casue problems if its defined twice in your system!!
 
-You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` & paste it all into a new editable `My_Macros.cfg` file for example, as that `Mainsail.cfg` is read only & you can't make any changes to it.
+You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` & paste it all into a new editable `My_Macros.cfg` file for example & use `[include My_Macros.cfg]` to include it in your `printer.cfg`. 
+
+As `Mainsail.cfg` is read only & you can't make any changes to it.
 
 Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `ctrl+/` on PC or `cmd+/` on MacOS.
 
