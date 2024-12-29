@@ -76,7 +76,7 @@ echo "--------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.1
+                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.2
                          The Demon_Klipper_Essentials_Unified System Report Generator!${reset}
 
 --------------------------------------------------------------------------------------------------------------
@@ -104,9 +104,9 @@ if [ ! -d "$DEMON" ]; then
     echo
 
 else 
-    echo "Directory $DEMON exists."
+    echo "Directory $DEMON ${green}exists${reset}."
     if [ "$(ls -A $DEMON)" ]; then
-        echo "Directory $DEMON contains files."
+        echo "Directory $DEMON ${green}contains files${reset}."
 
         if [ "$SDEM" -eq 1 ] && [ "$SDEMB" -eq 0 ]; then
             echo "${green}Demon_Klipper_Essentials_Unified is included in the system.${reset}"
@@ -117,14 +117,14 @@ else
         elif [ "$SDEM" -gt 1 ] || [ "$SDEMB" -gt 1 ]; then
             echo
             echo "${red}##########################################################################################################"
-            echo "WARNING: Demon_Klipper_Essentials_Unified is defined more than once!!"
+            echo "WARNING: Demon_Klipper_Essentials_Unified is included more than once!!"
             echo "##########################################################################################################${reset}"
             echo
 
         elif [ "$SDEM" -eq 1 ] && [ "$SDEMB" -eq 1 ]; then
             echo
             echo "${red}##########################################################################################################"
-            echo "WARNING: Demon_Klipper_Essentials_Unified is defined more than once with two types of include!!"
+            echo "WARNING: Demon_Klipper_Essentials_Unified is included more than once with two types of include!!"
             echo "##########################################################################################################${reset}"
             echo
 
@@ -158,9 +158,9 @@ if [ ! -d "$DEMONUF" ]; then
     echo
 
 else
-    echo "Directory $DEMONUF exists."
+    echo "Directory $DEMONUF ${green}exists${reset}."
     if [ "$(ls -A $DEMONUF)" ]; then
-        echo "Directory $DEMONUF contains files."
+        echo "Directory $DEMONUF ${green}contains files${reset}."
 
         if [ "$SDUF" -eq 1 ] && [ "$SDUFB" -eq 0 ]; then
             echo "${green}Demon_User_Files is included in the system.${reset}"
@@ -213,9 +213,9 @@ if [ ! -d "$EDUF" ]; then
     echo
 
 else
-    echo "Directory $EDUF exists."
+    echo "Directory $EDUF ${green}exists${reset}."
     if [ "$(ls -A $EDUF)" ]; then
-        echo "Directory $EDUF contains files."
+        echo "Directory $EDUF ${green}contains files${reset}."
 
         if [ "$SEDUF" -eq 1 ] && [ "$SEDUFB" -eq 0 ]; then
             echo "${green}Extract_Demon_User_Files is included in the system.${reset}"
@@ -268,9 +268,9 @@ if [ ! -d "$KAMP" ]; then
     echo
 
 else
-    echo "Directory $KAMP exists."
+    echo "Directory $KAMP ${green}exists${reset}."
     if [ "$(ls -A $KAMP)" ]; then
-        echo "Directory $KAMP contains files."
+        echo "Directory $KAMP ${green}contains files${reset}."
 
         if [ "$SKPL" -eq 1 ] && [ "$SKPLB" -eq 0 ]; then
             echo "${green}KAMP_LiTE is included in the system.${reset}"
@@ -323,7 +323,7 @@ if [ ! -f "$DIR/mainsail.cfg" ]; then
     echo
 
 else
-    echo "File $DIR/mainsail.cfg file exists."
+    echo "File $DIR/mainsail.cfg file ${green}exists${reset}."
 
     if [ "$SMNSL" -eq 1 ] && [ "$SMNSLB" -eq 0 ]; then
         echo "${green}mainsail.cfg file is included in the system.${reset}"
@@ -341,7 +341,7 @@ else
     elif [ "$SMNSL" -eq 1 ] && [ "$SMNSLB" -eq 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: mainsail.cfg file is defined more than once with two types of include!!"
+        echo "WARNING: mainsail.cfg file is included more than once with two types of include!!"
         echo "##########################################################################################################${reset}"
         echo
 
@@ -377,7 +377,7 @@ elif [ "$SMNSL" -ge 0 ] || [ "$SMNSLB" -ge 0 ] && [ ! -f "$DIR/My_Macros.cfg" ];
     echo
 
 else
-    echo "File $DIR/My_Macros.cfg file exists."
+    echo "File $DIR/My_Macros.cfg file ${green}exists${reset}."
 
     if [ "$SMYMC" -eq 1 ] && [ "$SMYMCB" -eq 0 ]; then
     echo "${green}My_Macros.cfg file is included in the system.${reset}"
@@ -395,7 +395,7 @@ else
     elif [ "$SMYMC" -eq 1 ] && [ "$SMYMCB" -eq 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: My_Macros.cfg file is defined more than once with two types of include!!"
+        echo "WARNING: My_Macros.cfg file is included more than once with two types of include!!"
         echo "##########################################################################################################${reset}"
         echo
 
@@ -469,7 +469,7 @@ elif [ "$SHSK" -gt 1 ] || [ "$SHSKB" -gt 1 ]; then
 elif [ "$SHSK" -eq 1 ] && [ "$SHSKB" -eq 1 ]; then
     echo
     echo "${red}##########################################################################################################"
-    echo "WARNING: Heat_Soak file is defined more than once with two types of include!!"
+    echo "WARNING: Heat_Soak file is included more than once with two types of include!!"
     echo "##########################################################################################################${reset}"
     echo
 
@@ -485,10 +485,10 @@ echo "--------------------------------------------------------------------------
 echo
 
 # NeoPixel CHECKS
-echo "${blue}Checking NeoPixel LED cfg${reset}"
+echo "${blue}Checking NeoPixel lighting control cfg file${reset}"
 echo
 if [ -f "$DIR/Neopixel_Control.cfg" ]; then
-    echo "File $DIR/Neopixel_Control.cfg exists."
+    echo "File $DIR/Neopixel_Control.cfg ${green}exists${reset}."
 
     if [ "$SNPCTRL" -eq 1 ] && [ "$SNPCTRLB" -eq 0 ]; then
         echo "${green}Neopixel_Control.cfg file is included in the system.${reset}"
@@ -505,7 +505,7 @@ if [ -f "$DIR/Neopixel_Control.cfg" ]; then
     elif [ "$SNPCTRL" -eq 1 ] && [ "$SSNPCTRLB" -eq 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: Neopixel_Control.cfg file is defined more than once with two types of include!!"
+        echo "WARNING: Neopixel_Control.cfg file is included more than once with two types of include!!"
         echo "##########################################################################################################${reset}"
 
     else
@@ -516,7 +516,7 @@ if [ -f "$DIR/Neopixel_Control.cfg" ]; then
     fi
 
 elif [ -f "$DIR/RGB_LEDs.cfg" ]; then
-    echo "File $DIR/RGB_LEDs.cfg file exists."
+    echo "File $DIR/RGB_LEDs.cfg file ${green}exists${reset}."
 
     if [ "$SRGBLED" -eq 1 ] && [ "$SRGBLEDB" -eq 0 ]; then
         echo "${green}RGB_LEDs.cfg file is included in the system.${reset}"
@@ -533,7 +533,7 @@ elif [ -f "$DIR/RGB_LEDs.cfg" ]; then
     elif [ "$SRGBLED" -eq 1 ] && [ "$SRGBLEDB" -eq 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: RGB_LEDs.cfg file is defined more than once with two types of include!!"
+        echo "WARNING: RGB_LEDs.cfg file is included more than once with two types of include!!"
         echo "##########################################################################################################${reset}"
 
     else
@@ -544,7 +544,7 @@ elif [ -f "$DIR/RGB_LEDs.cfg" ]; then
     fi
 
 elif [ -f "$DIR/stealthburner_leds.cfg" ]; then
-    echo "File $DIR/stealthburner_leds.cfg file exists."
+    echo "File $DIR/stealthburner_leds.cfg file ${green}exists${reset}."
 
     if [ "$SSBLED" -eq 1 ] && [ "$SSBLEDB" -eq 0 ]; then
         echo "${green}stealthburner_leds.cfg file is included in the system.${reset}"
@@ -561,7 +561,7 @@ elif [ -f "$DIR/stealthburner_leds.cfg" ]; then
     elif [ "$SSBLED" -eq 1 ] && [ "$SSBLEDB" -eq 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: stealthburner_leds.cfg file is defined more than once with two types of include!!"
+        echo "WARNING: stealthburner_leds.cfg file is included more than once with two types of include!!"
         echo "##########################################################################################################${reset}"
 
     else
