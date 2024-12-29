@@ -40,16 +40,15 @@ _DEMON_PAUSE
 Between the quote marks so it looks like this: `"_DEMON_PAUSE"`
 
 
-Were it says `variable_user_cancel_macro: ""` you need to paste in...
-```
-_DEMON_CANCEL
-```
-
 Were it says `variable_user_resume_macro: ""` you need to paste in...
 ```
 _DEMON_RESUME
 ```
 
+Were it says `variable_user_cancel_macro: ""` you need to paste in...
+```
+_DEMON_CANCEL
+```
 
 Also be sure to add the line below for the `variable_runout_sensor: ""` option between the quote marks ("").
 ```
