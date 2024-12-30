@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.1
+# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.3
 
 # Time/Date
 TIME="$(date)"
@@ -55,6 +55,7 @@ SSBLEDB=$(grep -Fxc "[include stealthburner_leds.cfg]" $DIR/printer.cfg)
 # printer.cfg Searches
 SPSVV=$(grep -Fxc "[save_variables]" $DIR/printer.cfg)
 SPSVVD=$(grep -Fxc "filename: ~/demon_vars.cfg" $DIR/printer.cfg)
+SPSVVDB=$(grep -Fxc "filename = ~/demon_vars.cfg" $DIR/printer.cfg)
 SPRESP=$(grep -Fxc "[respond]" $DIR/printer.cfg)
 SPFM=$(grep -Fxc "[force_move]" $DIR/printer.cfg)
 SPFMT=$(grep -Fxc "enable_force_move: True" $DIR/printer.cfg)
@@ -76,7 +77,7 @@ echo "--------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.2
+                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.3
                          The Demon_Klipper_Essentials_Unified System Report Generator!${reset}
 
 --------------------------------------------------------------------------------------------------------------
@@ -591,16 +592,33 @@ echo "${blue}Checking save_variables printer.cfg Section${reset}"
 echo
 if [ "$SPSVV" -eq 1 ]; then
     echo "${green}The save_variables section is defined in the printer.cfg file.${reset}"
-    if [ "$SPSVVD" -eq 1 ]; then
-        echo "${green}The correct file path is defined for your saved_variables.${reset}"
+        if [ "$SPSVVD" -eq 1 ] && [ "$SPSVVDB" -eq 0 ]; then
+            echo "${green}The correct file path is defined for your saved_variables.${reset}"
+        
+        elif [ "$SPSVVD" -eq 0 ] && [ "$SPSVVDB" -eq 1 ]; then
+            echo "${green}The correct file path is defined with for your saved_variables.${reset}"
 
-    elif [ "$SPSVVD" -eq 0 ]; then
-        echo
-        echo "${red}##########################################################################################################"    
-        echo "WARNING: The correct file path is NOT defined for your saved_variables."
-        echo "##########################################################################################################${reset}"
-        echo
-    fi
+        elif [ "$SPSVVD" -gt 1 ] || [ "$SPSVVDB" -gt 1 ]; then
+            echo
+            echo "${red}##########################################################################################################"
+            echo "WARNING: The correct file path is defined more than once!!"
+            echo "##########################################################################################################${reset}"
+            echo
+
+        elif [ "$SPSVVD" -eq 1 ] && [ "$SPSVVDB" -eq 1 ]; then
+            echo
+            echo "${red}##########################################################################################################"
+            echo "WARNING: The correct file path is defined more than once with two different definitions!!"
+            echo "##########################################################################################################${reset}"
+            echo
+
+        else
+            echo
+            echo "${red}##########################################################################################################"
+            echo "WARNING: The correct file path is NOT defined for your saved_variables."
+            echo "##########################################################################################################${reset}"
+            echo
+        fi
 
 elif [ "$SPSVV" -eq 0 ]; then
     echo
