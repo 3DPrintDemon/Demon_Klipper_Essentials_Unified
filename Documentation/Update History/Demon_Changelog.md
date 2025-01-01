@@ -2,7 +2,7 @@
 
 #### 27/12/2024
 
-- Added Demo_Diagnostics
+- Added Demon_Diagnostics
 
 #### 22/12/2024 
 
