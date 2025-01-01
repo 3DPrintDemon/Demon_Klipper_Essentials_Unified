@@ -1,4 +1,9 @@
 # Demon Changelog
+
+#### 27/12/2024
+
+- Added Demo_Diagnostics
+
 #### 22/12/2024 
 
 - Create Demon_Changelog.md file.
