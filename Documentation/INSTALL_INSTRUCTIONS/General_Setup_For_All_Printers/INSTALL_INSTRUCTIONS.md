@@ -368,8 +368,7 @@ Or you will get an invalid for LED error.
 If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
 You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
 
-
-![LED Chain Settings](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/assets/122202359/d452e81e-5847-4b16-a752-760f587ffc4d)
+![LED Chain Settings](https://github.com/user-attachments/assets/0b5c7bda-73e0-4cda-ba0c-f4edf0c03c96)
 
 ****************************************************************************************************************************
 
@@ -417,12 +416,11 @@ https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
 
 You must set your desired values in the KAMP_Settings.cfg
 
-![KAMP_LiTE Settings](https://github.com/user-attachments/assets/3ecfcd1c-b117-43b8-b8cb-9121be6c7b95)
+![KAMP_LiTE Settings](https://github.com/user-attachments/assets/11708975-5592-489c-b1f4-f299d99afb41)
 
-Then you must activate the KAMP settings in the `demon_user_settings_v2.9.cfg` file.
+Then you must activate the KAMP settings in the `demon_user_settings_v*.cfg` file.
 
-![KAMP_LiTE Vars](https://github.com/user-attachments/assets/58ebc555-2bad-465c-b052-04c9f189171d)
-
+![KAMP_LiTE Vars](https://github.com/user-attachments/assets/309e6f1a-a8a0-41d5-aa76-646a6efdade5)
 
 To use correctly ensure your `extruder` section in your `printer.cfg` has the line below defined & that its set to 5 or higher, if not the KAMP purge will be skipped & it wont work!
 ```
