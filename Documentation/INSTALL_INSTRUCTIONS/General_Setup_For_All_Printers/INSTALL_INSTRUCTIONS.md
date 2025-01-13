@@ -72,7 +72,7 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 ## DO NOT include them yet as there's some important stuff to do first!
 
-[Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
+- [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
 ## If you're using a Sovol SV08 printer 
 
