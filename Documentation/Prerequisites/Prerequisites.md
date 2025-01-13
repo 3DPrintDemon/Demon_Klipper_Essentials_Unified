@@ -68,7 +68,8 @@ These additional macros are prerequisites:
 ******************************
 
 ### **For SOVOL SV08 PRINTERS**
-![DEMON_Display_Menu](https://github.com/user-attachments/assets/eb7965ac-fcd2-4fd4-9487-7cbcaf2828e7)
+
+![DEMON_Display_Menu](https://github.com/user-attachments/assets/36acc84f-8dbd-4d39-84b8-e2da8037f10e)
 
 - https://github.com/3DPrintDemon/SV08/releases/tag/v1.0
 - https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
@@ -80,7 +81,8 @@ These additional macros are prerequisites:
 
 ### Optional install for Armbian systems
 
-![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
+![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/cdd314a4-7369-479c-ba91-ca759f109b5c)
+
 - [DEMON Armbian HDMI Boot Screen](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
 
 ******************************
