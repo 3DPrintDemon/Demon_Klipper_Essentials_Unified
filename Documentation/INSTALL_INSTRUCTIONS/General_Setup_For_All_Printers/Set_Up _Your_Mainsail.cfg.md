@@ -70,6 +70,6 @@ Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're 
 
 BE SURE TO SAVE & RESTART!
 
-![Mainsail_Client_Var](https://github.com/user-attachments/assets/03d025db-8a73-4b9a-909c-236b64362663)
+![Mainsail_Client_Var](https://github.com/user-attachments/assets/bf10ec6c-7a72-4edb-b25d-7428429329bd)
 
 ### [Head back to where you were...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#set-up-your-mainsailcfg-file)
