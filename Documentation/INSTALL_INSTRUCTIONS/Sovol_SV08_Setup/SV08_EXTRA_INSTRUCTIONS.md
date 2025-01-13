@@ -61,15 +61,18 @@ Run it at each stage of your install as many times as you like to make sure you'
 
 ### The goal is to make as many GREEN lines as possible!
 
-![DD-1](https://github.com/user-attachments/assets/72157cce-aa52-4d07-b358-7312a2865e12)
+![DD-1](https://github.com/user-attachments/assets/68eb829e-f034-4659-bcf1-2160c603c4c4)
+
 
 The utility will scan & evaluate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
 
-![DD-2](https://github.com/user-attachments/assets/fd922242-8130-4ab5-9120-ca11dd40ca3f)
+![DD-2](https://github.com/user-attachments/assets/8338c885-75ff-4e61-8b93-65bd7ead43c8)
+
 
 The system will also give you big red warnings with clear explanations when things are not correct!
 
-![DD-3](https://github.com/user-attachments/assets/c6baeeb2-0a58-44b7-a6f8-988f10f4d6ca)
+![DD-3](https://github.com/user-attachments/assets/ec9044af-cf72-49c0-85aa-5d2e79d8c3af)
+
 
 ### NOTE: THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
 
@@ -334,7 +337,8 @@ initial_BLUE: 0.7
 
 ****************************************************************************************************************************
 
-![DEMON_Display_Menu](https://github.com/user-attachments/assets/eb7965ac-fcd2-4fd4-9487-7cbcaf2828e7)
+![DEMON_Display_Menu](https://github.com/user-attachments/assets/6a5a642d-c668-41dd-af7f-c8a7aee80a55)
+
 
 BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 
@@ -346,7 +350,8 @@ BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
 ###### Note: These files are required for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
 
 ## OPTIONAL INSTALL for stock system!!
-![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/fb98da30-1f13-4490-9dfd-861b4a979488)
+![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/a3d92371-929e-4850-b05f-acfaed6575ba)
+
 
 - [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
 
