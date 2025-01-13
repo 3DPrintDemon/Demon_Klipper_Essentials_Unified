@@ -25,7 +25,8 @@ _DRIVER_DEFINER
  at the top of their `[homing_override]` section. The best place is underneath the “collect user state variables” (the block of ‘set’ commands. Put it in with the “checks if the variable definitions are up to date” command, under `_CheckProbe action=query`
 On line 577 in my file.
 
-![Klicky_Driver_Definer](https://github.com/user-attachments/assets/90200ca7-d21d-436d-92ad-aebebc3305f7)
+
+![Klicky_Driver_Definer](https://github.com/user-attachments/assets/aec9bd7f-a17a-44c6-929a-29a5acd91d1d)
 
 
 This will call the macro that recognises your XY drivers & passes that info to the Demon Homing macro. For printers NOT using `Klicky Probe`, you don’t need to do this!
