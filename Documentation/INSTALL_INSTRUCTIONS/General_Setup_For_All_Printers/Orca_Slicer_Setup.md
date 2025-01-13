@@ -13,7 +13,7 @@ If this is not the case the system will fail as soon as you start a print.
 
 Here is how they should look in Ocra Slicer. 
 
-![Orca_Slicer_Printer_G-code](https://github.com/user-attachments/assets/6b87af09-35f0-4491-a54e-55385a85f80b)
+![Orca_Slicer_Printer_G-code](https://github.com/user-attachments/assets/b8158095-cf67-4ad9-8fcb-098b55d0fd4a)
 
 These are fully setup codes as per recommended Mainsail settings combined with the macro settings for Orca Slicer using relative extrusion, as per the image....
 
