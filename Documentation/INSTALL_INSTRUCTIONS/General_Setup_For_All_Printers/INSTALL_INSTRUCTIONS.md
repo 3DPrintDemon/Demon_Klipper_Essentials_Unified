@@ -6,11 +6,6 @@
 **Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
 ****************************************************************************************************************************
 
-**If you own a Sovol SV06/Plus with a Sovol Klipper screen or a Sovol SV07/Plus & want to use the latest version of Klipper with Adaptive Meshing & more features you need to follow my How2 guide on how to update the Sovol Klipper screens on your printers.**
-
-https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
-****************************************************************************************************************************
-
 ### Orca Slicer
 
 Make sure you have the latest 2.2.0 (beta2 or later) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
@@ -22,8 +17,6 @@ This link GOOD!
 ******************************
 
 # Whats New
-
-- [Check Out the new macros & how to use them!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Update_History.md)
 
 
 - ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
@@ -48,28 +41,15 @@ This link GOOD!
 
 - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
 
-****************************************************************************************************************************
 
-# INSTALL THE MACROS VIA THE NEW SSH INSTALLERS!
-
-Enjoy the ease of installing the `Demon_Klipper_Essentials_Unified` macro pack with a sinlge command! - Additional installs & prerequisites still required!
-
-- ### ***NOW WITH DEMON_USER_FILES AUTO EXTRACTION!!***
-
-This installer will look at your machine & see if you have a previous version of `Demon_Klipper_Essentials_Unified` in your `/config` directory, if so it'll move it into a new directory called `Previous_Demon_Macros`. It will then clone the latest main branch files of `Demon_Klipper_Essentials_Unified` to the original location on your system saving the old version for you. 
-
-Not only that but the installer will also create numbered backups for any previous `Demon_Klipper_Essentials_Unified` directories, so you can use the installer over & over & keep all old versions in a local archive on your machine!
-
-Lastly the installer will automatically install the latest `demon_vars.cfg` file in the correct place, overwriting any previous ones. Plus it now auto extracts the Demon_User_Files too! So you don't have to worry about that!
-
-Copy the code block below & paste it into your SSH terminal 
 
 ****************************************************************************************************************************
 ****************************************************************************************************************************
 
-# NEW!!! GENERAL PREREQUISITES SSH INSTALLER HERE:
+# PREREQUISITES SSH INSTALLERS HERE:
 ### RUN FROM YOUR SSH TERMINAL TO INSTALL YOUR PREREQUISITES!
-Install all the prerequisites in one easy script meant for all printers, Vorons to Enders! If you have a Sovol SV08 use the other one below specifically for your machine!
+Install all the prerequisites in one easy script meant for all printers, Vorons to Enders! This version of the installer also gives you the option to install the main files right away.
+
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh | bash
 ```
@@ -94,6 +74,36 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
+## If you're using a Sovol SV08 printer 
+
+- [SOVOL SV08 SETUP](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
+
+You need to do this AS WELL AS the general setup for all printers below...!!
+
+****************************************************************************************************************************
+
+# The File Structure Has Changed for v2.9.4 Onwards
+
+There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
+
+#### After the initial install of `Demon_Klipper_Essentials_Unified`.
+
+The image below is what your config directory should look like after the initial install has completed. 
+
+If the `Demon_User_Files` directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
+
+![Demon_Config_DIR](https://github.com/user-attachments/assets/54e85efb-5d9d-4e3e-a90e-a58710cf15a3)
+
+
+Check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
+
+![Demon_User_Files](https://github.com/user-attachments/assets/bbd26215-be8c-4d45-9869-a7c23db06cb5)
+
+
+If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
+
+...Now back to the current step in the process
+
 ****************************************************************************************************************************
 
 # NEW FEATURE: Demon_Diagnostics!
@@ -114,41 +124,24 @@ Run it at each stage of your install as many times as you like to make sure you'
 ### The goal is to make as many GREEN lines as possible!
 ###### NOTE: This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
 
-![DD-1](https://github.com/user-attachments/assets/72157cce-aa52-4d07-b358-7312a2865e12)
+![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
+
 
 The utility will scan & evaluate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
 
-![DD-2](https://github.com/user-attachments/assets/fd922242-8130-4ab5-9120-ca11dd40ca3f)
+![DD-2](https://github.com/user-attachments/assets/8af1ef75-73ff-49db-b9c7-2bd7fb704ccb)
+
 
 The system will also give you big red warnings with clear explanations when things are not correct!
 
-![DD-3](https://github.com/user-attachments/assets/c6baeeb2-0a58-44b7-a6f8-988f10f4d6ca)
+![DD-3](https://github.com/user-attachments/assets/1ad99cc6-6008-413c-9250-b9a2f45d3b7c)
+
 
 ### NOTE: THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
 
 It just scans them safely & leaves them unedited & unchanged!
 
-****************************************************************************************************************************
 
-# The File Structure Has Changed for v2.9.4 Onwards
-
-There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
-
-#### After the initial install of `Demon_Klipper_Essentials_Unified`.
-
-The image below is what your config directory should look like after the initial install has completed. 
-
-If the `Demon_User_Files` directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
-
-![Demon_Config_DIR](https://github.com/user-attachments/assets/781d77c2-477b-45bd-8b88-82252f8d6a90)
-
-Check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
-
-![Demon_User_Files](https://github.com/user-attachments/assets/5dfb557a-f68a-4cff-ab9d-01fb89b32fa5)
-
-If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
-
-...Now back to the current step in the process
 ****************************************************************************************************************************
 
 # Define Save Variables Section
@@ -166,7 +159,7 @@ The error below should now be rare if new SSH installer is used!
 
 If this file is not present on your first reboot but you have already added the `[save_variables]` section you'll see this error:
 
-![EOF Error](https://github.com/user-attachments/assets/b67bb757-e83e-4d0c-9267-a80c3c3f5944)
+![EOF Error](https://github.com/user-attachments/assets/2da883e7-9228-47ae-9637-976b54ce0db0)
 
 
 Don't worry though this is just telling you the system created the file but it does not have the required saved variable within the file. After you have included the Demon macros in your printer.cfg file you can then home the printer to create the variable within the file to clear the error. Unless you're running `Klicky Probe` then please [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe) as simply homing the printer wont clear the error unless you have edited the Klicky macros first.
@@ -253,7 +246,8 @@ It is vitally important that you have the `demon_vars.cfg` file & `[save_variabl
 Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
 
 
-![Includes](https://github.com/user-attachments/assets/08d84634-6b26-47ce-8e4b-0e7d2214292e)
+![Includes](https://github.com/user-attachments/assets/0555c56b-a2f8-4efd-b2e1-ebb58a0fd8e6)
+
 
 
 
@@ -302,7 +296,8 @@ This will bring in the defualt macro layout.
 It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
 
 
-![Macro_Layout](https://github.com/user-attachments/assets/ea10b72e-760c-4313-bd97-59446c6f2ea2)
+![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
+
 
 
 ****************************************************************************************************************************
@@ -388,7 +383,8 @@ For Klipper's Adaptive Mesh feature to work you must have:
 
 ###### Find options under Orca main window Process/Global/Others
 
-![ORCA Label](https://github.com/user-attachments/assets/1a1cd72e-11d9-4023-bc6e-ef0e0b9e0a9a)
+![ORCA Label](https://github.com/user-attachments/assets/a2e51dab-a695-4eff-b637-a0b039e3e219)
+
 
 Add this to your `moonraker.conf` file:
 ```
@@ -420,7 +416,7 @@ You must set your desired values in the KAMP_Settings.cfg
 
 ![KAMP_LiTE Settings](https://github.com/user-attachments/assets/3ecfcd1c-b117-43b8-b8cb-9121be6c7b95)
 
-Then you must activate the KAMP settings in the `demon_user_settings_v2.8.cfg` file.
+Then you must activate the KAMP settings in the `demon_user_settings_v2.9.cfg` file.
 
 ![KAMP_LiTE Vars](https://github.com/user-attachments/assets/58ebc555-2bad-465c-b052-04c9f189171d)
 
@@ -461,7 +457,8 @@ If you use another slicer:
 - NOTE: If you don't set `_CLEAN_VARIABLES` the printer will give you an error if you haven’t done this & try to use the nozzle clean macros.
 
 
-![Settings](https://github.com/user-attachments/assets/a018488d-9841-49fe-9534-ed824081e313)
+![Settings](https://github.com/user-attachments/assets/6692d5f0-8947-4e76-b48c-efe245048b48)
+
 
 
 
@@ -507,9 +504,9 @@ For printers using `Klicky Probe` [you need to do this to get things to work cor
 
 ## Z Endstop Switch
 
-If you’re using your printer with a separate endstop switch & you are NOT using the `Klicky` macros you need to set the location of your Z endstop switch in the Demon macros `demon_user_settings_v2.9.cfg file`. There’s two variables for you to define the location of your separate endstop switch.
+If you’re using your printer with a separate endstop switch & you are NOT using the `Klicky` macros you need to set the location of your Z endstop switch in the Demon macros `demon_user_settings_v*.cfg file`. There’s two variables for you to define the location of your separate endstop switch.
 
-Open the `demon_user_settings_v2.9.cfg` file & search 
+Open the `demon_user_settings_v*.cfg` file & search 
 
 ```
 z_endstop_location_x
@@ -524,7 +521,7 @@ There are also other definable homing options to set there too! So be sure to se
 
 When testing homing for the first time be EXTREMELY CAREFUL & be ready to hit EMERGENCY STOP!! You may need to abort the homing process.
 
-If for any reason you wish to revert back to your normal homing system, simply comment all back in from your old system & disable the `demon_homing_control_v1.2.cfg` file by commenting out its full content apart from the file version number at the bottom. Make your selection & then by then `ctrl+/` on wondows or `cmd+/` on MacOS.
+If for any reason you wish to revert back to your normal homing system, simply comment all back in from your old system & disable the `demon_homing_control_v*.cfg` file by commenting out its full content apart from the file version number at the bottom. Make your selection & then by then `ctrl+/` on wondows or `cmd+/` on MacOS.
 
 ## DEMON HOMING CONTROL SETTINGS 
 Found in the demon_user_settings_v2.9.cfg onwards.
@@ -548,7 +545,8 @@ Don’t worry it’s super simple! Open the file linked above & “comment in”
 
 I REPEAT LEAVE LINE 106 COMMENTED OUT!!! Comment in lines 101-05 ONLY!
 
-![BTT_Eddy_setup](https://github.com/user-attachments/assets/6340a21d-1ac6-4be4-b16e-c0f0b2254c31)
+![BTT_Eddy_setup](https://github.com/user-attachments/assets/dedc2189-7ed8-47c4-b03d-6f500cfabbd4)
+
 
 
 
@@ -562,9 +560,6 @@ Once Your probe is setup correctly & tested working as per the above BTT github 
 ## Eddy Coil Setup
 if you're using the Coil version of the Eddy Probe & are struggling to set it up here is what you need! edited cfg file with correct settings for use with a EBB36 & set up to deal with high temperature printing. 
 
-NOT FOR EDDY USB!
-
-https://github.com/3DPrintDemon/Eddy/releases/tag/Eddy_Coil_with_EBB36_Edited_cfg_v1.0
 
 
 ****************************************************************************************************************************
@@ -578,7 +573,8 @@ If you are sure you have covered all items general and model/setup specific you 
 When you try to home the printer for the first time cover the EMERGENCY STOP button incase something goes wrong. Also pay attention to the console in Mainsail, it should output a sequence like this...
 
 
-![Homing_Console](https://github.com/user-attachments/assets/ef5239ec-4bc5-4a99-a613-7817498e0ea3)
+![Homing_Console](https://github.com/user-attachments/assets/207b57d1-7738-40ff-aa3b-980e737e7fdf)
+
 
 If the console only shows `G28` for example there is an issue with your demon_homing_control file, please abort homing & check the system!
 
@@ -610,7 +606,8 @@ This link GOOD!
 - https://github.com/SoftFever/OrcaSlicer/releases
 
 
-![Orca Fail](https://github.com/user-attachments/assets/2fd3bbf6-2c4b-4e89-ba27-5bf112cbd179)
+![Orca Fail](https://github.com/user-attachments/assets/2b2c4cb5-912b-470e-86f0-b3526b03fd50)
+
 
 **Fin...**
 
