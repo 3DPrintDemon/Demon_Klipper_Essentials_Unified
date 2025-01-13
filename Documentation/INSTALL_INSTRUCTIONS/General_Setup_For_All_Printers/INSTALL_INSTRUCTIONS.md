@@ -272,8 +272,6 @@ Also please note that if you do not use the new installer to update but instead 
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
 ```
 
-![Update Manager](https://github.com/user-attachments/assets/efa9ab69-3e2d-4ee9-a909-a98c7f0e8864)
-
 ```
 [update_manager Demon_Klipper_Essentials_Unified]
 type: git_repo
