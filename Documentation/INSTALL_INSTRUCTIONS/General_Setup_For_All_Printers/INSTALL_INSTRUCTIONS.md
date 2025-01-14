@@ -534,6 +534,21 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 To setup your `BTT Eddy probe` you’ll need to download their .cfg file. They have 3 available, what the differences are is well explained on their Github so I won’t rehash it here. 
 
+## NEW DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
+
+Demonise your Eddy! Download this file, set it up for you printer & run it!
+
+https://github.com/3DPrintDemon/Demon_Eddy/tree/master
+
+
+<details>
+    <summary>
+        <b>
+        Old method no Offset adjsutment - the new one is way better!
+        </b>
+    </summary>
+<p>
+</p>
 For use here with the Demon macros we need to be using the regular version (non-homing & non-offset)
 https://github.com/bigtreetech/Eddy/blob/master/sample-bigtreetech-eddy.cfg
 
@@ -553,6 +568,8 @@ I REPEAT LEAVE LINE 106 COMMENTED OUT!!! Comment in lines 101-05 ONLY!
 
 Actual Probe setup & calibration. You will need to setup your Eddy Probe still, steps how to do this are here:
 https://github.com/bigtreetech/Eddy/blob/master/README.md
+
+</details>
 
 Once Your probe is setup correctly & tested working as per the above BTT github guide all Demon Z_Probe calibration, machine meshing & machine levelling macros all now automatically detect & support BTT Eddy Probe! Just hit go & it’ll do its thing!
 
