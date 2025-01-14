@@ -99,7 +99,9 @@ Then Save & Restart.
 
 # PREREQUISITES SSH INSTALLERS HERE:
 ### RUN FROM YOUR SSH TERMINAL TO INSTALL YOUR PREREQUISITES!
-Install all the prerequisites in one easy script meant for all printers, Vorons to Enders! This version of the installer also gives you the option to install the main files right away.
+
+>[!IMPORTANT]
+>Install all the prerequisites in one easy script meant for all printers, Vorons to Enders! This version of the installer also gives you the option to install the main files right away.
 
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh | bash
@@ -118,7 +120,9 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 # MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR MAIN FILE INSTALL!
-It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
+
+>[!IMPORTANT]
+>It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
 
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
