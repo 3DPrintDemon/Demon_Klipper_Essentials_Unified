@@ -544,7 +544,7 @@ https://github.com/3DPrintDemon/Demon_Eddy/tree/master
 <details>
     <summary>
         <b>
-        Old method no Offset adjsutment - the new one is way better!
+        Click to expand - Old method no Offset adjsutment - the new one is way better!
         </b>
     </summary>
 <p>
