@@ -78,9 +78,9 @@ Don't worry though this is just telling you the system created the file but it d
 <p>
 </p>
 If you get a boot looping popup message that wont go away check your system for any other [save_variables] sections or any other defined filenames!
-<p>
-</p>
+
 If you feel your demon_vars.cfg file is not working you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros.
+
 ```
 cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
 ```
