@@ -34,8 +34,6 @@ This link GOOD!
 
 - Disable your current macros for START_PRINT & END_PRINT, plus any others you dont need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Your_Current_Macro_Files.md)
 
-
-
 ### Did you already do this???
 
 - Don't miss this out, you need them! [INSTALL PREREQUISITES](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
@@ -45,7 +43,12 @@ This link GOOD!
 
 - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
 
-## Troubleshooting Save Variables Section
+<br>
+
+# Troubleshooting Save Variables Section
+
+>[!TIP]
+>This is important so it's at the top where you might see it, as if not correct it'll cause the following issues...
 
 <details>
     <summary>
@@ -75,7 +78,8 @@ Don't worry though this is just telling you the system created the file but it d
 <p>
 </p>
 If you get a boot looping popup message that wont go away check your system for any other [save_variables] sections or any other defined filenames!
-
+<p>
+</p>
 If you feel your demon_vars.cfg file is not working you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros.
 ```
 cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
