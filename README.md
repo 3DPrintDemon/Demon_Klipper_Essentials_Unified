@@ -6,7 +6,9 @@
 
  
 # Welcome to 3DPrintDemon DEVILISHLY GOOD Klipper macros! 
-### We suffered a small disruption but the repo has been restored from local backups!
+
+>[!NOTE]
+>We suffered a small disruption but the repo has been restored from local backups!
 
 
 ## NOW WITH FULL BTT EDDY SUPPORT!!!
@@ -15,7 +17,7 @@ A lot of time, love, coffee & lack of sleep testing has been poured into these m
 
 **Made to make your printing life easier & your printer SMARTER!**
 
-
+<br>
 
 # These macros will run on almost any COREXY or BED SLINGER (cartesian) Klipper printer with no changes needed to the macro files! 
 Small user setting changes will be required of course.
@@ -28,6 +30,7 @@ Checks & Error Handling. Clear & easy to read messages
 
 ### These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
+<br>
 
 # Introduction
 
@@ -44,41 +47,46 @@ Macro pack version update history is here....
 
 - #### [CHANGELOG](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Demon_Changelog.md)
 
-
-
- 
 ****************************************************************************************************************************
-## All sounds great right!? Ok well here’s the tricky bit! 
+
+<br>
+
+# All sounds great right!? Ok well here’s the tricky bit! 
 …Well its not that tricky because I got it all written down here for you to just copy/paste into your setup!
 
 **PLEASE CHECK ALL INSTRUCTIONS CAREFULLY!**
 
-**Don’t just install & run the macros & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!** 
+>[!CAUTION]
+>Don’t just install & run the macros & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!
 
 You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
 
 ****************************************************************************************************************************
 
+<br>
 
 # FULL INSTALL INSTRUCTIONS...
 
-************************************
+<br>
+
 - ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
-************************************
 
 
+<br>
 
 ## Stuff you need to install BEFORE these macros can work - DO NOT SKIP THIS!
 
 - [PREREQUISITES - DONT NOT SKIP THIS!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
 
+<br>
+
 ## Full install & setup instructions...
 
 - [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
-
-
 ****************************************************************************************************************************
+
+<br>
 
 ## Orca Slicer Heads-up!
 If you get the error in the photo below it means your version is not v2.2.0 (beta or beta2 or later)
@@ -92,9 +100,9 @@ This link GOOD!
 
 ![Orca Fail](https://github.com/user-attachments/assets/873834af-e9ce-4632-af02-4e3ea133071a)
 
-
 ****************************************************************************************************************************
 
+<br>
 
 # WANT MORE...??
 Whats that I hear you cry, you want more?! Ok I got you covered!
