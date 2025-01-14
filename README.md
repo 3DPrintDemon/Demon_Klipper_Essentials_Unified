@@ -28,7 +28,10 @@ So for example if you hit `MACHINE_LEVEL` on a COREXY printer you'll get a `QUAD
 
 Checks & Error Handling. Clear & easy to read messages
 
-### These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
+<br>
+
+>[!IMPORTANT]
+>These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
 
 <br>
 
