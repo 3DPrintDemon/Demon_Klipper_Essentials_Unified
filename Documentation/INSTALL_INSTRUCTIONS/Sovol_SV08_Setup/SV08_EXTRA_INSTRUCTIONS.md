@@ -1,3 +1,7 @@
+# IF YOU'RE USING A SOVOL SV08 PRINTER!
+
+<br>
+
 ****************************************************************************************************************************
 ### IF YOU RAN V1.0-V2.8 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
 **Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
@@ -18,11 +22,9 @@ This link GOOD!
 
 ******************************
 
-# IF YOU'RE USING A SOVOL SV08 PRINTER!
+<br>
 
-
-
-### NEW SOVOL SV08 PREREQUISTIES INSTALLER!!
+## NEW SOVOL SV08 PREREQUISTIES INSTALLER!!
 
 Choose to install the Kiuah G-code Shell command extension [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional) Do this first!
 
@@ -32,17 +34,20 @@ Heres the SSH command to run the SV08 Prerequisites installer! Install all the e
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
 ```
 
-### HERE'S THE MAIN Demon_Klipper_Essentials_Unified MACROS SSH INSTALLER!!
+## HERE'S THE MAIN Demon_Klipper_Essentials_Unified MACROS SSH INSTALLER!!
 
 Heres the SSH command to install the main package!
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
-###### NOTE: Don't forget to restart Klipper & reload your web browser window so new items will show & work correctly after installation!
+>[!NOTE]
+>Don't forget to restart Klipper & reload your web browser window so new items will show & work correctly after installation!
 
 ### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) as well!
 
 ****************************************************************************************************************************
+
+<br>
 
 # NEW FEATURE: Demon_Diagnostics!
 
@@ -74,19 +79,24 @@ The system will also give you big red warnings with clear explanations when thin
 ![DD-3](https://github.com/user-attachments/assets/ec9044af-cf72-49c0-85aa-5d2e79d8c3af)
 
 
-### NOTE: THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
-
-It just scans them safely & leaves them unedited & unchanged!
+>[!NOTE]
+>THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
+>
+>It just scans them safely & leaves them unedited & unchanged!
 
 
 ****************************************************************************************************************************
+
+<br>
+
 # Edit your printer.cfg 
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
-#### IMPORTANT: Be sure to comment out the Sovol/Mainline [save_variables] section in the printer.cfg file!!
-
-If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour asking to extract files on restarts! You must define the Demon one ONLY!
+>[!IMPORTANT]
+>Be sure to comment out the Sovol/Mainline [save_variables] section in the printer.cfg file!!
+>
+>If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour asking to extract files on restarts! You must define the Demon one ONLY!
 
 Comment out - Stock Sovol...
 ```
@@ -100,12 +110,14 @@ Comment out - Mainline...
 ```
 Add this to your `printer.cfg` BEFORE you include the macros. 
 
-#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system can't update the demon_vars.cfg variable file.
+>]!IMPORTANT]
+>Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system can't update the demon_vars.cfg variable file.
 
 ```
 [save_variables]
 filename: ~/demon_vars.cfg
 ```
+<br>
 
 Now be sure to include these...
 ```
@@ -141,8 +153,11 @@ timeout: 3600
 
 This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file. You csan set the time (seconds) to anything you like.
 
+<br>
 
-YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE! 
+>[!IMPORTANT]
+>YOU MUST, I REPEAT MUST DISABLE ALL THE SOVOL MACROS BY COMMENTING OUT THE macro.cfg FILE INCLUDE IN THE printer.cfg FILE!
+
 To do this use a # at the start of the line like this:
 ```
 # [include Macro.cfg]
@@ -220,6 +235,8 @@ Be sure to comment out the Sovol [homing_override] section if you want to use th
 # set_position_z: 0
 ```
 
+<br>
+
 Now... There's one more thing I really recommend doing & that's modifying the settings below for your meshing & probing sections! This will improve the accuracy of your system when using the probe. Do check these values against your current values & DO NOT overwrite your stock sections!! Comment them out & paste these in below them so you can always go back if you need to!
 
 THIS FIRST SECTION IS OPTIONAL TO SLOW THE MACHINE DOWN - as the stock settings are waaaaaaaaay too fast & are unrealistic.
@@ -284,14 +301,17 @@ max_adjust: 10
 
 ```
 
+<br>
+
 ## Timelapse Use
 
 If you wish to continue to use Timelapse be sure to add this back in your slicer's `Before Layer Change` gcode box.
 ```
 TIMELAPSE_TAKE_FRAME
 ```
+<br>
 
-## Mainline users
+# Mainline users
 
 You will need to add these sections to your printer.cfg if they're not defined already. 
 
@@ -333,9 +353,9 @@ initial_GREEN: 0.4
 initial_BLUE: 0.7  
 ```
 
-
-
 ****************************************************************************************************************************
+
+<br>
 
 ![DEMON_Display_Menu](https://github.com/user-attachments/assets/6a5a642d-c668-41dd-af7f-c8a7aee80a55)
 
