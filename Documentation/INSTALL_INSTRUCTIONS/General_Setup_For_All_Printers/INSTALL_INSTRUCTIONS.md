@@ -1,9 +1,9 @@
 # GENERAL SETUP FOR ALL PRINTERS
 
-****************************************************************************************************************************
 ### IF YOU RAN V1.0-V2.8 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
 **Instructions to do this are further down this page.**
 **Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
+
 ****************************************************************************************************************************
 
 ### Orca Slicer
@@ -14,7 +14,10 @@ This link GOOD!
 
 - https://github.com/SoftFever/OrcaSlicer/releases
 
-******************************
+
+****************************************************************************************************************************
+
+<br>
 
 # Whats New
 
@@ -22,7 +25,8 @@ This link GOOD!
 - ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 
 
-****************************************************************************************************************************
+
+<br>
 
 # Preparing Your Current System
 
@@ -41,10 +45,53 @@ This link GOOD!
 
 - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
 
+## Troubleshooting Save Variables Section
+
+<details>
+    <summary>
+        <b>
+        Click to expand - What if you get a EOF error?
+        </b>
+    </summary>
+<p>
+</p>
+The error below should now be rare if new SSH installer is used!
+
+If this file is not present on your first reboot but you have already added the `[save_variables]` section you'll see this error:
+
+![EOF Error](https://github.com/user-attachments/assets/2da883e7-9228-47ae-9637-976b54ce0db0)
 
 
+Don't worry though this is just telling you the system created the file but it does not have the required saved variable within the file. After you have included the Demon macros in your printer.cfg file you can then home the printer to create the variable within the file to clear the error. Unless you're running `Klicky Probe` then please [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe) as simply homing the printer wont clear the error unless you have edited the Klicky macros first.
+
+</details>
+
+<details>
+  <summary>
+        <b>
+        Click to expand - What if you get a popup boot loop message?
+        </b>
+    </summary>
+<p>
+</p>
+If you get a boot looping popup message that wont go away check your system for any other [save_variables] sections or any other defined filenames!
+
+If you feel your demon_vars.cfg file is not working you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros.
+```
+cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
+```
+
+If that doesnt work try changing your filename line to:
+```
+filename = ~/demon_vars.cfg
+```
+Then Save & Restart.
+
+</details>
+
 ****************************************************************************************************************************
-****************************************************************************************************************************
+
+<br>
 
 # PREREQUISITES SSH INSTALLERS HERE:
 ### RUN FROM YOUR SSH TERMINAL TO INSTALL YOUR PREREQUISITES!
@@ -59,7 +106,9 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
 ```
 
+****************************************************************************************************************************
 
+<br>
 
 # MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR MAIN FILE INSTALL!
@@ -74,16 +123,20 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 - [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
+
 ****************************************************************************************************************************
 
+<br>
 
-## MODEL SPECIFIC INSTRUCTIONS - If you're using a Sovol SV08 printer 
+# MODEL SPECIFIC INSTRUCTIONS - If you're using a Sovol SV08 printer 
 
 - [SOVOL SV08 SETUP](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
 You need to do this AS WELL AS the general setup for all printers below...!!
 
 ****************************************************************************************************************************
+
+<br>
 
 # The File Structure Has Changed for v2.9.4 Onwards
 
@@ -108,6 +161,8 @@ If your directory is empty please click the reload button for your web browser t
 ...Now back to the current step in the process
 
 ****************************************************************************************************************************
+
+<br>
 
 # NEW FEATURE: Demon_Diagnostics!
 
@@ -140,37 +195,32 @@ The system will also give you big red warnings with clear explanations when thin
 ![DD-3](https://github.com/user-attachments/assets/1ad99cc6-6008-413c-9250-b9a2f45d3b7c)
 
 
-### NOTE: THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
-
-It just scans them safely & leaves them unedited & unchanged!
+>[!NOTE]
+>THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
+>
+>It just scans them safely & leaves them unedited & unchanged!
 
 
 ****************************************************************************************************************************
+
+<br>
 
 # Define Save Variables Section
 
 Add this to your `printer.cfg` preferably BEFORE you include the macros. 
 
-#### IMPORTANT: Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system can't update the demon_vars.cfg variable file.
+>[!IMPORTANT]
+>Be sure to comment out any other [save_variables] already in your printer.cfg, if you don't the system can't update the demon_vars.cfg variable file.
 
 ```
 [save_variables]
 filename: ~/demon_vars.cfg
 ```
 
-The error below should now be rare if new SSH installer is used!
 
-If this file is not present on your first reboot but you have already added the `[save_variables]` section you'll see this error:
+****************************************************************************************************************************
 
-![EOF Error](https://github.com/user-attachments/assets/2da883e7-9228-47ae-9637-976b54ce0db0)
-
-
-Don't worry though this is just telling you the system created the file but it does not have the required saved variable within the file. After you have included the Demon macros in your printer.cfg file you can then home the printer to create the variable within the file to clear the error. Unless you're running `Klicky Probe` then please [see here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#unless-youre-using-klicky-probe) as simply homing the printer wont clear the error unless you have edited the Klicky macros first.
-
-If you feel your demon_vars.cfg file is not working you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros.
-```
-cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
-```
+<br>
 
 # Set Up Your Mainsail.cfg File!
 
@@ -180,13 +230,16 @@ You will need to configure your `Mainsail.cfg` `_CLIENT_VARIABLE` macro, set it 
 
 If you choose *NOT* to use the Mainsail.cfg...
 
-These macros make use of the `respond` command & is already defined in the your `Mainsail.cfg` file so if you are not going to use it please make sure your printer.cfg has this defined for use in the system, you will need to add the section manually. 
+>[!TIP]
+>These macros make use of the `respond` command & is already defined in the your `Mainsail.cfg` file so if you are not going to use it please make sure your printer.cfg has this defined for use in the system, you will need to add the section manually. 
 
 ```
 [respond]
 ```
 
 ****************************************************************************************************************************
+
+<br>
 
 # NEW FEATURE: Demon User Files Updater
 
@@ -200,7 +253,8 @@ To use this awesome new feature you have to have the `Kiauh` `G-code Shell Comma
 
 ****************************************************************************************************************************
 
-#### IMPORTANT: If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+> [!IMPORTANT]
+> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
 
 ****************************************************************************************************************************
 
@@ -226,6 +280,9 @@ If you have a MKS based system:
 Then once you restart your system you'll be greeted by new system prompts telling you if anyhting needs to be done to get your system ready for use, & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
 
 ****************************************************************************************************************************
+
+<br>
+
 # Manual User File Placement
 
 If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
@@ -235,13 +292,17 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 ****************************************************************************************************************************
 
+<br>
+
 # Include Now!
 
 Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
 
 Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
 
-It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
+>[!IMPORTANT]
+>It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
+
 ```
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 [include ./Demon_User_Files/*.cfg]
@@ -258,9 +319,12 @@ If you're using the `Demon User Files Updater` after the restart & if any file n
 
 These files are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain prestine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
 
-###### NOTE: Don't home the printer yet unless you have the `force_move` section defined & know the default homing settings are suitable for your machine!
+>[!NOTE]
+>Don't home the printer yet unless you have the `force_move` section defined & know the default homing settings are suitable for your machine!
 
 ****************************************************************************************************************************
+
+<br>
 
 # Demon Klipper Essentials Mainsail Updates
 
@@ -285,7 +349,7 @@ Here's some info on the `update_manager` section if you need it. https://docs.ma
 
 ****************************************************************************************************************************
 
-
+<br>
 
 # Macro Layout Import/Restore
 
@@ -302,6 +366,8 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 
 ****************************************************************************************************************************
+
+<br>
 
 # Define Force Move Section
 
@@ -328,7 +394,8 @@ This will call the new Demon timeout macro after 1 hour & execute the functions 
 # Load & Unload Macros
 
 
-###### NOTE: Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
+>[!NOTE]
+>Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
 
 All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 20 or below will pass the check. 
 
@@ -340,7 +407,6 @@ max_extrude_only_velocity: 15
 
 ****************************************************************************************************************************
 
-
 # Printer Lights (White LEDs)
 Be sure to name any White LEDs that are on an output_pin in the `printer.cfg` file you wish the macros to control to:
 
@@ -348,7 +414,6 @@ Be sure to name any White LEDs that are on an output_pin in the `printer.cfg` fi
 [output_pin Printer_Lights]
 ```
 ****************************************************************************************************************************
-
 
 # Neopixel Toolhead LEDs 
 
@@ -370,6 +435,8 @@ You will need to change this if you have a long chain or use neopixels elsewhere
 
 ****************************************************************************************************************************
 
+<br>
+
 # Setting up KLIPPER's Adaptive Mesh option. 
 
 There is no longer any need for a separate KAMP install for meshing. The adaptive purge line & smart park are still needed.
@@ -381,7 +448,8 @@ For Klipper's Adaptive Mesh feature to work you must have:
 - Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
 - Added the `Exclude Object` section to your `printer.cfg` file
 
-###### Find options under Orca main window Process/Global/Others
+>[!TIP]
+>Find options under Orca main window Process/Global/Others
 
 ![ORCA Label](https://github.com/user-attachments/assets/a2e51dab-a695-4eff-b637-a0b039e3e219)
 
@@ -400,6 +468,8 @@ Add this to your `printer.cfg` file:
 Save & restart!
 
 ****************************************************************************************************************************
+
+<br>
 
 # Setting up KAMP_LiTE Adaptive Purge & Smart Park
 
@@ -425,14 +495,15 @@ To use correctly ensure your `extruder` section in your `printer.cfg` has the li
 max_extrude_cross_section: 5
 ```
 
+>[!NOTE]
+>If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the >settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
 
-###### NOTE: If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
+<br>
 
-
-****************************************************************************************************************************
-
-**To use adaptive meshing all files MUST have been sliced with `Label Objects` active.** 
-IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
+>[!TIP]
+>**To use adaptive meshing all files MUST have been sliced with `Label Objects` active.** 
+>
+>IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
 
 If you use ORCA SLICER:
 
@@ -444,10 +515,10 @@ If you use another slicer:
 
 `Internal error on command:"BED_MESH_CALIBRATE"`
 
-
-
-
 ****************************************************************************************************************************
+
+<br>
+
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THESE VIDEOS!
 
 - Configure the macros in one place! Set the variables for all the Demon Klipper Essentials macros in the `demon_user_settings` file
@@ -478,6 +549,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 ****************************************************************************************************************************
 
+<br>
 
 # NEW DEMON MACROS FEATURE!! DEMON HOMING CONTROL!
 
@@ -488,6 +560,8 @@ So there’s no more risk of homing at Z0.2mm after a stoppage or a Z offset cal
 Not only that the homing macros know automatically if you’re using a BTT Eddy Probe or not and will adapt themselves to it!
 
 ****************************************************************************************************************************
+
+<br>
 
 ## DEMON Homing Control - IMPORTANT!
 To use the `demon_homing_control_v1.2.cfg` file
@@ -529,6 +603,8 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 
 ****************************************************************************************************************************
+
+<br>
 
 # NEW DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
 
@@ -576,9 +652,12 @@ if you're using the Coil version of the Eddy Probe & are struggling to set it up
 
 ****************************************************************************************************************************
 
+<br>
+
 # FIRST HOMING TEST!
 
-#### WARNING! Be sure you have included the files correctly & have set everything up as well as possible.
+>[!IMPORTANT]
+>Be sure you have included the files correctly & have set everything up as well as possible.
 
 If you are sure you have covered all items general and model/setup specific you can attempt your first homing! Be sure to double check your probe &/or Z endstop is working correctly!
 
@@ -590,10 +669,13 @@ When you try to home the printer for the first time cover the EMERGENCY STOP but
 
 If the console only shows `G28` for example there is an issue with your demon_homing_control file, please abort homing & check the system!
 
-Improper setup of the macros & the demon_homing_control feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
+>[!CAUTION]
+>Improper setup of the macros & the demon_homing_control feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
 No liability or responsibility will be accpeted for any damage caused by the use of these macros.
 
 ****************************************************************************************************************************
+
+<br>
 
 # Orca Slicer Setup
 
@@ -624,6 +706,9 @@ This link GOOD!
 **Fin...**
 
 ****************************************************************************************************************************
+
+<br>
+
 # If You're Using A Sovol SV08 Printer
 
 For model specific configuration click below.
@@ -631,6 +716,8 @@ For model specific configuration click below.
 - [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
 ****************************************************************************************************************************
+
+<br><br>
 
 # Additional Configuration - EXTRA STEPS
 
@@ -788,6 +875,8 @@ titlebar_items: chamber
 
 ****************************************************************************************************************************
 
+<br>
+
 # Auto Shutdown Moonraker Power Device
 
 To make use of the `_GOODNIGHT` post print auto shutdown macro you must enable your RPI as a secondary MCU so it can control your shutdown relay hardware. Use this link to do that.
@@ -824,7 +913,9 @@ Then if you wish you can add a physical momentary switch to a 3rd GPIO pin & ano
 
 Then you need to SSH into your pi & run:
 
-###### NOTE: these commands are for a real Rpi, cloned system or systems built on different images will probably vary.
+>[!NOTE]
+>these commands are for a real Rpi, cloned system or systems built on different images will probably vary.
+
 ```
 sudo nano /boot/config.txt
 ```
@@ -885,6 +976,8 @@ pin: ### <<<<<< Insert unused board pin for state change only, monitored by syst
 This will give you full control of your power relay unit via the GUI Switch & the `PRINT_END` & `_GOODNIGHT` macros.
 
 ****************************************************************************************************************************
+
+<br>
 
 ## Extra Bonus...
 As an added bonus you can add a second physical button to a 4th GPIO pin to use as a physical Emergency Stop button!
