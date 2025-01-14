@@ -190,7 +190,8 @@ Your ssh terminal will tell you what you need to do to complete the install corr
 Run it at each stage of your install as many times as you like to make sure you're getting everything done! 
 
 ### The goal is to make as many GREEN lines as possible!
-###### NOTE: This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
+>[!NOTE]
+>This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
 
 ![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
 
