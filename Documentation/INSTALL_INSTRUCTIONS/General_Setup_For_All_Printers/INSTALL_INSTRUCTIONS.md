@@ -530,11 +530,7 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 ****************************************************************************************************************************
 
-# BTT EDDY PROBE
-
-To setup your `BTT Eddy probe` you’ll need to download their .cfg file. They have 3 available, what the differences are is well explained on their Github so I won’t rehash it here. 
-
-## NEW DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
+# NEW DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
 
 Demonise your Eddy! Download this file, set it up for you printer & run it!
 
