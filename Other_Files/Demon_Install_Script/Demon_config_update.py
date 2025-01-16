@@ -104,6 +104,8 @@ def compare_and_merge_configs(old_config, new_config, output_path):
                     elif choice == 'q':
                         print(f"[red]Operation Cancelled, no file was written![/]\n")
                         exit()
+                else:
+                    merged_config.set(section, key, new_value)
 
             else:
                 # If the key is not in the old config, use the new value
