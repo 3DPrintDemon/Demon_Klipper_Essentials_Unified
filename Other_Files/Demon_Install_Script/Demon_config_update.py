@@ -35,10 +35,10 @@ from rich.prompt import Prompt
 #  then ask if this is the one the user wants to migrate,
 #  continue in descending order of version,
 #  If the last file is not accepted, print a joke saying the user should make-up his mind. and use the :exploding_head:
-#OLD_CONFIG_PATH = "~/printer_data/config/Demon_User_files/Previous_versions/demon_user_settings_v2.9.4.cfg"
-#NEW_CONFIG_PATH = "~/printer_data/config/Demon_User_files/demon_user_settings_v2.9.5_test.cfg"
-OLD_CONFIG_PATH = os.path.expanduser("~/demon_user_settings_v2.9.4.cfg")
-NEW_CONFIG_PATH = os.path.expanduser("~/demon_user_settings_v2.9.5_test.cfg")
+OLD_CONFIG_PATH = os.path.expanduser("~/printer_data/config/Demon_User_files/Previous_versions/demon_user_settings_v2.9.4.cfg")
+NEW_CONFIG_PATH = os.path.expanduser("~/printer_data/config/Demon_User_files/demon_user_settings_v2.9.5.cfg")
+#OLD_CONFIG_PATH = os.path.expanduser("~/demon_user_settings_v2.9.4.cfg")
+#NEW_CONFIG_PATH = os.path.expanduser("~/demon_user_settings_v2.9.5_test.cfg")
 
 # Function to load a configuration file
 def load_config(file_path):
