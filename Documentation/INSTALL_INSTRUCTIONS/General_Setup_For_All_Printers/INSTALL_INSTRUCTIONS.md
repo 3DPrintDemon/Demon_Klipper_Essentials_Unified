@@ -225,7 +225,7 @@ Add this to your `printer.cfg` preferably BEFORE you include the macros.
 
 ```
 [save_variables]
-filename: ~/demon_vars.cfg
+filename = ~/demon_vars.cfg
 ```
 
 
