@@ -6,13 +6,8 @@ requires:
 """
 
 """
-usage: `python3 Demon_config_update.py`
+usage: `python3 `~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_config_update.py`
 
-positional arguments:
-  none
-
-optional arguments:
-  none
 """
 
 import importlib.util
