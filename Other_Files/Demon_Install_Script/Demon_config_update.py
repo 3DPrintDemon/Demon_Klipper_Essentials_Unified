@@ -15,8 +15,36 @@ optional arguments:
   none
 """
 
+import importlib.util
+import sys
+
+# Function to check if dependencies are installed and provide the command to install them
+def check_dependencies():
+    """Check if required packages are installed"""
+    required_packages = {
+        'rich': 'python3 -m pip install rich',
+        'configupdater': 'python3 -m pip install ConfigUpdater'
+    }
+    
+    missing_packages = []
+    
+    for package, install_cmd in required_packages.items():
+        if importlib.util.find_spec(package) is None:
+            missing_packages.append((package, install_cmd))
+    
+    if missing_packages:
+        print("Missing required packages:")
+        for package, install_cmd in missing_packages:
+            print(f"- {package}: Install using `{install_cmd}`")
+        print("\nPlease install the missing packages and try again.")
+        sys.exit(1)
+
+# Check dependencies before importing them
+check_dependencies()
+
 from configupdater import ConfigUpdater
 import os
+import re
 from pathlib import Path
 
 # Python rich
@@ -35,10 +63,90 @@ from rich.prompt import Prompt
 #  then ask if this is the one the user wants to migrate,
 #  continue in descending order of version,
 #  If the last file is not accepted, print a joke saying the user should make-up his mind. and use the :exploding_head:
-OLD_CONFIG_PATH = os.path.expanduser("~/printer_data/config/Demon_User_files/Previous_versions/demon_user_settings_v2.9.4.cfg")
-NEW_CONFIG_PATH = os.path.expanduser("~/printer_data/config/Demon_User_files/demon_user_settings_v2.9.5.cfg")
-#OLD_CONFIG_PATH = os.path.expanduser("~/demon_user_settings_v2.9.4.cfg")
-#NEW_CONFIG_PATH = os.path.expanduser("~/demon_user_settings_v2.9.5_test.cfg")
+OLD_CONFIG_PATH = os.path.expanduser("~/printer_data/config/Demon_User_Files/Previous_Versions/")
+NEW_CONFIG_PATH = os.path.expanduser("~/printer_data/config/Demon_User_Files/")
+
+
+# Extract version numbers from filename and return as tuple for sorting
+def parse_version(filename: str) -> tuple:
+    # Strip extension before trying to match
+    basename = os.path.splitext(filename)[0]
+    match = re.search(r'v(\d+)\.(\d+)\.(\d+)', basename)
+    if match:
+        return tuple(map(int, match.groups()))
+    return (None, None, None)
+
+# Find and select configuration files for migration.
+# Returns tuple of (old_config_path, new_config_path)
+def find_config_files() -> tuple[str, str]:
+    base_path = NEW_CONFIG_PATH
+    prev_versions_path = OLD_CONFIG_PATH
+    
+    # Find all config files in Previous_versions directory
+    config_files = []
+    print(prev_versions_path)
+    if os.path.exists(prev_versions_path):
+        for file in os.listdir(prev_versions_path):
+            if file.startswith("demon_user_settings_v") and file.endswith(".cfg"):
+                full_path = os.path.join(prev_versions_path, file)
+                config_files.append(full_path)
+    
+    if not config_files:
+        console.print("[red]No previous config files found in Previous_versions directory![/]")
+        return None, None
+    
+    # Sort configs by version numbers in filename, newest first
+    config_files.sort(key=lambda x: parse_version(os.path.basename(x)), reverse=True)
+    
+    # Find the new config file
+    new_config = None
+    for file in os.listdir(base_path):
+        if file.startswith("demon_user_settings_v") and file.endswith(".cfg"):
+            new_config = os.path.join(base_path, file)
+            break
+    
+    if not new_config:
+        console.print("[red]No new config file found in main directory![/]")
+        return None, None
+    
+    # Ask user to select old config version
+    console.rule("[yellow]Config Selection[/]")
+    print(f"Found new config file: [green]{new_config}[/]")
+    print("\nAvailable previous versions:")
+    
+    for i, path in enumerate(config_files, 1):
+        version = ".".join(map(str, parse_version(os.path.basename(path))))
+        print(f"[blue]{i}[/]. Version {version} - {os.path.basename(path)}")
+    
+    jokes = [
+        "Looks like someone's having a hard time making up their mind! 🤯",
+        "Decision making isn't your strong suit today, is it? 🤯",
+        "Eeny, meeny, miny... oh nevermind! 🤯",
+        "Let's just go with the newest one before we both get grey hair! 🤯"
+    ]
+    
+    selected_config = None
+    for i, path in enumerate(config_files):
+        version = ".".join(map(str, parse_version(os.path.basename(path))))
+        choice = Prompt.ask(
+            f"\nUse version {version}?",
+            choices=["y", "n"],
+            default="y"
+        )
+        
+        if choice == 'y':
+            selected_config = path
+            break
+        
+        # If we've reached the last config and still no selection
+        if i == len(config_files) - 1 and choice == 'n':
+            joke = jokes[hash(str(config_files)) % len(jokes)]  # Deterministic joke selection
+            console.print(f"\n[yellow]{joke}[/]")
+            selected_config = config_files[0]  # Use the newest version
+            version = ".".join(map(str, parse_version(os.path.basename(selected_config))))
+            print(f"[blue]Using the newest version: {version}[/]")
+    
+    return selected_config, new_config
 
 # Function to load a configuration file
 def load_config(file_path):
@@ -127,14 +235,21 @@ def compare_and_merge_configs(old_config, new_config, output_path):
 
 # Main function
 def main():
+    
+    OLD_CONFIG_PATH, NEW_CONFIG_PATH = find_config_files()
+
+    if not OLD_CONFIG_PATH or not NEW_CONFIG_PATH:
+        console.print("[red]Error:[/] Unable to proceed without both config files.")
+        return
+
     # Ensure old configuration exists
     if not os.path.exists(OLD_CONFIG_PATH):
-        print(f"Error: {OLD_CONFIG_PATH} does not exist.")
+        print(f"[red]Error:[/] {OLD_CONFIG_PATH} does not exist.")
         return
 
     # Ensure new configuration exists
     if not os.path.exists(NEW_CONFIG_PATH):
-        print(f"Error: {NEW_CONFIG_PATH} does not exist.")
+        print(f"[red]Error:[/] {NEW_CONFIG_PATH} does not exist.")
         return
 
     # Load configurations
