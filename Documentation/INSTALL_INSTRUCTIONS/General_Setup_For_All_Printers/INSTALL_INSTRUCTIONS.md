@@ -181,7 +181,7 @@ Each time you run it the utility will scan your system in its current state & it
 
 ### RUN FROM YOUR SSH TERMINAL WITH THIS COMMAND!
 ```
-sh ./printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics.sh
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics.sh
 ```
 
 The script will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
