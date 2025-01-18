@@ -36,10 +36,21 @@ Choose to install the Kiuah G-code Shell command extension [click here!](https:/
 >[!IMPORTANT]
 >It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
 
+### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
+
+RUN THIS FIRST:
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
 ```
-Your new files should now be avaiable to you on your printer! This script will install the macros as well as ask you your prerequisite install choices.
+Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
+
+```
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
+```
+
+Your new files should now be avaiable to you on your printer!
+
+## DO NOT include them yet as there's some important stuff to do first!
 
 >[!NOTE]
 >Don't forget to reload your web browser window so new items will show & work correctly after installation!
