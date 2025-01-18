@@ -97,29 +97,8 @@ Then Save & Restart.
 
 <br>
 
-# PREREQUISITES SSH INSTALLERS HERE:
-### RUN FROM YOUR SSH TERMINAL TO INSTALL YOUR PREREQUISITES!
-
->[!IMPORTANT]
->Install all the prerequisites in one easy script meant for all printers, Vorons to Enders! This version of the installer also gives you the option to install the main files right away.
-
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh | bash
-```
-### Sovol SV08 machine specific prerequisites installer here...
->[!NOTE]
->Do not use this unless you have a Sovol SV08 printer!!
-
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
-```
-
-****************************************************************************************************************************
-
-<br>
-
-# MAIN SSH INSTALLER HERE:
-### RUN FROM YOUR SSH TERMINAL TO START YOUR MAIN FILE INSTALL!
+# MAIN SSH INSTALLERS HERE:
+### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
 >[!IMPORTANT]
 >It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
@@ -130,6 +109,22 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly. 
 
 ## DO NOT include them yet as there's some important stuff to do first!
+
+<br>
+
+
+### Sovol SV08 machine specific installer here...
+### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
+>[!NOTE]
+>Do not use this unless you have a Sovol SV08 printer!!
+
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
+```
+Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
+## DO NOT include them yet as there's some important stuff to do first!
+
+<br>
 
 - [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
