@@ -82,9 +82,7 @@ fi
 echo "Extracting Demon_User_Files to $DUF."
 cp /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE/*.cfg /home/$U/printer_data/config/Demon_User_Files --backup=numbered
 
-echo "Operations complete. Loading SOVOL SV08 Prerequisites installer..."
-
-sh /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
+echo "Operations complete. Don't forget to run the Prerequisites installer...!"
 
 
 
