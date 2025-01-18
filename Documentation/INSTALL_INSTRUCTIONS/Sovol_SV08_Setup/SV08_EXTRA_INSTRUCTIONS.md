@@ -39,7 +39,7 @@ Choose to install the Kiuah G-code Shell command extension [click here!](https:/
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
 ```
-Your new files should now be avaiable to you on your printer!
+Your new files should now be avaiable to you on your printer! This script will install the macros as well as ask you your prerequisite install choices.
 
 >[!NOTE]
 >Don't forget to reload your web browser window so new items will show & work correctly after installation!
