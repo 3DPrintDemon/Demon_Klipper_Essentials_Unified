@@ -10,18 +10,14 @@ This link GOOD!
 
 ******************************
 
-# NEW!!! General Prerequisites Installer Here...
+# PREREQUISITES ARE NOW INSTALLED WITHIN THE MAIN INSTALLERS!
 
-Install all the prerequisites in one easy script meant for all printers Vorons to Enders! If you have a Sovol SV08 use the other one below specifically for your machine!
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh | bash
-```
+[HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#main-ssh-installers-here)
 
-## Sovol SV08 machine specific prerequisites installer here...
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
-```
-###### NOTE: Do not use this unless you have a Sovol SV08 printer!! Seriously its not for you, move along, nothing to see here! ;-p
+You will still need to prepare them & include them for use! Links below.
+
+Kiauh G-code Shell Command Extension is still a manual install as below! 
+
 ******************************
 
 # ALL PRINTERS...
