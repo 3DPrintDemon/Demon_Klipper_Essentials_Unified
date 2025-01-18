@@ -24,24 +24,25 @@ This link GOOD!
 
 <br>
 
-## NEW SOVOL SV08 PREREQUISTIES INSTALLER!!
+## SOVOL SV08 FULL INSTALLER / UPDATER!!
 
 Choose to install the Kiuah G-code Shell command extension [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional) Do this first!
 
-Heres the SSH command to run the SV08 Prerequisites installer! Install all the extra stuff at once!
+### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh | bash
-```
-
-## HERE'S THE MAIN Demon_Klipper_Essentials_Unified MACROS SSH INSTALLER!!
-
-Heres the SSH command to install the main package!
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
-```
 >[!NOTE]
->Don't forget to restart Klipper & reload your web browser window so new items will show & work correctly after installation!
+>Do not use this unless you have a Sovol SV08 printer!!
+
+>[!IMPORTANT]
+>It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
+
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
+```
+Your new files should now be avaiable to you on your printer!
+
+>[!NOTE]
+>Don't forget to reload your web browser window so new items will show & work correctly after installation!
 
 ### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) as well!
 
