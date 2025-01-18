@@ -10,9 +10,9 @@ This link GOOD!
 
 ******************************
 
-# PREREQUISITES ARE NOW INSTALLED WITHIN THE MAIN INSTALLERS!
+# PREREQUISITES ARE NOW INSTALLED LOCALLY AFTER THE MAIN INSTALLER HAS RUN!
 
-[HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#main-ssh-installers-here)
+[SEE HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#main-ssh-installers-here)
 
 You will still need to prepare them & include them for use! Links below.
 
