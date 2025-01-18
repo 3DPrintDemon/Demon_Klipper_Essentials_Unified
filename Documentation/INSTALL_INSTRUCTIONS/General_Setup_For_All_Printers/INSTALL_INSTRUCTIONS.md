@@ -106,7 +106,10 @@ Then Save & Restart.
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
-Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly. 
+Your new files should now be avaiable to you on your printer! This script will install the macros as well as ask you your prerequisite install choices.
+
+>[!NOTE]
+>Don't forget to reload your web browser window so new items will show & work correctly after installation!
 
 ## DO NOT include them yet as there's some important stuff to do first!
 
