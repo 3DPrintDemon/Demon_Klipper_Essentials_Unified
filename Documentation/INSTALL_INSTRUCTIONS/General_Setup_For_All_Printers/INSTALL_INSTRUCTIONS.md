@@ -103,10 +103,16 @@ Then Save & Restart.
 >[!IMPORTANT]
 >It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
 
+RUN THIS FIRST:
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
-Your new files should now be avaiable to you on your printer! This script will install the macros as well as ask you your prerequisite install choices.
+Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
+
+```
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
+```
+Your new files should now be avaiable to you on your printer! 
 
 >[!NOTE]
 >Don't forget to reload your web browser window so new items will show & work correctly after installation!
@@ -116,14 +122,21 @@ Your new files should now be avaiable to you on your printer! This script will i
 <br>
 
 
-### Sovol SV08 machine specific installer here...
+## Sovol SV08 machine specific installer here...
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 >[!NOTE]
 >Do not use this unless you have a Sovol SV08 printer!!
 
+RUN THIS FIRST:
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
 ```
+Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
+
+```
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
+```
+
 Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
 ## DO NOT include them yet as there's some important stuff to do first!
 
