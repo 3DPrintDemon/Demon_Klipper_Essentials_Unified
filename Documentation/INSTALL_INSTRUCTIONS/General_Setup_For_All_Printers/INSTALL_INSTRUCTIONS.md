@@ -87,8 +87,12 @@ cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_V
 
 If that doesnt work try changing your filename line to:
 ```
+[save_variables]
 filename = ~/demon_vars.cfg
 ```
+
+Also double check you have no other `[save_variables]` sections defined in your system. 
+
 Then Save & Restart.
 
 </details>
