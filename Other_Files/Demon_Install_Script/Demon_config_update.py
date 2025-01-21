@@ -6,7 +6,7 @@ requires:
 """
 
 """
-usage: `python3 `~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_config_update.py`
+usage: `python3 ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_config_update.py`
 
 """
 
@@ -169,6 +169,26 @@ def ask_file_path():
             print(f"[red]Invalid path:[/red] {file_path}. Please try again.")
 
 
+# Helper function to extract clean value
+def get_value_parts(option):
+    r={}
+    
+    if '#' in option:
+        splitted_line = option.split('#', 1)
+        r['raw_value'] = splitted_line[0].strip()
+        r['comment_offset'] = len(splitted_line[0])-1
+        r['comment'] = '#' + splitted_line[1]
+    else:
+        r['raw_value'] = option.strip()
+        r['comment_offset'] = len(r['raw_value'])
+        r['comment'] = ''
+
+    return r
+
+def get_value_line(value, offset, comment):
+    padding = max(0, offset - len(value))
+    return value + ( ' ' * padding) + comment
+
 # Function to compare and merge configurations
 def compare_and_merge_configs(old_config, new_config, output_path):
 
@@ -181,28 +201,29 @@ def compare_and_merge_configs(old_config, new_config, output_path):
 
         for key, item in new_config[section].items():
             if old_config.has_section(section) and old_config.has_option(section, key):
-                old_value = old_config[section][key].value
-                new_value = new_config[section][key].value
+                old_value = get_value_parts(old_config[section][key].value)
+                new_value = get_value_parts(new_config[section][key].value)
 
-                if old_value != new_value and key != 'variable_demon_version':
+                if old_value['raw_value'] != new_value['raw_value'] and key != 'variable_demon_version':
 
                     # Prompt the user to choose the value
                     console.rule(f"Section: [yellow]\[{section}][/], key: [purple]{key}[/]")
-                    print(f"[blue]\[1][/] Old value: [blue]{old_value}[/]")
-                    print(f"[green]\[2][/] New value: [green]{new_value}[/]")
+                    print(f"[green]{new_value['comment']}[/]")
+                    print(f"[blue]\[1][/] Old value: [blue]{old_value['raw_value']}[/]")
+                    print(f"[green1]\[2][/] New value: [green1]{new_value['raw_value']}[/]")
 
                     choice = Prompt.ask(
-                        "Which value do you want to keep? [blue]\[1][/] or [green]\[2][/] or [red][q][/] to cancel and quit: ",
+                        "Which value do you want to keep? [blue]\[1][/] or [green1]\[2][/] or [red][q][/] to cancel and quit: ",
                         choices=["1", "2","q"],
                         default="2",
                     )
 
                     if choice == '1':
                         print(f"[blue]Old value[/] kept!\n")
-                        new_config[section][key].value = old_value
+                        new_config[section][key].value = get_value_line(old_value['raw_value'], new_value['comment_offset'], new_value['comment'])
 
                     elif choice == '2':
-                        print(f"[green]New value[/] kept!\n")
+                        print(f"[green1]New value[/] kept!\n")
                     
                     elif choice == 'q':
                         print(f"[red]Operation Cancelled, no file was written![/]\n")
