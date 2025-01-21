@@ -114,7 +114,7 @@ How about fully automated power on/off control with auto cool down & shutdown af
 
 Find out here!
 
-- [Auto Shutdown Relay!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/edit/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#auto-shutdown-moonraker-power-device)
+- [Auto Shutdown Relay!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#auto-shutdown-moonraker-power-device)
 
 Or maybe you're using a printer with a bedside mounted Z endstop switch & sensorless homing & you want an AUTO E STOP system so that if your nozzle misses your endstop switch the printer knows there's a problem!
 
