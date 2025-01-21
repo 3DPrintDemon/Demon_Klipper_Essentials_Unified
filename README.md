@@ -122,4 +122,4 @@ Or maybe you're using a printer with a bedside mounted Z endstop switch & sensor
 
 If thats not enough how about creating your very own online auto updating backup of all your config files here on Github in your own private repo?!
 
-- [Auto backup your printer!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Documentation/INSTALL_INSTRUCTIONS/Auto_Backup_Your_Printer)
+- [Auto backup your printer!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Documentation/INSTALL_INSTRUCTIONS/Auto_Backup_Your_Printer/Git_Backup.md)
