@@ -72,6 +72,7 @@ def parse_version(filename: str) -> tuple:
         return tuple(map(int, match.groups()))
     return (None, None, None)
 
+
 # Find and select configuration files for migration.
 # Returns tuple of (old_config_path, new_config_path)
 def find_config_files() -> tuple[str, str]:
@@ -144,6 +145,7 @@ def find_config_files() -> tuple[str, str]:
     
     return selected_config, new_config
 
+
 # Function to load a configuration file
 def load_config(file_path):
     updater = ConfigUpdater()
@@ -170,7 +172,6 @@ def save_config(updater, file_path):
             else:
                 # Write original line if no match
                 f.write(line + '\n')
-
 
 
 def ask_file_path():
@@ -202,9 +203,11 @@ def get_value_parts(option):
 
     return r
 
+
 def get_value_line(value, offset, comment):
     padding = max(0, offset - len(value))
     return value + ( ' ' * padding) + comment
+
 
 # Function to compare and merge configurations
 def compare_and_merge_configs(old_config, new_config, output_path):
@@ -246,7 +249,6 @@ def compare_and_merge_configs(old_config, new_config, output_path):
                         print(f"[red]Operation Cancelled, no file was written![/]\n")
                         exit()
 
-
     # Save the merged configuration
     console.rule(f"Save config")
     choice = Prompt.ask(
@@ -265,6 +267,7 @@ def compare_and_merge_configs(old_config, new_config, output_path):
     save_config(new_config, output_path)
     print(f"Merged configuration saved to [purple]\"{output_path}\"[/]\n")
     console.rule(f"")
+
 
 # Main function
 def main():
