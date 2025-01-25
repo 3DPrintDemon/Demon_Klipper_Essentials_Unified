@@ -40,6 +40,7 @@ check_dependencies()
 from configupdater import ConfigUpdater
 import os
 import re
+from io import StringIO
 from pathlib import Path
 
 # Python rich
@@ -152,8 +153,24 @@ def load_config(file_path):
 
 # Function to save a configuration file
 def save_config(updater, file_path):
+    config_string = StringIO()
+    updater.write(config_string)
+
     with open(file_path, "w") as f:
-        updater.write(f)
+        # Iterate through each line
+        for line in config_string.getvalue().splitlines():
+            # Perform your operation here
+            # Example: modify the line or do some processing
+            match = re.match(r'^\s*(\S*)\s*:(\s*.*)', line)
+            
+            if match:
+                # Reconstruct line without spaces before colon
+                processed_line = f"{match.group(1)}:{match.group(2)}"
+                f.write(processed_line + '\n')
+            else:
+                # Write original line if no match
+                f.write(line + '\n')
+
 
 
 def ask_file_path():
@@ -176,7 +193,7 @@ def get_value_parts(option):
     if '#' in option:
         splitted_line = option.split('#', 1)
         r['raw_value'] = splitted_line[0].strip()
-        r['comment_offset'] = len(splitted_line[0])-1
+        r['comment_offset'] = len(splitted_line[0])
         r['comment'] = '#' + splitted_line[1]
     else:
         r['raw_value'] = option.strip()
