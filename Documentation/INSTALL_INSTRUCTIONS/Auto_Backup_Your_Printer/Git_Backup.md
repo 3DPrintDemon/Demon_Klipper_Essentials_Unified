@@ -52,7 +52,17 @@ Use this to reset/change Git Repo for backups if you made a mistake or need to c
 git remote set-url origin https://<YOUR_NEW_TOKEN>@<YOUR_NEW_GIT_URL>
 ```
 
-Edited commands for Sovol SV07/+ & SV06/+ Klipper Screens the ones in the guide will not work use these:
+Use this command to see what email information git is using.
+```
+git config --global user.email
+```
+
+To change email use.
+```
+git config --global user.email "YOUR_EMAIL"
+```
+
+Edited commands for other SBC systems, eg MKS the ones in the guide will not work use these, change mks to biqu or othwer if needed:
 ```
  wget -O /home/mks/printer_data/config/autocommit.sh https://raw.githubusercontent.com/EricZimmerman/VoronTools/main/autocommit.sh
 ```
@@ -79,8 +89,8 @@ gcode:
 
 
 **************************************************************************************************************
-## Sovol Klipper screen Macro
-Edited config_backup.cfg for Sovol SV07/+ & SV06/+ Klipper Screens. Instead of using the macro in the guide use this, as it wont work plus better backup name:
+## Other SBC Macro
+Edited config_backup.cfg for MkS system, change to biqu or other if needed. Instead of using the macro in the guide use this, as it wont work plus better backup name:
 ```
 [gcode_shell_command backup_printer]
 command: /usr/bin/bash /home/mks/printer_data/config/autocommit.sh
@@ -95,7 +105,7 @@ gcode:
 **************************************************************************************************************
 
 ## Sovol SV08 Macro
-Edited config_backup.cfg for Sovol SV08. Instead of using the macro in the guide use this, as it wont work plus better backup name:
+Edited config_backup.cfg for Sovol SV08. Instead of using the macro in the guide use this, as it wont work plus better backup name. change mks sovol in the path to biqu if on mainline:
 ```
 [gcode_shell_command backup_printer]
 command: /usr/bin/bash /home/sovol/printer_data/config/autocommit.sh
