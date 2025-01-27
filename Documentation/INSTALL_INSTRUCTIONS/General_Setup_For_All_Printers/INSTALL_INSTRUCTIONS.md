@@ -30,16 +30,19 @@ This link GOOD!
     </summary>
 <p>
 </p>
-To use this new feature you'll need to install a couple of things first. SSH into your printer, then run.
+    
+To use this new feature you'll need to install a couple of things first. SSH into your printer.
     
 ``` 
 python3 -m pip install rich
 ```
+
 Wait for this to complete then run.
 
 ```
 python3 -m pip install ConfigUpdater
 ```
+
 These commands will install the libaries you need to run the interactive user file updater script.
 
 To use the feature use this command...
