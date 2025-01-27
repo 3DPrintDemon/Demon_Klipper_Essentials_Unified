@@ -17,14 +17,43 @@ This link GOOD!
 
 ****************************************************************************************************************************
 
-<br>
+# UPDATING FROM A PREVIOUS VERSION
 
-# Whats New
+>[!TIP]
+>Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
 
+<details>
+    <summary>
+        <b>
+        Click here to learn more!
+        </b>
+    </summary>
+<p>
+</p>
+To use this new feature you'll need to install a couple of things first. SSH into your printer, then run.
+    
+``` 
+python3 -m pip install rich
+```
+Wait for this to complete then run.
 
-- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+```
+python3 -m pip install ConfigUpdater
+```
+These commands will install the libaries you need to run the interactive user file updater script.
 
+To use the feature use this command...
 
+```
+python3 ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_config_update.py
+```
+![Updater](https://github.com/user-attachments/assets/2dac0a2d-6795-4a3c-b903-d4c35b8d9a39)
+
+Other things you will need to look at when updating!
+[UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+</details>
+
+****************************************************************************************************************************
 
 <br>
 
