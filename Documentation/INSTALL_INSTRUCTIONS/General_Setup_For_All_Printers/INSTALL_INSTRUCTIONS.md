@@ -177,17 +177,6 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 - [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
-
-****************************************************************************************************************************
-
-<br>
-
-# MODEL SPECIFIC INSTRUCTIONS - If you're using a Sovol SV08 printer 
-
-- [SOVOL SV08 SETUP](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
-
-You need to do this AS WELL AS the general setup for all printers below...!!
-
 ****************************************************************************************************************************
 
 <br>
@@ -760,19 +749,20 @@ This link GOOD!
 
 **Fin...**
 
+
 ****************************************************************************************************************************
 
 <br>
 
-# If You're Using A Sovol SV08 Printer
+# MODEL SPECIFIC INSTRUCTIONS - If you're using a Sovol SV08 printer 
 
-For model specific configuration click below.
+For model specific configuration click below. You need to do all the general setup for all printers as well as these extra steps...!!
 
 - [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
 
 ****************************************************************************************************************************
 
-<br><br>
+<br>
 
 # Additional Configuration - EXTRA STEPS
 
