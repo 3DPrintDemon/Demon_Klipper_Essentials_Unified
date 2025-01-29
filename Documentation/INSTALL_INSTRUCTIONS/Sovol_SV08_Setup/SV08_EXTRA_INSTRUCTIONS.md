@@ -142,8 +142,6 @@ Now be sure to include these...
 
 # FOR MAINLINE UNCOMMENT LINE BELOW 
 # [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Biqu.cfg]
-
-# [include ./demon_SV08_ML_display_v1.0.cfg]
 ```
 
 Be sure your `printer.cfg` file `[extruder]` section contains...
