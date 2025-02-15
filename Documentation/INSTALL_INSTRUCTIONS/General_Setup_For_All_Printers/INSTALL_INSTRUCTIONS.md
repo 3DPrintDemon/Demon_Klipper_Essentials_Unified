@@ -812,7 +812,7 @@ insert_gcode:
 runout_gcode:
     { action_respond_info("Filament Encoder Stall Detected") }
     {% if printer.print_stats.state == "printing" %}
-      PAUSE
+      _FIL_CHANGE_PARK
     {% endif %}
 
 [delayed_gcode encoder_sensor]
