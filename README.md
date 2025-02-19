@@ -95,9 +95,7 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 If you get the error in the photo below it means your version is not v2.2.0 (beta or beta2 or later)
 PLEASE UPDATE YOUR SLICER! 
 
-DO NOT USE ORCA SLICER DOT NET!!! ....BAD!!!
-
-This link GOOD!
+Do NOT use Orca Slicer from anywhere other than GitHub or Flathub. Orca Slicer Does NOT have a dedicated website associated with the project.
 
 - https://github.com/SoftFever/OrcaSlicer/releases
 
