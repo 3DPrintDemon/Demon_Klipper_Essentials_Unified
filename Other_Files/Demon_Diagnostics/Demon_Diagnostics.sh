@@ -753,7 +753,7 @@ if [ "$SPXTRDR" -eq 0 ]; then
     
 else 
     if [ "$SPMXE" -eq 1 ]; then
-        echo "${green}The max_exdrude section is defined in the printer.cfg file.${reset}"
+        echo "${green}The max_extrude section is defined in the printer.cfg file.${reset}"
 
     elif [ "$SPMXE" -eq 0 ]; then
         echo
@@ -761,14 +761,14 @@ else
         echo "have a separate cfg file for your toolhead that contains your extruder section, pleasse manually check it!"
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_exdrude_cross_section is NOT defined in the printer.cfg file."
+        echo "WARNING: The max_extrude_cross_section is NOT defined in the printer.cfg file."
         echo "##########################################################################################################${reset}"
         echo
 
     elif [ "$SPMXE" -gt 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_exdrude is defined in the printer.cfg file more than once!!"
+        echo "WARNING: The max_extrude is defined in the printer.cfg file more than once!!"
         echo "##########################################################################################################${reset}"
         echo
     fi
@@ -785,7 +785,7 @@ if [ "$SPXTRDR" -eq 0 ]; then
     
 else    
     if [ "$SPMXEV" -eq 1 ]; then
-    echo "${green}The max_exdrude_velocity section is defined in the printer.cfg file.${reset}"
+    echo "${green}The max_extrude_velocity section is defined in the printer.cfg file.${reset}"
 
     elif [ "$SPMXEV" -eq 0 ]; then
         echo
@@ -793,14 +793,14 @@ else
         echo "have a separate cfg file for your toolhead that contains your extruder section, pleasse manually check it!"
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_exdrude_velocity is NOT defined in the printer.cfg file."
+        echo "WARNING: The max_extrude_velocity is NOT defined in the printer.cfg file."
         echo "##########################################################################################################${reset}"
         echo
 
     elif [ "$SPMXEV" -gt 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_exdrude_velocity is defined in the printer.cfg file more than once!!"
+        echo "WARNING: The max_extrude_velocity is defined in the printer.cfg file more than once!!"
         echo "##########################################################################################################${reset}"
         echo
     fi
