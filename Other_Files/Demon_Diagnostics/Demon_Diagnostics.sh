@@ -422,13 +422,7 @@ if [ "$U" = "$S" ] || [ "$U" = "$B" ]; then
     if [ -f "$DIR/Macro.cfg" ] || [ -f "$DIR/sovol-macros.cfg" ]; then
     echo "Sovol Macros cfg file found."
     
-        if [ "$SSMF" -eq 0 ] || [ "$SSMFB" -eq 0 ]; then
-            echo "${green}Macro.cfg file is correctly NOT included in the system.${reset}"
-
-        elif [ "$SSMLMF" -eq 0 ] || [ "$SSMLMFB" -eq 0 ]; then
-            echo "${green}sovol-macros.cfg file is correctly NOT included in the system.${reset}"
-        
-        elif [ "$SSMF" -ge 1 ] || [ "$SSMFB" -ge 1 ]; then
+       if [ "$SSMF" -ge 1 ] || [ "$SSMFB" -ge 1 ]; then
             echo
             echo "${red}##########################################################################################################"
             echo "WARNING: Sovol Macro.cfg file is included, please comment it out!!"
@@ -441,6 +435,9 @@ if [ "$U" = "$S" ] || [ "$U" = "$B" ]; then
             echo "WARNING: sovol-macros.cfg file is included, please comment it out!!"
             echo "##########################################################################################################${reset}"
             echo
+
+        elif [ "$SSMF" -eq 0 ] && [ "$SSMFB" -eq 0 ] && [ "$SSMLMF" -eq 0 ] && [ "$SSMLMFB" -eq 0 ]; then
+            echo "${green}Sovol Macros file is correctly NOT included in the system.${reset}"
         fi
 
     echo "--------------------------------------------------------------------------------------------------------------"
