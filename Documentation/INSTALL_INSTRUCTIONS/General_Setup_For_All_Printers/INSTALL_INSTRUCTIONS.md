@@ -246,9 +246,12 @@ Program extras - pauses, extra cleans, turn fans on sooner!
 
 Plus the printer knows if you have loaded or unloaded the filament even if you restart! It will know if you need a full load or unload or a simple purge & clean!!
 
+Watch the [demo video!](https://www.youtube.com/watch?v=8Ou42thloCI)!
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8Ou42thloCI
 " target="_blank"><img src="http://img.youtube.com/vi/8Ou42thloCI/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
+
 </details>
 
 >[!CAUTION]
