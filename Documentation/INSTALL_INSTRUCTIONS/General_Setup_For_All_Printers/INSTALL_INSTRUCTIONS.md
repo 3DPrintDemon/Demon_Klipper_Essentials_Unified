@@ -245,6 +245,8 @@ Shoot direction - shoot your poop any way you like!
 
 Program extras - pauses, extra cleans, turn fans on sooner!
 
+Random Spot - never shoot from the same spot twice! Vary pellet placement within a chosen range!
+
 Plus the printer knows if you have loaded or unloaded the filament even if you restart! It will know if you need a full load or unload or a simple purge & clean!!
 
 Watch the [demo video!](https://www.youtube.com/watch?v=8Ou42thloCI)!
@@ -256,7 +258,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 </details>
 
 >[!CAUTION]
->THIS SYSTEM REQUIRES ACCUARTE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
+>THIS SYSTEM REQUIRES ACCURATE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
 
 ****************************************************************************************************************************
 
