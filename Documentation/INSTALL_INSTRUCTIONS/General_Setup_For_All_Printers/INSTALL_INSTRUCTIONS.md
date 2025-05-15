@@ -210,6 +210,54 @@ If your directory is empty please click the reload button for your web browser t
 
 <br>
 
+# NEW FEATURE: POOP_N_SHOOT!
+
+![P_N_S](https://github.com/user-attachments/assets/dc9cafb2-aaea-4c4e-b18e-8c8c51f850dc)
+
+There's a whole new way to purge filament on any printer! Use a dedicated purge area or the edge of your print bed to create a poop pellet & use the nozzle/toolhead to shoot it into the bucket! Fully customisable features!
+
+<details>
+    <summary>
+        <b>
+        Click here to learn more!
+        </b>
+    </summary>
+<p>
+</p>
+Choose many diiferent options, adjsut & tune settings, including...
+
+Positions - place the pellet where you want!
+
+Parking - park the toolhead where you like!
+
+Height - choose your height!
+
+Speed - choose how fast or slow!
+
+Temps - select what temps you want!
+
+Feed lengths - choose load/unload & purge lengths!
+
+Poop flow rate - tune the flow of poop!
+
+Shoot direction - shoot your poop any way you like!
+
+Program extras - pauses, extra cleans, turn fans on sooner!
+
+Plus the printer knows if you have loaded or unloaded the filament even if you restart! It will know if you need a full load or unload or a simple purge & clean!!
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8Ou42thloCI
+" target="_blank"><img src="http://img.youtube.com/vi/8Ou42thloCI/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
+</details>
+
+>[!CAUTION]
+>THIS SYSTEM REQUIRES ACCUARTE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
+
+****************************************************************************************************************************
+
+<br>
+
 # NEW FEATURE: Demon_Diagnostics!
 
 Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
@@ -593,7 +641,8 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 - Walkthrough video on Demon User Settings Cleaner Variables: https://youtu.be/Nk6oSrvPmgw
-
+- Will update this video soon for new version
+  
 ****************************************************************************************************************************
 
 <br>
