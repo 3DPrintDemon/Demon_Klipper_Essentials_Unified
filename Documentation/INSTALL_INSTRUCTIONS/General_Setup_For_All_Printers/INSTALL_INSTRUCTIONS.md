@@ -216,6 +216,7 @@ If your directory is empty please click the reload button for your web browser t
 
 There's a whole new way to purge filament on any printer! Use a dedicated purge area or the edge of your print bed to create a poop pellet & use the nozzle/toolhead to shoot it into the bucket! Fully customisable features!
 
+Activate with the demon_user_settings_cleaner_variables .cfg file!
 <details>
     <summary>
         <b>
@@ -224,7 +225,7 @@ There's a whole new way to purge filament on any printer! Use a dedicated purge 
     </summary>
 <p>
 </p>
-Choose many diiferent options, adjsut & tune settings, including...
+Choose many diiferent options, adjust & tune settings, including...
 
 Positions - place the pellet where you want!
 
