@@ -58,7 +58,6 @@ Other things you will need to look at when updating!
 
 ****************************************************************************************************************************
 
-<br>
 
 # Preparing Your Current System
 
@@ -135,8 +134,6 @@ Then Save & Restart.
 
 # IMPORTANT INFO BEFORE YOU START...
 
-<br>
-
 ### File Structure Has Changed for v2.9.4 Onwards
 
 >[!IMPORTANT]
@@ -171,8 +168,6 @@ If your directory is empty please click the reload button for your web browser t
 </details>
 
 ****************************************************************************************************************************
-
-<br>
 
 ### FEATURE: DEMON DIAGNOSTICS!
 
@@ -226,8 +221,6 @@ It just scans them safely & leaves them unedited & unchanged!
 
 ****************************************************************************************************************************
 
-<br>
-
 ### FEATURE: DEMON USER FILES UPDATER!
 
 <details>
@@ -267,8 +260,6 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 ****************************************************************************************************************************
 
-<br>
-
 ### Macro Layout Import/Restore
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
@@ -281,11 +272,8 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 ![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
 
-
-
 ****************************************************************************************************************************
 
-<br>
 
 ### NEW FEATURE: POOP_N_SHOOT!
 
