@@ -888,8 +888,8 @@ gcode_id: CH
 ```
 
 >[!NOTE]
->You can't use both a chamber fan & and a chamber sensor in the macros at the same time. Its set up for one of the other.
->It is possible to have both at once as long as you only set one to be used by the macros.
+>You can't use both a chamber fan & and a chamber sensor in the macros at the same time. It's set up for one or the other.
+>It is possible to have both at once on your printer as long as you only set one to be used by the macros.
 
 ****************************************************************************************************************************
 
