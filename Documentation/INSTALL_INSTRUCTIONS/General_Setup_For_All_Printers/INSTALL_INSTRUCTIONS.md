@@ -857,6 +857,112 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 - If you have a Chamber exhaust fan call it `[temperature_fan chamber]`
 - If you instead have a Chamber Thermistor only & no Exhaust fan call it `[temperature_sensor Chamber_Temp]`
 
+For use with a chamber fan...
+```
+[temperature_fan chamber]
+pin: ### < ADD YOUR OWN PIN HERE
+max_power: 1.0
+shutdown_speed: 0.0
+kick_start_time: 0.5
+cycle_time:0.01
+off_below:0.1
+sensor_type: ### < ADD YOUR OWN SENSOR TYPE HERE
+sensor_pin: ### < ADD YOUR OWN PIN HERE
+min_temp: 5
+max_temp: 70
+target_temp: 50
+control: watermark
+gcode_id: C
+```
+
+For use with a chamber sensor...
+```
+[temperature_sensor Chamber_Temp]
+sensor_type: ### < ADD YOUR OWN SENSOR TYPE HERE
+sensor_pin: ### < ADD YOUR OWN PIN HERE
+min_temp: 5
+max_temp: 60
+gcode_id: CH
+```
+
+>[!NOTE]
+>You can't use both a chamber fan & and a chamber sensor in the macros at the same time. Its set up for one of the other.
+>It is possible to have both at once as long as you only set one to be used by the macros.
+
+****************************************************************************************************************************
+
+## Bed Fans setup
+
+To use the macro's bed fan system set your bad fans up like this...
+
+```
+[fan_generic Bed_Fans]
+pin: ### < ADD YOUR OWN PIN HERE
+max_power: 1.0
+shutdown_speed: 0
+kick_start_time: 0.5
+off_below: 0.20
+```
+****************************************************************************************************************************
+
+## Chamber heater Setup
+
+There are STL's for Voron machines available with instructions on how to build a safe & reliable heater. 
+
+>[!CAUTION]
+>If you are unsure in any way how to build a unit such as this DO NOT BUILD ONE!
+>
+>WARNING ACTIVE CHAMBER HEATERS CAN BE DANGEROUS!!
+
+If you're sure & you know what you're doing...
+
+For a Neopixel equipped heater core [click here](https://www.printables.com/model/1054038-tartarus-heater-core-module-ptc-chamber-heater-enc)
+
+![TARTARUS Heater Core](https://github.com/user-attachments/assets/e314525c-66da-48af-8ad5-43f8022d7470)
+
+For a canbus heater & power control module [click here](https://www.printables.com/model/1054035-tartarus-canbus-ssr-module-for-chamber-heater-encl)
+
+![TARTARUS Canbus Module](https://github.com/user-attachments/assets/d2052c1c-f50c-45a4-a1bf-a727e710c2f9)
+
+To use the maco's chamber heater system set your heater up like this...
+
+```
+[heater_generic Chamber_Heater]
+gcode_id: CH
+heater_pin: ### < ADD YOUR OWN PIN HERE
+max_power: 0.50
+sensor_type: < ADD YOUR OWN SENSOR TYPE HERE
+sensor_pin: ### < ADD YOUR OWN PIN HERE
+control: pid
+pid_Kp: 15.391
+pid_Ki: 1.629
+pid_Kd: 36.362
+min_temp: 5
+max_temp: 110
+
+[heater_fan Chamber_Heater_Fan]
+pin: ### < ADD YOUR OWN PIN HERE
+max_power: 1.0
+shutdown_speed: 1
+off_below: 0.2
+heater: Chamber_Heater
+heater_temp: 55
+fan_speed: 1.0
+
+[verify_heater Chamber_Heater]
+max_error: 120
+check_gain_time: 90
+hysteresis: 5
+heating_gain: 2
+```
+
+>[!CAUTION]
+>Use this system with extreme care! Active chamber heaters can be dangerous!! Be sure to set it up safely as possible & to PID tune your heater!
+>
+>No liability or responsibility for any losses, damages, injury or death will be accepted for the use of any models or information or settings supplied here or anywhere else!
+>
+>USE AT YOUR OWN RISK!
+
 ****************************************************************************************************************************
 
 ## Printer LED lights
