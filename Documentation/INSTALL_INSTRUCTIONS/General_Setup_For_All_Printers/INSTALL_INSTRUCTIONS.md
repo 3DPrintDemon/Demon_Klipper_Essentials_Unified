@@ -134,10 +134,10 @@ Then Save & Restart.
 
 # IMPORTANT INFO BEFORE YOU START...
 
-### File Structure Has Changed for v2.9.4 Onwards
-
 >[!IMPORTANT]
 >Click the lines below to expand them to read the contents!
+
+### File Structure Has Changed for v2.9.4 Onwards
 
 <details>
     <summary>
