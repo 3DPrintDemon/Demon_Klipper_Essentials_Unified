@@ -915,7 +915,7 @@ There are STL's for Voron machines available with instructions on how to build a
 >
 >WARNING ACTIVE CHAMBER HEATERS CAN BE DANGEROUS!!
 >
->No liability or responsibility will be accepted in whole or in part for any losses, damages, injury or death linked directly or indirectly to the use of any STL models, advice, information or settings supplied here or anywhere else, linked or not!
+>No liability or responsibility will be accepted in whole or in part for any losses, damages, injury or death linked directly or indirectly to the use of any STL models, digital data files, .cfg files, advice, information or settings supplied here or anywhere else, linked or not!
 >
 >USE AT YOUR OWN RISK!
 
@@ -964,7 +964,7 @@ heating_gain: 2
 >[!CAUTION]
 >Use this system with extreme care! Active chamber heaters can be dangerous!! Be sure to set it up safely as possible & to PID tune your heater!
 >
->No liability or responsibility will be accepted in whole or in part for any losses, damages, injury or death linked directly or indirectly to the use of any STL models, advice, information or settings supplied here or anywhere else, linked or not!
+>No liability or responsibility will be accepted in whole or in part for any losses, damages, injury or death linked directly or indirectly to the use of any STL models, digital data files, .cfg files, advice, information or settings supplied here or anywhere else, linked or not!
 >
 >USE AT YOUR OWN RISK!
 
