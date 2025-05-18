@@ -924,7 +924,7 @@ For a canbus heater & power control module [click here](https://www.printables.c
 
 ![TARTARUS Canbus Module](https://github.com/user-attachments/assets/d2052c1c-f50c-45a4-a1bf-a727e710c2f9)
 
-To use the maco's chamber heater system set your heater up like this...
+To use the macro's chamber heater system set your heater up like this...
 
 ```
 [heater_generic Chamber_Heater]
