@@ -223,6 +223,10 @@ It just scans them safely & leaves them unedited & unchanged!
 
 ### FEATURE: DEMON USER FILES UPDATER!
 
+> [!IMPORTANT]
+> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+
+
 <details>
     <summary>
         <b>
@@ -252,11 +256,6 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 </details>
 
 ![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
-
-****************************************************************************************************************************
-
-> [!IMPORTANT]
-> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
 
 ****************************************************************************************************************************
 
