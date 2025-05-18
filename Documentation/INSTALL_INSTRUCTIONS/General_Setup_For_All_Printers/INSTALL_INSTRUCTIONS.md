@@ -907,7 +907,7 @@ off_below: 0.20
 
 ## Chamber heater Setup
 
-There are STL's for Voron machines available with instructions on how to build a safe & reliable heater. 
+There are STL's for Voron machines available with instructions on how to build a chamber heater. 
 
 >[!CAUTION]
 >If you are unsure in any way how to build a unit such as this DO NOT BUILD ONE!
