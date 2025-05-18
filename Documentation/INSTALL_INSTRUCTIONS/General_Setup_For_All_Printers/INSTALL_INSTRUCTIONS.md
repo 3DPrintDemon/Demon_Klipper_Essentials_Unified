@@ -332,6 +332,8 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 # MAIN SSH INSTALLERS HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
+Use for any machine Voron to Ender!
+
 >[!IMPORTANT]
 >It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
 
