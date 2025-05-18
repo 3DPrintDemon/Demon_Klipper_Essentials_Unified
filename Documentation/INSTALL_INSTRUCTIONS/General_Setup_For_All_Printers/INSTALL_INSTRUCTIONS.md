@@ -353,7 +353,6 @@ Your new files should now be avaiable to you on your printer!
 
 <br>
 
-
 ## Sovol SV08 machine specific installer here...
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 >[!NOTE]
