@@ -133,59 +133,23 @@ Then Save & Restart.
 
 <br>
 
-# MAIN SSH INSTALLERS HERE:
-### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
+# IMPORTANT INFO BEFORE YOU START...
+
+<br>
+
+### File Structure Has Changed for v2.9.4 Onwards
 
 >[!IMPORTANT]
->It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
+>Click the lines below to expand them to read the contents!
 
-RUN THIS FIRST:
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
-```
-Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
-
-```
-sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
-```
-Your new files should now be avaiable to you on your printer! 
-
->[!NOTE]
->Don't forget to reload your web browser window so new items will show & work correctly after installation!
-
-## DO NOT include them yet as there's some important stuff to do first!
-
-<br>
-
-
-## Sovol SV08 machine specific installer here...
-### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
->[!NOTE]
->Do not use this unless you have a Sovol SV08 printer!!
-
-RUN THIS FIRST:
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
-```
-Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
-
-```
-sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
-```
-
-Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
-## DO NOT include them yet as there's some important stuff to do first!
-
-<br>
-
-- [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
-
-****************************************************************************************************************************
-
-<br>
-
-# The File Structure Has Changed for v2.9.4 Onwards
-
+<details>
+    <summary>
+        <b>
+        Click to expand - File Structure Has Changed for v2.9.4 Onwards
+        </b>
+    </summary>
+<p>
+</p>
 There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
 
 #### After the initial install of `Demon_Klipper_Essentials_Unified`.
@@ -204,13 +168,126 @@ Check inside the `Demon_User_Files` directory you should see these 3 files, ther
 
 If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
 
-...Now back to the current step in the process
+</details>
 
 ****************************************************************************************************************************
 
 <br>
 
-# NEW FEATURE: POOP_N_SHOOT!
+### FEATURE: DEMON DIAGNOSTICS!
+
+>[!TIP]
+> BE SURE TO USE THIS WHEN SETTING UP! It's your onboard helper tool!
+>This sytem will help you see whats been done, what needs doing & what is not correctly set yet!
+
+<details>
+    <summary>
+        <b>
+        Click to expand - FEATURE: DEMON DIAGNOSTICS!
+        </b>
+    </summary>
+<p>
+</p>
+Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
+Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everything setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
+
+### RUN FROM YOUR SSH TERMINAL WITH THIS COMMAND!
+```
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics.sh
+```
+
+The script will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
+
+Your ssh terminal will tell you what you need to do to complete the install correctly & not miss anything. It'll warn you if anything is wrong.
+Run it at each stage of your install as many times as you like to make sure you're getting everything done! 
+
+### The goal is to make as many GREEN lines as possible!
+
+The utility will scan & evaluate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
+
+![DD-2](https://github.com/user-attachments/assets/8af1ef75-73ff-49db-b9c7-2bd7fb704ccb)
+
+
+The system will also give you big red warnings with clear explanations when things are not correct!
+
+![DD-3](https://github.com/user-attachments/assets/1ad99cc6-6008-413c-9250-b9a2f45d3b7c)
+
+
+NOTE THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
+
+It just scans them safely & leaves them unedited & unchanged!
+
+</details>
+
+![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
+
+>[!NOTE]
+>This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
+
+****************************************************************************************************************************
+
+<br>
+
+### FEATURE: DEMON USER FILES UPDATER!
+
+<details>
+    <summary>
+        <b>
+        Click to expand - FEATURE: DEMON USER FILES UPDATER!
+        </b>
+    </summary>
+<p>
+</p> 
+
+This new feature is a quality of life system that's useful if you'd like the macros to help manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to auto extract the new versions from your updated macros.
+
+This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. If your user files need updating it will prompt you to extract the required files from the main `Demon Klipper Essentials Unified` directory & place them in the new directory `Demon_User_Files` outside of the managed main directory, this is directly inside your printer's `config` directory. It will also move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them. This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
+
+To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add *ONE* of these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
+
+<br>
+
+### Manual User File Placement
+
+If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
+
+Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like [this...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards)
+
+
+****************************************************************************************************************************
+
+</details>
+
+![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
+
+****************************************************************************************************************************
+
+> [!IMPORTANT]
+> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+
+****************************************************************************************************************************
+
+<br>
+
+### Macro Layout Import/Restore
+
+Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
+
+This will bring in the defualt macro layout.
+- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
+
+It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
+
+
+![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
+
+
+
+****************************************************************************************************************************
+
+<br>
+
+### NEW FEATURE: POOP_N_SHOOT!
 
 ![P_N_S](https://github.com/user-attachments/assets/dc9cafb2-aaea-4c4e-b18e-8c8c51f850dc)
 
@@ -264,43 +341,52 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 <br>
 
-# NEW FEATURE: Demon_Diagnostics!
+# MAIN SSH INSTALLERS HERE:
+### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
-Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
-Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everything setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
+>[!IMPORTANT]
+>It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
 
-### RUN FROM YOUR SSH TERMINAL WITH THIS COMMAND!
+RUN THIS FIRST:
 ```
-sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics.sh
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
+Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
 
-The script will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
-
-Your ssh terminal will tell you what you need to do to complete the install correctly & not miss anything. It'll warn you if anything is wrong.
-Run it at each stage of your install as many times as you like to make sure you're getting everything done! 
-
-### The goal is to make as many GREEN lines as possible!
->[!NOTE]
->This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
-
-![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
-
-
-The utility will scan & evaluate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
-
-![DD-2](https://github.com/user-attachments/assets/8af1ef75-73ff-49db-b9c7-2bd7fb704ccb)
-
-
-The system will also give you big red warnings with clear explanations when things are not correct!
-
-![DD-3](https://github.com/user-attachments/assets/1ad99cc6-6008-413c-9250-b9a2f45d3b7c)
-
+```
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
+```
+Your new files should now be avaiable to you on your printer! 
 
 >[!NOTE]
->THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
->
->It just scans them safely & leaves them unedited & unchanged!
+>Don't forget to reload your web browser window so new items will show & work correctly after installation!
 
+## DO NOT include them yet as there's some important stuff to do first!
+
+<br>
+
+
+## Sovol SV08 machine specific installer here...
+### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
+>[!NOTE]
+>Do not use this unless you have a Sovol SV08 printer!!
+
+RUN THIS FIRST:
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
+```
+Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
+
+```
+sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
+```
+
+Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
+## DO NOT include them yet as there's some important stuff to do first!
+
+<br>
+
+- [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
 
 ****************************************************************************************************************************
 
@@ -342,24 +428,30 @@ If you choose *NOT* to use the Mainsail.cfg...
 
 <br>
 
-# NEW FEATURE: Demon User Files Updater
+# Include Now!
 
-This new feature is a quality of life system that's useful if you'd like the macros to help manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to auto extract the new versions from your updated macros.
+### Main Directory Includes
 
-This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. If your user files need updating it will prompt you to extract the required files from the main `Demon Klipper Essentials Unified` directory & place them in the new directory `Demon_User_Files` outside of the managed main directory, this is directly inside your printer's `config` directory. It will also move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them. This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
+Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
 
-![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
+Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
 
-To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add *ONE* of these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
+>[!IMPORTANT]
+>It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
 
-****************************************************************************************************************************
+```
+[include ./Demon_Klipper_Essentials_Unified/*.cfg]
+[include ./Demon_User_Files/*.cfg]
+```
+Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
 
-> [!IMPORTANT]
-> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
 
-****************************************************************************************************************************
+![Includes](https://github.com/user-attachments/assets/0555c56b-a2f8-4efd-b2e1-ebb58a0fd8e6)
 
-###### NOTE: if you have a non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work. 
+### Demon User File Updater Includes
+
+>[!NOTE]
+>If you have a non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work. 
 
 If you have a Raspberry Pi based system:
 ```
@@ -379,41 +471,6 @@ If you have a MKS based system:
 ```
 
 Then once you restart your system you'll be greeted by new system prompts telling you if anyhting needs to be done to get your system ready for use, & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
-
-****************************************************************************************************************************
-
-<br>
-
-# Manual User File Placement
-
-If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
-
-Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like [this...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards)
-
-
-****************************************************************************************************************************
-
-<br>
-
-# Include Now!
-
-Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
-
-Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
-
->[!IMPORTANT]
->It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
-
-```
-[include ./Demon_Klipper_Essentials_Unified/*.cfg]
-[include ./Demon_User_Files/*.cfg]
-```
-Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
-
-
-![Includes](https://github.com/user-attachments/assets/0555c56b-a2f8-4efd-b2e1-ebb58a0fd8e6)
-
-
 
 
 If you're using the `Demon User Files Updater` after the restart & if any file needs updating your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
@@ -447,24 +504,6 @@ is_system_service: False
 managed_services: klipper
 ```
 Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
-
-****************************************************************************************************************************
-
-<br>
-
-# Macro Layout Import/Restore
-
-Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
-
-This will bring in the defualt macro layout.
-- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
-
-It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
-
-
-![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
-
-
 
 ****************************************************************************************************************************
 
@@ -653,7 +692,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 <br>
 
-# NEW DEMON MACROS FEATURE!! DEMON HOMING CONTROL!
+# FEATURE: DEMON HOMING CONTROL!
 
 This sort of thing has been available for some time elsewhere but this is the first time we have a version integrated here in the 3DPrintDemon macros. This feature will lower the motor current on the X & Y axis motors when homing the printer & then increase it again to normal levels afterwards! This means your printer will be a little more gentle when homing. 
 
@@ -665,15 +704,14 @@ Not only that the homing macros know automatically if you’re using a BTT Eddy 
 
 <br>
 
-## DEMON Homing Control - IMPORTANT!
+>[!IMPORTANT]
+>DEMON Homing Control - IMPORTANT!
 To use the `demon_homing_control_v1.2.cfg` file
 be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
-
-****************************************************************************************************************************
-
-## UNLESS you’re using `Klicky Probe`!!! 
-
-For printers using `Klicky Probe` [you need to do this to get things to work correctly!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Kicky_Probe_Users.md)
+>
+>UNLESS you’re using `Klicky Probe`!
+>
+>For printers using `Klicky Probe` [you need to do this to get things to work correctly!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Kicky_Probe_Users.md)
 
 ****************************************************************************************************************************
 
