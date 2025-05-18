@@ -915,6 +915,10 @@ There are STL's for Voron machines available with instructions on how to build a
 >If you are unsure in any way how to build a unit such as this DO NOT BUILD ONE!
 >
 >WARNING ACTIVE CHAMBER HEATERS CAN BE DANGEROUS!!
+>
+>No liability or responsibility will be accepted in whole or in part for any losses, damages, injury or death linked directly or indirectly to the use of any STL models, advice, information or settings supplied here or anywhere else, linked or not!
+>
+>USE AT YOUR OWN RISK!
 
 If you're sure & you know what you're doing...
 
