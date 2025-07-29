@@ -9,7 +9,7 @@
 
 <br>
 
-## NOW WITH FULL BTT EDDY SUPPORT!!!
+## NOW WITH FULL EDDY NG SUPPORT!!!
 
 A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human! Fully ai code Free! No ai has been used to create them! 
 
