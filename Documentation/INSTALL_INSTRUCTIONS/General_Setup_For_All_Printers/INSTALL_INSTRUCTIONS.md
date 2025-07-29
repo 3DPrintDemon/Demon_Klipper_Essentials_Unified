@@ -731,10 +731,21 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 
 ****************************************************************************************************************************
+<br>
+
+# NEW EDDY NG SUPPORT!! 
+
+Follow the Eddy NG wiki & install the firmware & klipper files, then be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
+
+Set your chosen values for Eddy NG in the demon_user_settings_vx.x.x.cfg file
+
+If done correctly the macro's will automatically know you are using EDDY NG & will adapt all relevant macros to suit!
+
+Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
 
-# NEW DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
+# DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
 
 Demonise your Eddy! Download this file, set it up for you printer & run it!
 
