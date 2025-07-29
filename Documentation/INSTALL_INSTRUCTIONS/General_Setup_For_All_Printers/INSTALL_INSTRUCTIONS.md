@@ -741,6 +741,11 @@ Set your chosen values for Eddy NG in the demon_user_settings_vx.x.x.cfg file
 
 If done correctly the macro's will automatically know you are using EDDY NG & will adapt all relevant macros to suit!
 
+### RANDOM & CUSTOM TAP FEATURE!
+Set if you wish EDDY NG to "TAP" in your original home location, or if you want it to "TAP" a custom spot away from the most used area of your bed. Maybe you'd simply prefer for it to "TAP" a random spot around your orignial home loaction, or possibly even a random spot around a custom location! The choice is yours!
+
+Choose if you wish to disable the bed heater temporarily while tap is in progress to reduce any possible interference!
+
 Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
