@@ -746,6 +746,8 @@ Set if you wish EDDY NG to "TAP" in your original home location, or if you want 
 
 Choose if you wish to disable the bed heater temporarily while tap is in progress to reduce any possible interference!
 
+Don't forget to update your [.json file](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON) to add the new EDDY NG setup macro.
+
 Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
