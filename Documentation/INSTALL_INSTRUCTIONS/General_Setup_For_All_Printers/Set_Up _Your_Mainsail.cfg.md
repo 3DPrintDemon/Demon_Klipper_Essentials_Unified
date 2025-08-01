@@ -43,7 +43,14 @@ variable_idle_timeout : 600
 It will sit & wait for you. Or if you prefer you can set it to disable your motors & kill all heaters, cancel your print & even shut the printer down! 
 It’s totally up to you!
 
-###### NOTE: Don’t forget you should set the idle timeout section in your printer.cfg as per the next section below!
+###### NOTE: Don’t forget this is a different idle timeout than the one set in the idle timeout section in your printer.cfg, this is shown later in the install process!
+
+<br>
+
+Be sure to add the line below for the `variable_runout_sensor: ""` option between the quote marks ("") if you are using one!
+```
+filament_switch_sensor filament_sensor
+```
 
 Now were it says `variable_user_pause_macro : ""` you need to paste in...
 ```
@@ -62,10 +69,6 @@ Were it says `variable_user_cancel_macro: ""` you need to paste in...
 _DEMON_CANCEL
 ```
 
-Also be sure to add the line below for the `variable_runout_sensor: ""` option between the quote marks ("").
-```
-filament_switch_sensor filament_sensor
-```
 Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're done. Image is for a Voron 2.4 350
 
 BE SURE TO SAVE & RESTART!
