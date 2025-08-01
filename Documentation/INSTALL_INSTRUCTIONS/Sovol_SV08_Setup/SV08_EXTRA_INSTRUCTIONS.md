@@ -32,7 +32,7 @@ Choose to install the Kiuah G-code Shell command extension [click here!](https:/
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
 >[!IMPORTANT]
->It is highly recommended to use this installer if you're installing fresh or updating from an older version and are not using Update Manager! It will archive your old files for you.
+>It is highly recommended to use this installer if you're installing fresh or updating from an older version and are not using Moonraker's Update Manager! It will archive your old files for you.
 
 RUN THIS FIRST:
 ```
