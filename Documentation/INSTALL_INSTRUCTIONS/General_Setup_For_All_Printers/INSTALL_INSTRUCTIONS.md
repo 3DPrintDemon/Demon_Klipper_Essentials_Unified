@@ -989,6 +989,9 @@ max_power: 1.0
 shutdown_speed: 0
 kick_start_time: 0.5
 off_below: 0.20
+
+[output_pin DISABLE_BED_FANS]
+pin: ### < ADD YOUR OWN PIN HERE
 ```
 ****************************************************************************************************************************
 
@@ -1045,6 +1048,9 @@ max_error: 120
 check_gain_time: 90
 hysteresis: 5
 heating_gain: 2
+
+[output_pin DISABLE_CHAMBER_HEATER]
+pin: ### < ADD YOUR OWN PIN HERE - any unused pin will do, you don't have to have anything actually hooked up to it.
 ```
 
 >[!CAUTION]
@@ -1059,6 +1065,15 @@ heating_gain: 2
 ## Printer LED lights
 - If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
 - NeoPixel LEDs are dealt with in the additionally installed files.
+
+```
+[output_pin Printer_Lights]
+pin: ### < ADD YOUR OWN PIN HERE
+pwm: True
+value: 1
+shutdown_value: 0
+cycle_time: 0.001
+```
 
 ****************************************************************************************************************************
 
