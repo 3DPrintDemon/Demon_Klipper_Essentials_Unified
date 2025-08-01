@@ -748,6 +748,8 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 # NEW EDDY NG SUPPORT!! 
 
+Eddy NG is now fully supported within the macros, adding the tap command to the custom_expansion file is no longer required & can be removed! 
+
 Follow the Eddy NG wiki & install the firmware & klipper files, then be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
 
 Set your chosen values for Eddy NG in the demon_user_settings_vx.x.x.cfg file
