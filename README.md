@@ -66,7 +66,7 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 <br>
 
-# FULL INSTALL INSTRUCTIONS...
+# INSTALL INSTRUCTIONS LINKS...
 
 <br>
 
