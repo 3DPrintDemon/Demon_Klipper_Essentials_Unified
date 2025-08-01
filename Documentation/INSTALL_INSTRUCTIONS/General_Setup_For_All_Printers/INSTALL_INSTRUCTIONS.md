@@ -909,6 +909,7 @@ To modifiy the `Machine Gcode` in Orca Slicer [click here...](https://github.com
 
 
 ### Orca Slicer Additional
+
 If you get the error in the photo below it means your version is not v2.2.0 (beta or beta2 or later)
 PLEASE UPDATE YOUR SLICER! 
 
@@ -920,6 +921,27 @@ Use this link....
 
 
 ![Orca Fail](https://github.com/user-attachments/assets/2b2c4cb5-912b-470e-86f0-b3526b03fd50)
+
+****************************************************************************************************************************
+
+<br>
+
+# Recognised Slicer Filament Types
+
+>[!IMPORTANT]
+>These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
+
+Recognised slicer filament types at the moment are:
+- PLA
+- PLA+
+- ASA
+- ABS
+- PET
+- PETG
+- FLEX
+- TPU
+
+<br>
 
 
 **Fin...**
