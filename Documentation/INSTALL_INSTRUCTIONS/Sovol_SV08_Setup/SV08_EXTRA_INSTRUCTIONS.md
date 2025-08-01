@@ -28,33 +28,51 @@ This link GOOD!
 
 Choose to install the Kiuah G-code Shell command extension [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional) Do this first!
 
+# MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
-
->[!NOTE]
->Do not use this unless you have a Sovol SV08 printer!!
 
 >[!IMPORTANT]
->It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
-
-### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
+>It is highly recommended to use this installer if you're installing fresh or updating from an older version and are not using Update Manager! It will archive your old files for you.
 
 RUN THIS FIRST:
 ```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
-Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
+
+<br>
+
+### SOVOL SV08 MACHINE SPECIFIC PREREQUISITES INSTALLER...
+
+Run from your SSH terminal to install your prerequisite. This script will ask you your prerequisite install choices.
+
+>[!NOTE]
+>Do not use this unless you have a Sovol SV08 printer!!
 
 ```
 sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
 ```
 
-Your new files should now be avaiable to you on your printer!
+****************************************************************************************************************************
 
-## DO NOT include them yet as there's some important stuff to do first!
+<br> 
+
+# ...Your new files should now be Installed! 
+
+Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
 
 >[!NOTE]
 >Don't forget to reload your web browser window so new items will show & work correctly after installation!
 
+>[!IMPORTANT]
+>DO NOT include the new files just yet as there's some important stuff to do first!
+
+<br>
+
+- [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
+
+<br>
+
+****************************************************************************************************************************
 ### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) as well!
 
 ****************************************************************************************************************************
