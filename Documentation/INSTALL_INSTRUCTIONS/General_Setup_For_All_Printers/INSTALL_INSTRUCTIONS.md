@@ -609,6 +609,11 @@ Be sure to name any White LEDs that are on an output_pin in the `printer.cfg` fi
 
 ```
 [output_pin Printer_Lights]
+pin: ### < ADD YOUR OWN PIN HERE
+pwm: True
+value: 1
+shutdown_value: 0
+cycle_time: 0.001
 ```
 ****************************************************************************************************************************
 
