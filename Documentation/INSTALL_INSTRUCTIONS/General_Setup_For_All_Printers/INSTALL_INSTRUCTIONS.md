@@ -767,17 +767,21 @@ Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
 
-# DEMON EDDY!!! - Now with Offset control USE THIS ONE!!!
+# DEMON EDDY!!! - USE THIS IF YOU HAVE NOT INSTALLED EDDY NG!!
 
 Demonise your Eddy! Download this file, set it up for you printer & run it!
 
+If you're still on main branch Klipper & have NOT installed EDDY NG software you should be using DEMON EDDY & NOT the files BTT provide! Use this file below!
+
 https://github.com/3DPrintDemon/Demon_Eddy/tree/master
+
+Once Your probe is setup correctly & tested working all Demon Z_Probe calibration, machine meshing & machine levelling macros all now automatically detect & support BTT Eddy Probe! Just hit go & it’ll do its thing!
 
 ****************************************************************************************************************************
 <details>
     <summary>
         <b>
-        Click to expand - Old method no Offset adjsutment - the new one is way better!
+        Click to expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
         </b>
     </summary>
 <p>
@@ -802,14 +806,7 @@ I REPEAT LEAVE LINE 106 COMMENTED OUT!!! Comment in lines 101-05 ONLY!
 Actual Probe setup & calibration. You will need to setup your Eddy Probe still, steps how to do this are here:
 https://github.com/bigtreetech/Eddy/blob/master/README.md
 
-</details>
-
-Once Your probe is setup correctly & tested working as per the above BTT github guide all Demon Z_Probe calibration, machine meshing & machine levelling macros all now automatically detect & support BTT Eddy Probe! Just hit go & it’ll do its thing!
-
-## Eddy Coil Setup
-if you're using the Coil version of the Eddy Probe & are struggling to set it up here is what you need! edited cfg file with correct settings for use with a EBB36 & set up to deal with high temperature printing. 
-
-
+</details> 
 
 ****************************************************************************************************************************
 
