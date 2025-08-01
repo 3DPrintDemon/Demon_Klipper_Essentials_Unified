@@ -713,7 +713,7 @@ Not only that the homing macros know automatically if you’re using a BTT Eddy 
 
 >[!IMPORTANT]
 >DEMON Homing Control - IMPORTANT!
-To use the `demon_homing_control_v1.2.cfg` file
+To use the `demon_homing_control_vx.x.cfg` file
 be sure to comment out or un-include & disable any old homing or sensorless homing macros you might have, you will also need to comment out any old `[safe_homing]` & `[homing_override]` sections in your `printer,cfg` or macro files.
 >
 >UNLESS you’re using `Klicky Probe`!
