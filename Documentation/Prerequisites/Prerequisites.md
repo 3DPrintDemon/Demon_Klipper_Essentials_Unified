@@ -10,19 +10,34 @@ This link GOOD!
 
 ******************************
 
-# PREREQUISITES ARE NOW INSTALLED LOCALLY AFTER THE MAIN INSTALLER HAS RUN!
+# PREREQUISITES ARE INSTALLED LOCALLY AFTER THE MAIN INSTALLER HAS RUN BY USING THE PREREQUISITES INSTALLER!
 
 [SEE HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#main-ssh-installers-here)
 
-You will still need to prepare them & include them for use! Links below.
+You will still need to prepare them & include them for use! Links below for further instructions & information.
 
-Kiauh G-code Shell Command Extension is still a manual install as below! 
+Kiauh G-code Shell Command Extension is an optional but recommended manual install see below! 
+
+<br>
+
+## DEMON DISCORD!
+
+Come & join the community! We've just launched Demon Discord, help us start building a fantastic user focused resource for help & support from other users, share custom expansion gcode, or simply chat & show off your machine & your latest prints!
+
+<p align="left">
+    <img width="500" alt="Demon_Discord" src="https://github.com/user-attachments/assets/980b8b69-f78b-43b1-be27-cc1236fcf794" />
+    <https://discord.gg/KEbxw22AD4>
+</p>
+
+[https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
+
+<br>
 
 ******************************
 
 # ALL PRINTERS...
 
-### OPTIONAL - Kiauh G-code Shell Command Extension - OPTIONAL!
+### OPTIONAL BUT RECOMMENDED - Kiauh G-code Shell Command Extension - OPTIONAL!
 While not vital to Demon Klipper Essentials it will provide additional functionality to the system & quality of life features, if you wish not to use it then don't install it & don't include the new `Extract_Demon_User_Files_x.cfg`, you'll just have to deal with some file management tasks manually. 
 
 If you do install the shell command extension & want the system to help manage your `User Files` be aware that it gives Klipper access to system level shell commands that have a very small potential for misuse if you download macros or files from any dubious or malicious sources! Also don't mess with the Demon `.sh` files unless you know what you're doing as you can seriously break stuff if you get things wrong!
@@ -40,9 +55,13 @@ Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Comm
 ###### NOTE: Please take extra care of your system & protect it from misuse after installing the Kiauh G-code Shell Command Extension! Responsibility for this is solely on you.
 
 ******************************
-You must download & `[include]` these additional files along with these Demon Macros or they will NOT work correctly.
 
-These additional macros are prerequisites:
+# REQUIRED...
+
+After running the prerequisites installer you must `[include]` these additional files along with these Demon Macros or they will NOT work correctly, more information in respective links. 
+They are separated into their own repositories due to software licensing laws! ...It's just the way it's gotta be I'm afraid!
+
+These additional macros are prerequisites: 
 
 ## **FOR ALL MACHINES FOR ADAPTIVE PURGING & SMART PARK install KAMP_LiTE fork.**
 - https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
@@ -51,7 +70,7 @@ These additional macros are prerequisites:
 
 ******************************
 
-### **For VORON PRINTERS or other machines with toolhead Neopixels**
+## **For VORON PRINTERS or other machines with toolhead Neopixels**
 - https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Firmware/stealthburner_leds.cfg
 - https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
 
@@ -63,7 +82,16 @@ These additional macros are prerequisites:
 
 ******************************
 
-### **For SOVOL SV08 PRINTERS**
+## **For other machines without toolhead Neopixels**
+- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+  
+###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
+
+You must keep neopixels set to `False` in the `demon_user_settings_v2.9.cfg` `Hardware Options` section
+
+******************************
+
+## **For SOVOL SV08 PRINTERS**
 
 ![DEMON_Display_Menu](https://github.com/user-attachments/assets/36acc84f-8dbd-4d39-84b8-e2da8037f10e)
 
@@ -75,7 +103,7 @@ These additional macros are prerequisites:
 
 ******************************
 
-### Optional install for Armbian systems
+## Optional install for Armbian systems
 
 ![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/cdd314a4-7369-479c-ba91-ca759f109b5c)
 
@@ -83,14 +111,6 @@ These additional macros are prerequisites:
 
 ******************************
 
-### **For other machines without toolhead Neopixels**
-- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
-  
-###### Note: This file is requred for the heat soaks to work correctly. Install even if you dont have any LEDs & set a dummy pin.
-
-You must keep neopixels set to `False` in the `demon_user_settings_v2.9.cfg` `Hardware Options` section
-
-******************************
 
 - [Head on to General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
