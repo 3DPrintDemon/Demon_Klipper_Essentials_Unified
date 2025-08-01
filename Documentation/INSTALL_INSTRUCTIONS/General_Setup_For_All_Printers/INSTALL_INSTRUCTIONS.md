@@ -347,7 +347,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 Use for any machine Voron, SV08 to Ender!
 
 >[!IMPORTANT]
->It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
+>It is highly recommended to use this installer if you're installing fresh or updating from an older version and are not using Moonraker's Update Manager! It will archive your old files for you.
 
 RUN THIS FIRST:
 ```
