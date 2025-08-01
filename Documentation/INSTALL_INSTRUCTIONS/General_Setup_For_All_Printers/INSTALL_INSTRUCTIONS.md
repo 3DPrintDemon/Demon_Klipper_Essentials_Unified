@@ -341,10 +341,10 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 <br>
 
-# MAIN SSH INSTALLERS HERE:
+# MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
-Use for any machine Voron to Ender!
+Use for any machine Voron, SV08 to Ender!
 
 >[!IMPORTANT]
 >It is highly recommended to use this installer if you're installing fresh or updating from an older version! It will archive your old files for you.
@@ -353,37 +353,43 @@ RUN THIS FIRST:
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
-Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
+
+<br>
+
+# PREREQUISITE INSTALLERS HERE:
+
+Run from your SSH terminal to install your prerequisites. This script will ask you your prerequisite install choices. 
+
+FOR ALL PRINTERS EXCEPT SOVOL SV08 MACHINES!
 
 ```
 sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
 ```
-Your new files should now be avaiable to you on your printer! 
 
->[!NOTE]
->Don't forget to reload your web browser window so new items will show & work correctly after installation!
+### SOVOL SV08 MACHINE SPECIFIC PREREQUISITES INSTALLER...
 
-## DO NOT include them yet as there's some important stuff to do first!
+Run from your SSH terminal to install your prerequisite. This script will ask you your prerequisite install choices.
 
-<br>
-
-## Sovol SV08 machine specific installer here...
-### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 >[!NOTE]
 >Do not use this unless you have a Sovol SV08 printer!!
-
-RUN THIS FIRST:
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer_SV08.sh | bash
-```
-Then run this to install your prerequisite. This script will ask you your prerequisite install choices.
 
 ```
 sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
 ```
 
+****************************************************************************************************************************
+
+<br> 
+
+# ...Your new files should now be Installed! 
+
 Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
-## DO NOT include them yet as there's some important stuff to do first!
+
+>[!NOTE]
+>Don't forget to reload your web browser window so new items will show & work correctly after installation!
+
+>[!IMPORTANT]
+>DO NOT include the new files just yet as there's some important stuff to do first!
 
 <br>
 
@@ -414,7 +420,7 @@ filename = ~/demon_vars.cfg
 
 You will need to configure your `Mainsail.cfg` `_CLIENT_VARIABLE` macro, set it up now! 
 
-[Click here to do that!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Set_Up%20_Your_Mainsail.cfg.md)
+### [Click here to do that!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Set_Up%20_Your_Mainsail.cfg.md)
 
 If you choose *NOT* to use the Mainsail.cfg...
 
