@@ -22,9 +22,9 @@ Small user setting changes will be required of course.
 
 These macros have been developed for use on almost anything from Voron printers to an Ender 3, & anything else in between! They will check what sort of machine you have & try to adapt themselves to it automatically!
 
-So for example if you hit `MACHINE_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST`.
+So for example if you hit `MACHINE_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST`. Plus the macros can see if you have a COREXY machine that uses `Z_TILT_ADJSUT` & will make use of that system instead of QGL!
 
-Checks & Error Handling. Clear & easy to read messages
+Checks & Error Handling. Clear & easy to read messages!
 
 <br>
 
@@ -35,8 +35,8 @@ Checks & Error Handling. Clear & easy to read messages
 
 # Introduction
 
-These macros are smart & have adaptive properties & will shape themselves to what you’re printing. 
-For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at! Plus it can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
+These macros are smart & have adaptive properties & will shape themselves to your printer what you’re printing without any need to edit any code! 
+For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at, they can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
 
 
 
@@ -74,8 +74,10 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 
 <br>
+ 
+## DO NOT SKIP THE PREREQUISITES INSTALLER AFTER RUNNING THE MAIN INSTALLER!
 
-## Stuff you need to install BEFORE these macros can work - DO NOT SKIP THIS!
+Files listed here are installed by the prerequisites installer apart from the Kiauh Shell Script Extension which is an optional but recommended manual install. Links in the following page are provided for your infomation & include any required setup or additional information you will need! They will also help you choose which file version to install when using the prerequisites installer!
 
 - [PREREQUISITES - DONT NOT SKIP THIS!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md)
 
@@ -86,6 +88,19 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 - [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
 ****************************************************************************************************************************
+
+<br>
+
+## DEMON DISCORD!
+
+Come & join the community! We've just launched Demon Discord, help us start building a fantastic user focused resource for help & support from other users, share custom expansion gcode, or simply chat & show off your machine & your latest prints!
+
+<p align="left">
+    <img width="500" alt="Demon_Discord" src="https://github.com/user-attachments/assets/980b8b69-f78b-43b1-be27-cc1236fcf794" />
+    <https://discord.gg/KEbxw22AD4>
+</p>
+
+[https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
 
 <br>
 
