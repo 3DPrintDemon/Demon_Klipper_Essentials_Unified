@@ -83,7 +83,9 @@ Files listed here are installed by the prerequisites installer apart from the Ki
 
 <br>
 
-## Full install & setup instructions...
+# FULL INSTALL & SETUP INSTRUCTIONS...
+
+Click the link below to begin reading how to install!
 
 - [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
