@@ -113,7 +113,13 @@ If you get a boot looping popup message that wont go away check your system for 
 If you feel your demon_vars.cfg file is not working you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros.
 
 ```
+sudo service klipper stop
+```
+```
 cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
+```
+```
+sudo service klipper start
 ```
 
 If that doesnt work try changing your filename line to:
@@ -126,6 +132,28 @@ Also double check you have no other `[save_variables]` sections defined in your 
 
 Then Save & Restart.
 
+</details>
+
+<details>
+    <summary>
+        <b>
+        Click to expand - Manually reinstall your demon_vars.cfg file
+        </b>
+    </summary>
+<p>
+</p>
+
+If you feel your demon_vars.cfg file is not working or is missing you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros. This will reset any values in your old file back to system defaults!
+
+```
+sudo service klipper stop
+```
+```
+cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
+```
+```
+sudo service klipper start
+```
 </details>
 
 <br>
@@ -410,6 +438,28 @@ Add this to your `printer.cfg` preferably BEFORE you include the macros.
 [save_variables]
 filename = ~/demon_vars.cfg
 ```
+
+<details>
+    <summary>
+        <b>
+        Click to expand - Manually reinstall your demon_vars.cfg file
+        </b>
+    </summary>
+<p>
+</p>
+
+If you feel your demon_vars.cfg file is not working or is missing you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros. This will reset any values in your old file back to system defaults!
+
+```
+sudo service klipper stop
+```
+```
+cp -f ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Vars/demon_vars.cfg ~/
+```
+```
+sudo service klipper start
+```
+</details>
 
 
 ****************************************************************************************************************************
