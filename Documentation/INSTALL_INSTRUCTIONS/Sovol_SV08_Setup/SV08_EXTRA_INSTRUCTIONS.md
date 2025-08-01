@@ -111,6 +111,10 @@ The system will also give you big red warnings with clear explanations when thin
 >If you don't do this & you use the `Demon_User_Files_Updater` G-code shell command extension it will cause looping behaviour asking to extract files on restarts! You must define the Demon one ONLY!
 
 Comment out - Stock Sovol...
+
+```
+# [include plr.cfg]
+```
 ```
 # [save_variables]
 # filename =/home/sovol/printer_data/config/saved_variables.cfg
