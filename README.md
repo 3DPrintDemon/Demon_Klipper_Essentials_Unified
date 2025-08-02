@@ -89,11 +89,13 @@ Click the link below to begin reading how to install!
 
 - ### [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
+<br>
+
 ****************************************************************************************************************************
 
 <br>
 
-## DEMON DISCORD!
+# DEMON DISCORD!
 
 Come & join the community! We've just launched Demon Discord, help us start building a fantastic user focused resource for help & support from other users, share custom expansion gcode, or simply chat & show off your machine & your latest prints!
 
@@ -106,7 +108,7 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 <br>
 
-## Orca Slicer Heads-up!
+# Orca Slicer Heads-up!
 If you get the error in the photo below it means your version is not v2.2.0 (beta or beta2 or later)
 PLEASE UPDATE YOUR SLICER! 
 
