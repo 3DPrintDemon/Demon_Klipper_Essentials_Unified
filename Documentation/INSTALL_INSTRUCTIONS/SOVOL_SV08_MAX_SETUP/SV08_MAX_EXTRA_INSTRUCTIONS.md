@@ -127,6 +127,9 @@ It just scans them safely & leaves them unedited & unchanged!
 
 <br>
 
+>[!NOTE]
+>When complete the printer will give you some unknown command errors relating to the commented out plr.cfg file. This is because Sovol have hardcoded these commands into Klipper/Moonraker & I am yet to find where they're being called from! Once I find the source of the calls I'll update things. In the meantime these messages can safely be ingored. 
+
 <br>
 
 # Timelapse Use
