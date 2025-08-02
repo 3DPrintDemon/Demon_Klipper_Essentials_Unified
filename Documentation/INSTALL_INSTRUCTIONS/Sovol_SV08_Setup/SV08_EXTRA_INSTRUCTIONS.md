@@ -205,6 +205,8 @@ To do this use a # at the start of the line like this:
 ```
 # [include Macro.cfg]
 ```
+<br>
+
 Then set your fans like this in the printer.cfg file:
 ```
 [multi_pin fan_pins]
@@ -227,6 +229,10 @@ Comment out the stock entry do not delete it, it must look like this:
 # pin: extra_mcu:PB1
 # max_power: 1.0
 ```
+>[!TIP]
+>In Orca Slicer click the edit box on the printer name at the top of the screen to bring up the `Printer Settings` window, then in the `Basic information` tab at the very bottom under `Accessory` be sure to uncheck the `Auxiliary part cooling fan` option. This will stop Orca keeping the fans on after printing.
+
+<br>
 
 Rename the `[output_pin Main_LED]` section & change the cycle_time. As the stock value of `5` is incorrect. 
 
