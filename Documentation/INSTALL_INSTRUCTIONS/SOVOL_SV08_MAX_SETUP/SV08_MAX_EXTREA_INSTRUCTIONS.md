@@ -412,7 +412,7 @@ Start by changing directory to:
 cd ~/klipper/klippy/extras
 ```
 
-## The first way is the safe way where these two commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
+## The first way is the safe way where these three commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
 
 You need ALL THREE of these files!
 ```
