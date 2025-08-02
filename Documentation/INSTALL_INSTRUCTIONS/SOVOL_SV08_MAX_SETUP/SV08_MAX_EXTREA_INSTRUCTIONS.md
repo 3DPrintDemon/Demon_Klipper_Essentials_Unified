@@ -398,9 +398,9 @@ tachometer_poll_interval: 0.001375
 
 # OK NOW THE TRICKY SSH BIT!
 
-In this section you'll modify the way your SV08 MAX deals with a couple of thing, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
+In this section you'll modify the way your SV08 MAX deals with a couple of things, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
 
-Secondly the printer will now choose a random spot to tap the bed so it will NOT tap the same place over & over for every print!
+Secondly the printer will now choose a random spot around the centre home location to tap the bed so it will NOT tap the same place over & over for every print!
 
 Lastly the buffer_stepper.cfg file ties it all together & gives increased functionality especially when used with an HDMI touchscreen!
 
