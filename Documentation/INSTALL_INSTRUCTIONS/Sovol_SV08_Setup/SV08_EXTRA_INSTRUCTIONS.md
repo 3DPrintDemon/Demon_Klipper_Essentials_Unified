@@ -77,6 +77,19 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 <br>
 
+# DEMON DISCORD!
+
+Come & join the community! We've just launched Demon Discord, help us start building a fantastic user focused resource for help & support from other users, share custom expansion gcode, or simply chat & show off your machine & your latest prints!
+
+<p align="left">
+    <img width="500" alt="Demon_Discord" src="https://github.com/user-attachments/assets/980b8b69-f78b-43b1-be27-cc1236fcf794" />
+    <https://discord.gg/KEbxw22AD4>
+</p>
+
+[https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
+
+<br>
+
 # NEW FEATURE: Demon_Diagnostics!
 
 Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
