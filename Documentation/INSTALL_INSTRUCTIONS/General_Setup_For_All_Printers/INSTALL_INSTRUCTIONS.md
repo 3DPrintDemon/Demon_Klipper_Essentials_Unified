@@ -383,18 +383,18 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 Run from your SSH terminal to install your prerequisites. This script will ask you your prerequisite install choices. 
 
-FOR ALL PRINTERS EXCEPT SOVOL SV08 MACHINES!
+FOR ALL PRINTERS VORON to ENDER - EXCEPT SOVOL SV08 OG MACHINES!
 
 ```
 sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
 ```
 
-### SOVOL SV08 MACHINE SPECIFIC PREREQUISITES INSTALLER...
+### SOVOL SV08 OG MACHINE SPECIFIC PREREQUISITES INSTALLER...
 
 Run from your SSH terminal to install your prerequisite. This script will ask you your prerequisite install choices.
 
 >[!NOTE]
->Do not use this unless you have a Sovol SV08 printer!!
+>Do not use this unless you have a Sovol SV08 OG printer!! NOT SV08 MAX!
 
 ```
 sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Sovol_SV08_Prerequisites_Installer.sh
@@ -946,11 +946,17 @@ Recognised slicer filament types at the moment are:
 
 <br>
 
-# MODEL SPECIFIC INSTRUCTIONS - If you're using a Sovol SV08 printer 
+# MODEL SPECIFIC INSTRUCTIONS
 
 For model specific configuration click below. You need to do all the general setup for all printers as well as these extra steps...!!
 
+## If you're using a Sovol SV08 OG printer 
+
 - [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Sovol_SV08_Setup/SV08_EXTRA_INSTRUCTIONS.md)
+
+## If you're using a Sovol SV08 MAX printer   
+
+- [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_EXTREA_INSTRUCTIONS.md)
 
 ****************************************************************************************************************************
 
