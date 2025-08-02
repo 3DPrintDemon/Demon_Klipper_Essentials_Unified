@@ -956,7 +956,7 @@ For model specific configuration click below. You need to do all the general set
 
 ## If you're using a Sovol SV08 MAX printer   
 
-- [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_EXTREA_INSTRUCTIONS.md)
+- [Further configuration steps are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_EXTRA_INSTRUCTIONS.md)
 
 ****************************************************************************************************************************
 
