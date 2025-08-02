@@ -20,11 +20,11 @@ A lot of time, love, coffee & lack of sleep testing has been poured into these m
 # These macros will run on almost any COREXY or BED SLINGER (cartesian) Klipper printer with no changes needed to the macro files! 
 Small user setting changes will be required of course.
 
-These macros have been developed for use on almost anything from Voron printers to an Ender 3, & anything else in between! They will check what sort of machine you have & try to adapt themselves to it automatically!
+These macros have been developed for use on almost anything from a Voron printer to an Ender 3, & anything else in between! They will check what sort of machine you have & try to adapt themselves to it automatically!
 
-So for example if you hit `MACHINE_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST`. Plus the macros can see if you have a COREXY machine that uses `Z_TILT_ADJSUT` & will make use of that system instead of QGL!
+So for example if you hit `MACHINE_LEVEL` on a COREXY printer you'll get a `QUAD_GANTRY_LEVEL`, but if you do the same on a bed slinger you'll get a `Z_TILT_ADJUST`. Plus the macros can even see if you have a COREXY machine that uses `Z_TILT_ADJSUT` & will make use of that system instead of QGL!
 
-Checks & Error Handling. Clear & easy to read messages!
+Checks & Error Handling with clear & easy to understand messages to tell you what's wrong!
 
 <br>
 
@@ -35,8 +35,8 @@ Checks & Error Handling. Clear & easy to read messages!
 
 # Introduction
 
-These macros are smart & have adaptive properties & will shape themselves to your printer what you’re printing without any need to edit any code! 
-For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at, they can automatically choose & load the correct mesh for the temperature of your print, as your bed will slightly change shape the hotter it gets. 
+These macros are smart & have adaptive properties, they will shape themselves to your printer what you’re printing without any need to edit any code! 
+For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at they can automatically choose & load the correct mesh for the filament type or temperature of your print, as your bed will slightly change shape the hotter it gets. They can do all that plus much, much more!
 
 
 
