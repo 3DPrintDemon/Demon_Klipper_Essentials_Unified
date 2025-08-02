@@ -394,6 +394,8 @@ tachometer_poll_interval: 0.001375
 
 ****************************************************************************************************************************
 
+<br>
+
 # OK NOW THE TRICKY SSH BIT!
 
 In this section you'll modify the way your SV08 MAX deals with a couple of thing, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
