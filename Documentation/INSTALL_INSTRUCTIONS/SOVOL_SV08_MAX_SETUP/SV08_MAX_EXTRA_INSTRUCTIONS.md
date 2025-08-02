@@ -461,11 +461,11 @@ sudo reboot now
 
 <br>
 
-## Download & Manual Install
+## Optional Download & Manual Install
 
 <br>
 
-Download both the `filament_switch_sensor.py`, the `z_offset_calibration.py` & the `buffer_stepper.cfg` files found here.
+Download the `filament_switch_sensor.py`, the `z_offset_calibration.py` & the `buffer_stepper.cfg` files found here.
 
 https://github.com/3DPrintDemon/DEMON-SV08MAX/tree/main/DEMON_SV08_MAX_REPLACEMENT_FILES
 
