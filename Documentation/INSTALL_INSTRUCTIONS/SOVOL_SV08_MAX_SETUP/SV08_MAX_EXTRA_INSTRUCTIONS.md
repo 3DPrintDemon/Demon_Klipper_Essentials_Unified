@@ -376,6 +376,9 @@ cycle_time: 0.01
 shutdown_value: 0
 ```
 
+>[!TIP]
+>In Orca Slicer click the edit box on the printer name at the top of the screen to bring up the `Printer Settings` window, then in the `Basic information` tab at the very bottom under `Accessory` be sure to uncheck the `Auxiliary part cooling fan` option. This will stop Orca keeping the fans on after printing.
+
 <br>
 
 Next comment out the stock [heater_fan bed_fan] section as it's not the correct setup for this fan!
