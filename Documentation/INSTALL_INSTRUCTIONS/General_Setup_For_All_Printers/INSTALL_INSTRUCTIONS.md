@@ -1088,6 +1088,8 @@ pin: ### < ADD YOUR OWN PIN HERE - any unused pin will do, you don't have to hav
 >
 >USE AT YOUR OWN RISK!
 
+****************************************************************************************************************************
+
 <br>
 
 ## Voron 2.4 Auto Emergency Stop!
@@ -1254,6 +1256,17 @@ You can also add your chamber temp to the menubar in KlipperScreen, this to your
 ```
 titlebar_items: chamber
 ```
+
+****************************************************************************************************************************
+
+<br>
+
+## Auto Github Config Dir Backup!
+
+Setup backups that are saved to your own private Github Repo with a single click as well as automatically on the hour every hour!
+The backups can even be edited online than pulled down by the printer once online again so syncing everthing up!
+
+https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Auto_Backup_Your_Printer/Git_Backup.md
 
 ****************************************************************************************************************************
 
