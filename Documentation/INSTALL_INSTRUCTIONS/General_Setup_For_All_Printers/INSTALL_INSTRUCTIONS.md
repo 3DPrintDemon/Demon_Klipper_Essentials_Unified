@@ -1088,7 +1088,21 @@ pin: ### < ADD YOUR OWN PIN HERE - any unused pin will do, you don't have to hav
 >
 >USE AT YOUR OWN RISK!
 
+<br>
+
+## Voron 2.4 Auto Emergency Stop!
+
+If you have a Voron 2.4 printer & are using a traditional Z endstop switch and if your nozzle ever doesn't make a clean contact with the switch or if the nozzle ever misses it totally due to either a homing error or obstruction this can seriously damage your printer! Costing you at minimum a build plate as your offset will be set incorrectly with a unclean press of the switch, or at worse further damage can be caused to the toolhead & bearing carriages! Install this simple mod, it could save you so much time & money!
+
+<img width="600" alt="AES" src="https://github.com/user-attachments/assets/20abaa35-e019-4546-89f4-4da2df367bee" />
+
+### MORE DETAILS HERE!
+
+https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch/AES.md
+
 ****************************************************************************************************************************
+
+<br>
 
 ## Printer LED lights
 - If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
