@@ -427,7 +427,7 @@ This will give you quick & easy access to control the Auto Feeder via the touchs
 name: Feed In
 icon: arrow-down
 method: printer.gcode.script
-params: {"script":"FEED_LOOP"}
+params: {"script":"_FEED_IN"}
 
 [menu __main custom feed_out]
 name: Feed Out
