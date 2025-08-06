@@ -153,6 +153,32 @@ TIMELAPSE_TAKE_FRAME
 ```
 <br>
 
+# SV08 MAX CUSTOM EXPANSION FILE! - REQUIRED!!
+
+>[!IMPORTANT]
+>BE SURE YOU FOLLOW THIS SECTION!!!!!
+
+>[!CAUTION]
+>DAMAGE MAY RESULT IF YOU DO NOT DO THIS!!!
+
+>[!NOTE]
+>The command below MUST have at least 2 presses of the spacebar at the start of the line its on for it to work!
+>It must NOT be at the very start of the line!
+
+Go into the demon_custom_expansion cfg file & under the `[gcode_macro _CUSTOM_PRE_LEVEL]` section & paste in...
+```
+    _OFFSET_FORCE_OVERLAY
+```
+
+Then be sure to set `variable_ceal_master_enable:` & the `variable_pre_level:` both to...
+```
+True
+```
+
+By doing this you make sure the printer has the correct Z Offset for printing! 
+
+<br>
+
 # Edit Your printer.cfg 
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
