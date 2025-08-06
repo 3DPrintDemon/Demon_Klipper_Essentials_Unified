@@ -162,8 +162,9 @@ TIMELAPSE_TAKE_FRAME
 >DAMAGE MAY RESULT IF YOU DO NOT DO THIS!!!
 
 >[!NOTE]
->The command below MUST have at least 2 presses of the spacebar at the start of the line its on for it to work!
->It must NOT be at the very start of the line!
+>The command below MUST have at least 2 presses of the spacebar at the start of the line it's on for it to work!
+>
+>It must NOT be at the very start of the line! If you click the copy text button box below the correct spacing "should" be applied when you paste it in, but please check the command is correctly indented before use!
 
 Go into the demon_custom_expansion cfg file & under the `[gcode_macro _CUSTOM_PRE_LEVEL]` section & paste in...
 ```
