@@ -16,7 +16,7 @@ cd ~/klipper/klippy/extras
 
 ## This is the safe way where these commands will make your current files into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
 
-You need BOTH of these files!
+You need ALL of these files!
 
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
@@ -34,6 +34,9 @@ Restart
 ```
 sudo reboot now
 ```
+
+>[!NOTE]
+>By doing this it will give your Klipper install a "Dirty" status in update manager!
 
 >[!IMPORTANT]
 >Disable your old filament sensor section in your printer.cfg & you should be all set!
