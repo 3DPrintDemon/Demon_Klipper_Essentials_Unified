@@ -16,7 +16,7 @@ cd ~/klipper/klippy/extras
 
 ## This is the safe way where these commands will make your current files into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
 
-You need ALL of these files!
+You need ALL of these files! They're designed for use with [Demon Klipper Essentials Unified](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified)
 
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
