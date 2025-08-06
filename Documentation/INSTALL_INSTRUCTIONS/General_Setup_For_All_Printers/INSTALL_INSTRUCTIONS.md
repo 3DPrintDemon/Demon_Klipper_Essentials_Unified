@@ -364,6 +364,16 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 <br>
 
+# INSTALL THE SOVOL AUTO FILAMENT FEEDER ON ALMOST ANY KLIPPER PRINTER!
+
+<img width="400" alt="SOVOL AUTO FEEDER" src="https://github.com/user-attachments/assets/7c3f532e-55a0-4c6f-9f95-96d337471b52" />
+
+If you have a longer way to run your filament to your extruder, or if you run large/heavy (3-5kg) filament rolls this unit can help improve filament feeding & help reduce strain on your extruder motor! With these macros it'll automatically feed in & feed out your filament for the entire run to your extruder! Learn more [CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/SOVOL_AUTO_FEEDER.md)
+
+For use with these macros!
+
+<br>
+
 # MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
