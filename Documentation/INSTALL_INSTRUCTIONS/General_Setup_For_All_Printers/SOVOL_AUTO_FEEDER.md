@@ -29,6 +29,12 @@ cd ~/printer_data/config
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.cfg  --backups=1
 ```
 
+Then in your printer.cfg include the new file...
+
+```
+[include buffer_stepper.cfg]
+```
+
 Restart
 
 ```
