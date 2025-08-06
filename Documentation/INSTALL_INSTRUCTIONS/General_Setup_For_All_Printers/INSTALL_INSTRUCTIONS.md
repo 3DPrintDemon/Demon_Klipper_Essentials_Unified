@@ -22,6 +22,8 @@ This link GOOD!
 >[!TIP]
 >Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
 
+### SSH CONFIG UPDATER SCRIPT!
+
 <details>
     <summary>
         <b>
