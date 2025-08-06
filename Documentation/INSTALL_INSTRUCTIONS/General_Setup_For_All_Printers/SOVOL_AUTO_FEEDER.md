@@ -35,6 +35,9 @@ Then in your printer.cfg include the new file...
 [include buffer_stepper.cfg]
 ```
 
+>[!IMPORTANT]
+>Disable your old filament sensor section in your printer.cfg or this system will not work!
+
 Restart
 
 ```
@@ -43,9 +46,6 @@ sudo reboot now
 
 >[!NOTE]
 >By doing this it will give your Klipper install a "Dirty" status in update manager!
-
->[!IMPORTANT]
->Disable your old filament sensor section in your printer.cfg & you should be all set!
 
 <br>
 
