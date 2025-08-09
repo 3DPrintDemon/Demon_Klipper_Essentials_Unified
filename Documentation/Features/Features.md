@@ -26,10 +26,6 @@
 - NEW! Support for Klipper's `ADAPTIVE_MESH` system in the latest Klipper update
 - NOTE you need the latest version of Klipper to use this!
 
-If you own a Sovol SV06/Plus with a Sovol Klipper screen or a Sovol SV07/Plus & want to use the latest version of Klipper with Adaptive Meshing & more features you need to follow my How2 guide on how to update the Sovol Klipper screens on your printers.
-
-https://github.com/3DPrintDemon/How-to-Update-Sovol-Klipper-Screen-To-Latest-Klipper-SV06-and-SV07 
-
 - NEW! Adaptive Pressure Advance Mode! - APA - ORCA SLICER ONLY
 
 - Why have only 1 single setting for Pressure Advance trying to work across the whole print when you can have 6!!
