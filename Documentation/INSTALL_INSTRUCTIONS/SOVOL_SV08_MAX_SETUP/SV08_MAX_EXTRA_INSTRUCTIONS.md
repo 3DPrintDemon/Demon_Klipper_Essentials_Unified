@@ -467,7 +467,7 @@ params: {"script":"_FEED_OUT"}
 
 <br>
 
-## ADD CLOG DETECTION OVERRIDE PIN!
+# Add Clog Detection Override Pin!
 
 >[!IMPORTANT]
 >In the `buffer_stepper.cfg` file you are about to install you will need to add the pin shown a few lines down to use as a manual override for the clog detection.
