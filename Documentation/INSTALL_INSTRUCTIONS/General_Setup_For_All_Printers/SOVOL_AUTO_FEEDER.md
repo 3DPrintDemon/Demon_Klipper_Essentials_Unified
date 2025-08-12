@@ -38,6 +38,16 @@ Then in your printer.cfg include the new file...
 >[!IMPORTANT]
 >Disable your old filament sensor section in your printer.cfg or this system will not work!
 
+<br>
+
+## Add an unused pin as an override
+
+Add an unused pin on your mainboard to control the manual override clog detection.
+
+See line 40 of the `buffer_stepper.cfg` file, under the `[output_pin STOP_CLOG_DETECTION]`
+
+<br>
+
 Restart
 
 ```
@@ -58,3 +68,5 @@ CANL | CANH
 The Sovol cable uses non-standard Canbus colours, normally CanH is yellow & CanL is green
 
 <img width="544" height="426" alt="Connection" src="https://github.com/user-attachments/assets/240b8478-51d7-46ac-9588-77b57d832ba3" />
+
+
