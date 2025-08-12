@@ -467,6 +467,24 @@ params: {"script":"_FEED_OUT"}
 
 <br>
 
+## ADD CLOG DETECTION OVERRIDE PIN!
+
+>[!IMPORTANT]
+>In the `buffer_stepper.cfg` file you are about to install you will need to add the pin shown a few lines down to use as a manual override for the clog detection.
+This will allow you to disable the automated clog detection during a print if you keep getting false triggers!
+
+See line 40 of the `buffer_stepper.cfg` file, under the `[output_pin STOP_CLOG_DETECTION]` & add this pin...
+
+```
+pin: PC12
+```
+
+<br>
+
+****************************************************************************************************************************
+
+<br>
+
 # OK NOW THE TRICKY SSH BIT!
 
 In this section you'll modify the way your SV08 MAX deals with a couple of things, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
