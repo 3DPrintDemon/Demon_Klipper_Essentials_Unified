@@ -294,7 +294,7 @@ THIS FIRST SECTION IS OPTIONAL TO SLOW THE MACHINE DOWN - as the stock settings 
 kinematics: corexy
 max_velocity: 700
 max_accel: 8200
-max_accel_to_decel: 4500
+minimum_cruise_ratio: 0.5
 max_z_velocity: 20
 max_z_accel: 500
 square_corner_velocity: 5.0
