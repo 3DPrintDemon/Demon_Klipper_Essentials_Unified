@@ -43,7 +43,7 @@ pin: PB2
 [output_pin OUTPUT_PIN2] # PLA Detect
 pin: PE7
 
-[output_pin OUTPUT_PIN3] # PLA Twine Detect
+[output_pin OUTPUT_PIN3] # Twine Detect
 pin: PE8
 ```
 
