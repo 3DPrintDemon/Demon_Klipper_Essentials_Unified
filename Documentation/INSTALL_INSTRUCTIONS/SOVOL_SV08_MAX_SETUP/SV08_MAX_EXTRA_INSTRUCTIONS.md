@@ -29,6 +29,21 @@ This link GOOD!
 
 <br>
 
+# ADD EXTRA UNPUBLISHED PINS FOR MORE FUNCTIONS HERE!!
+
+Here you can find a selection of extra pins on the stock SV08 MAX mainboard for expanding your system!
+
+- 1x disable/enable clog detection switch
+- 2x thermistor pins, great for chamber & case sensors!
+- 3x digital output pins, gcode buttons or I/O sensor pins @3.3v
+- 2x chains of multicolour neopixel LED chains!
+
+## [HOOK ME UP!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_Extended_Pins.md)
+
+<br>
+
+<br>
+
 # MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
