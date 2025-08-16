@@ -612,15 +612,19 @@ max_extrude_only_velocity: 15
 ****************************************************************************************************************************
 
 # Printer Lights (White LEDs)
-Be sure to name any White LEDs that are on an output_pin in the `printer.cfg` file you wish the macros to control to:
+Be sure to name any White LEDs that are in the `printer.cfg` file you wish the macros to control to:
 
 ```
-[output_pin Printer_Lights]
-pin: ### < ADD YOUR OWN PIN HERE
-pwm: True
-value: 1
-shutdown_value: 0
-cycle_time: 0.001
+[led Printer_Lights]
+#red_pin:
+#green_pin:
+#blue_pin:
+white_pin: PD13
+cycle_time: 0.010
+#initial_RED: 0.0
+#initial_GREEN: 0.0
+#initial_BLUE: 0.0
+initial_WHITE: 1.0
 ```
 ****************************************************************************************************************************
 
