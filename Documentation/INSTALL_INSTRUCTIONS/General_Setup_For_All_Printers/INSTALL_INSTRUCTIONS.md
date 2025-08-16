@@ -620,6 +620,11 @@ white_pin: ### #<<<<<<<< ADD YOUR OWN PIN
 cycle_time: 0.010
 initial_WHITE: 1.0
 ```
+
+>[!TIP]
+>If you were using the `Heat_Soak.cfg` (not the others but that specific one!) please redownload the new version here...
+>- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+
 ****************************************************************************************************************************
 
 # Neopixel Toolhead LEDs 
