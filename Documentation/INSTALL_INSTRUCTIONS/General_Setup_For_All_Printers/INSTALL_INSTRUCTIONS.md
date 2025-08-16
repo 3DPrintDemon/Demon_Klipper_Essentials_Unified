@@ -616,7 +616,7 @@ Be sure to name any White LEDs that are in the `printer.cfg` file you wish the m
 
 ```
 [led Printer_Lights]
-white_pin: PD13
+white_pin: ### #<<<<<<<< ADD YOUR OWN PIN
 cycle_time: 0.010
 initial_WHITE: 1.0
 ```
