@@ -382,12 +382,10 @@ tachometer_ppr: 1
 tachometer_poll_interval: 0.0075
 max_power: 1.0
 
-[output_pin Printer_Lights]
-pin: PD13
-pwm: 1
-value:1.0
-cycle_time: 0.01
-shutdown_value: 0
+[led Printer_Lights]
+white_pin: PD13
+cycle_time: 0.001
+initial_WHITE: 1.0
 ```
 
 >[!TIP]
