@@ -65,6 +65,108 @@ By doing this you make sure the printer has the correct Z Offset for printing!
 
 <br>
 
+# THE TRICKY SSH BIT!
+
+In this section you'll modify the way your SV08 MAX deals with a couple of things, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
+
+Secondly the printer will now choose a random spot around the centre home location to tap the bed so it will NOT tap the same place over & over for every print!
+
+Lastly the buffer_stepper.cfg file ties it all together & gives increased functionality especially when used with an HDMI touchscreen!
+
+## Install Direct Via SSH 
+
+Start by changing directory to:
+
+```
+cd ~/klipper/klippy/extras
+```
+
+## The first way is the safe way where these three commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
+
+You need ALL THREE of these files!
+```
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
+```
+```
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=1
+```
+```
+cd ~/printer_data/config
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.cfg  --backups=1
+```
+
+Restart
+
+```
+sudo reboot now
+```
+
+<br>
+
+## The second way is available if you simply want to overwrite your current files & not make a backup - USE WITH CAUTION!!
+
+You need ALL THREE of these files!
+```
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=0
+```
+```
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=0
+```
+```
+cd ~/printer_data/config
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.cfg  --backups=0
+```
+
+Restart
+
+```
+sudo reboot now
+```
+
+*********************************
+
+<br>
+
+## Optional Download & Manual Install
+
+<br>
+
+Download the `filament_switch_sensor.py`, the `z_offset_calibration.py` & the `buffer_stepper.cfg` files found here.
+
+https://github.com/3DPrintDemon/DEMON-SV08MAX/tree/main/DEMON_SV08_MAX_REPLACEMENT_FILES
+
+<br>
+
+Open your chosen SFTP client & login to your SV08 MAX
+
+Naviagate to....
+
+```
+/home/sovol/klipper/klippy/extras
+```
+
+Find the `filament_switch_sensor.py` & the `z_offset_calibration.py` files already in your system & download them to keep safe as a backup!!! IMPORTANT!!!
+
+Now upload the modified files, overwriting the current files.
+
+
+Naviagate to....
+
+```
+/home/sovol/printer_data/config
+```
+
+Find the `buffer_stepper.cfg` file already in your system & download them to keep safe as a backup!!! IMPORTANT!!!
+
+Now upload the modified files, overwriting the current files.
+
+Restart the printer.
+
+
+*********************************
+
+<br>
+
 # Edit Your printer.cfg 
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
@@ -367,108 +469,6 @@ pin: PC12
 <br>
 
 ****************************************************************************************************************************
-
-<br>
-
-# OK NOW THE TRICKY SSH BIT!
-
-In this section you'll modify the way your SV08 MAX deals with a couple of things, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
-
-Secondly the printer will now choose a random spot around the centre home location to tap the bed so it will NOT tap the same place over & over for every print!
-
-Lastly the buffer_stepper.cfg file ties it all together & gives increased functionality especially when used with an HDMI touchscreen!
-
-## Install Direct Via SSH 
-
-Start by changing directory to:
-
-```
-cd ~/klipper/klippy/extras
-```
-
-## The first way is the safe way where these three commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
-
-You need ALL THREE of these files!
-```
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
-```
-```
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=1
-```
-```
-cd ~/printer_data/config
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.cfg  --backups=1
-```
-
-Restart
-
-```
-sudo reboot now
-```
-
-<br>
-
-## The second way is available if you simply want to overwrite your current files & not make a backup - USE WITH CAUTION!!
-
-You need ALL THREE of these files!
-```
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=0
-```
-```
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=0
-```
-```
-cd ~/printer_data/config
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.cfg  --backups=0
-```
-
-Restart
-
-```
-sudo reboot now
-```
-
-*********************************
-
-<br>
-
-## Optional Download & Manual Install
-
-<br>
-
-Download the `filament_switch_sensor.py`, the `z_offset_calibration.py` & the `buffer_stepper.cfg` files found here.
-
-https://github.com/3DPrintDemon/DEMON-SV08MAX/tree/main/DEMON_SV08_MAX_REPLACEMENT_FILES
-
-<br>
-
-Open your chosen SFTP client & login to your SV08 MAX
-
-Naviagate to....
-
-```
-/home/sovol/klipper/klippy/extras
-```
-
-Find the `filament_switch_sensor.py` & the `z_offset_calibration.py` files already in your system & download them to keep safe as a backup!!! IMPORTANT!!!
-
-Now upload the modified files, overwriting the current files.
-
-
-Naviagate to....
-
-```
-/home/sovol/printer_data/config
-```
-
-Find the `buffer_stepper.cfg` file already in your system & download them to keep safe as a backup!!! IMPORTANT!!!
-
-Now upload the modified files, overwriting the current files.
-
-Restart the printer.
-
-
-*********************************
 
 <br>
 
