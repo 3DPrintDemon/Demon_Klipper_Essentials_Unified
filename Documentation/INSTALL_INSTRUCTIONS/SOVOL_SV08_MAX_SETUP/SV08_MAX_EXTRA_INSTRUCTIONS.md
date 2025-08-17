@@ -370,19 +370,6 @@ pin: PC12
 
 <br>
 
-# ADD EXTRA UNPUBLISHED PINS FOR MORE FUNCTIONS HERE!!
-
-Here you can find a selection of extra pins on the stock SV08 MAX mainboard for expanding your system!
-
-- 1x disable/enable clog detection switch
-- 2x thermistor pins, great for chamber & case sensors!
-- 3x digital output pins, gcode buttons or I/O sensor pins @3.3v
-- 2x chains of multicolour neopixel LED chains!
-
-## [HOOK ME UP!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_Extended_Pins.md)
-
-<br>
-
 # OK NOW THE TRICKY SSH BIT!
 
 In this section you'll modify the way your SV08 MAX deals with a couple of things, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
@@ -484,5 +471,20 @@ Restart the printer.
 *********************************
 
 <br>
+
+# ADD EXTRA UNPUBLISHED PINS FOR MORE FUNCTIONS HERE!!
+
+Here you can find a selection of extra pins on the stock SV08 MAX mainboard for expanding your system!
+
+- 1x disable/enable clog detection switch
+- 2x thermistor pins, great for chamber & case sensors!
+- 3x digital output pins, gcode buttons or I/O sensor pins @3.3v
+- 2x chains of multicolour neopixel LED chains!
+
+## [HOOK ME UP!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_Extended_Pins.md)
+
+<br>
+
+*********************************
 
 - [Head on to General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
