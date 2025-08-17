@@ -5,87 +5,9 @@
 >[!NOTE]
 >When complete the printer will give you some unknown command errors relating to the commented out plr.cfg file. This is because Sovol have hardcoded these commands into Klipper/Moonraker & I am yet to find where they're being called from! Once I find the source of the calls I'll update things. In the meantime these messages can safely be ignored. 
 
-<br>
 
 ****************************************************************************************************************************
-### IF YOU RAN V1.0-V2.8 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
-**Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
-****************************************************************************************************************************
-
-- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
-
-
-****************************************************************************************************************************
-
-### Orca Slicer
-
-Make sure you have the latest 2.2.0 (beta2 or later) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
-
-This link GOOD!
-
-- https://github.com/SoftFever/OrcaSlicer/releases
-
-******************************
-
-<br>
-
-# ADD EXTRA UNPUBLISHED PINS FOR MORE FUNCTIONS HERE!!
-
-Here you can find a selection of extra pins on the stock SV08 MAX mainboard for expanding your system!
-
-- 1x disable/enable clog detection switch
-- 2x thermistor pins, great for chamber & case sensors!
-- 3x digital output pins, gcode buttons or I/O sensor pins @3.3v
-- 2x chains of multicolour neopixel LED chains!
-
-## [HOOK ME UP!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_Extended_Pins.md)
-
-<br>
-
-<br>
-
-# MAIN SSH INSTALLER HERE:
-### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
-
->[!IMPORTANT]
->It is highly recommended to use this installer if you're installing fresh or updating from an older version and are not using Moonraker's Update Manager! It will archive your old files for you.
-
-RUN THIS FIRST:
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
-```
-
-<br>
-
-# PREREQUISITE INSTALLERS HERE:
-
-Run from your SSH terminal to install your prerequisites. This script will ask you your prerequisite install choices. 
-
-```
-sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
-```
-****************************************************************************************************************************
-
-<br> 
-
-# ...Your new files should now be Installed! 
-
-Your new files should now be available to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
-
->[!NOTE]
->Don't forget to reload your web browser window so new items will show & work correctly after installation!
-
->[!IMPORTANT]
->DO NOT include the new files just yet as there's some important stuff to do first!
-
-<br>
-
-- [Other ways to install are here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Other_Ways_To_Install.md)
-
-<br>
-
-****************************************************************************************************************************
-### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) as well!
+### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) first!
 
 ****************************************************************************************************************************
 
@@ -103,58 +25,6 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 [https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
 
 <br>
-
-### FEATURE: DEMON DIAGNOSTICS!
-
->[!TIP]
-> BE SURE TO USE THIS WHEN SETTING UP! It's your onboard helper tool!
->This system will help you see whats been done, what needs doing & what is not correctly set yet!
-
-<details>
-    <summary>
-        <b>
-        Click to expand - FEATURE: DEMON DIAGNOSTICS!
-        </b>
-    </summary>
-<p>
-</p>
-Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
-Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everything setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
-
-### RUN FROM YOUR SSH TERMINAL WITH THIS COMMAND!
-```
-sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Diagnostics/Demon_Diagnostics.sh
-```
-
-The script will tell you exactly what you currently have defined, included & installed at the time of the system scan! It'll also tell you if there's something not defined, or if there's something missing. It will tell you if a file is installed but not included or even if it's been defined/included multiple times! 
-
-Your ssh terminal will tell you what you need to do to complete the install correctly & not miss anything. It'll warn you if anything is wrong.
-Run it at each stage of your install as many times as you like to make sure you're getting everything done! 
-
-### The goal is to make as many GREEN lines as possible!
-
-The utility will scan & evaluate your printer.cfg & moonraker.conf files to check how you're doing & to make sure you don't miss anything that's needed by the macros.
-
-![DD-2](https://github.com/user-attachments/assets/8af1ef75-73ff-49db-b9c7-2bd7fb704ccb)
-
-
-The system will also give you big red warnings with clear explanations when things are not correct!
-
-![DD-3](https://github.com/user-attachments/assets/1ad99cc6-6008-413c-9250-b9a2f45d3b7c)
-
-
-NOTE THIS SCRIPT MAKES NO CHANGES TO ANY OF YOUR FILES 
-
-It just scans them safely & leaves them unedited & unchanged!
-
-</details>
-
-![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
-
->[!NOTE]
->This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
-
-
 
 ****************************************************************************************************************************
 
@@ -192,6 +62,19 @@ True
 ```
 
 By doing this you make sure the printer has the correct Z Offset for printing! 
+
+<br>
+
+# ADD EXTRA UNPUBLISHED PINS FOR MORE FUNCTIONS HERE!!
+
+Here you can find a selection of extra pins on the stock SV08 MAX mainboard for expanding your system!
+
+- 1x disable/enable clog detection switch
+- 2x thermistor pins, great for chamber & case sensors!
+- 3x digital output pins, gcode buttons or I/O sensor pins @3.3v
+- 2x chains of multicolour neopixel LED chains!
+
+## [HOOK ME UP!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_Extended_Pins.md)
 
 <br>
 
