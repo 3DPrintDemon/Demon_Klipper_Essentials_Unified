@@ -38,7 +38,7 @@ Before layer change G-code:
 G92 E0
 ```
 
-After layer change G-code:
+Layer change G-code:
 ```
 ;AFTER_LAYER_CHANGE
 ;[layer_z]
