@@ -134,13 +134,12 @@ Comment out the stock entry do not delete it, it must look like this:
 Rename the `[output_pin Main_LED]` section & change the cycle_time. As the stock value of `5` is incorrect. 
 
 ```
-[output_pin Printer_Lights]
-pin:PA3
-pwm: 1
-value:1
-cycle_time: 0.01
-shutdown_value: 0
+[led Printer_Lights]
+white_pin: PA3
+cycle_time: 0.001
+initial_WHITE: 1.0
 ```
+
 
 Be sure to comment out the Sovol [homing_override] section if you want to use the demon_homing_control file. If not leave this commented in & disable the demon file by commenting out its full content.
 
