@@ -601,12 +601,12 @@ This will call the new Demon timeout macro after 1 hour & execute the functions 
 >[!NOTE]
 >Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament.
 
-All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 20 or below will pass the check. 
+All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 25 or below will pass the check. 
 
 Be sure your `printer.cfg` file `[extruder]` section contains...
 
 ```
-max_extrude_only_velocity: 15
+max_extrude_only_velocity: 22
 ```
 
 ****************************************************************************************************************************
