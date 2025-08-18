@@ -2,6 +2,8 @@
 
 # Previous & Existing Features
 
+THIS PAGE NEEDS UPDATING! MANY MORE FEATURES HAVE BEEN ADDED!
+
 - NEW! ORCA Slicer `Multi_Surface` handling! 
 - The printer knows what bed surface you choose to use & can add a pre-set Z offset for the print & remove it afterward! The system can even combine the surface offset with a filament or temperature based one! Don't worry though there are `Bed Saver` safety checks that should help stop you entering a wrong number & damaging your printer, especially when using the combine offset function!
 
