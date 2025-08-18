@@ -81,14 +81,17 @@ Start by changing directory to:
 cd ~/klipper/klippy/extras
 ```
 
-## The first way is the safe way where these three commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
+## The first way is the safe way where these four commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
 
-You need ALL THREE of these files!
+You need ALL FOUR of these files!
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
 ```
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=1
+```
+```
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.py --backups=1
 ```
 ```
 cd ~/printer_data/config
