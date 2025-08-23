@@ -1183,6 +1183,16 @@ Setup Klipperscreen PREPARE Menu
 
 Open your `KlipperScreen.conf` file in your printer’s /config folder. If you don’t have one create one.
 Paste the lines below in to create the new KS menu!
+
+
+Add this to the top of the file, it defines the file section by naming your printer. You can also add your chamber temp or any other sensor or heater on your printer to the menubar in KlipperScreen. 
+
+Example:
+```
+[printer <YOUR PRINTER NAME>]
+titlebar_items: chamber
+```
+
 ```
 [menu __main custom]
 name: Prepare
@@ -1269,12 +1279,6 @@ params: {"script":"_RESET_FILE_STATE"}
 ```
 
 The icons are appropriate if you use with the material-darker theme. Other theme’s icons may differ.
-
-You can also add a printer name & your chamber temp to the menubar in KlipperScreen, this to your `KlipperScreen.conf` file:
-```
-[printer <YOUR PRINTER NAME>]
-titlebar_items: chamber
-```
 
 ****************************************************************************************************************************
 
