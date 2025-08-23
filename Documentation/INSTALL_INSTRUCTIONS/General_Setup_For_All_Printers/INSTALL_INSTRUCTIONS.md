@@ -1193,6 +1193,8 @@ Example:
 titlebar_items: chamber
 ```
 
+Then paste this below the above information to add the new custom menu. 
+
 ```
 [menu __main custom]
 name: Prepare
