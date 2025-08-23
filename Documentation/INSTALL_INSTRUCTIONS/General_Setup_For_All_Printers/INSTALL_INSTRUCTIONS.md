@@ -1270,8 +1270,9 @@ params: {"script":"_RESET_FILE_STATE"}
 
 The icons are appropriate if you use with the material-darker theme. Other theme’s icons may differ.
 
-You can also add your chamber temp to the menubar in KlipperScreen, this to your `KlipperScreen.conf` file:
+You can also add a printer name & your chamber temp to the menubar in KlipperScreen, this to your `KlipperScreen.conf` file:
 ```
+[printer <YOUR PRINTER NAME>]
 titlebar_items: chamber
 ```
 
