@@ -302,18 +302,6 @@ initial_BLUE: 0.7
 
 <br>
 
-![DEMON_Display_Menu](https://github.com/user-attachments/assets/6a5a642d-c668-41dd-af7f-c8a7aee80a55)
-
-
-BE SURE TO INSTALL THE STUFF YOU NEED TO INSTALL!!!
-
-- https://github.com/3DPrintDemon/SV08/releases/tag/v1.0
-- https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
-- https://github.com/3DPrintDemon/Voron-Stealthburner/blob/main/Firmware/RGB_LEDs.cfg
-- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
-  
-###### Note: These files are required for the macro pack to work correctly. Install even if you dont have any LEDs & set a dummy pin.
-
 ## OPTIONAL INSTALL for stock system!!
 ![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/a3d92371-929e-4850-b05f-acfaed6575ba)
 
