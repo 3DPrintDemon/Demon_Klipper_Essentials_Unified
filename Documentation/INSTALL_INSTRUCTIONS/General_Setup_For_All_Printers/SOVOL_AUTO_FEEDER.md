@@ -22,9 +22,6 @@ You need ALL of these files! They're designed for use with [Demon Klipper Essent
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
 ```
 ```
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/home/sovol/klipper/klippy/extras/buffer_stepper.py --backups=1
-```
-```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.py --backups=1
 ```
 ```
