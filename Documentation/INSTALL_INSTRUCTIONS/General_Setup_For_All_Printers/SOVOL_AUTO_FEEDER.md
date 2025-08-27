@@ -2,7 +2,7 @@
 
 <img width="743" height="848" alt="SOVOL AUTO FEEDER" src="https://github.com/user-attachments/assets/5ef916f6-1759-469a-b052-4666aab483ac" />
 
-## You can install the Sovol Auto Feeder unit on any canbus printer for use with these macros!
+## You can install the Sovol Auto Feeder unit on any canbus SOVOL printer for use with these macros!
 
 You will need an active Canbus network, If you dont have one your mainboard might support CanBridge mode, if not it will need a U2C module to add a Canbus network to your machine!
 
