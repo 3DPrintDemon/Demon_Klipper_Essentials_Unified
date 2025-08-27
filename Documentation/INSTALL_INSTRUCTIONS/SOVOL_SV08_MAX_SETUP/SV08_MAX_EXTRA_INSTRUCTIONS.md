@@ -108,12 +108,15 @@ sudo reboot now
 
 ## The second way is available if you simply want to overwrite your current files & not make a backup - USE WITH CAUTION!!
 
-You need ALL THREE of these files!
+You need ALL FOUR of these files!
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=0
 ```
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=0
+```
+```
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.py --backups=0
 ```
 ```
 cd ~/printer_data/config
