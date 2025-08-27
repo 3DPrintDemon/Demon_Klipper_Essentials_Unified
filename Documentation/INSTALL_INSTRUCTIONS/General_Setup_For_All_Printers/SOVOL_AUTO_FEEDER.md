@@ -46,6 +46,9 @@ Add an unused pin on your mainboard to control the manual override clog detectio
 
 See line 40 of the `buffer_stepper.cfg` file, under the `[output_pin STOP_CLOG_DETECTION]`
 
+>[!TIP]
+>Also be sure to comment out & disbale your entire old filament sensor section in your printer.cfg or the new system will not work!
+
 <br>
 
 Restart
