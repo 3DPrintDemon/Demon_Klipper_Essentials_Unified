@@ -62,6 +62,33 @@ sudo reboot now
 
 <br>
 
+# KlipperScreen Feed In & Feed Out Menu Buttons!
+
+>[!TIP]
+>Don't miss this if you're using KlipperScreen!
+
+To add filament feed in & out buttons to the custom Demon `Prepare` KlipperScreen menu be sure you have followed [this section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#modifying-klipperscreen-menus-for-new-features) of the main documentation & then paste these two blocks at the bottom of the original section you pasted in!
+
+This will give you quick & easy access to control the Auto Feeder via the touchscreen!
+
+```
+[menu __main custom feed_in]
+name: Feed In
+icon: arrow-down
+method: printer.gcode.script
+params: {"script":"_FEED_IN"}
+
+[menu __main custom feed_out]
+name: Feed Out
+icon: arrow-up
+method: printer.gcode.script
+params: {"script":"_FEED_OUT"}
+```
+
+****************************************************************************************************************************
+
+<br>
+
 Connnections are:
 
 GND | 24v
