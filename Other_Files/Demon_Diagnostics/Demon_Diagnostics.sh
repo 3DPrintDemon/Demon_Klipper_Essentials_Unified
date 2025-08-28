@@ -815,14 +815,14 @@ if [ "$SPEXOB" -eq 1 ]; then
 elif [ "$SPEXOB" -eq 0 ]; then
     echo
     echo "${red}##########################################################################################################"
-    echo "WARNING: The exclude_objects section is NOT defined in the printer.cfg file."
+    echo "WARNING: The exclude_object section is NOT defined in the printer.cfg file."
     echo "##########################################################################################################${reset}"
     echo
 
 elif [ "$SPEXOB" -gt 1 ]; then
     echo
     echo "${red}##########################################################################################################"
-    echo "WARNING: The exclude_objects section is defined in the printer.cfg file more than once!!"
+    echo "WARNING: The exclude_object section is defined in the printer.cfg file more than once!!"
     echo "##########################################################################################################${reset}"
     echo
 fi
