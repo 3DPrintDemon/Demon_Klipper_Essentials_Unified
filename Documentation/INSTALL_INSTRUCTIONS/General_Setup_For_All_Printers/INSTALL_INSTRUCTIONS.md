@@ -373,6 +373,8 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
 
+****************************************************************************************************************************
+
 <br>
 
 # MAIN SSH INSTALLER HERE:
