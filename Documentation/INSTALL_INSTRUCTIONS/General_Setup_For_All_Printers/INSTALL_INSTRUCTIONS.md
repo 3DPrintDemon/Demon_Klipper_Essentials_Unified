@@ -988,7 +988,169 @@ For model specific configuration click below. You need to do all the general set
 
 # Additional Configuration - EXTRA STEPS
 
+## Printer LED lights
+- If you have printer LED lights (NOT neopixel) call them `[led Printer_Lights]`
+- NeoPixel LEDs are dealt with in the additionally installed files.
 
+```
+[led Printer_Lights]
+white_pin: ### #<<<<<<< ADD YOUR OWN PIN HERE!
+cycle_time: 0.001
+initial_WHITE: 1.0
+```
+
+****************************************************************************************************************************
+
+<br>
+
+## Filament Sensor
+If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
+```
+[filament_switch_sensor filament_sensor]
+switch_pin: ^### <<<<<< Insert board pin for sensor
+pause_on_runout: False
+insert_gcode:
+    { action_respond_info("Insert Detected") }  
+runout_gcode:
+    { action_respond_info("Runout Detected") }
+    {% if printer.print_stats.state == "printing" %}
+      _FIL_CHANGE_PARK
+    {% endif %}
+```
+
+If you have an encoder based sensor like the BTT Smart Sensor add this:
+```
+[filament_motion_sensor encoder_sensor]
+switch_pin: ^### <<<<<< insert board pin
+detection_length: 9
+extruder: extruder
+pause_on_runout: False
+insert_gcode:
+    { action_respond_info("Filament Encoder is Running") }
+runout_gcode:
+    { action_respond_info("Filament Encoder Stall Detected") }
+    {% if printer.print_stats.state == "printing" %}
+      _FIL_CHANGE_PARK
+    {% endif %}
+
+[delayed_gcode encoder_sensor]
+initial_duration: 1
+gcode:
+    SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
+```
+
+****************************************************************************************************************************
+
+<br>
+
+## Modifying KlipperScreen Menus For New Features
+
+Setup Klipperscreen PREPARE Menu
+
+Open your `KlipperScreen.conf` file in your printer’s /config folder. If you don’t have one create one.
+Paste the lines below in to create the new KS menu!
+
+
+Add this to the top of the file, it defines the file section by naming your printer. You can also add your chamber temp or any other sensor or heater on your printer to the menubar in KlipperScreen. 
+
+Example:
+```
+[printer <YOUR PRINTER NAME>]
+titlebar_items: chamber
+```
+
+Then paste this below the above information to add the new custom menu. 
+
+```
+[menu __main custom]
+name: Prepare
+icon: klipper
+
+[menu __main custom present]
+name: Present Toolhead
+icon: bed-level-t-r
+method: printer.gcode.script
+params: {"script":"present_toolhead"}
+
+[menu __main custom load]
+name: Load Clean
+icon: arrow-down
+method: printer.gcode.script
+params: {"script":"load_clean"}
+
+[menu __main custom unload]
+name: Unload Clean
+icon: arrow-up
+method: printer.gcode.script
+params: {"script":"unload_clean"}
+
+[menu __main custom stow]
+name: Stow Toolhead
+icon: bed-level-b-l
+method: printer.gcode.script
+params: {"script":"stow_toolhead"}
+
+[menu __main custom ready_up_pla]
+name: Ready Up PLA
+icon: filament
+method: printer.gcode.script
+params: {"script":"ready_up_pla"}
+
+[menu __main custom ready_up_asa]
+name: Ready Up ASA
+icon: filament
+method: printer.gcode.script
+params: {"script":"ready_up_asa"}
+
+[menu __main custom ready_up_petg]
+name: Ready Up PETG
+icon: filament
+method: printer.gcode.script
+params: {"script":"ready_up_petg"}
+
+[menu __main custom ready_up_tpu]
+name: Ready Up TPU
+icon: filament
+method: printer.gcode.script
+params: {"script":"ready_up_tpu"}
+
+[menu __main custom clean]
+name: Nozzle Clean
+icon: shuffle
+method: printer.gcode.script
+params: {"script":"clean_nozzle"}
+
+[menu __main custom machine_level]
+name: Machine Level
+icon: z-tilt
+method: printer.gcode.script
+params: {"script":"machine_level_cold"}
+
+[menu __main custom z_ascender]
+name: Z Ascender
+icon: warning
+method: printer.gcode.script
+params: {"script":"z_ascender"}
+
+[menu __main custom heatsoak_toggle]
+name: Heatsoak Toggle
+icon: heat-up
+method: printer.gcode.script
+params: {"script":"HEATSOAK_TOGGLE"}
+
+[menu __main custom reset_file]
+name: Reset Print State
+icon: sd
+method: printer.gcode.script
+params: {"script":"_RESET_FILE_STATE"}
+
+```
+
+The icons are appropriate if you use with the material-darker theme. Other theme’s icons may differ.
+
+****************************************************************************************************************************
+
+<br>
 
 ## Chamber Monitoring & Fan Control
 
@@ -1126,167 +1288,6 @@ If you have a Voron 2.4 printer & are using a traditional Z endstop switch and i
 
 https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch/AES.md
 
-****************************************************************************************************************************
-
-<br>
-
-## Printer LED lights
-- If you have printer LED lights (NOT neopixel) call them `[output_pin Printer_Lights]`
-- NeoPixel LEDs are dealt with in the additionally installed files.
-
-```
-[output_pin Printer_Lights]
-pin: ### < ADD YOUR OWN PIN HERE
-pwm: True
-value: 1
-shutdown_value: 0
-cycle_time: 0.001
-```
-
-****************************************************************************************************************************
-
-## Filament Sensor
-If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
-```
-[filament_switch_sensor filament_sensor]
-switch_pin: ^### <<<<<< Insert board pin for sensor
-pause_on_runout: False
-insert_gcode:
-    { action_respond_info("Insert Detected") }  
-runout_gcode:
-    { action_respond_info("Runout Detected") }
-    {% if printer.print_stats.state == "printing" %}
-      _FIL_CHANGE_PARK
-    {% endif %}
-```
-
-If you have an encoder based sensor like the BTT Smart Sensor add this:
-```
-[filament_motion_sensor encoder_sensor]
-switch_pin: ^### <<<<<< insert board pin
-detection_length: 9
-extruder: extruder
-pause_on_runout: False
-insert_gcode:
-    { action_respond_info("Filament Encoder is Running") }
-runout_gcode:
-    { action_respond_info("Filament Encoder Stall Detected") }
-    {% if printer.print_stats.state == "printing" %}
-      _FIL_CHANGE_PARK
-    {% endif %}
-
-[delayed_gcode encoder_sensor]
-initial_duration: 1
-gcode:
-    SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
-```
-
-****************************************************************************************************************************
-
-## Modifying KlipperScreen Menus For New Features
-
-Setup Klipperscreen PREPARE Menu
-
-Open your `KlipperScreen.conf` file in your printer’s /config folder. If you don’t have one create one.
-Paste the lines below in to create the new KS menu!
-
-
-Add this to the top of the file, it defines the file section by naming your printer. You can also add your chamber temp or any other sensor or heater on your printer to the menubar in KlipperScreen. 
-
-Example:
-```
-[printer <YOUR PRINTER NAME>]
-titlebar_items: chamber
-```
-
-Then paste this below the above information to add the new custom menu. 
-
-```
-[menu __main custom]
-name: Prepare
-icon: klipper
-
-[menu __main custom present]
-name: Present Toolhead
-icon: bed-level-t-r
-method: printer.gcode.script
-params: {"script":"present_toolhead"}
-
-[menu __main custom load]
-name: Load Clean
-icon: arrow-down
-method: printer.gcode.script
-params: {"script":"load_clean"}
-
-[menu __main custom unload]
-name: Unload Clean
-icon: arrow-up
-method: printer.gcode.script
-params: {"script":"unload_clean"}
-
-[menu __main custom stow]
-name: Stow Toolhead
-icon: bed-level-b-l
-method: printer.gcode.script
-params: {"script":"stow_toolhead"}
-
-[menu __main custom ready_up_pla]
-name: Ready Up PLA
-icon: filament
-method: printer.gcode.script
-params: {"script":"ready_up_pla"}
-
-[menu __main custom ready_up_asa]
-name: Ready Up ASA
-icon: filament
-method: printer.gcode.script
-params: {"script":"ready_up_asa"}
-
-[menu __main custom ready_up_petg]
-name: Ready Up PETG
-icon: filament
-method: printer.gcode.script
-params: {"script":"ready_up_petg"}
-
-[menu __main custom ready_up_tpu]
-name: Ready Up TPU
-icon: filament
-method: printer.gcode.script
-params: {"script":"ready_up_tpu"}
-
-[menu __main custom clean]
-name: Nozzle Clean
-icon: shuffle
-method: printer.gcode.script
-params: {"script":"clean_nozzle"}
-
-[menu __main custom machine_level]
-name: Machine Level
-icon: z-tilt
-method: printer.gcode.script
-params: {"script":"machine_level_cold"}
-
-[menu __main custom z_ascender]
-name: Z Ascender
-icon: warning
-method: printer.gcode.script
-params: {"script":"z_ascender"}
-
-[menu __main custom heatsoak_toggle]
-name: Heatsoak Toggle
-icon: heat-up
-method: printer.gcode.script
-params: {"script":"HEATSOAK_TOGGLE"}
-
-[menu __main custom reset_file]
-name: Reset Print State
-icon: sd
-method: printer.gcode.script
-params: {"script":"_RESET_FILE_STATE"}
-
-```
-
-The icons are appropriate if you use with the material-darker theme. Other theme’s icons may differ.
 
 ****************************************************************************************************************************
 
