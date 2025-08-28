@@ -14,16 +14,17 @@ This link GOOD!
 
 - https://github.com/SoftFever/OrcaSlicer/releases
 
-
 ****************************************************************************************************************************
 
-# UPDATING FROM A PREVIOUS VERSION
+<br>
 
->[!TIP]
->Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
+### NEW FEATURE: POOP_N_SHOOT!
 
-### SSH CONFIG UPDATER SCRIPT!
+![P_N_S](https://github.com/user-attachments/assets/dc9cafb2-aaea-4c4e-b18e-8c8c51f850dc)
 
+There's a whole new way to purge filament on any printer! Use a dedicated purge area or the edge of your print bed to create a poop pellet & use the nozzle/toolhead to shoot it into the bucket! Fully customisable features!
+
+Activate with the demon_user_settings_cleaner_variables .cfg file!
 <details>
     <summary>
         <b>
@@ -32,48 +33,95 @@ This link GOOD!
     </summary>
 <p>
 </p>
-    
-To use this new feature you'll need to install a couple of things first. SSH into your printer.
-    
-``` 
-python3 -m pip install rich
-```
+Choose many diiferent options, adjust & tune settings, including...
 
-Wait for this to complete then run.
+Positions - place the pellet where you want!
 
-```
-python3 -m pip install ConfigUpdater
-```
+Parking - park the toolhead where you like!
 
-These commands will install the libaries you need to run the interactive user file updater script.
+Height - choose your height!
 
-To use the feature use this command...
+Speed - choose how fast or slow!
 
-```
-python3 ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_config_update.py
-```
-![Updater](https://github.com/user-attachments/assets/2dac0a2d-6795-4a3c-b903-d4c35b8d9a39)
+Temps - select what temps you want!
 
-Other things you will need to look at when updating!
-[UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+Feed lengths - choose load/unload & purge lengths!
+
+Poop flow rate - tune the flow of poop!
+
+Shoot direction - shoot your poop any way you like!
+
+Program extras - pauses, extra cleans, turn fans on sooner!
+
+Random Spot - never shoot from the same spot twice! Vary pellet placement within a chosen range!
+
+Plus the printer knows if you have loaded or unloaded the filament even if you restart! It will know if you need a full load or unload or a simple purge & clean!!
+
+Watch the [demo video!](https://www.youtube.com/watch?v=8Ou42thloCI)!
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=8Ou42thloCI
+" target="_blank"><img src="http://img.youtube.com/vi/8Ou42thloCI/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
+
 </details>
+
+>[!CAUTION]
+>THIS SYSTEM REQUIRES ACCURATE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
 
 ****************************************************************************************************************************
 
+<br>
 
-# Preparing Your Current System
+### INSTALL THE SOVOL AUTO FILAMENT FEEDER ON ALMOST ANY KLIPPER PRINTER!
 
-- Make a backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
+<img width="400" alt="SOVOL AUTO FEEDER" src="https://github.com/user-attachments/assets/7c3f532e-55a0-4c6f-9f95-96d337471b52" />
 
-- Disable your current macros for START_PRINT & END_PRINT, plus any others you dont need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Your_Current_Macro_Files.md)
+If you have a longer way to run your filament to your extruder, or if you run large/heavy (3-5kg) filament rolls this unit can help improve filament feeding & help reduce strain on your extruder motor! With these macros it'll automatically feed in & feed out your filament for the entire run to your extruder! Learn more [CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/SOVOL_AUTO_FEEDER.md)
 
-### Not Sure How to SSH?
+For use with these macros!
 
-- If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
+****************************************************************************************************************************
 
 <br>
 
-# Troubleshooting Save Variables Section
+# IMPORTANT INFO BEFORE YOU START...
+
+>[!IMPORTANT]
+>Click the lines below to expand them to read the contents!
+
+### File Structure Has Changed for v2.9.4 Onwards
+
+<details>
+    <summary>
+        <b>
+        Click to expand - File Structure Has Changed for v2.9.4 Onwards
+        </b>
+    </summary>
+<p>
+</p>
+There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
+
+#### After the initial install of `Demon_Klipper_Essentials_Unified`.
+
+The image below is what your config directory should look like after the initial install has completed. 
+
+If the `Demon_User_Files` directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
+
+![Demon_Config_DIR](https://github.com/user-attachments/assets/54e85efb-5d9d-4e3e-a90e-a58710cf15a3)
+
+
+Check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
+
+![Demon_User_Files](https://github.com/user-attachments/assets/bbd26215-be8c-4d45-9869-a7c23db06cb5)
+
+
+If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
+
+</details>
+
+<br>
+
+### TROUBLESHOOTING SAVE VARIABLES SECTION
 
 >[!TIP]
 >This is important so it's at the top where you might see it, as if not correct it'll cause the following issues...
@@ -155,57 +203,48 @@ sudo service klipper start
 
 <br>
 
-## DEMON DISCORD!
+### UPDATING FROM A PREVIOUS VERSION
 
-Come & join the community! We've just launched Demon Discord, help us start building a fantastic user focused resource for help & support from other users, share custom expansion gcode, or simply chat & show off your machine & your latest prints!
+>[!TIP]
+>Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
 
-<p align="left">
-    <img width="500" alt="Demon_Discord" src="https://github.com/user-attachments/assets/980b8b69-f78b-43b1-be27-cc1236fcf794" />
-    <https://discord.gg/KEbxw22AD4>
-</p>
-
-[https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
-
-****************************************************************************************************************************
-
-<br>
-
-# IMPORTANT INFO BEFORE YOU START...
-
->[!IMPORTANT]
->Click the lines below to expand them to read the contents!
-
-### File Structure Has Changed for v2.9.4 Onwards
+### SSH CONFIG UPDATER SCRIPT!
 
 <details>
     <summary>
         <b>
-        Click to expand - File Structure Has Changed for v2.9.4 Onwards
+        Click here to learn more!
         </b>
     </summary>
 <p>
 </p>
-There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
+    
+To use this new feature you'll need to install a couple of things first. SSH into your printer.
+    
+``` 
+python3 -m pip install rich
+```
 
-#### After the initial install of `Demon_Klipper_Essentials_Unified`.
+Wait for this to complete then run.
 
-The image below is what your config directory should look like after the initial install has completed. 
+```
+python3 -m pip install ConfigUpdater
+```
 
-If the `Demon_User_Files` directory & contained files are not present then the system is not ready for use! This directory also needs to be included in to the system - explained later on.
+These commands will install the libaries you need to run the interactive user file updater script.
 
-![Demon_Config_DIR](https://github.com/user-attachments/assets/54e85efb-5d9d-4e3e-a90e-a58710cf15a3)
+To use the feature use this command...
 
+```
+python3 ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_config_update.py
+```
+![Updater](https://github.com/user-attachments/assets/2dac0a2d-6795-4a3c-b903-d4c35b8d9a39)
 
-Check inside the `Demon_User_Files` directory you should see these 3 files, there could also be a system created archive directory if you had these files here before...
-
-![Demon_User_Files](https://github.com/user-attachments/assets/bbd26215-be8c-4d45-9869-a7c23db06cb5)
-
-
-If your directory is empty please click the reload button for your web browser to refresh the Mainsail page.
-
+Other things you will need to look at when updating!
+[UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 </details>
 
-****************************************************************************************************************************
+<br>
 
 ### FEATURE: DEMON DIAGNOSTICS!
 
@@ -257,7 +296,7 @@ It just scans them safely & leaves them unedited & unchanged!
 >[!NOTE]
 >This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
 
-****************************************************************************************************************************
+<br>
 
 ### FEATURE: DEMON USER FILES UPDATER!
 
@@ -288,14 +327,12 @@ If you choose to manage the system yourself manually & not to use the `Demon_Use
 
 Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like [this...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards)
 
-
-****************************************************************************************************************************
-
 </details>
 
 ![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
 
-****************************************************************************************************************************
+
+<br>
 
 ### Macro Layout Import/Restore
 
@@ -309,70 +346,33 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 ![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
 
-****************************************************************************************************************************
-
-
-### NEW FEATURE: POOP_N_SHOOT!
-
-![P_N_S](https://github.com/user-attachments/assets/dc9cafb2-aaea-4c4e-b18e-8c8c51f850dc)
-
-There's a whole new way to purge filament on any printer! Use a dedicated purge area or the edge of your print bed to create a poop pellet & use the nozzle/toolhead to shoot it into the bucket! Fully customisable features!
-
-Activate with the demon_user_settings_cleaner_variables .cfg file!
-<details>
-    <summary>
-        <b>
-        Click here to learn more!
-        </b>
-    </summary>
-<p>
-</p>
-Choose many diiferent options, adjust & tune settings, including...
-
-Positions - place the pellet where you want!
-
-Parking - park the toolhead where you like!
-
-Height - choose your height!
-
-Speed - choose how fast or slow!
-
-Temps - select what temps you want!
-
-Feed lengths - choose load/unload & purge lengths!
-
-Poop flow rate - tune the flow of poop!
-
-Shoot direction - shoot your poop any way you like!
-
-Program extras - pauses, extra cleans, turn fans on sooner!
-
-Random Spot - never shoot from the same spot twice! Vary pellet placement within a chosen range!
-
-Plus the printer knows if you have loaded or unloaded the filament even if you restart! It will know if you need a full load or unload or a simple purge & clean!!
-
-Watch the [demo video!](https://www.youtube.com/watch?v=8Ou42thloCI)!
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8Ou42thloCI
-" target="_blank"><img src="http://img.youtube.com/vi/8Ou42thloCI/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
-
-</details>
-
->[!CAUTION]
->THIS SYSTEM REQUIRES ACCURATE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
-
-****************************************************************************************************************************
 
 <br>
 
-# INSTALL THE SOVOL AUTO FILAMENT FEEDER ON ALMOST ANY KLIPPER PRINTER!
+# Preparing Your Current System
 
-<img width="400" alt="SOVOL AUTO FEEDER" src="https://github.com/user-attachments/assets/7c3f532e-55a0-4c6f-9f95-96d337471b52" />
+- Make a backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
 
-If you have a longer way to run your filament to your extruder, or if you run large/heavy (3-5kg) filament rolls this unit can help improve filament feeding & help reduce strain on your extruder motor! With these macros it'll automatically feed in & feed out your filament for the entire run to your extruder! Learn more [CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/SOVOL_AUTO_FEEDER.md)
+- Disable your current macros for START_PRINT & END_PRINT, plus any others you dont need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Your_Current_Macro_Files.md)
 
-For use with these macros!
+### Not Sure How to SSH?
+
+- If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
+
+<br>
+
+## DEMON DISCORD!
+
+Come & join the community! We've just launched Demon Discord, help us start building a fantastic user focused resource for help & support from other users, share custom expansion gcode, or simply chat & show off your machine & your latest prints!
+
+<p align="left">
+    <img width="500" alt="Demon_Discord" src="https://github.com/user-attachments/assets/980b8b69-f78b-43b1-be27-cc1236fcf794" />
+    <https://discord.gg/KEbxw22AD4>
+</p>
+
+[https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
+
+****************************************************************************************************************************
 
 <br>
 
