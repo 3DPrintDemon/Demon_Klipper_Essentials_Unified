@@ -467,6 +467,29 @@ sudo service klipper start
 ```
 </details>
 
+****************************************************************************************************************************
+
+<br>
+
+# Define Force Move Section
+
+Be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
+```
+[force_move]
+enable_force_move: True
+```
+
+# Idle Timeout printer.cfg 
+
+To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
+```
+[idle_timeout]
+gcode:
+    _DEMON_IDLE_TIMEOUT
+timeout: 3600
+```
+
+This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file
 
 ****************************************************************************************************************************
 
@@ -571,28 +594,6 @@ Here's some info on the `update_manager` section if you need it. https://docs.ma
 ****************************************************************************************************************************
 
 <br>
-
-# Define Force Move Section
-
-Be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
-```
-[force_move]
-enable_force_move: True
-```
-
-# Idle Timeout printer.cfg 
-
-To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
-```
-[idle_timeout]
-gcode:
-    _DEMON_IDLE_TIMEOUT
-timeout: 3600
-```
-
-This will call the new Demon timeout macro after 1 hour & execute the functions of your choice in the demon_user_settings file
-
-****************************************************************************************************************************
 
 # Load & Unload Macros
 
