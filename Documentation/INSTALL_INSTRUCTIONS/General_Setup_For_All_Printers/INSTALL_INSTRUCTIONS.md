@@ -987,21 +987,7 @@ For model specific configuration click below. You need to do all the general set
 <br>
 
 # Additional Configuration - EXTRA STEPS
-
-## Printer LED lights
-- If you have printer LED lights (NOT neopixel) call them `[led Printer_Lights]`
-- NeoPixel LEDs are dealt with in the additionally installed files.
-
-```
-[led Printer_Lights]
-white_pin: ### #<<<<<<< ADD YOUR OWN PIN HERE!
-cycle_time: 0.001
-initial_WHITE: 1.0
-```
-
-****************************************************************************************************************************
-
-<br>
+<br> 
 
 ## Filament Sensor
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
