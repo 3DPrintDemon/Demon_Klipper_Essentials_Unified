@@ -481,6 +481,10 @@ Be sure to define the force move section in your printer.cfg file or your printe
 enable_force_move: True
 ```
 
+****************************************************************************************************************************
+
+<br>
+
 # Idle Timeout printer.cfg 
 
 To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
