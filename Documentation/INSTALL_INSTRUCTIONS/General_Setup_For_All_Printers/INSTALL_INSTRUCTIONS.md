@@ -18,7 +18,7 @@ This link GOOD!
 
 <br>
 
-### NEW FEATURE: POOP_N_SHOOT!
+### NEW FEATURE: PELLET FORMING PURGE - POOP_N_SHOOT!
 
 ![P_N_S](https://github.com/user-attachments/assets/dc9cafb2-aaea-4c4e-b18e-8c8c51f850dc)
 
