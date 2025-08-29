@@ -66,15 +66,14 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 <br>
 
-# INSTALL INSTRUCTIONS LINKS...
+ # FULL INSTALL & SETUP INSTRUCTIONS...
+
+Click the link below to begin reading how to install!
+
+- ### [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
 <br>
 
-- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
-
-
-<br>
- 
 ## DO NOT SKIP THE PREREQUISITES INSTALLER AFTER RUNNING THE MAIN INSTALLER!
 
 Files listed here are installed by the prerequisites installer apart from the Kiauh Shell Script Extension which is an optional but recommended manual install. Links in the following page are provided for your infomation & include any required setup or additional information you will need! They will also help you choose which file version to install when using the prerequisites installer!
@@ -83,11 +82,7 @@ Files listed here are installed by the prerequisites installer apart from the Ki
 
 <br>
 
-# FULL INSTALL & SETUP INSTRUCTIONS...
-
-Click the link below to begin reading how to install!
-
-- ### [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 
 <br>
 
