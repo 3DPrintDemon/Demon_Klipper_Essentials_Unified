@@ -765,7 +765,7 @@ else
     elif [ "$SPMXE" -gt 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_extrude is defined in the printer.cfg file more than once!!"
+        echo "WARNING: The max_extrude_croos_section is defined in the printer.cfg file more than once!!"
         echo "##########################################################################################################${reset}"
         echo
     fi
@@ -775,14 +775,14 @@ echo "--------------------------------------------------------------------------
 echo
 
 # max_extrude_velocity Checks
-echo "${blue}Checking max_extrude_velocity printer.cfg Section${reset}"
+echo "${blue}Checking max_extrude_only_velocity printer.cfg Section${reset}"
 echo
 if [ "$SPXTRDR" -eq 0 ]; then
     echo "${blue}The extruder section is NOT defined in the printer.cfg file, check bypassed.${reset}"
     
 else    
     if [ "$SPMXEV" -eq 1 ]; then
-    echo "${green}The max_extrude_velocity section is defined in the printer.cfg file.${reset}"
+    echo "${green}The max_extrude_only_velocity section is defined in the printer.cfg file.${reset}"
 
     elif [ "$SPMXEV" -eq 0 ]; then
         echo
@@ -790,14 +790,14 @@ else
         echo "have a separate cfg file for your toolhead that contains your extruder section, pleasse manually check it!"
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_extrude_velocity is NOT defined in the printer.cfg file."
+        echo "WARNING: The max_extrude_only_velocity is NOT defined in the printer.cfg file."
         echo "##########################################################################################################${reset}"
         echo
 
     elif [ "$SPMXEV" -gt 1 ]; then
         echo
         echo "${red}##########################################################################################################"
-        echo "WARNING: The max_extrude_velocity is defined in the printer.cfg file more than once!!"
+        echo "WARNING: The max_extrude_only_velocity is defined in the printer.cfg file more than once!!"
         echo "##########################################################################################################${reset}"
         echo
     fi
