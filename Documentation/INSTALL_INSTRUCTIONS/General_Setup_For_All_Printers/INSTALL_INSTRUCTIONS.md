@@ -1146,6 +1146,38 @@ To get the most from these macros you’ll need to add a Chamber thermistor to y
 - If you instead have a Chamber Thermistor only & no Exhaust fan call it `[temperature_sensor Chamber_Temp]`
 
 For use with a chamber fan...
+
+```
+[temperature_fan chamber]
+pin: Chamber Temp Fan Pin # <<<<<<<< ADD YOUR OWN PIN HERE
+max_power: 1.0
+shutdown_speed: 0.0
+kick_start_time: 0.5
+cycle_time:0.01
+off_below:0.1
+sensor_type: Chamber Temp Fan Sensor Type # <<<<<<<< ADD YOUR OWN PIN HERE
+sensor_pin: Chamber Temp Fan Sensor Pin # <<<<<<<< ADD YOUR OWN PIN HERE
+min_temp: 5
+max_temp: 70
+target_temp: 50
+control: pid
+pid_kp: 35.5
+pid_ki: 1.5
+pid_kd: 40
+max_speed: 1.0
+min_speed: 0.0
+gcode_id: C
+```
+
+<details>
+    <summary>
+        <b>
+        Click to expand - OR the old verion is here...
+        </b>
+    </summary>
+<p>
+</p>
+    
 ```
 [temperature_fan chamber]
 pin: ### < ADD YOUR OWN PIN HERE
@@ -1162,6 +1194,8 @@ target_temp: 50
 control: watermark
 gcode_id: C
 ```
+
+</details>
 
 For use with a chamber sensor...
 ```
