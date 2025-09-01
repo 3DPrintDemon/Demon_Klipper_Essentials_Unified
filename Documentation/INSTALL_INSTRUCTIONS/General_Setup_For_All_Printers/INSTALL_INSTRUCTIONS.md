@@ -580,12 +580,6 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 
 To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
 
-Also please note that if you do not use the new installer to update but instead jusy rely on Update Manager to update from v2.9.3 or lower you must run this ssh script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for the latest version! 
-
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
-```
-
 ```
 [update_manager Demon_Klipper_Essentials_Unified]
 type: git_repo
@@ -595,7 +589,14 @@ primary_branch: main
 is_system_service: False
 managed_services: klipper
 ```
+
 Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
+
+Also please note that if you do not use the new installer to update but instead jusy rely on Update Manager to update from v2.9.3 or lower you must run this ssh script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for the latest version! 
+
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
+```
 
 ****************************************************************************************************************************
 
