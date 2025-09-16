@@ -16,7 +16,7 @@ If you have a Klipper error or power outage on your Sovol printer running stock 
 <br>
 
 
-## Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#orca-slicer-setup)
+## Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
 This update now uses custom names & also provides a means of checking that you sent a file with the correct START Gcode for these macros! The system will halt the print & warn you if not! So no more sending a file to print with the wrong START Gcode & bad things happening!!
 
