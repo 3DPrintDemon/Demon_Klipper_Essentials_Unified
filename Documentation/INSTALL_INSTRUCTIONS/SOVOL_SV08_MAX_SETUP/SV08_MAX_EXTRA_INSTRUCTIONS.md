@@ -38,6 +38,19 @@ TIMELAPSE_TAKE_FRAME
 ```
 <br>
 
+# PLR (Power Loss Recovery) Use
+
+You can now use the Sovol PLR system with DEKU macros! To do this simply add
+
+```
+LOG_Z
+```
+To your slicer's `Layer Change` box in `Machine Gcode`
+
+<img width="517" height="222" alt="ZLOG" src="https://github.com/user-attachments/assets/0626aa47-1335-407f-8a69-d8fd778dac18" />
+
+<br>
+
 # SV08 MAX CUSTOM EXPANSION FILE! - REQUIRED!!
 
 >[!IMPORTANT]
