@@ -33,6 +33,7 @@ If you wish to continue to use Timelapse be sure to add this back in your slicer
 ```
 TIMELAPSE_TAKE_FRAME
 ```
+
 <br>
 
 # PLR (Power Loss Recovery) Use
@@ -269,14 +270,6 @@ max_adjust: 10
 
 ```
 
-<br>
-
-## Timelapse Use
-
-If you wish to continue to use Timelapse be sure to add this back in your slicer's `Before Layer Change` gcode box.
-```
-TIMELAPSE_TAKE_FRAME
-```
 <br>
 
 # Mainline users
