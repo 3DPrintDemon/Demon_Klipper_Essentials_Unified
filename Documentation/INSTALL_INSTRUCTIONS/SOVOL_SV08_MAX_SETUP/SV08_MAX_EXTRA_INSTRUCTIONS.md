@@ -49,6 +49,12 @@ To your slicer's `Layer Change` box in `Machine Gcode`
 
 <img width="517" height="222" alt="ZLOG" src="https://github.com/user-attachments/assets/0626aa47-1335-407f-8a69-d8fd778dac18" />
 
+Then in the demon_user_settings file near the top set
+
+```
+variable_sovol_plr: True
+```
+
 <br>
 
 # SV08 MAX CUSTOM EXPANSION FILE! - REQUIRED!!
