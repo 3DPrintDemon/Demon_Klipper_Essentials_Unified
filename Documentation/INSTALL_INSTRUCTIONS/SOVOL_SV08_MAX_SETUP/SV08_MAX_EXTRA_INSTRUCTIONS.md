@@ -225,7 +225,7 @@ Includes should look like this!
 #[include chamber_hot.cfg]
 [include buffer_stepper.cfg]
 [include timelapse.cfg]
-# [include plr.cfg]
+[include plr.cfg]
 # [include Macro.cfg]
 # [include moonraker_obico_macros.cfg]
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
