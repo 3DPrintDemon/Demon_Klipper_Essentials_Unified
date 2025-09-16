@@ -11,6 +11,17 @@
 
 ## SUPPORT FOR SOVOL'S PLR SYSTEM ADDED!!
 
+If you have a Klipper error or power outage on your Sovol printer running stock firmware don't worry! The DEKU macros now can make use of the Sovol PLR feature!
+
+<br>
+
+
+## Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#orca-slicer-setup)
+
+This update now uses custom names & also provides a means of checking that you sent a file with the correct START Gcode for these macros! The system will halt the print & warn you if not! So no more sending a file to print with the wrong START Gcode & bad things happening!!
+
+<br>
+
 ## NOW WITH FULL EDDY NG SUPPORT!!!
 
 A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human! Fully ai code Free! No ai has been used to create them! 
