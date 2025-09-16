@@ -59,6 +59,7 @@ Then in the demon_user_settings file near the top set
 ```
 variable_sovol_plr: True
 ```
+Once the macros see you have set the above variable `True` they will ask you if you wish to automatically download & install all required files to use the Sovol PLR system with DEKU macros. If you click `GET` on the pop up prompt your machine will reboot to bring the new files into the system.
 
 <br>
 
