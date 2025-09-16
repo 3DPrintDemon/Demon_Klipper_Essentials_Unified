@@ -471,19 +471,28 @@ params: {"script":"_FEED_OUT"}
 
 <br>
 
+>[!IMPORTANT]
+>In the `buffer_stepper.cfg` file you have just installed you will need to add the pins shown a few lines down to use as a manual override for the clog & Jam detection.
+This will allow you to disable the automated clog & Jam detection system during a print if you keep getting false triggers!
+
 # Add Clog Detection Override Pin!
 
->[!IMPORTANT]
->In the `buffer_stepper.cfg` file you are about to install you will need to add the pin shown a few lines down to use as a manual override for the clog detection.
-This will allow you to disable the automated clog detection during a print if you keep getting false triggers!
-
-See line 40 of the `buffer_stepper.cfg` file, under the `[output_pin STOP_CLOG_DETECTION]` & add this pin...
+See line 45 of the `buffer_stepper.cfg` file, under the `[output_pin CLOG_DETECTION]` & add this pin...
 
 ```
 pin: PC12
 ```
 
 <br>
+
+# Add Jam Detection Override Pin!
+
+See line 49 of the `buffer_stepper.cfg` file, under the `[output_pin JAM_DETECTION]` & add this pin...
+
+```
+pin: PC11
+```
+
 
 ****************************************************************************************************************************
 
