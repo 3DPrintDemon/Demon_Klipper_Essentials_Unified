@@ -52,6 +52,12 @@ Be sure to include your PLR.cfg file now!
 [include plr.cfg]
 ```
 
+Then in the demon_user_settings file near the top set
+
+```
+variable_sovol_plr: True
+```
+
 <br>
 
 # Edit your printer.cfg 
