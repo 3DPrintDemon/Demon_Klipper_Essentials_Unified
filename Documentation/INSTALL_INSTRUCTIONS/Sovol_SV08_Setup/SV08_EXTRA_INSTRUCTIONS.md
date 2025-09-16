@@ -27,6 +27,32 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 <br>
 
+# Timelapse Use
+
+If you wish to continue to use Timelapse be sure to add this back in your slicer's `Before Layer Change` gcode box.
+```
+TIMELAPSE_TAKE_FRAME
+```
+<br>
+
+# PLR (Power Loss Recovery) Use
+
+You can now use the Sovol PLR system with DEKU macros! To do this simply add
+
+```
+LOG_Z
+```
+To your slicer's `Layer Change` box in `Machine Gcode`
+
+<img width="517" height="222" alt="ZLOG" src="https://github.com/user-attachments/assets/0626aa47-1335-407f-8a69-d8fd778dac18" />
+
+Be sure to include your PLR.cfg file now!
+```
+[include plr.cfg]
+```
+
+<br>
+
 # Edit your printer.cfg 
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
@@ -38,9 +64,6 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 Comment out - Stock Sovol...
 
-```
-# [include plr.cfg]
-```
 ```
 # [save_variables]
 # filename =/home/sovol/printer_data/config/saved_variables.cfg
