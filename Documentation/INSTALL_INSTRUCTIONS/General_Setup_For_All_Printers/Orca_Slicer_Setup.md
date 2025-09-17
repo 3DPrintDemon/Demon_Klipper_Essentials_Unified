@@ -28,7 +28,7 @@ DEMON_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[hot_plate_temp_init
 Machine end G-code:
 ```
 ; printing object ENDGCODE
-PRINT_END
+DEMON_END
 ```
 
 Before layer change G-code:
