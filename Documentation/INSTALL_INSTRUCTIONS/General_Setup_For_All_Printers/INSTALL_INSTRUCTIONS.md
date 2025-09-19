@@ -282,7 +282,7 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 
 # MAIN SSH INSTALLER HERE:
-### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
+### RUN THIS FIRST FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
 Use for any machine Voron, SV08 to Ender!
 
@@ -300,7 +300,7 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 # PREREQUISITE INSTALLERS HERE:
 
-Run from your SSH terminal to install your prerequisites. This script will ask you your prerequisite install choices. 
+Next run ONE of these from your SSH terminal to install your prerequisites. This script will ask you your prerequisite install choices. 
 
 FOR ALL PRINTERS VORON to ENDER - EXCEPT SOVOL SV08 OG MACHINES!
 
