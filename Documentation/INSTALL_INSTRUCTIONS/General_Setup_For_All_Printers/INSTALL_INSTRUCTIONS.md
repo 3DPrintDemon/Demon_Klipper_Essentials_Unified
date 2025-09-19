@@ -1,19 +1,5 @@
 # GENERAL SETUP FOR ALL PRINTERS
 
-### IF YOU RAN V1.0-V2.8 BE SURE TO UPDATE YOUR SLICER'S START GCODE OR NEW FEATURES WONT WORK!
-**Instructions to do this are further down this page.**
-**Also you must update ALL the macro files as this new version will NOT work correctly with old files!**
-
-****************************************************************************************************************************
-
-### Orca Slicer
-
-Make sure you have the latest 2.2.0 (beta2 or later) version of Orca Slicer DO NOT USE ORCA SLICER DOT NET!!! BAD!!!
-
-This link GOOD!
-
-- https://github.com/SoftFever/OrcaSlicer/releases
-
 ****************************************************************************************************************************
 
 <br>
