@@ -300,17 +300,19 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 # PREREQUISITE INSTALLERS HERE:
 
-Next run ONE of these from your SSH terminal to install your prerequisites. This script will ask you your prerequisite install choices. 
+Next run ONE of these from your SSH terminal to install your prerequisites. These scripts will ask you your prerequisite install choices. 
 
-FOR ALL PRINTERS VORON to ENDER - EXCEPT SOVOL SV08 OG MACHINES!
+<br>
+
+### FOR ALL PRINTERS VORON to ENDER - EXCEPT SOVOL SV08 OG MACHINES!
 
 ```
 sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Demon_Prerequisites_Installer.sh
 ```
 
-### SOVOL SV08 OG MACHINE SPECIFIC PREREQUISITES INSTALLER...
+<br>
 
-Run from your SSH terminal to install your prerequisite. This script will ask you your prerequisite install choices.
+### SOVOL SV08 OG MACHINE SPECIFIC PREREQUISITES INSTALLER...
 
 >[!NOTE]
 >Do not use this unless you have a Sovol SV08 OG printer!! NOT SV08 MAX!
