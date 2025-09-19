@@ -9,6 +9,13 @@
 
 <br>
 
+# Introduction
+
+These macros are smart & have adaptive properties, they will shape themselves to your printer what you’re printing without any need to edit any code! 
+For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at they can automatically choose & load the correct mesh for the filament type or temperature of your print, as your bed will slightly change shape the hotter it gets. They can do all that plus much, much more!
+
+<br>
+
 ## SUPPORT FOR SOVOL'S PLR SYSTEM ADDED!!
 
 If you have a Klipper error or power outage on your Sovol printer running stock firmware don't worry! The DEKU macros now can make use of the Sovol PLR feature!
@@ -46,21 +53,11 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 
 <br>
 
-# Introduction
-
-These macros are smart & have adaptive properties, they will shape themselves to your printer what you’re printing without any need to edit any code! 
-For example the macros know if your printer is CoreXY or bed slinger, they know if it's already homed so wont home it again, & can not only automatically shape itself to simple things like your printer’s bed size & what temperatures you’re printing at they can automatically choose & load the correct mesh for the filament type or temperature of your print, as your bed will slightly change shape the hotter it gets. They can do all that plus much, much more!
-
-
 
 A macro pack features list is here....
 
 - #### [FEATURES LIST](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Features/Features.md)
-
-Macro pack version update history is here....
-
-- #### [CHANGELOG](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Update%20History/Demon_Changelog.md)
-
+- 
 ****************************************************************************************************************************
 
 <br>
