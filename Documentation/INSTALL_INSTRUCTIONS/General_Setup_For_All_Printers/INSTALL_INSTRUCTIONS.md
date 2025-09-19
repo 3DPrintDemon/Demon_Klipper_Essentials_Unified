@@ -1,75 +1,11 @@
 # GENERAL SETUP FOR ALL PRINTERS
 
-<br>
-
-### NEW FEATURE: PELLET FORMING PURGE - POOP_N_SHOOT!
-
-![P_N_S](https://github.com/user-attachments/assets/dc9cafb2-aaea-4c4e-b18e-8c8c51f850dc)
-
-There's a whole new way to purge filament on any printer! Use a dedicated purge area or the edge of your print bed to create a poop pellet & use the nozzle/toolhead to shoot it into the bucket! Fully customisable features!
-
-Activate with the demon_user_settings_cleaner_variables .cfg file!
-
-<br>
-
-<details>
-    <summary>
-        <b>
-        Click to expand - FEATURE: PELLET FORMING PURGE SYSTEM!
-        </b>
-    </summary>
-<p>
-</p>
-Choose many diiferent options, adjust & tune settings, including...
-
-Positions - place the pellet where you want!
-
-Parking - park the toolhead where you like!
-
-Height - choose your height!
-
-Speed - choose how fast or slow!
-
-Temps - select what temps you want!
-
-Feed lengths - choose load/unload & purge lengths!
-
-Poop flow rate - tune the flow of poop!
-
-Shoot direction - shoot your poop any way you like!
-
-Program extras - pauses, extra cleans, turn fans on sooner!
-
-Random Spot - never shoot from the same spot twice! Vary pellet placement within a chosen range!
-
-Plus the printer knows if you have loaded or unloaded the filament even if you restart! It will know if you need a full load or unload or a simple purge & clean!!
-
-Watch the [demo video!](https://www.youtube.com/watch?v=8Ou42thloCI)!
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8Ou42thloCI
-" target="_blank"><img src="http://img.youtube.com/vi/8Ou42thloCI/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
-
-</details>
-
-<br>
+**PLEASE CHECK ALL INSTRUCTIONS CAREFULLY!**
 
 >[!CAUTION]
->THIS SYSTEM REQUIRES ACCURATE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
+>Don’t just install & run the macros & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!
 
-****************************************************************************************************************************
-
-<br>
-
-### INSTALL THE SOVOL AUTO FILAMENT FEEDER ON ALMOST ANY KLIPPER PRINTER!
-
-<img width="400" alt="SOVOL AUTO FEEDER" src="https://github.com/user-attachments/assets/7c3f532e-55a0-4c6f-9f95-96d337471b52" />
-
-If you have a longer way to run your filament to your extruder, or if you run large/heavy (3-5kg) filament rolls this unit can help improve filament feeding & help reduce strain on your extruder motor! With these macros it'll automatically feed in & feed out your filament for the entire run to your extruder! Learn more [CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/SOVOL_AUTO_FEEDER.md)
-
-For use with these macros!
-
-****************************************************************************************************************************
+You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `DEMON_START` macro to work correctly.
 
 <br>
 
