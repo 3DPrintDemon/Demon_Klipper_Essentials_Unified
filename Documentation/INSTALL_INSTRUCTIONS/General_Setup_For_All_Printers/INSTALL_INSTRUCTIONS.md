@@ -121,7 +121,7 @@ If your directory is empty please click the reload button for your web browser t
 
 <br>
 
-### TROUBLESHOOTING SAVE VARIABLES SECTION
+### TROUBLESHOOTING SECTION
 
 >[!TIP]
 >This is important so it's at the top where you might see it, as if not correct it'll cause the following issues...
@@ -148,12 +148,12 @@ Don't worry though this is just telling you the system created the file but it d
 <details>
   <summary>
         <b>
-        Click to expand - What if you get a popup boot loop message?
+        Click to expand - What if you get a popup boot loop welcome message?
         </b>
     </summary>
 <p>
 </p>
-If you get a boot looping popup message that wont go away check your system for any other [save_variables] sections or any other defined filenames!
+If you get a boot looping popup welcome message that wont go away check your system for any other [save_variables] sections or any other defined filenames!
 
 If you feel your demon_vars.cfg file is not working you can reinstall it directly from your current version of the `Demon Klipper Essentials Unified` macros.
 
@@ -176,6 +176,19 @@ filename = ~/demon_vars.cfg
 Also double check you have no other `[save_variables]` sections defined in your system. 
 
 Then Save & Restart.
+
+</details>
+
+<details>
+  <summary>
+        <b>
+        Click to expand - What if you get a popup boot loop Extract Files message?
+        </b>
+    </summary>
+<p>
+</p>
+
+Due to the way the Kiauh Shell Script Extension works if you have a custom user account name you will need to do [this work-around](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#for-custom-user-account-names).
 
 </details>
 
