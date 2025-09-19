@@ -541,8 +541,58 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 ### Demon User File Updater Includes
 
->[!NOTE]
->If you have a non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work. 
+
+> [!TIP]
+> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+> You will also get a extract files message everytime you restart Klipper!
+>If you have a custom, non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work.
+
+<br>
+
+### For Custom User Account Names
+<details>
+    <summary>
+        <b>
+        Click to expand - If You Have A Host SBC with Custom User Account Name
+        </b>
+    </summary>
+<p>
+</p>
+
+If you have a custom host name for your SBC you will need to adjust the file paths in one of the `Extract_Demon_User_Files_xxxx.cfg` files. This is due to how the Kiauh Shell Script Extension works. It requires the full file path to be specified including the host's custom user account name! 
+
+* To do this you will need to copy the entire contents of a [Extract_Demon_User_Files_xxxx.cfg](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/Demon_User_Files_Updater) file of your choice.
+* Create a new file in the Demon_User_Files directory.
+* name it...
+  
+```
+Extract_Demon_User_Files_Custom.cfg
+```
+
+* Paste in the contents of your clipboard to the new file.
+* Use `ctrl+F` on Windows or `cmd+F` on MacOS
+* Search for the standard user account name in the file you chose to copy, e.g. sovol/biqu/mks/pi
+* Then replace that entire file path with...
+
+```
+/home/<YOUR USER ACCOUNT NAME HERE>/printer_data/config/Demon_User_Files/Demon_User_Files_Updater/
+```
+
+* Be sure to leave file to be called at the very end of the file path in tact or the command WONT WORK! So for example the top file path on line 2 will read....
+
+```
+EXAMPLE!
+command: /usr/bin/bash /home/<YOUR USE ACCOUNT NAME HERE>/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Settings.sh
+```
+
+* Do the same for the rest of the file paths in the cfg file.
+* Save & Restart
+
+</details>
+
+<br>
+
+### For Standard User Account Names
 
 If you have a Raspberry Pi based system:
 ```
