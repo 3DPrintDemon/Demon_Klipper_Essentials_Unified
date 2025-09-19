@@ -221,6 +221,8 @@ sudo service klipper start
 >[!TIP]
 >Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
 
+<br>
+
 <details>
     <summary>
         <b>
@@ -254,6 +256,8 @@ Other things you will need to look at when updating!
 [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 </details>
 
+<br>
+
 ![Updater](https://github.com/user-attachments/assets/2dac0a2d-6795-4a3c-b903-d4c35b8d9a39)
 
 <br>
@@ -263,6 +267,8 @@ Other things you will need to look at when updating!
 >[!TIP]
 > BE SURE TO USE THIS WHEN SETTING UP! It's your onboard helper tool!
 >This sytem will help you see whats been done, what needs doing & what is not correctly set yet!
+
+<br>
 
 <details>
     <summary>
@@ -303,6 +309,8 @@ It just scans them safely & leaves them unedited & unchanged!
 
 </details>
 
+<br>
+
 ![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
 
 >[!NOTE]
@@ -315,6 +323,7 @@ It just scans them safely & leaves them unedited & unchanged!
 > [!IMPORTANT]
 > If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
 
+<br>
 
 <details>
     <summary>
@@ -340,6 +349,9 @@ If you choose to manage the system yourself manually & not to use the `Demon_Use
 Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like [this...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards)
 
 </details>
+
+<br>
+
 
 ![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
 
