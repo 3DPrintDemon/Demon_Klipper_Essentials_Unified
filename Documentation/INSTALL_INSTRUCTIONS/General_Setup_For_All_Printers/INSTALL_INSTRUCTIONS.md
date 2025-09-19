@@ -244,6 +244,9 @@ It just scans them safely & leaves them unedited & unchanged!
 >This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
 
 <br>
+<br>
+<br>
+
 
 ## DEMON DISCORD!
 
@@ -257,6 +260,9 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 [https://discord.gg/KEbxw22AD4](https://discord.gg/KEbxw22AD4)
 
 <br>
+<br>
+<br>
+
 
 # Preparing Your Current System
 
@@ -271,6 +277,9 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
+
 
 # MAIN SSH INSTALLER HERE:
 ### RUN FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
@@ -310,7 +319,10 @@ sh ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Inst
 
 ****************************************************************************************************************************
 
-<br> 
+<br>
+<br>
+<br>
+
 
 # ...Your new files should now be Installed! 
 
@@ -329,8 +341,16 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
-# Define Save Variables Section
+# DEMON KLIPPER ESSENTIALS UNIFIED SETUP...
+
+Lets start the setup of these macros, the first and most important step is to make sure a few things are correctly defined.
+
+<br>
+
+## Define Save Variables Section
 
 Add this to your `printer.cfg` preferably BEFORE you include the macros. 
 
@@ -368,7 +388,7 @@ sudo service klipper start
 
 <br>
 
-# Define Force Move Section
+## Define Force Move Section
 
 Be sure to define the force move section in your printer.cfg file or your printer wont be able to make use of the new homing routine. 
 ```
@@ -380,7 +400,7 @@ enable_force_move: True
 
 <br>
 
-# Idle Timeout printer.cfg 
+## Idle Timeout printer.cfg 
 
 To use the new timeout settings correctly you should set your `printer.cfg` `[idle_timeout]` section like this:
 ```
@@ -396,7 +416,7 @@ This will call the new Demon timeout macro after 1 hour & execute the functions 
 
 <br>
 
-# Set Up Your Mainsail.cfg File!
+## Set Up Your Mainsail.cfg File!
 
 You will need to configure your `Mainsail.cfg` `_CLIENT_VARIABLE` macro, set it up now! 
 
@@ -414,10 +434,16 @@ If you choose *NOT* to use the Mainsail.cfg...
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
-# Include Now!
+# INCLUDE NOW!
 
-### MAIN DIRECTORY INCLUDES
+Time to include the main macro files & their prerequisites, as well as the Demon User File Updater system.
+
+<br>
+
+## MAIN DIRECTORY INCLUDES
 
 Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
 
@@ -437,7 +463,7 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 <br>
 
-# FEATURE: DEMON USER FILES UPDATER!
+## FEATURE: DEMON USER FILES UPDATER!
 
 > [!IMPORTANT]
 > If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
@@ -476,7 +502,7 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 <br>
 
-# DEMON USER FILES UPDATER INCLUDES
+## DEMON USER FILES UPDATER INCLUDES
 
 
 > [!TIP]
@@ -563,6 +589,8 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
 # Macro Layout Import/Restore
 
@@ -578,6 +606,8 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 
 ****************************************************************************************************************************
 
+<br>
+<br>
 <br>
 
 # Demon Klipper Essentials Mainsail Updates
@@ -604,6 +634,8 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 ****************************************************************************************************************************
 
+<br>
+<br>
 <br>
 
 # Load & Unload Macros
@@ -666,6 +698,8 @@ You will need to change this if you have a long chain or use neopixels elsewhere
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
 # Setting up KLIPPER's Adaptive Mesh option. 
 
@@ -699,6 +733,8 @@ Save & restart!
 
 ****************************************************************************************************************************
 
+<br>
+<br>
 <br>
 
 # Setting up KAMP_LiTE Adaptive Purge & Smart Park
@@ -748,6 +784,8 @@ If you use another slicer:
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
 # BE SURE TO SET YOUR MACRO VARIABLES & WATCH THESE VIDEOS!
 
@@ -780,6 +818,8 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
   
 ****************************************************************************************************************************
 
+<br>
+<br>
 <br>
 
 # FEATURE: DEMON HOMING CONTROL!
@@ -833,6 +873,9 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 
 ****************************************************************************************************************************
+
+<br>
+<br>
 <br>
 
 # NEW EDDY NG SUPPORT!! 
@@ -856,7 +899,11 @@ Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
 
-# DEMON EDDY!!! - USE THIS IF YOU HAVE NOT INSTALLED EDDY NG!!
+# DEMON EDDY!!!
+
+USE THIS IF YOU HAVE A BTT EDDY DUO/USB PROBE & HAVE NOT INSTALLED EDDY NG!!
+
+NOT for use with Sovol Eddy probes!
 
 Demonise your Eddy! Download this file, set it up for you printer & run it!
 
@@ -900,6 +947,8 @@ https://github.com/bigtreetech/Eddy/blob/master/README.md
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
 # FIRST HOMING TEST!
 
@@ -922,6 +971,8 @@ No liability or responsibility will be accpeted for any damage caused by the use
 
 ****************************************************************************************************************************
 
+<br>
+<br>
 <br>
 
 # Orca Slicer Setup
@@ -953,6 +1004,8 @@ Use this link....
 ****************************************************************************************************************************
 
 <br>
+<br>
+<br>
 
 # Recognised Slicer Filament Types
 
@@ -974,10 +1027,13 @@ Recognised slicer filament types at the moment are:
 
 **Fin...**
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ****************************************************************************************************************************
-
-<br>
 
 # MODEL SPECIFIC INSTRUCTIONS
 
@@ -993,6 +1049,10 @@ For model specific configuration click below. You need to do all the general set
 
 ****************************************************************************************************************************
 
+<br>
+<br>
+<br>
+<br>
 <br>
 
 # Additional Configuration - EXTRA STEPS
