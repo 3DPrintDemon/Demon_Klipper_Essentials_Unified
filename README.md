@@ -57,7 +57,7 @@ A macro pack features list is here....
 
 <br>
 
- # FULL INSTALL & SETUP INSTRUCTIONS...
+ # START HERE....!!!
 
 Click the link below to begin reading how to install!
 
