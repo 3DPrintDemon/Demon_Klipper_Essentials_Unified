@@ -1,7 +1,5 @@
 # GENERAL SETUP FOR ALL PRINTERS
 
-****************************************************************************************************************************
-
 <br>
 
 ### NEW FEATURE: PELLET FORMING PURGE - POOP_N_SHOOT!
