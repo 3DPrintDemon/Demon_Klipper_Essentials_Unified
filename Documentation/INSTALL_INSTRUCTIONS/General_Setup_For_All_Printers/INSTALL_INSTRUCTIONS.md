@@ -182,7 +182,7 @@ Then Save & Restart.
 <details>
   <summary>
         <b>
-        Click to expand - What if you get a popup boot loop Extract Files message?
+        Click to expand - What if you get a popup boot loop extract files message?
         </b>
     </summary>
 <p>
