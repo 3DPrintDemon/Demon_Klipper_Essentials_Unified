@@ -25,10 +25,13 @@ This link GOOD!
 There's a whole new way to purge filament on any printer! Use a dedicated purge area or the edge of your print bed to create a poop pellet & use the nozzle/toolhead to shoot it into the bucket! Fully customisable features!
 
 Activate with the demon_user_settings_cleaner_variables .cfg file!
+
+<br>
+
 <details>
     <summary>
         <b>
-        Click here to learn more!
+        Click to expand - FEATURE: PELLET FORMING PURGE SYSTEM!
         </b>
     </summary>
 <p>
@@ -65,6 +68,8 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 </details>
 
+<br>
+
 >[!CAUTION]
 >THIS SYSTEM REQUIRES ACCURATE SETUP & TUNING, IT WILL NOT WORK CORRECTLY OR RELIABLY IF YOU DO NOT TUNE IT WELL! PLEASE SPEND TIME DOING SO IF YOU USE IT!
 
@@ -90,6 +95,8 @@ For use with these macros!
 >Click the lines below to expand them to read the contents!
 
 ### File Structure Has Changed for v2.9.4 Onwards
+
+<br>
 
 <details>
     <summary>
@@ -226,7 +233,7 @@ sudo service klipper start
 <details>
     <summary>
         <b>
-        Click here to learn more!
+        Click to expand - SCRIPT: USER SETTING FILE UPDATER!
         </b>
     </summary>
 <p>
