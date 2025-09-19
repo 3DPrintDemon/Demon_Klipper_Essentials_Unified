@@ -1,6 +1,4 @@
 ************************************
-- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
-************************************
 
 ![DEMON](https://github.com/user-attachments/assets/e3f166b4-200b-400f-a5d0-64d879cf33d5)
 
@@ -75,7 +73,7 @@ Files listed here are installed by the prerequisites installer apart from the Ki
 
 <br>
 
-- ### [UPDATING FROM A PREVIOUS VERSION CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+- ### [UPDATE CHANGES FROM PREVIOUS VERSIONS CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 
 <br>
 
