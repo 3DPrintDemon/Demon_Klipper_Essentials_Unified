@@ -61,7 +61,7 @@ A macro pack features list is here....
 
 Click the link below to begin reading how to install!
 
-- ## [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+- ## [GENERAL INSTALL & SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
 ###### DO NOT SKIP THE PREREQUISITES INSTALLER AFTER RUNNING THE MAIN INSTALLER!
 
