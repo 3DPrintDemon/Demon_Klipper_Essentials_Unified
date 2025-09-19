@@ -437,7 +437,7 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 <br>
 
-### FEATURE: DEMON USER FILES UPDATER!
+# FEATURE: DEMON USER FILES UPDATER!
 
 > [!IMPORTANT]
 > If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
@@ -474,8 +474,9 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 ![Prompt](https://github.com/user-attachments/assets/77ba2d6b-14fe-437f-a607-8241f94e0fc5)
 
+<br>
 
-### DEMON USER FILES UPDATER INCLUDES
+# DEMON USER FILES UPDATER INCLUDES
 
 
 > [!TIP]
@@ -563,7 +564,7 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 
 <br>
 
-### Macro Layout Import/Restore
+# Macro Layout Import/Restore
 
 Lastly in Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
@@ -624,6 +625,8 @@ max_extrude_only_velocity: 22
 
 ****************************************************************************************************************************
 
+<br>
+
 # Printer Lights (White LEDs)
 Be sure to name any White LEDs that are in the `printer.cfg` file you wish the macros to control to:
 
@@ -639,6 +642,8 @@ initial_WHITE: 1.0
 >- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
 
 ****************************************************************************************************************************
+
+<br>
 
 # Neopixel Toolhead LEDs 
 
