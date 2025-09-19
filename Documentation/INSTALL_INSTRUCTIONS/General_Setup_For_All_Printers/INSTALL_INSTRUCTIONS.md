@@ -544,7 +544,9 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 > [!TIP]
 > If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+> 
 > You will also get a extract files message everytime you restart Klipper!
+> 
 >If you have a custom, non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work.
 
 <br>
