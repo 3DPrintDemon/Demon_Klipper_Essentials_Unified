@@ -900,6 +900,8 @@ Don't forget to update your [.json file](https://github.com/3DPrintDemon/Demon_K
 Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
+<br>
+<br>
 
 # DEMON EDDY!!!
 
