@@ -61,7 +61,7 @@ A macro pack features list is here....
 
 Click the link below to begin reading how to install!
 
-- ### [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+- ## [GENERAL SETUP FOR ALL PRINTERS](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
 <br>
 
@@ -73,7 +73,9 @@ Files listed here are installed by the prerequisites installer apart from the Ki
 
 <br>
 
-###### [UPDATE CHANGES FROM PREVIOUS VERSIONS CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
+Changes list info page if you ran previous older versions
+
+- ###### [UPDATE CHANGES FROM PREVIOUS VERSIONS CLICK HERE!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Other_Files/Version_Config_Changes/V2.9_Config_Changes.md)
 
 ****************************************************************************************************************************
 
