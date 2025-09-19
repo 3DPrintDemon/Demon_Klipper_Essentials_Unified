@@ -62,20 +62,6 @@ A macro pack features list is here....
 
 <br>
 
-# All sounds great right!? Ok well here’s the tricky bit! 
-…Well its not that tricky because I got it all written down here for you to just copy/paste into your setup!
-
-**PLEASE CHECK ALL INSTRUCTIONS CAREFULLY!**
-
->[!CAUTION]
->Don’t just install & run the macros & wonder why they don’t work! They WILL need setting up once on your system. Damage to your machine may result if the macros are run without the prerequisites or without the correct setup before first use!
-
-You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `PRINT_START` macro to work correctly. 
-
-****************************************************************************************************************************
-
-<br>
-
  # FULL INSTALL & SETUP INSTRUCTIONS...
 
 Click the link below to begin reading how to install!
