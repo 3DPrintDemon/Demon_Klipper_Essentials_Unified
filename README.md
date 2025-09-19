@@ -57,7 +57,7 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 A macro pack features list is here....
 
 - #### [FEATURES LIST](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Features/Features.md)
-- 
+
 ****************************************************************************************************************************
 
 <br>
