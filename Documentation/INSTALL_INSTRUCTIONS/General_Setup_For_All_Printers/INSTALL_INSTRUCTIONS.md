@@ -596,24 +596,6 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 <br>
 <br>
 
-# Macro Layout Import/Restore
-
-In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
-
-This will bring in the defualt macro layout.
-- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
-
-It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
-
-
-![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
-
-****************************************************************************************************************************
-
-<br>
-<br>
-<br>
-
 # Load & Unload Macros
 
 
@@ -974,6 +956,24 @@ If the console only shows `G28` for example there is an issue with your demon_ho
 >[!CAUTION]
 >Improper setup of the macros & the demon_homing_control feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
 No liability or responsibility will be accpeted for any damage caused by the use of these macros.
+
+****************************************************************************************************************************
+
+<br>
+<br>
+<br>
+
+# Macro Layout Import/Restore
+
+In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
+
+This will bring in the defualt macro layout.
+- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
+
+It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
+
+
+![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
 
 ****************************************************************************************************************************
 
