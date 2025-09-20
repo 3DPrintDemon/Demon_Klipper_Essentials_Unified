@@ -8,6 +8,24 @@
 You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get the `DEMON_START` macro to work correctly.
 
 <br>
+<br>
+<br>
+
+# NEW! COMPANION INSTALL VIDEO!
+
+Here's quick run-through of the general install process. This is NOT meant to replace the written instructions below but it is meant purely as a visual guide that will help you get the macros up & running on your system. By the time you're done you should be confident & comfortable working with the files on your printer to contiune with setting up the macros further. 
+
+***...You got this!***
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=SvPROz0Q96M
+" target="_blank"><img src="http://img.youtube.com/vi/SvPROz0Q96M/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
+
+- [Install Demon Klipper Essentials Unified in 15 Minutes or Less!](https://youtu.be/SvPROz0Q96M)
+
+<br>
+<br>
+<br>
 
 # IMPORTANT INFO BEFORE YOU START...
 
