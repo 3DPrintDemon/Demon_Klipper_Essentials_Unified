@@ -235,7 +235,7 @@ filename = ~/demon_vars.cfg
 Be sure your `printer.cfg` file `[extruder]` section contains...
 
 ```
-max_extrude_only_velocity: 15
+max_extrude_only_velocity: 22
 ```
 ```
 max_extrude_cross_section: 5
