@@ -31,7 +31,7 @@ This update now uses custom names & also provides a means of checking that you s
 
 ## SUPPORT FOR SOVOL'S PLR SYSTEM ADDED!!
 
-If you have a Klipper error or power outage on your Sovol printer running stock firmware don't worry! The DEKU macros now can make use of the Sovol PLR feature!
+If you have a Klipper error or power outage on your Sovol printer running stock firmware don't worry! The DKEU macros now can make use of the Sovol PLR feature!
 
 <br>
 
