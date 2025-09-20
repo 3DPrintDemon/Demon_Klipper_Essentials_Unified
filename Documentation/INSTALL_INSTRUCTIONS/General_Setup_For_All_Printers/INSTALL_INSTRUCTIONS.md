@@ -13,7 +13,7 @@ You will need to edit your slicer's `Start G-code` & `End G-code` boxes to get t
 
 # NEW! COMPANION INSTALL VIDEO!
 
-Here's quick run-through of the general install process. This is NOT meant to replace the written instructions below but it is meant purely as a visual guide that will help you get the macros up & running on your system. By the time you're done you should be confident & comfortable working with the files on your printer to contiune with setting up the macros further. 
+Here's quick run-through of the general install process. This is NOT meant to replace the written instructions below, it's meant purely as a visual guide that will help you get the macros up & running on your system. By the time you're done you should be confident & comfortable working with the files on your printer to contiune with setting up the macros further. 
 
 ***...You got this!***
 
