@@ -762,28 +762,6 @@ initial_WHITE: 1.0
 
 <br>
 
-# Neopixel Toolhead LEDs 
-
-....if using a Voron or another machine with neopixel LEDs in the toolhead. Be sure to name any neopixel toolhead LEDs:
-
-```
-[neopixel sb_leds]   
-```
-Or you will get an invalid for LED error.
-
-....If you're using an SV08 leave the neopixel LEDs their defualt name:
-```
-[neopixel Screen_Colour]
-```
-If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
-You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
-
-![LED Chain Settings](https://github.com/user-attachments/assets/0b5c7bda-73e0-4cda-ba0c-f4edf0c03c96)
-
-****************************************************************************************************************************
-
-<br>
-
 # Filament Sensor
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
 ```
@@ -819,6 +797,28 @@ initial_duration: 1
 gcode:
     SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
 ```
+
+****************************************************************************************************************************
+
+<br>
+
+# Neopixel Toolhead LEDs 
+
+....if using a Voron or another machine with neopixel LEDs in the toolhead. Be sure to name any neopixel toolhead LEDs:
+
+```
+[neopixel sb_leds]   
+```
+Or you will get an invalid for LED error.
+
+....If you're using an SV08 leave the neopixel LEDs their defualt name:
+```
+[neopixel Screen_Colour]
+```
+If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
+You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
+
+![LED Chain Settings](https://github.com/user-attachments/assets/0b5c7bda-73e0-4cda-ba0c-f4edf0c03c96)
 
 ****************************************************************************************************************************
 
