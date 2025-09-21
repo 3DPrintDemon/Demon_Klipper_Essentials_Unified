@@ -27,16 +27,17 @@ variable_use_custom_pos   : True
 Then choose your desired XY parking position - make sure it's at least 5mm away from any axis max or min limits! You don't want the toolhead being bumped by an endstop!
 
 ```
-< EAMPLE DO NOT COPY THIS BLOCK - PARKING BACK LEFT CORNER ON A 350 SIZE VORON >
+< EAMPLE DO NOT COPY/PASTE THIS BLOCK - PARKING BACK LEFT CORNER ON A 350 SIZE VORON >
 < variable_custom_park_x    : 5.0 >
 < variable_custom_park_y    : 320.0 >
 ```
 
-Once you setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
+Once you setup where you want/need the park position set the extruder retract/unretract movements & speeds etc.
 
-You can define a specific cancel print location too if you wish! Set your X Y loaction with these:
+Now set the printer to park on print cancel. You can even define two locations if you wish, one for pause, & one for cancel. In the example below we just have the print parking in the same location as when paused. You can define a specific cancel print location too if you wish! Set your X Y loaction by changing the 'None" values to an axis position.
+
 ```
-< EAMPLE DO NOT COPY THIS BLOCK - PARKING ON PRINT CANCEL >
+< EAMPLE DO NOT COPY/PASTE THIS BLOCK - PARKING ON PRINT CANCEL >
 < variable_park_at_cancel   : True >
 < variable_park_at_cancel_x : None >
 < variable_park_at_cancel_y : None >
