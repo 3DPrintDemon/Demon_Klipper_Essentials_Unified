@@ -19,14 +19,6 @@ Then open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIA
 
 Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `ctrl+/` on PC or `cmd+/` on MacOS.
 
-Then use... 
-```
-[include My_Macros.cfg]
-```
-to include it in your `printer.cfg`. 
-
-As `Mainsail.cfg` is read only & you can't make any changes to it.
-
 Now set...
 ```
 variable_use_custom_pos   : True
@@ -44,9 +36,10 @@ Once you setup where you want/need the park position, the extruder retract/unret
 
 You can define a specific cancel print location too if you wish! Set your X Y loaction with these:
 ```
-variable_park_at_cancel   : True
-variable_park_at_cancel_x : None
-variable_park_at_cancel_y : None
+< EAMPLE DO NOT COPY THIS BLOCK - PARKING ON PRINT CANCEL >
+< variable_park_at_cancel   : True >
+< variable_park_at_cancel_x : None >
+< variable_park_at_cancel_y : None >
 ```
 You must set...
 
@@ -83,6 +76,14 @@ Were it says `variable_user_cancel_macro: ""` you need to paste in...
 ```
 _DEMON_CANCEL
 ```
+
+Then use... 
+```
+[include My_Macros.cfg]
+```
+to include it in your `printer.cfg`. 
+
+As `Mainsail.cfg` is read only & you can't make any changes to it.
 
 Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're done. Image is for a Voron 2.4 350
 
