@@ -946,6 +946,8 @@ The icons are appropriate if you use with the material-darker theme. Other theme
 
 <br>
 
+<img width="600" alt="KlipperScreen" src="https://github.com/user-attachments/assets/032f6675-3a0b-4bfd-acc9-4fd8e2f5d720" />
+
 ****************************************************************************************************************************
 
 <br>
