@@ -223,6 +223,7 @@ Other things you will need to look at when updating!
     </summary>
 <p>
 </p>
+    
 Once you have installed the main files this is an awesome new adaptive script (run from ssh) that will revolutionise your Demon_Klipper_Essentials_Unified install process! 
 Each time you run it the utility will scan your system in its current state & it'll show you your progress with getting everything setup, think of it as your installation copilot, or your own little red devil on your shoulder! 
 
@@ -304,8 +305,7 @@ Come & join the community! We've just launched Demon Discord, help us start buil
     </summary>
 <p>
 </p>
-# HOW TO SSH!
-
+    
 Be sure to use something like WinSCP or Putty on WindowsPC or Terminal on MacOS to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
 
 - Open a new SSH terminal & write in the below example but replacing the objects between the `< >` (NOT including the `<>` less/more than or xx symbols.) with your printer's information. 
@@ -353,6 +353,7 @@ You're now ready to begin issuing commands to install the macros.
     </summary>
 <p>
 </p>
+    
 While not vital to Demon Klipper Essentials it will provide additional functionality to the system & quality of life features, if you wish not to use it then don't install it & don't include the new `Extract_Demon_User_Files_x.cfg`, you'll just have to deal with some file management tasks manually. 
 
 If you do install the shell command extension & want the system to help manage your `User Files` be aware that it gives Klipper access to system level shell commands that have a very small potential for misuse if you download macros or files from any dubious or malicious sources! Also don't mess with the Demon `.sh` files unless you know what you're doing as you can seriously break stuff if you get things wrong!
