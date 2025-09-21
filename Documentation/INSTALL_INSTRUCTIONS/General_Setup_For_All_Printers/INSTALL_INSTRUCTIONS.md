@@ -133,7 +133,9 @@ Then Save & Restart.
 <p>
 </p>
 
-Due to the way the Kiauh Shell Script Extension works if you have a custom user account name you will need to do [this work-around](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#for-custom-user-account-names).
+you might have included the wrong demon_user_files_updater.cfg please double check you chose the correct one for your system. 
+
+Also. Due to the way the Kiauh Shell Script Extension works if you have a custom user account name you will need to do [this work-around](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#for-custom-user-account-names).
 
 </details>
 
