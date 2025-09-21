@@ -39,7 +39,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 <details>
     <summary>
         <b>
-        Click to expand - File Structure Has Changed for v2.9.4 Onwards
+        Click To Expand - File Structure Has Changed for v2.9.4 Onwards
         </b>
     </summary>
 <p>
@@ -74,7 +74,7 @@ If your directory is empty please click the reload button for your web browser t
 <details>
     <summary>
         <b>
-        Click to expand - What if you get a EOF error?
+        Click To Expand - What if you get a EOF error?
         </b>
     </summary>
 <p>
@@ -93,7 +93,7 @@ Don't worry though this is just telling you the system created the file but it d
 <details>
   <summary>
         <b>
-        Click to expand - What if you get a popup boot loop welcome message?
+        Click To Expand - What if you get a popup boot loop welcome message?
         </b>
     </summary>
 <p>
@@ -127,7 +127,7 @@ Then Save & Restart.
 <details>
   <summary>
         <b>
-        Click to expand - What if you get a popup boot loop extract files message?
+        Click To Expand - What if you get a popup boot loop extract files message?
         </b>
     </summary>
 <p>
@@ -140,7 +140,7 @@ Due to the way the Kiauh Shell Script Extension works if you have a custom user 
 <details>
     <summary>
         <b>
-        Click to expand - Manually reinstall your demon_vars.cfg file
+        Click To Expand - Manually reinstall your demon_vars.cfg file
         </b>
     </summary>
 <p>
@@ -171,7 +171,7 @@ sudo service klipper start
 <details>
     <summary>
         <b>
-        Click to expand - SCRIPT: USER SETTING FILE UPDATER!
+        Click To Expand - SCRIPT: USER SETTING FILE UPDATER!
         </b>
     </summary>
 <p>
@@ -218,7 +218,7 @@ Other things you will need to look at when updating!
 <details>
     <summary>
         <b>
-        Click to expand - FEATURE: DEMON DIAGNOSTICS!
+        Click To Expand - FEATURE: DEMON DIAGNOSTICS!
         </b>
     </summary>
 <p>
@@ -296,7 +296,7 @@ Make a backup of your current system now! Be sure you at least download your cur
 <details>
     <summary>
         <b>
-        Click to expand - How To Disable You Current Macros
+        Click To Expand - How To Disable You Current Macros
         </b>
     </summary>
 <p>
@@ -329,7 +329,7 @@ Now click `Save` & exit the file, no need to restart just yet, unless you want t
 <details>
     <summary>
         <b>
-        Click to expand - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly
+        Click To Expand - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly
         </b>
     </summary>
 <p>
@@ -377,7 +377,7 @@ You're now ready to begin issuing commands to install the macros.
 <details>
     <summary>
         <b>
-        Click to expand - OPTIONAL BUT RECOMMENDED - Kiauh G-code Shell Command Extension - OPTIONAL!
+        Click To Expand - OPTIONAL BUT RECOMMENDED - Kiauh G-code Shell Command Extension - OPTIONAL!
         </b>
     </summary>
 <p>
@@ -400,8 +400,6 @@ Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Comm
 ###### NOTE: Please take extra care of your system & protect it from misuse after installing the Kiauh G-code Shell Command Extension! Responsibility for this is solely on you.
 
 </details>
-
-<br>
 
 ****************************************************************************************************************************
 
@@ -498,7 +496,7 @@ filename = ~/demon_vars.cfg
 <details>
     <summary>
         <b>
-        Click to expand - Manually reinstall your demon_vars.cfg file
+        Click To Expand - Manually reinstall your demon_vars.cfg file
         </b>
     </summary>
 <p>
@@ -606,7 +604,7 @@ Your full include list should look like this example from my Voron 2.4 - the add
 <details>
     <summary>
         <b>
-        Click to expand - FEATURE: DEMON USER FILES UPDATER!
+        Click To Expand - FEATURE: DEMON USER FILES UPDATER!
         </b>
     </summary>
 <p>
@@ -651,7 +649,7 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 <details>
     <summary>
         <b>
-        Click to expand - If You Have A Host SBC with Custom User Account Name
+        Click To Expand - If You Have A Host SBC with Custom User Account Name
         </b>
     </summary>
 <p>
@@ -843,7 +841,7 @@ Add this to the top of the file, it defines the file section by naming your prin
 <details>
     <summary>
         <b>
-        Click to expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
+        Click To Expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
         </b>
     </summary>
 <p>
@@ -1199,7 +1197,7 @@ Once Your probe is setup correctly & tested working all Demon Z_Probe calibratio
 <details>
     <summary>
         <b>
-        Click to expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
+        Click To Expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
         </b>
     </summary>
 <p>
@@ -1386,7 +1384,7 @@ gcode_id: C
 <details>
     <summary>
         <b>
-        Click to expand - OR the old verion is here...
+        Click To Expand - OR the old verion is here...
         </b>
     </summary>
 <p>
