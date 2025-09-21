@@ -852,14 +852,13 @@ Save & restart!
 
 # Setting up KAMP_LiTE Adaptive Purge & Smart Park
 
-KAMP_LiTE is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful! Changes listed in the link.
+KAMP_LiTE has been installed for you with the prerequisites installer , & is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful!
 
-You must have a version of Klipper later than 1st Feb 2024. You must have completed the steps described in the above section.
+Use the line below in your `printer.cfg` to automatically include all files in that directory if you have not done so already.
 
-Also the fork KAMP_LiTE must be installed & included, how to do this is in the below link:
-
-https://github.com/3DPrintDemon/KAMP_LiTE/releases/tag/v1.0
-
+```
+[include ./KAMP_LiTE/*.cfg]
+```
 
 You must set your desired values in the KAMP_Settings.cfg
 
