@@ -852,7 +852,7 @@ Save & restart!
 
 # Setting up KAMP_LiTE Adaptive Purge & Smart Park
 
-KAMP_LiTE has been installed for you with the prerequisites installer , & is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful!
+KAMP_LiTE has been installed for you with the prerequisites installer, & is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful!
 
 Use the line below in your `printer.cfg` to automatically include all files in that directory if you have not done so already.
 
