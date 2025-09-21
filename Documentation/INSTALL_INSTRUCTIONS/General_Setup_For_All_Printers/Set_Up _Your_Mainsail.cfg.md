@@ -9,11 +9,14 @@
 You should be sure to `[include mainsail.cfg]` as we will be using this! 
 When inclding this file you pay very close attention to any sections defined within it! They must not be duplicated within your printer.cfg file, for instance the pause/resume section will casue problems if its defined twice in your system!!
 
-You need to open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` & paste it all into a new editable file for example...
+Create a new editable file in your /config directory...
 
 ```
 My_Macros.cfg
 ```
+
+Then open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` at thr top & paste it all into `My_macros.cfg`.
+
 Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `ctrl+/` on PC or `cmd+/` on MacOS.
 
 Then use... 
@@ -24,6 +27,18 @@ to include it in your `printer.cfg`.
 
 As `Mainsail.cfg` is read only & you can't make any changes to it.
 
+Now set...
+```
+variable_use_custom_pos   : True
+```
+
+Then choose your desired XY parking position - make sure it's at least 5mm away from any axis max or min limits! You don't want the toolhead being bumped by an endstop!
+
+```
+< EAMPLE DO NOT COPY THIS BLOCK - PARKING BACK LEFT CORNER ON A 350 SIZE VORON >
+< variable_custom_park_x    : 5.0 >
+< variable_custom_park_y    : 345.0 >
+```
 
 Once you setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
 
