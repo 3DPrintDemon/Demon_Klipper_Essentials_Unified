@@ -284,17 +284,67 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 # Preparing Your Current System
 
+### MAKE A BACKUP!
+
 - Make a backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
+
+### Disable Your Current Macros
 
 - Disable your current macros for START_PRINT & END_PRINT, plus any others you don't need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Your_Current_Macro_Files.md)
 
+<br>
+
 ### Not Sure How to SSH?
 
-- If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
+<details>
+    <summary>
+        <b>
+        Click to expand - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly
+        </b>
+    </summary>
+<p>
+</p>
+# HOW TO SSH!
+
+Be sure to use something like WinSCP or Putty on WindowsPC or Terminal on MacOS to log into your system via SSH, you'll need your printer's IP address along with its account name & password.
+
+- Open a new SSH terminal & write in the below example but replacing the objects between the `< >` (NOT including the `<>` less/more than or xx symbols.) with your printer's information. 
+
+```
+EXAMPLE
+ssh <pi>@<192.168.1.xx>
+
+NOT including the <> less/more than symbols or the xx on the end.
+
+<pi> = your printer's account name, so biqu, pi, mks, sovol for example
+
+<192.168.1.xx> = your printer's full IP address replacing the example numbers with yours.
+
+This can be found from your WiFI router in most cases.
+```
+```
+So basically the command will be something that will look like....
+
+EXAMPLE
+ssh pi@192.168.1.95
+```
+
+- Once you have input the correct account name & IP address as above 
+
+- Press return
+
+- Then the terminal will ask you for your password. Enter it, it wont be displayed on screen but it will be working.
+
+- Press return again to login.
+
+You're now ready to begin issuing commands to install the macros.
+
+</details>
 
 <br>
 
 ### Install Kiauh G-code Shell Command Extension
+
 <details>
     <summary>
         <b>
@@ -318,6 +368,7 @@ Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Comm
 ![Shell Install](https://github.com/user-attachments/assets/d4897e79-f019-4c67-8474-ed8ca28b3612)
 
 ###### NOTE: Please take extra care of your system & protect it from misuse after installing the Kiauh G-code Shell Command Extension! Responsibility for this is solely on you.
+
 </details>
 
 ****************************************************************************************************************************
