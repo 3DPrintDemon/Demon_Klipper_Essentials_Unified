@@ -826,6 +826,119 @@ You will need to change this if you have a long chain or use neopixels elsewhere
 <br>
 <br>
 
+# Demon Klipper Essentials Mainsail Updates
+
+To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
+
+```
+[update_manager Demon_Klipper_Essentials_Unified]
+type: git_repo
+path: ~/printer_data/config/Demon_Klipper_Essentials_Unified
+origin: https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
+primary_branch: main
+is_system_service: False
+managed_services: klipper
+```
+
+Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
+
+Also please note that if you do not use the new installer to update but instead jusy rely on Update Manager to update from v2.9.3 or lower you must run this ssh script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for the latest version! 
+
+```
+wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
+```
+
+****************************************************************************************************************************
+
+<br>
+<br>
+<br>
+
+# Setting up KLIPPER's Adaptive Mesh option. 
+
+There is no longer any need for a separate KAMP install for meshing. The adaptive purge line & smart park are still needed.
+
+For Klipper's Adaptive Mesh feature to work you must have:
+- You must have a version of Klipper later than 1st Feb 2024
+- Enabled your Slicer for `Label Objects`
+- It's good to have `Exclude Objects` too...
+- Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
+- Added the `Exclude Object` section to your `printer.cfg` file
+
+>[!TIP]
+>Find options under Orca main window Process/Global/Others
+
+![ORCA Label](https://github.com/user-attachments/assets/a2e51dab-a695-4eff-b637-a0b039e3e219)
+
+
+Add this to your `moonraker.conf` file:
+```
+[file_manager]
+enable_object_processing: True
+```
+
+Add this to your `printer.cfg` file:
+```
+[exclude_object]
+```
+
+Save & restart!
+
+****************************************************************************************************************************
+
+<br>
+<br>
+<br>
+
+# Setting up KAMP_LiTE Adaptive Purge & Smart Park
+
+KAMP_LiTE has been installed for you with the prerequisites installer, & is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful!
+
+Use the line below in your `printer.cfg` to automatically include all files in that directory if you have not done so already.
+
+```
+[include ./KAMP_LiTE/*.cfg]
+```
+
+You must set your desired values in the KAMP_Settings.cfg
+
+![KAMP_LiTE Settings](https://github.com/user-attachments/assets/11708975-5592-489c-b1f4-f299d99afb41)
+
+Then you must activate the KAMP settings in the `demon_user_settings_v*.cfg` file.
+
+![KAMP_LiTE Vars](https://github.com/user-attachments/assets/309e6f1a-a8a0-41d5-aa76-646a6efdade5)
+
+To use correctly ensure your `extruder` section in your `printer.cfg` has the line below defined & that its set to 5 or higher, if not the KAMP purge will be skipped & it wont work!
+```
+max_extrude_cross_section: 5
+```
+
+>[!NOTE]
+>If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the >settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
+
+<br>
+
+>[!TIP]
+>**To use adaptive meshing all files MUST have been sliced with `Label Objects` active.** 
+>
+>IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
+
+If you use ORCA SLICER:
+
+`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the demon_user_settings.cfg or re-slice the file with it enabled and restart the print!`
+
+If you use another slicer:
+
+`Internal error on command:"PRINT_START"`
+
+`Internal error on command:"BED_MESH_CALIBRATE"`
+
+****************************************************************************************************************************
+
+<br>
+<br>
+<br>
+
 # Modifying KlipperScreen Menus For New Features
 
 Setup Klipperscreen PREPARE Menu
@@ -947,119 +1060,6 @@ The icons are appropriate if you use with the material-darker theme. Other theme
 <br>
 
 <img width="600" alt="KlipperScreen" src="https://github.com/user-attachments/assets/032f6675-3a0b-4bfd-acc9-4fd8e2f5d720" />
-
-****************************************************************************************************************************
-
-<br>
-<br>
-<br>
-
-# Demon Klipper Essentials Mainsail Updates
-
-To be notifed of main macro pack updates & to be able to install them with a single click from your Mainsail web interface paste the block below into your `moonraker.conf` file, its a good idea to keep it under the `update_manager` section.
-
-```
-[update_manager Demon_Klipper_Essentials_Unified]
-type: git_repo
-path: ~/printer_data/config/Demon_Klipper_Essentials_Unified
-origin: https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified.git
-primary_branch: main
-is_system_service: False
-managed_services: klipper
-```
-
-Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
-
-Also please note that if you do not use the new installer to update but instead jusy rely on Update Manager to update from v2.9.3 or lower you must run this ssh script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for the latest version! 
-
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
-```
-
-****************************************************************************************************************************
-
-<br>
-<br>
-<br>
-
-# Setting up KLIPPER's Adaptive Mesh option. 
-
-There is no longer any need for a separate KAMP install for meshing. The adaptive purge line & smart park are still needed.
-
-For Klipper's Adaptive Mesh feature to work you must have:
-- You must have a version of Klipper later than 1st Feb 2024
-- Enabled your Slicer for `Label Objects`
-- It's good to have `Exclude Objects` too...
-- Added the `file_manager` section to your `moonraker.conf` file for `object processing`  
-- Added the `Exclude Object` section to your `printer.cfg` file
-
->[!TIP]
->Find options under Orca main window Process/Global/Others
-
-![ORCA Label](https://github.com/user-attachments/assets/a2e51dab-a695-4eff-b637-a0b039e3e219)
-
-
-Add this to your `moonraker.conf` file:
-```
-[file_manager]
-enable_object_processing: True
-```
-
-Add this to your `printer.cfg` file:
-```
-[exclude_object]
-```
-
-Save & restart!
-
-****************************************************************************************************************************
-
-<br>
-<br>
-<br>
-
-# Setting up KAMP_LiTE Adaptive Purge & Smart Park
-
-KAMP_LiTE has been installed for you with the prerequisites installer, & is simply KAMP but without the adpative meshing macro, as it is not required now klipper has Adaptive Meshing included by default. However the Adpative Purge & Smart Park features are still very useful!
-
-Use the line below in your `printer.cfg` to automatically include all files in that directory if you have not done so already.
-
-```
-[include ./KAMP_LiTE/*.cfg]
-```
-
-You must set your desired values in the KAMP_Settings.cfg
-
-![KAMP_LiTE Settings](https://github.com/user-attachments/assets/11708975-5592-489c-b1f4-f299d99afb41)
-
-Then you must activate the KAMP settings in the `demon_user_settings_v*.cfg` file.
-
-![KAMP_LiTE Vars](https://github.com/user-attachments/assets/309e6f1a-a8a0-41d5-aa76-646a6efdade5)
-
-To use correctly ensure your `extruder` section in your `printer.cfg` has the line below defined & that its set to 5 or higher, if not the KAMP purge will be skipped & it wont work!
-```
-max_extrude_cross_section: 5
-```
-
->[!NOTE]
->If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the >settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
-
-<br>
-
->[!TIP]
->**To use adaptive meshing all files MUST have been sliced with `Label Objects` active.** 
->
->IF NOT YOU WILL RECEIVE THE FOLLOWING ERRORS!!
-
-If you use ORCA SLICER:
-
-`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the demon_user_settings.cfg or re-slice the file with it enabled and restart the print!`
-
-If you use another slicer:
-
-`Internal error on command:"PRINT_START"`
-
-`Internal error on command:"BED_MESH_CALIBRATE"`
 
 ****************************************************************************************************************************
 
