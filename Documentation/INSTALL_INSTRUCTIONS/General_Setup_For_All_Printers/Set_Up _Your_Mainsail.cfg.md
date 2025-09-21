@@ -29,7 +29,7 @@ Then choose your desired XY parking position - make sure it's at least 5mm away 
 ```
 < EAMPLE DO NOT COPY THIS BLOCK - PARKING BACK LEFT CORNER ON A 350 SIZE VORON >
 < variable_custom_park_x    : 5.0 >
-< variable_custom_park_y    : 345.0 >
+< variable_custom_park_y    : 320.0 >
 ```
 
 Once you setup where you want/need the park position, the extruder retract/unretract movements & speeds etc. You can even define two locations if you wish, one for pause, & one for cancel.
