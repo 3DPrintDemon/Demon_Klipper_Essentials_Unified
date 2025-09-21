@@ -292,6 +292,34 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly [click here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/How_To_SSH.md)
 
+<br>
+
+### Install Kiauh G-code Shell Command Extension
+<details>
+    <summary>
+        <b>
+        Click to expand - OPTIONAL BUT RECOMMENDED - Kiauh G-code Shell Command Extension - OPTIONAL!
+        </b>
+    </summary>
+<p>
+</p>
+While not vital to Demon Klipper Essentials it will provide additional functionality to the system & quality of life features, if you wish not to use it then don't install it & don't include the new `Extract_Demon_User_Files_x.cfg`, you'll just have to deal with some file management tasks manually. 
+
+If you do install the shell command extension & want the system to help manage your `User Files` be aware that it gives Klipper access to system level shell commands that have a very small potential for misuse if you download macros or files from any dubious or malicious sources! Also don't mess with the Demon `.sh` files unless you know what you're doing as you can seriously break stuff if you get things wrong!
+These macros only use the G-code Shell Commands to help to keep your `User Files` up to date & in a directory were you can edit & manage them without creating a "dirty" status on the main Demon Klipper Essentials install.
+
+- https://github.com/dw-0/kiauh/tree/master
+
+Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Command) to install the extension.
+
+###### NOTE: If using the new V6 alpha release these options change to "E" for extensions, then option 1 for (G-code shell command), then option 1 to install. 
+###### NOTE: BE aware the V6 release of Kiauh is alpha stage software! Be cautious using it, I would recommend using the last stable release instead for this task, just incase!
+
+![Shell Install](https://github.com/user-attachments/assets/d4897e79-f019-4c67-8474-ed8ca28b3612)
+
+###### NOTE: Please take extra care of your system & protect it from misuse after installing the Kiauh G-code Shell Command Extension! Responsibility for this is solely on you.
+</details>
+
 ****************************************************************************************************************************
 
 <br>
