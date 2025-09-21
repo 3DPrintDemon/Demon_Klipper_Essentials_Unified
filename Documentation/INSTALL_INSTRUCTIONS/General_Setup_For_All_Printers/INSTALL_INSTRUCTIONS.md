@@ -401,6 +401,8 @@ Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Comm
 
 </details>
 
+<br>
+
 ****************************************************************************************************************************
 
 <br>
