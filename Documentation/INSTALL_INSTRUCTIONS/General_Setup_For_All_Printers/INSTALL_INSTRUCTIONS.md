@@ -763,7 +763,7 @@ initial_WHITE: 1.0
 <br>
 
 # Filament Sensor
-If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `PRINT_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
+If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `DEMON_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
 ```
 [filament_switch_sensor filament_sensor]
 switch_pin: ^### <<<<<< Insert board pin for sensor
@@ -925,11 +925,11 @@ max_extrude_cross_section: 5
 
 If you use ORCA SLICER:
 
-`Error evaluating 'gcode_macro PRINT_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the demon_user_settings.cfg or re-slice the file with it enabled and restart the print!`
+`Error evaluating 'gcode_macro DEMON_START:gcode': gcode.CommandError: This error is caused by the sliced file not having "Label Objects" enabled! Please disable Adaptive_Meshing in the demon_user_settings.cfg or re-slice the file with it enabled and restart the print!`
 
 If you use another slicer:
 
-`Internal error on command:"PRINT_START"`
+`Internal error on command:"DEMON_START"`
 
 `Internal error on command:"BED_MESH_CALIBRATE"`
 
