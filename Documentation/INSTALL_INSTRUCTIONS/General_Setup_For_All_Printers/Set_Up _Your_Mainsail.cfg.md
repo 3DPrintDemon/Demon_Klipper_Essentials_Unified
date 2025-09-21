@@ -15,7 +15,7 @@ Create a new editable file in your /config directory...
 My_Macros.cfg
 ```
 
-Then open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` at thr top & paste it all into `My_macros.cfg`.
+Then open the `Mainsail.cfg` file, select & copy the `[gcode_macro _CLIENT_VARIABLE]` at the top & paste it into `My_macros.cfg`, see the image at the bottom of the page for guidance.
 
 Once pasted into the new file uncomment the `[gcode_macro _CLIENT_VARIABLE]` macro by selecting the whole macro & pressing `ctrl+/` on PC or `cmd+/` on MacOS.
 
