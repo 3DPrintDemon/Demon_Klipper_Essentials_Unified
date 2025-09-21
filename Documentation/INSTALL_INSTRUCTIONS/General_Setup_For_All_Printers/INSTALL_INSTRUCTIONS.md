@@ -287,11 +287,40 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 ### MAKE A BACKUP!
 
-- Make a backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
+Make a backup of your current system now! Be sure you at least download your current `/config` folder BEFORE YOU DO ANYTHING ELSE!! You want have a set of UNTOUCHED files to refer back to if needed!
+
+<br>
 
 ### Disable Your Current Macros
 
-- Disable your current macros for START_PRINT & END_PRINT, plus any others you don't need including any for calibration & levelling. [Tips on how to do this quickly here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Your_Current_Macro_Files.md)
+<details>
+    <summary>
+        <b>
+        Click to expand - How To Disable You Current Macros
+        </b>
+    </summary>
+<p>
+</p>
+
+Disable your current macros for START_PRINT & END_PRINT, plus any others you don't need including any for calibration & levelling.
+
+The best way to do this is to comment out the old macro file include command in your `printer.cfg` by placing a hash in front of the command.
+```
+EXAMPLE
+# [include ./Your_Old_Start_End_Macros_File.cfg]
+```
+
+If however you can't do this as the macros are in amongst other macros in the same file, or they're in your `printer.cfg` you can select every line of the macros you want to disable & press the following keyboard commands...
+
+`Crtl+/` on windows PC
+
+OR....
+
+`Cmd+/` on MacOS
+
+Now click `Save` & exit the file, no need to restart just yet, unless you want to.
+
+</details>
 
 <br>
 
