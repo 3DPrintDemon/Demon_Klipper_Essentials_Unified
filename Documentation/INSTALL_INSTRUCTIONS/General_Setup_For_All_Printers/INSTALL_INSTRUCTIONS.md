@@ -893,8 +893,6 @@ Add this to your `printer.cfg` file:
 [exclude_object]
 ```
 
-Save & restart!
-
 ****************************************************************************************************************************
 
 <br>
@@ -923,6 +921,8 @@ To use correctly ensure your `extruder` section in your `printer.cfg` has the li
 ```
 max_extrude_cross_section: 5
 ```
+
+Save & restart!
 
 >[!NOTE]
 >If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the >settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
