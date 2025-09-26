@@ -675,17 +675,11 @@ Extract_Demon_User_Files_Custom.cfg
 * Paste in the contents of your clipboard to the new file.
 * Use `ctrl+F` on Windows or `cmd+F` on MacOS
 * Search for the standard user account name in the file you chose to copy, e.g. sovol/biqu/mks/pi
-* Then replace that entire file path with...
-
-```
-/home/<YOUR USER ACCOUNT NAME HERE>/printer_data/config/Demon_User_Files/Demon_User_Files_Updater/
-```
-
-* Be sure to leave file to be called at the very end of the file path in tact or the command WONT WORK! So for example the top file path on line 2 will read....
+* Then replace your user account name to read your actual user account name...
 
 ```
 EXAMPLE!
-command: /usr/bin/bash /home/<YOUR USE ACCOUNT NAME HERE>/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Settings.sh
+command: /usr/bin/bash /home/<YOUR USER ACCOUNT NAME HERE>/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Settings.sh
 ```
 
 * Do the same for the rest of the file paths in the cfg file.
