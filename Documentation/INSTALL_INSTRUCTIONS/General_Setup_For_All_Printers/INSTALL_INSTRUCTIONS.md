@@ -803,6 +803,9 @@ gcode:
     SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
 ```
 
+>[!NOTE]
+>SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set it as above.
+
 ****************************************************************************************************************************
 
 <br>
