@@ -85,6 +85,8 @@ Go into the demon_custom_expansion cfg file & under the `[gcode_macro _CUSTOM_PR
     _OFFSET_FORCE_OVERLAY
 ```
 
+<img width="1333" height="648" alt="SV08_MAX FO" src="https://github.com/user-attachments/assets/4a45e883-3818-4cdc-b61c-be2ecda3f57f" />
+
 Then be sure to set `variable_ceal_master_enable:` & the `variable_pre_level:` both to...
 ```
 True
