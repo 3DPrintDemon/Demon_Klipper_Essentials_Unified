@@ -6,8 +6,11 @@ Below shows a fully setup slicer as per recommended Mainsail settings combined w
 
 Cut/paste your current gcode out of the gcode window & into Notepad/Notes to save if you ever revert back & need it again. Replace your old Machine Gcode with the new Gcode for the relevant boxes.
  
-It's very important the last line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
+It's very important the `DEMON_START` line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
 If this is not the case the system will fail as soon as you start a print.
+
+>[!NOTE]
+>The `_SPS GSTART=True` line must be on a new line as shown!
 
 ###### NOTE: If your screen can't hold the text in a single line the computer will place it on mulitple lines itself, however there will not be actual "returns" placed into it, as far as the printer will see it will still be one long line.
 
