@@ -23,7 +23,8 @@ Machine Start G-code:
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
 M104 S0
 M140 S0
-DEMON_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[hot_plate_temp_initial_layer] LAYER=[layer_height] FILAMENT=[filament_type] EXCLUDE=[exclude_object] SURFACE="[curr_bed_type]" OAPA=[adaptive_pressure_advance] DMGCC="v1.1"
+DEMON_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[hot_plate_temp_initial_layer] LAYER=[layer_height] FILAMENT=[filament_type] EXCLUDE=[exclude_object] SURFACE="[curr_bed_type]" OAPA=[adaptive_pressure_advance] DMGCC="v1.2"
+_SPS GSTART=True
 ```
 Machine end G-code:
 ```
