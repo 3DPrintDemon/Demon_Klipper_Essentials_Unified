@@ -13,7 +13,8 @@ If this is not the case the system will fail as soon as you start a print.
 
 Here is how they should look in Ocra Slicer. 
 
-<img width="1150" height="2050" alt="Demon Machine Gcode v1 1" src="https://github.com/user-attachments/assets/8ca39ffe-3245-4278-adb4-aa4dbb6c6537" />
+<img width="1154" height="2095" alt="slicer" src="https://github.com/user-attachments/assets/b73a4b18-4f4a-45d7-8f7b-32de95567faf" />
+
 
 These are fully setup codes as per recommended Mainsail settings combined with the macro settings for Orca Slicer using relative extrusion, as per the image....
 
