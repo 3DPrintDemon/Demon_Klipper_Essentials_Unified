@@ -9,10 +9,10 @@ Cut/paste your current gcode out of the gcode window & into Notepad/Notes to sav
 It's very important the `DEMON_START` line of the `Machine Start Gcode` is a single long line as shown below, with no returns in it. 
 If this is not the case the system will fail as soon as you start a print.
 
+###### NOTE: If your screen can't hold the text in a single line the computer will place it on mulitple lines itself, however there will not be actual "returns" placed into it, as far as the printer will see it will still be one long line.
+
 >[!IMPORTANT]
 >The `_SPS GSTART=True` line must be on a new line as shown!
-
-###### NOTE: If your screen can't hold the text in a single line the computer will place it on mulitple lines itself, however there will not be actual "returns" placed into it, as far as the printer will see it will still be one long line.
 
 Here is how they should look in Ocra Slicer. 
 
