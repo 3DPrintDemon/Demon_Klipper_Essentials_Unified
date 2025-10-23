@@ -30,6 +30,33 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 <br>
 
+>[!IMPORTANT]
+>In the `buffer_stepper.cfg` file you have just installed you will need to add the pins shown a few lines down to use as a manual override for the clog & Jam detection.
+This will allow you to disable the automated clog & Jam detection system during a print if you keep getting false triggers!
+
+# Add Clog Detection Override Pin!
+
+See line 45 of the `buffer_stepper.cfg` file, under the `[output_pin CLOG_DETECTION]` & add this pin...
+
+```
+pin: PC12
+```
+
+<br>
+
+# Add Jam Detection Override Pin!
+
+See line 49 of the `buffer_stepper.cfg` file, under the `[output_pin JAM_DETECTION]` & add this pin...
+
+```
+pin: PC11
+```
+
+
+****************************************************************************************************************************
+
+<br>
+
 # Timelapse Use
 
 If you wish to continue to use Timelapse be sure to add this back in your slicer's `Before Layer Change` gcode box.
@@ -489,32 +516,7 @@ params: {"script":"_FEED_OUT"}
 
 <br>
 
->[!IMPORTANT]
->In the `buffer_stepper.cfg` file you have just installed you will need to add the pins shown a few lines down to use as a manual override for the clog & Jam detection.
-This will allow you to disable the automated clog & Jam detection system during a print if you keep getting false triggers!
 
-# Add Clog Detection Override Pin!
-
-See line 45 of the `buffer_stepper.cfg` file, under the `[output_pin CLOG_DETECTION]` & add this pin...
-
-```
-pin: PC12
-```
-
-<br>
-
-# Add Jam Detection Override Pin!
-
-See line 49 of the `buffer_stepper.cfg` file, under the `[output_pin JAM_DETECTION]` & add this pin...
-
-```
-pin: PC11
-```
-
-
-****************************************************************************************************************************
-
-<br>
 
 # ADD EXTRA UNPUBLISHED PINS FOR MORE FUNCTIONS HERE!!
 
