@@ -30,6 +30,14 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 <br>
 
+# HOW TO FIX & UPDATE YOUR SOVOL EMMC IMAGE!
+
+To update system packages & to update latest software versions, plus how to get rid of those annoying Moonraker Warnings for good!
+
+[CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Fix_Sovol_EMMC_Images/FIX_SOVOL_EMMC_IMAGES.md)
+
+<br>
+
 >[!IMPORTANT]
 >In the `buffer_stepper.cfg` file you have just installed you will need to add the pins shown a few lines down to use as a manual override for the clog & Jam detection.
 This will allow you to disable the automated clog & Jam detection system during a print if you keep getting false triggers!
