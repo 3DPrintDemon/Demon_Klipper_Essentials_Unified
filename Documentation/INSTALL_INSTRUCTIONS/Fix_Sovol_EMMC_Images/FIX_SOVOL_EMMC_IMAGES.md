@@ -5,7 +5,7 @@ This process is tested & working on the latest SV08 MAX & SV ZERO printer firmwa
 
 # BACKUP!
 
-first backup your entire config directory! 
+First & most IMPORTANTLY backup your entire config directory! 
 
 >[!WARNING]
 >Do not blame me if you bork this & you didn't make a good & complete backup of your setup! Continue at your own risk! 
