@@ -58,6 +58,8 @@ Now in your `printer.cfg` comment out
 # [include moonraker_obico_macros.cfg]
 ```
 
+<br>
+
 # RECTIFY & UPDATE
 
 First we're going to update the system packages. To do this we need to update the list we need.
