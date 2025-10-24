@@ -32,7 +32,7 @@ Save & exit the file.
 
 <br>
 
-# UNISTALL OBICO
+# UNINSTALL OBICO
 
 Uninstall this software that constantly pings an IP & spams your console constantly until you connect it!
 
