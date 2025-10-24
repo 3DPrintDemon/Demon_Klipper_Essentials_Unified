@@ -1,5 +1,9 @@
 # HOW TO FIX & UPDATE STOCK SOVOL EMMC IMAGES
 
+THIS SECTION IS TOTALLY OPTIONAL - YOUR PRINTER WILL FUNCTION WITH THE MACROS IF YOU CHOOSE TO SKIP THIS.
+
+<img width="848" height="573" alt="UPDATED!" src="https://github.com/user-attachments/assets/103d33d4-311b-4827-8007-803871cdc949" />
+
 This process is tested & working on the latest SV08 MAX & SV ZERO printer firmware releases. It'll probably also work on the latest SV08 Eddy upgrade firmware also, however that is currently untested.
 
 
