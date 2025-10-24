@@ -32,6 +32,32 @@ Save & exit the file.
 
 <br>
 
+# UNISTALL OBICO
+
+Uninstall this software that constantly pings an IP & spams your console constantly until you connect it!
+
+```
+sudo systemctl stop moonraker-obico.service
+sudo systemctl disable moonraker-obico.service
+sudo rm /etc/systemd/system/moonraker-obico.service
+sudo systemctl daemon-reload
+sudo systemctl reset-failed
+rm -rf ~/moonraker-obico
+```
+
+Then remove the config files
+
+```
+rm ~/printer_data/config/moonraker-obico.cfg
+rm ~/printer_data/config/moonraker-obico-update.cfg
+```
+
+Now in your `printer.cfg` comment out
+
+```
+# [include moonraker_obico_macros.cfg]
+```
+
 # RECTIFY & UPDATE
 
 First we're going to update the system packages. To do this we need to update the list we need.
