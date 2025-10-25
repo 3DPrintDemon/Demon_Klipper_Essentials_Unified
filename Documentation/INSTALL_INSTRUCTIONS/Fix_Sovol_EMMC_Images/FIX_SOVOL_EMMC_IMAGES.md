@@ -16,6 +16,12 @@ First & most IMPORTANTLY backup your entire config directory!
 
 <br>
 
+# SOVOL FIRMWARE UPDATE
+
+Now update to the latest Sovol firmware version for you machine. 
+
+<br>
+
 # DISABLE BACKPORTS CHECK
 
 SSH into the printer.
