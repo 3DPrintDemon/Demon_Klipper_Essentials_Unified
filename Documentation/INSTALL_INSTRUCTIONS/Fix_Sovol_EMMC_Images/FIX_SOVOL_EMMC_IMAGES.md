@@ -18,7 +18,7 @@ First & most IMPORTANTLY backup your entire config directory!
 
 # SOVOL FIRMWARE UPDATE
 
-Now update to the latest Sovol firmware version for you machine. 
+Now update to the latest Sovol firmware version for your machine. 
 
 <br>
 
