@@ -25,6 +25,25 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 ****************************************************************************************************************************
 
+# SOVOL SV08 EDDY UPGRADE KIT USERS!
+
+>[!IMPORTANT]
+>TEMPORERY WORKAROUND
+>
+>Unitl I can update some systems within the macros you'll need to add the below commands, it will not make use of the nozzle scraper just yet, please watch this space.
+
+You must paste this into the demon_custom_expansion file under the commands in the pre-levelling macro. Remember to enable it & the master enable at the top of the file.
+
+```
+    _Z_PARK
+    SET_HEATER_TEMPERATURE HEATER=extruder TARGET=150
+    TEMPERATURE_WAIT SENSOR=extruder MINIMUM={150 -2} MAXIMUM={150 + 5}
+
+    Z_OFFSET_CALIBRATION METHOD=force_overlay EXTRUDER_TEMP=150 BED_TEMP={printer.heater_bed.target}
+    M400
+    G0 Z10
+```
+
 <br>
 
 # Timelapse Use
