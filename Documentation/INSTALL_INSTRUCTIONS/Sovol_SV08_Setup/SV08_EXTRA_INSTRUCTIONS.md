@@ -43,6 +43,11 @@ You must paste this into the demon_custom_expansion file under the commands in t
     M400
     G0 Z10
 ```
+****************************************************************************************************************************
+
+<br>
+
+# REGULAR INSTRUCTIONS
 
 <br>
 
