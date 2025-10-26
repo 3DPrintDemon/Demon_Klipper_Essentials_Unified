@@ -74,20 +74,20 @@ case $choice in
     
     [mM]* ) echo "Ok modified Mainline Klipper system it is!"
         if [ -d "$UFDIR" ]; then
-            if [ ! -f "$UFDIR/demon_SV08_ML_display_v1.0.cfg" ]; then
-                echo "Installing Demon_SV08_Mainline_v1.0.cfg in directory $UFDIR"
+            if [ ! -f "$UFDIR/demon_SV08_ML_display_v1.1.cfg" ]; then
+                echo "Installing Demon_SV08_Mainline_v1.1.cfg in directory $UFDIR"
                 cd $UFDIR 
-                wget https://github.com/3DPrintDemon/SV08/releases/download/v1.0/demon_SV08_ML_display_v1.0.cfg --backups=1
+                wget https://github.com/3DPrintDemon/SV08/releases/download/v1.0/demon_SV08_ML_display_v1.1.cfg --backups=1
                 cd $CDIR
                 echo "Demon SV08 Mainline Display Config installer actions complete"
                 echo "Install complete! Please restart Klipper to use your new menu system."
         
             else
-                echo "demon_SV08_ML_display_v1.0.cfg file already exists."
+                echo "demon_SV08_ML_display_v1.1.cfg file already exists."
             fi
             
         else
-            echo "$UFDIR does not exist, please check your system or install the main macro files first, demon_SV08_ML_display_v1.0.cfg install cancelled!"
+            echo "$UFDIR does not exist, please check your system or install the main macro files first, demon_SV08_ML_display_v1.1.cfg install cancelled!"
         fi ;;
 
     *) exit ;;
