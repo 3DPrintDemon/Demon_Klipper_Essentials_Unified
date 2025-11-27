@@ -2,7 +2,7 @@
 ```
 M104 S0
 M140 S0
-DEMON_START EXTRUDER=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] LAYER=[layer_height] FILAMENT=[filament_type] DMGCC="v1.2"
+DEMON_START EXTRUDER=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] LAYER=[layer_height] FILAMENT=[filament_type] DMGCC="v1.3"
 _SPS GSTART=True
 ```
 
@@ -11,7 +11,7 @@ _SPS GSTART=True
 ```
 M109 S0
 M190 S0
-DEMON_START EXTRUDER=\{material_print_temperature_layer_0\} BED=\{material_bed_temperature_layer_0\} LAYER=\{layer_height\} FILAMENT=\{material_type\} DMGCC="v1.2"
+DEMON_START EXTRUDER=\{material_print_temperature_layer_0\} BED=\{material_bed_temperature_layer_0\} LAYER=\{layer_height\} FILAMENT=\{material_type\} DMGCC="v1.3"
 _SPS GSTART=True
 ```
 
@@ -21,7 +21,7 @@ This is untested, please notify if it doesnt work
 ```
 M109 S0
 M190 S0
-DEMON_START EXTRUDER=[extruder0_temperature] BED=[platform0_temperature] LAYER=[current_layer_height] FILAMENT=[auto_configure_material] DMGCC="v1.2"
+DEMON_START EXTRUDER=[extruder0_temperature] BED=[platform0_temperature] LAYER=[current_layer_height] FILAMENT=[auto_configure_material] DMGCC="v1.3"
 _SPS GSTART=True
 ```
 
