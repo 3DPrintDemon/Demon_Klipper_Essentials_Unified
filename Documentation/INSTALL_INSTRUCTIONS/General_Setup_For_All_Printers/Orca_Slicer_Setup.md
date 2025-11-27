@@ -12,11 +12,14 @@ If this is not the case the system will fail as soon as you start a print.
 ###### NOTE: If your screen can't hold the text in a single line the computer will place it on mulitple lines itself, however there will not be actual "returns" placed into it, as far as the printer will see it will still be one long line.
 
 >[!IMPORTANT]
+>There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
+>
 >The `_SPS GSTART=True` line must be on a new line as shown!
 
 Here is how they should look in Ocra Slicer. 
 
-<img width="1154" height="2095" alt="slicer" src="https://github.com/user-attachments/assets/b73a4b18-4f4a-45d7-8f7b-32de95567faf" />
+
+<img width="1193" height="2045" alt="ORCA" src="https://github.com/user-attachments/assets/7a2b29cc-68ba-4a12-952a-068e01b3fb3c" />
 
 
 These are fully setup codes as per recommended Mainsail settings combined with the macro settings for Orca Slicer using relative extrusion, as per the image....
@@ -27,7 +30,7 @@ Machine Start G-code:
 SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]
 M104 S0
 M140 S0
-DEMON_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[hot_plate_temp_initial_layer] LAYER=[layer_height] FILAMENT=[filament_type] EXCLUDE=[exclude_object] SURFACE="[curr_bed_type]" OAPA=[adaptive_pressure_advance] DMGCC="v1.2"
+DEMON_START EXTRUDER=[nozzle_temperature_initial_layer] TOOL={initial_tool} BED=[bed_temperature_initial_layer_single] LAYER=[layer_height] FILAMENT=[filament_type] EXCLUDE=[exclude_object] SURFACE="[curr_bed_type]" OAPA=[adaptive_pressure_advance] DMGCC="v1.3"
 _SPS GSTART=True
 ```
 Machine end G-code:
