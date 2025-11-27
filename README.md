@@ -25,6 +25,8 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 
 ## Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
+There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
+
 This update now uses custom names & also provides a means of checking that you sent a file with the correct START Gcode for these macros! The system will halt the print & warn you if not! So no more sending a file to print with the wrong START Gcode & bad things happening!!
 
 <br>
