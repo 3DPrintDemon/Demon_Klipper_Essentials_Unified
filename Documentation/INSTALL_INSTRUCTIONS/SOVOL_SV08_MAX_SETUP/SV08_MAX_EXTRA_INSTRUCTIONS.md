@@ -11,7 +11,7 @@ Plus I provide the DEMON DISCORD to help anyone with getting DKEU working on the
 
 All of this is given away to the community for FREE.
 
-However I would like to kindly ask that if you gain any sort of benefit, joy, improved quality of life using your printer, or maybe if you use these macros as part of your side or regular business. For example in your print farm or to help make your craft fair items please consider making a pledge on the 3DPrintDemon Patreon page for however much you feel these macros are worth to your printing life & your business income! You can choose the amount of your donation & how long you are an active donating supporter!
+However I would like to kindly ask that if you gain any sort of benefit, joy, improved quality of life using your printer, or maybe if you use these macros as part of your side or regular business, for example in your print farm or to help make your craft fair items please consider making a pledge on the 3DPrintDemon Patreon page for however much you feel these macros are worth to your printing life & your business income! You can choose the amount of your donation & how long you are an active donating supporter!
 
 You can stay a supporter on the 3DPrintDemon Patreon sending donations of your choosing for as long as you like. Maybe it’s for just a month or two for single private users that would like to show your gratitude, or maybe you could consider ongoing support if you’re a business owner & make regular use of my work to aid your business.
 
