@@ -1,3 +1,33 @@
+# SUPPORT YOUR FRIENDLY 3DPrintDemon!
+
+>[!TIP]
+>Please consider supporting this project…. Even if it’s for a single donation!
+>
+>It really does make a difference & any amount you send is greatly appreciated!
+
+This macro pack is the cumulation of over 2.5 years of work by one person alone, there have been countless late nights, missed family time, bottomless cups of coffee, as well as a boat load of effort & dedication. There’s been endless weeks of writing code & then probably that amount of time again at least thoroughly testing the files so that you can rest assured that they work & these macros will NOT damage or harm your printer in any way! Not counting any improper setup of course…
+
+Plus I provide the DEMON DISCORD to help anyone with getting DKEU working on their system!
+
+All of this is given away to the community for FREE.
+
+However I would like to kindly ask that if you gain any sort of benefit, joy, improved quality of life using your printer, or maybe if you use these macros as part of your side or regular business. For example in your print farm or to help make your craft fair items please consider making a pledge on the 3DPrintDemon Patreon page for however much you feel these macros are worth to your printing life & your business income! You can choose the amount of your donation & how long you are an active donating supporter!
+
+You can stay a supporter on the 3DPrintDemon Patreon sending donations of your choosing for as long as you like. Maybe it’s for just a month or two for single private users that would like to show your gratitude, or maybe you could consider ongoing support if you’re a business owner & make regular use of my work to aid your business.
+
+Active supporters have a special channel on the Demon Discord server & are provided with a higher level of support over non supporting members. Just make your discord user name known & you’ll be granted “supporter” privileges.
+
+[JOIN THE 3DPRINTDEMON PATREON](https://patreon.com/3dprintdemon) as an active donating member & show your support for my work!
+
+Your donations are used to feed my printers & give them the latest fancy pants new parts so I can continue adding new features, fixing bugs & providing time for helping you all to get the macros running & fixing issues you might experience!
+
+Be sure to use the website not the IOS app, it's cheaper!
+
+
+<br>
+<br>
+<br>
+
 # IF YOU'RE USING A SOVOL SV08 MAX PRINTER!
 
 <br>
@@ -528,6 +558,18 @@ params: {"script":"_FEED_OUT"}
 
 ****************************************************************************************************************************
 
+<br>
+
+# SUPPORT 3DPrintDemon!
+
+You can stay a supporter on the 3DPrintDemon Patreon sending donations of your choosing for as long as you like. Maybe it’s for just a month or two for single private users that would like to show your gratitude, or maybe you could consider ongoing support if you’re a business owner & make regular use of my work to aid your business.
+
+Active supporters have a special channel on the Demon Discord server & are provided with a higher level of support over non supporting members. Just make your discord user name known & you’ll be granted “supporter” privileges.
+
+[JOIN THE 3DPRINTDEMON PATREON](https://patreon.com/3dprintdemon) as an active donating member & show your support for my work!
+
+<br>
+<br>
 <br>
 
 
