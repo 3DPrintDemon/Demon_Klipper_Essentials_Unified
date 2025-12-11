@@ -977,17 +977,20 @@ If you use another slicer:
 <br>
 <br>
 
-# Modifying KlipperScreen Menus For New Features
+# Modifying KlipperScreen For New Features
 
-Setup Klipperscreen PREPARE Menu
+<img width="600" alt="KlipperScreen" src="https://github.com/user-attachments/assets/032f6675-3a0b-4bfd-acc9-4fd8e2f5d720" />
+
+<br>
+
+## Setup Klipperscreen PREPARE Menu
 
 Open your `KlipperScreen.conf` file in your printer’s /config folder. If you don’t have one create one.
-Paste the lines below in to create the new KS menu!
-
+Paste the lines in the expandable block below in to create the new KS menu!
 
 Add this to the top of the file, it defines the file section by naming your printer. You can also add your chamber temp or any other sensor or heater on your printer to the menubar in KlipperScreen. 
 
-<br>
+****************************************************************************************************************************
 
 <details>
     <summary>
@@ -1095,9 +1098,67 @@ The icons are appropriate if you use with the material-darker theme. Other theme
 
 </details> 
 
+****************************************************************************************************************************
+
 <br>
 
-<img width="600" alt="KlipperScreen" src="https://github.com/user-attachments/assets/032f6675-3a0b-4bfd-acc9-4fd8e2f5d720" />
+## KlipperScreen Auto Printer Lights
+
+Have Klipper turn your printer's LED's on & off automatically when Klipperscreen sleeps & wakes when the printer is idle & in "Standby" mode!
+
+****************************************************************************************************************************
+
+<details>
+    <summary>
+        <b>
+        Click To Expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
+        </b>
+    </summary>
+<p>
+</p>
+    
+Put this in your moonraker.conf file:
+
+```
+[power Auto Lights]
+type: klipper_device
+object_name: gcode_macro SET_AUTO_LIGHTS
+locked_while_printing: True
+```
+
+Put this in your KlipperScreen.conf file:
+
+```
+[main]
+screen_on_devices: Auto Lights
+screen_off_devices: Auto Lights
+```
+
+Then this goes in your My_Macros.cfg file:
+
+```
+[gcode_macro SET_AUTO_LIGHTS]
+variable_value: 1
+gcode:
+  {% if 'VALUE' not in params %}
+    {action_raise_error("Parameter 'VALUE' missing from 'SET_AUTO_LIGHTS'")}
+  {% endif %}
+  {% set state = params.VALUE|int %}
+  {% if state %}
+    SET_LED LED=Printer_Lights WHITE=1.00 SYNC=0 TRANSMIT=1
+  {% else %}
+    SET_LED LED=Printer_Lights WHITE=0.00 SYNC=0 TRANSMIT=1
+  {% endif %}
+  SET_GCODE_VARIABLE MACRO=SET_AUTO_LIGHTS VARIABLE=value value={state}
+```
+
+Be sure to restart Moonraker, KlipperScreen as well as Klipper before use! 
+
+###### NOTE: Do not set your screen sleep time to less than the longest non-printing operation, 15 minutes should be the minimum as the system will queue LED on/off commands within Klipper & you'll get the respective amounts of LED on/off's after the current non-printing operation completes. Or you will get some crazy disco effect going on for a few seconds! This is simply the way Klipper works sadly so we have to be aware of it.
+
+Feature idea suggested by: torch
+
+</details> 
 
 ****************************************************************************************************************************
 
