@@ -1106,6 +1106,8 @@ The icons are appropriate if you use with the material-darker theme. Other theme
 
 Have Klipper turn your printer's LED's on & off automatically when Klipperscreen sleeps & wakes when the printer is idle & in "Standby" mode!
 
+Lights stay on while printing, but the screen will still go to sleep.
+
 ****************************************************************************************************************************
 
 <details>
