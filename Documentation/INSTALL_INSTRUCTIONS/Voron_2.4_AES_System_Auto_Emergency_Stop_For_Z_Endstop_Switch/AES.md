@@ -16,7 +16,7 @@ The system lays ready but disarmed during normal operation & printing, then beco
 >[!NOTE]
 >AES is primarily designed for machines that use sensorless homing that can easily miscalculate where they are during homing, however it can still be used on machines with endstop switches too!
 >
->Machines that use non-contact Z homing set the trigger point between the Z homing trigger point & the bed. This includes regular induction probes, BL Touch, Klicky Probe, Beacon, Cartographer, Eddy, & Eddy NG users.
+>Machines that use non-contact Z homing set the trigger point between the Z homing trigger point & the bed. This includes Voron Z endstop switches, regular induction probes, BL Touch, Klicky Probe, Beacon, Cartographer, Eddy, & Eddy NG users.
 >
 >Full contact machines that use TAP where the nozzle MUST touch the bed to home Z should set their AES trigger point just below the bed surface, this will not save your bed in the event of trouble BUT this will allow you to use TAP & still have some protection against the nozzle missing the bed all together.
 
