@@ -13,6 +13,15 @@ The system uses an inductive probe to trigger an automatic `Emergency Stop` when
 
 The system lays ready but disarmed during normal operation & printing, then becomes armed as soon as `Home Z` is called, & it will trigger if your nozzle misses the Z endstop switch & the gantry lowers past its normal Z triggering point. It disarms itself once Z homing is complete.
 
+>[!NOTE]
+>AES is primarily designed for machines that use sensorless homing that can easily miscalculate where they are during homing, however it can still be used on machines with endstop switches too!
+>
+>Machines that use non-contact Z homing set the trigger point between the Z homing trigger point & the bed. This includes regular induction probes, BL Touch, Klicky Probe, Beacon, Cartographer, Eddy, & Eddy NG users.
+>
+>Full contact machines that use TAP where the nozzle MUST touch the bed to home Z should set their AES trigger point just below the bed surface, this will not save your bed in the event of trouble BUT this will allow you to use TAP & still have some protection against the nozzle missing the bed all together.
+
+<br>
+
 # REQUIRED PARTS
 
 - LDO M8 Pinda 2 Inductive Probe (NC version used here)
