@@ -1104,7 +1104,7 @@ The icons are appropriate if you use with the material-darker theme. Other theme
 
 ## KlipperScreen Auto Printer Lights
 
-Have Klipper turn your printer's LED's on & off automatically when Klipperscreen sleeps & wakes when the printer is idle & in "Standby" mode!
+Have Klipper turn ALL your printer's LED's on & off automatically when Klipperscreen sleeps & wakes when the printer is idle & in "Standby" mode!
 
 Lights stay on while printing, but the screen will still go to sleep.
 
@@ -1136,25 +1136,9 @@ screen_on_devices: Auto Lights
 screen_off_devices: Auto Lights
 ```
 
-Then this goes in your My_Macros.cfg file:
+The main control macro `SET_AUTO_LIGHTS` has been rewritten & integrated into the system.
 
-```
-[gcode_macro SET_AUTO_LIGHTS]
-variable_value: 1
-gcode:
-  {% if 'VALUE' not in params %}
-    {action_raise_error("Parameter 'VALUE' missing from 'SET_AUTO_LIGHTS'")}
-  {% endif %}
-  {% set state = params.VALUE|int %}
-  {% if state %}
-    SET_LED LED=Printer_Lights WHITE=1.00 SYNC=0 TRANSMIT=1
-  {% else %}
-    SET_LED LED=Printer_Lights WHITE=0.00 SYNC=0 TRANSMIT=1
-  {% endif %}
-  SET_GCODE_VARIABLE MACRO=SET_AUTO_LIGHTS VARIABLE=value value={state}
-```
-
-Be sure to restart Moonraker, KlipperScreen as well as Klipper before use! 
+Be sure to restart Moonraker & KlipperScreen before use! 
 
 ###### NOTE: Do not set your screen sleep time to less than the longest non-printing operation, 15 minutes should be the minimum as the system will queue LED on/off commands within Klipper & you'll get the respective amounts of LED on/off's after the current non-printing operation completes. Or you will get some crazy disco effect going on for a few seconds! This is simply the way Klipper works sadly so we have to be aware of it.
 
