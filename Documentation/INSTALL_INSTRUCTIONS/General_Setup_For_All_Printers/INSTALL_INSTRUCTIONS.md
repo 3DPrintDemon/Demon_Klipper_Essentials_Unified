@@ -1108,6 +1108,9 @@ Have Klipper turn ALL your printer's LED's on & off automatically when Klippersc
 
 Lights stay on while printing, but the screen will still go to sleep.
 
+>[!NOTE]
+>The main control macro `SET_AUTO_LIGHTS` has been rewritten & integrated into the system. If you have the old version in your My_Macros.cfg file please delete or comment it out!
+
 ****************************************************************************************************************************
 
 <details>
@@ -1136,7 +1139,7 @@ screen_on_devices: Auto Lights
 screen_off_devices: Auto Lights
 ```
 
-The main control macro `SET_AUTO_LIGHTS` has been rewritten & integrated into the system.
+The main control macro `SET_AUTO_LIGHTS` has been rewritten & integrated into the system. If you have the old version in your My_Macros.cfg file please delete or comment it out!
 
 Be sure to restart Moonraker & KlipperScreen before use! 
 
