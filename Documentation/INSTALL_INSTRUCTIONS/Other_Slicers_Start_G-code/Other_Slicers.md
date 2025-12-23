@@ -11,7 +11,7 @@ _SPS GSTART=True
 ```
 M109 S0
 M190 S0
-DEMON_START EXTRUDER=\{material_print_temperature_layer_0\} BED=\{material_bed_temperature_layer_0\} LAYER=\{layer_height\} FILAMENT=\{material_type\} DMGCC="v1.3"
+DEMON_START EXTRUDER=\{material_print_temperature_layer_0} BED=\{material_bed_temperature_layer_0} LAYER=\{layer_height} FILAMENT=\{material_type} DMGCC="v1.3"
 _SPS GSTART=True
 ```
 
