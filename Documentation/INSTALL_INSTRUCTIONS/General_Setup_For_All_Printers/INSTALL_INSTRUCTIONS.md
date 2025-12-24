@@ -1111,6 +1111,9 @@ Lights stay on while printing, but the screen will still go to sleep.
 >[!IMPORTANT]
 >The main control macro `SET_AUTO_LIGHTS` has been rewritten & integrated into the system. If you have the old version in your My_Macros.cfg file please delete or comment it out!
 
+>[!TIP]
+>To use make sure you enable at least one option, `printer_lights` &/or `neopixel_led` in the `Printer Hardware Options` section of the demon_user_settings cfg file. This system will also work with a chamber heater Neopixel too when you have `heater_neo` enabled with your chamber heater.
+
 ****************************************************************************************************************************
 
 <details>
