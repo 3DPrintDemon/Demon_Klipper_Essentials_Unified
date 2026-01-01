@@ -46,8 +46,7 @@ pin: PE7
 [output_pin OUTPUT_PIN3] # Twine Detect
 pin: PE8
 ```
-
-<img width="600" alt="Max Pins 1" src="https://github.com/user-attachments/assets/801f3d71-f2ce-409a-aa6f-a64fda2a697e" />
+<img width="600" alt="Max Pins 1" src="https://github.com/user-attachments/assets/fe6e0278-4e28-4eda-b880-72a95e2b2a3d" />
 
 ****************************************************************************************************************************
 
