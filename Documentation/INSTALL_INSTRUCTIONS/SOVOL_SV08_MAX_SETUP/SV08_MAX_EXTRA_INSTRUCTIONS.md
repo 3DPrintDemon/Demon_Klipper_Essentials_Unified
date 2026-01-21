@@ -32,10 +32,6 @@ Be sure to use the website not the IOS app, it's cheaper!
 
 <br>
 
->[!NOTE]
->When complete the printer will give you some unknown command errors relating to the commented out plr.cfg file. This is because Sovol have hardcoded these commands into Klipper/Moonraker & I am yet to find where they're being called from! Once I find the source of the calls I'll update things. In the meantime these messages can safely be ignored. 
-
-
 ****************************************************************************************************************************
 ### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) first!
 
