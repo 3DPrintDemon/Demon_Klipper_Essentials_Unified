@@ -72,11 +72,45 @@ To update system packages & to update latest software versions, plus how to get 
 
 ****************************************************************************************************************************
 
+# Use Your SV08 Max WITHOUT The Sovol Filament Buffer/Feeder
+
+To use your SV08 Max without the buffer follow this section & miss out the `Add Clog Detection Override Pin!` & `Add Jam Detection Override Pin!` sections below. 
+
+Or if you want to use the buffer, miss this section out & follow the two sections below for adding pins.
+
+Comment out your buffer_stepper.cfg file include command in your printer.cfg
+
+```
+# [include buffer_stepper.cfg]
+```
+
+Now ssh into your printer & send this command…..
+
+```
+cd ~/klipper/klippy/extras
+
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/NO_BUFFER/filament_switch_sensor.py —backups=1
+```
+
+```
+sudo reboot now
+```
+ 
+You have just installed the file that removes hardcoded commands for the buffer.
+
+<br>
+
+****************************************************************************************************************************
+
+# Use Your SV08 Max WITH The Sovol Filament Buffer/Feeder
+
 <br>
 
 >[!IMPORTANT]
->In the `buffer_stepper.cfg` file you have just installed you will need to add the pins shown a few lines down to use as a manual override for the clog & Jam detection.
+>In the `buffer_stepper.cfg` file you have just installed by clicking the `GET` buffer file button you will get a big red error, you'll need to add the pins shown a few lines down to use as a manual override for the clog & Jam detection.
 This will allow you to disable the automated clog & Jam detection system during a print if you keep getting false triggers!
+
+<br>
 
 # Add Clog Detection Override Pin!
 
@@ -135,6 +169,9 @@ Now Save & Restart.
 
 >[!TIP]
 >Once the macros see you have set the above variable `True` they will ask you if you wish to automatically download & install all required files to use the Sovol PLR system with DEKU macros. If you click `GET` on the pop up prompt your machine will reboot to bring the new files into the system.
+
+>[!NOTE]
+>Some users have reported that using the same nozzle temperature for the first layer & the rest of the print will cause Sovol's PLR code to break & not heat your nozzle correctly during a PLR resume event!
 
 <br>
 
