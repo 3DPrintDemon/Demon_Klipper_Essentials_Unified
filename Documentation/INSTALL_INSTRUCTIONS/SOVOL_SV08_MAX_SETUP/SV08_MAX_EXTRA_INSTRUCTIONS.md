@@ -212,6 +212,9 @@ Secondly the printer will now choose a random spot around the centre home locati
 
 Lastly the buffer_stepper.cfg file ties it all together & gives increased functionality especially when used with an HDMI touchscreen!
 
+>[!IMPORTANT]
+>After installing these files you'll need to comment out the `center_xy_postion` line under the `[z_offset_calibration]` section in your printer.cfg to clear an expected Klipper error. This is normal.
+
 ## Install Direct Via SSH 
 
 Start by changing directory to:
@@ -223,12 +226,16 @@ cd ~/klipper/klippy/extras
 ## The first way is the safe way where these four commands will make your current file into a backup file ending in `.1` & then download the new files to use instead - RECOMMENDED!!
 
 You need ALL FOUR of these files!
+
+NOTE: If you have chosen not to use your filament buffer unit do not run this first command, filament_switch_sensor.py, skip to the second line.
+
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=1
 ```
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/z_offset_calibration.py --backups=1
 ```
+
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/buffer_stepper.py --backups=1
 ```
@@ -248,6 +255,8 @@ sudo reboot now
 ## The second way is available if you simply want to overwrite your current files & not make a backup - USE WITH CAUTION!!
 
 You need ALL FOUR of these files!
+
+NOTE: If you have chosen not to use your filament buffer unit do not run this first command, filament_switch_sensor.py, skip to the second line.
 ```
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/filament_switch_sensor.py --backups=0
 ```
@@ -289,6 +298,8 @@ Naviagate to....
 ```
 /home/sovol/klipper/klippy/extras
 ```
+
+NOTE: If you have chosen not to use your filament buffer unit skip the filament_switch_sensor.py file.
 
 Find the `filament_switch_sensor.py` & the `z_offset_calibration.py` files already in your system & download them to keep safe as a backup!!! IMPORTANT!!!
 
