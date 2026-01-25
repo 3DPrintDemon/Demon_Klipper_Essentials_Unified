@@ -85,7 +85,7 @@ Now ssh into your printer & send this command…..
 ```
 cd ~/klipper/klippy/extras
 
-wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/NO_BUFFER/filament_switch_sensor.py -—backups=1
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/NO_BUFFER/filament_switch_sensor.py --backups=1
 ```
 
 ```
