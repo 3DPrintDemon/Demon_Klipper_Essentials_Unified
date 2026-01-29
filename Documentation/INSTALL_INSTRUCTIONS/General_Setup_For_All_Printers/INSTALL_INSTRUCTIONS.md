@@ -1255,6 +1255,9 @@ Eddy NG is now fully supported within the macros, adding the tap command to the 
 
 Follow the Eddy NG wiki & install the firmware & klipper files, then be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
 
+>[!IMPORTANT]
+>Don't add any of the Eddy NG macros, just the printer.cfg sections. Their macros are not required with DKEU.
+
 Set your chosen values for Eddy NG in the demon_user_settings_vx.x.x.cfg file
 
 If done correctly the macro's will automatically know you are using EDDY NG & will adapt all relevant macros to suit!
@@ -1266,7 +1269,8 @@ Choose if you wish to disable the bed heater temporarily while tap is in progres
 
 Don't forget to update your [.json file](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON) to add the new EDDY NG setup macro.
 
-Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
+>[!NOTE]
+>Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
 <br>
@@ -1274,9 +1278,11 @@ Note: Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 # DEMON EDDY!!!
 
-USE THIS IF YOU HAVE A BTT EDDY DUO/USB PROBE & HAVE NOT INSTALLED EDDY NG!!
+>[!TIP]
+>USE THIS IF YOU HAVE A BTT EDDY DUO/USB PROBE & HAVE NOT INSTALLED EDDY NG!!
 
-NOT for use with Sovol Eddy probes!
+>[!IMPORTANT]
+>NOT for use with Sovol Eddy probes!
 
 Demonise your Eddy! Download this file, set it up for you printer & run it!
 
@@ -1327,6 +1333,9 @@ https://github.com/bigtreetech/Eddy/blob/master/README.md
 
 >[!IMPORTANT]
 >Be sure you have included the files correctly & have set everything up as well as possible.
+
+>[!IMPORTANT]
+>If you're using a Sovol SV08 or SV08 Max don't test home just yet, be sure to complete the model specific page for your printer first (link to page below) as there is a duplicate homing_override section that needs commenting out first!
 
 If you are sure you have covered all items general and model/setup specific you can attempt your first homing! Be sure to double check your probe &/or Z endstop is working correctly!
 
