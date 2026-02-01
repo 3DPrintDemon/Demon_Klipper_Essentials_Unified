@@ -30,13 +30,17 @@ SSH into the printer.
 sudo nano /etc/apt/sources.list
 ```
 
-comment out 
+update this line from.... 
 
 ```
-#deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+deb http://deb.debian.org/debian bullseye-backports main contrib non-free
 ```
 
-This is because this is no longer available so we need to skip checking for it.
+to read....
+
+```
+deb http://archive.debian.org/debian bullseye-backports main contrib non-free
+```
 
 Save & exit the file.
 
