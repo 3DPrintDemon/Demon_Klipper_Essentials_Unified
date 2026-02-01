@@ -523,15 +523,11 @@ off_below: 0.10
 [fan_generic fan2] 
 pin: PE11
 tachometer_pin: PE13
-tachometer_ppr: 1
-tachometer_poll_interval: 0.0075
 max_power: 1.0
 
 [fan_generic fan3] 
 pin: PB0
 tachometer_pin: PB1
-tachometer_ppr: 1
-tachometer_poll_interval: 0.0075
 max_power: 1.0
 
 [led Printer_Lights]
