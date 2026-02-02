@@ -113,18 +113,20 @@ Reassemble the heater & reattach to the printer. Again it needs to look like thi
 
 ![IMG_1679](https://github.com/user-attachments/assets/95739d62-7cd1-40f5-89dd-dcc52a7e2c5f)
 
-
+ 
 >[!CAUTION]
 >DO NOT push the thermistor into the fins of the heater element! JUST NO, DONT DO IT! It must be free of the metal behind it & have no chance of making contact! It MUST remain in free air in front of the heater!
 
 
 <br>
 
-# Orca Change
+# Orca Changes
 
 First go to Orca & open your filament settings & uncheck the `Activate Temperature Control` box, you wont need it as Klipper & DKEU will now automatically monitor & control your chamber heater.
 
 <img width="361" height="103" alt="Orca CH" src="https://github.com/user-attachments/assets/60b9d9c2-3d1c-4742-a6ff-7b5f40604e6f" />
+
+Be sure to save & edit any other profiles you have.
 
 <br>
 
@@ -132,12 +134,35 @@ First go to Orca & open your filament settings & uncheck the `Activate Temperatu
 
 Now download & install the new chamber_hot.cfg file
 
+SHH into your printer & send...
+
 ```
 cd ~/printer_data/config
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/chamber_hot.cfg --backups=1
 ```
 
 <br>
+
+# Printer.cfg Changes
+
+Comment out the fan mounted on the chamber heater.
+
+Stock file:
+
+<img width="364" height="87" alt="Stock" src="https://github.com/user-attachments/assets/a7cabc81-6339-407e-bcf1-7a0e751c360c" />
+
+Place # at the start of each line
+
+<br>
+
+Previously modified DKEU file:
+
+<img width="266" height="111" alt="DKEU File" src="https://github.com/user-attachments/assets/1ee4b982-2a3f-4b2d-8b5e-c73467151931" />
+
+Place # at the start of each line
+
+<br>
+
 
 # Demon User Settings File Changes
 
