@@ -37,8 +37,9 @@ You will need:
 2. JST 1.25mm two pin plug
 3. 6mm Heat resistant Kapton Tape (up to 260ºc)
 4. 50-70mm length of 2-3mm good quality heat shrink tube
-5. Small cable tie
-6. Drill & 3-4mm drill bit
+5. RTV Silicone
+6. Small cable tie
+7. Drill & 3-4mm drill bit
 
 <br>
 
@@ -96,6 +97,11 @@ If it looks like this it is wrong & will not work well enough as its too enclose
 Drill a small 3mm hole in the plastic next to the thermistor mount. Secure the wires next to heater, making sure that the wires are kept well clear of it!
 
 ![IMG_1674](https://github.com/user-attachments/assets/82f40b25-d586-4157-825d-66249327f61a)
+
+<br>
+
+Next add a large blob of RTV Silicone to the loose end of the thermistor just behind the glass bead to keep it in the correct position over the heater element.
+
 
 
 <br>
