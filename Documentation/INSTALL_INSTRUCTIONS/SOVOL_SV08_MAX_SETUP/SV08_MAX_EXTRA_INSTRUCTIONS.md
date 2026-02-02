@@ -533,13 +533,13 @@ kick_start_time: 0.5
 off_below: 0.10
 
 [fan_generic fan2] 
-pin: PE11
-tachometer_pin: PE13
+pin: PB0
+tachometer_pin: PB1
 max_power: 1.0
 
 [fan_generic fan3] 
-pin: PB0
-tachometer_pin: PB1
+pin: PE11
+tachometer_pin: PE13
 max_power: 1.0
 
 [led Printer_Lights]
