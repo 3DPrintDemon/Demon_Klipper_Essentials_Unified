@@ -24,7 +24,9 @@ This modification allows Klipper to monitor & control your chamber heater with i
 
 DKEU will now be able to actively modify the temperature of the chamber heater while printing, allowing the system to automatically increase or decrease the temperature, or even turn the heater off completely if the chamber temperature is too high & then powering it back on when it gets back in range.
 
-Plus it gives you a Gcode button switch in Mainsail that allows you to manually override the automated systems & disable the chamber heater until you choose to turn it back on during that print.
+Plus it gives you a Gcode button switch in Mainsail that allows you to manually override the automated systems & disable the chamber heater until you choose to turn it back on during that print. 
+
+The heater is automatically disabled for low temperature printing.
 
 <br>
 
@@ -97,7 +99,7 @@ Reassemble the heater & reattach to the printer. Again it needs to look like thi
 
 # Orca Change
 
-First go to Orca & open your filament settings & uncheck the `Print Temperature` box, you wont need it as Klipper & DKEU will now automatically monitor & control your chamber heater.
+First go to Orca & open your filament settings & uncheck the `Activate Temperature Control` box, you wont need it as Klipper & DKEU will now automatically monitor & control your chamber heater.
 
 <img width="361" height="103" alt="Orca CH" src="https://github.com/user-attachments/assets/60b9d9c2-3d1c-4742-a6ff-7b5f40604e6f" />
 
