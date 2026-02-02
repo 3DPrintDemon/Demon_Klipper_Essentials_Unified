@@ -26,6 +26,7 @@ DKEU will now be able to actively modify the temperature of the chamber heater w
 
 Plus it gives you a Gcode button switch in Mainsail that allows you to manually override the automated systems & disable the chamber heater until you choose to turn it back on during that print.
 
+<br>
 
 # Adding The New Thermistor
 
