@@ -137,10 +137,36 @@ cd ~/printer_data/config
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/chamber_hot.cfg --backups=1
 ```
 
-Now Restart Klipper
+<br>
+
+# Demon User Settings File Changes
+
+To use the heater with DKEU you'll need to change a couple of settings in the `demon_user_settings` cfg file.
+
+Edit line `variable_danger_will_robinson` to read `True`
 
 <br>
 
+<img width="429" height="187" alt="Danger Will Robinson" src="https://github.com/user-attachments/assets/1013f0b8-62fd-45f7-87b1-89e7951b4bb7" />
+
+
+This is important as it'll unlock the system ready for use.
+
+
+<br>
+
+Next edit line `variable_chamber_heater` to read `True`
+
+<img width="429" height="414" alt="Chamber Heater On" src="https://github.com/user-attachments/assets/85a67b2b-c9f8-40c1-9d4b-23899c35b4bc" />
+
+
+This will tell DKEU you have a chamber heater & want to use it.
+
+<br>
+
+Now Restart Klipper
+
+<br>
 
 # [BACK TO WHERE YOU WERE...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_EXTRA_INSTRUCTIONS.md#use-your-sv08-max-without-the-sovol-filament-bufferfeeder)
 
