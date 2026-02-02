@@ -1,0 +1,94 @@
+# Modify Your SV08 Max's Chamber Heater For Temperature PID Control
+
+You can easily modify your Sovol chamber heater for temperature PID control by adding another thermistor & replacing Sovol's chamber_hot.cfg file.
+
+>[!CAUTION]
+>Modifying this unit is DANGEROUS! It deals with MAINS LEVEL VOLTAGES! These can KILL YOU & set fire to stuff & burn your house down!
+>
+>DO NOT ATTEMPT THIS IF YOU HAVE ANY DOUBT IN YOUR KNOWLEDGE OR COMPETENCY!
+>
+>BY USING THESE FILES & ANY ASSOCIATED INFORMATION HEREIN YOU AGREE TO ACCEPT FULL RESPONSIBLY & LIABILITY FOR ANY & ALL RESULTING OUTCOMES OF THEIR USE. USE AT YOUR OWN RISK!
+>
+>All outcomes good or bad through the use of this or any of my other models or any information shared is totally 100% on you! I accept no responsibility or liability in whole or in part for any loss/damage/injury/death to you or anyone else linked directly or indirectly through the use of this model or any information supplied here or elsewhere in my published works.
+>
+>I provide no guaranty or promise that any information presented here is in any way accurate, safe or correct. Use it at your own risk.
+
+
+<br>
+
+
+
+# Adding The New Thermistor
+
+You will need:
+1. EPCOS 100K B57560G104F glass bead thermistor
+2. JST 1.25mm two pin plug
+3. 6mm Heat resistant Kapton Tape (up to 260ºc)
+4. 50-70mm length of 2-3mm good quality heat shrink tube
+5. Small cable tie
+6. Drill & 3-4mm drill bit
+
+Remove the chamber heater from the printer. Open the unit by removing the 6 bolts on the rear.
+
+Add the  EPCOS 100K B57560G104F glass bead thermistor with the JST 1.25mm two pin plug to the MCU board inside next to the cable that'll say `TEMP 1`.
+
+![IMG_1673](https://github.com/user-attachments/assets/2a3ad818-544b-4a83-a9df-82bee19c5d84)
+![IMG_1656](https://github.com/user-attachments/assets/bd65f37b-7a1d-4e49-a1f8-2c7b3ff0032a)
+
+
+Slide the 50-70mm length of 2-3mm good quality heat shrink tube over the thermistor wires making sure to leave the glass bead exposed! Use gentle heat to shrink the tubing. Note, using a naked flame to do this could very well damage your thermistor!!
+Now take the Kapton tape & wrap a tight spiral from just behind the glass bead all the way back down the heat shrink tubing so everything is protected.
+
+lay the thermistor out so it sits over the middle of the heater & NOT at edges & NOT over a solid plate. It needs to be over the fins so airflow from the fan can heat it.
+
+Take a 50mm length of Kapton tape & secure the thermistor wire to the small plastic tab that sticks out over the silver heater element.
+
+>[!TIP]
+>This is easier if the heater is removed first!
+
+<br>
+
+It should look like this....
+
+
+![IMG_1665](https://github.com/user-attachments/assets/fcbace7a-4c4b-4258-aa68-527e2e1835ad)
+
+
+<br>
+
+If it looks like this it is wrong & will not work well enough as its too enclosed by the poorly placed & designed stock mount & is too far out of the airflow from the heater's fan!
+
+>[!CAUTION]
+>This is wrong & WILL NOT WORK
+
+
+
+![IMG_1660](https://github.com/user-attachments/assets/fa63395a-c431-4f2a-b8f9-7019da28c254)
+
+
+<br>
+
+Drill a small 3mm hole in the plastic next to the thermistor mount. Secure the wires next to heater, making sure that the wires are kept well clear of it!
+
+![IMG_1674](https://github.com/user-attachments/assets/82f40b25-d586-4157-825d-66249327f61a)
+
+
+<br>
+
+Reassemble the heater & reattach to the printer. Again it needs to look like this with the tip of the thermistor here...
+
+![IMG_1666](https://github.com/user-attachments/assets/047d5382-4e12-44c6-9458-d7defe8a03f4)
+
+
+<br>
+
+# Orca Change
+
+First go to Orca & open your filament settings & uncheck the `Print Temperature` box, you wont need it as Klipper & DKEU will now automatically monitor & control your chamber heater.
+
+<img width="361" height="103" alt="Orca CH" src="https://github.com/user-attachments/assets/60b9d9c2-3d1c-4742-a6ff-7b5f40604e6f" />
+
+<br>
+
+# New chamber_hot.cfg File
+
