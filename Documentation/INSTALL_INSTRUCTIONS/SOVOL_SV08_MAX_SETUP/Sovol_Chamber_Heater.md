@@ -72,8 +72,8 @@ Take a 50mm length of Kapton tape & secure the thermistor wire to the small plas
 
 It should look like this when you're finished....
 
+![IMG_1675](https://github.com/user-attachments/assets/f64224bf-7098-4aec-a0f2-578a13563fcc)
 
-![IMG_1665](https://github.com/user-attachments/assets/fcbace7a-4c4b-4258-aa68-527e2e1835ad)
 
 
 <br>
@@ -102,6 +102,7 @@ Drill a small 3mm hole in the plastic next to the thermistor mount. Secure the w
 
 Next add a large blob of RTV Silicone to the loose end of the thermistor just behind the glass bead to keep it in the correct position over the heater element.
 
+![IMG_1677](https://github.com/user-attachments/assets/a35d7c25-43d5-4165-b7e5-8f3291958380)
 
 
 <br>
@@ -110,7 +111,8 @@ Next add a large blob of RTV Silicone to the loose end of the thermistor just be
 
 Reassemble the heater & reattach to the printer. Again it needs to look like this with the tip of the thermistor here...
 
-![IMG_1666](https://github.com/user-attachments/assets/047d5382-4e12-44c6-9458-d7defe8a03f4)
+![IMG_1679](https://github.com/user-attachments/assets/95739d62-7cd1-40f5-89dd-dcc52a7e2c5f)
+
 
 >[!CAUTION]
 >DO NOT push the thermistor into the fins of the heater element! JUST NO, DONT DO IT! It must be free of the metal behind it & have no chance of making contact! It MUST remain in free air in front of the heater!
