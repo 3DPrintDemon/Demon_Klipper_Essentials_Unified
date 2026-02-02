@@ -94,7 +94,7 @@ If it looks like this it is wrong & will not work well enough as its too enclose
 
 ## Securing The Wires Safely
 
-Drill a small 3mm hole in the plastic next to the thermistor mount. Secure the wires next to heater, making sure that the wires are kept well clear of it!
+Drill a small 3mm hole in the plastic next to the thermistor mount. Secure the wires with the small cable tie next to heater, making sure that the wires are kept well clear of it!
 
 ![IMG_1674](https://github.com/user-attachments/assets/82f40b25-d586-4157-825d-66249327f61a)
 
