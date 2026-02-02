@@ -9,9 +9,9 @@ You can easily modify your Sovol chamber heater for temperature PID control by a
 >
 >BY USING THESE FILES & ANY ASSOCIATED INFORMATION HEREIN YOU AGREE TO ACCEPT FULL RESPONSIBLY & LIABILITY FOR ANY & ALL RESULTING OUTCOMES OF THEIR USE. USE AT YOUR OWN RISK!
 >
->All outcomes good or bad through the use of this or any of my other models or any information shared is totally 100% on you! I accept no responsibility or liability in whole or in part for any loss/damage/injury/death to you or anyone else linked directly or indirectly through the use of this model or any information supplied here or elsewhere in my published works.
+>All outcomes good or bad through the use of this information or any of my macros or files is totally 100% on you! I accept no responsibility or liability in whole or in part for any loss/damage/injury/death to you or anyone else linked directly or indirectly through the use of any files I have published or any information supplied here or elsewhere in my published works.
 >
->I provide no guaranty or promise that any information presented here is in any way accurate, safe or correct. Use it at your own risk.
+>I provide no guarantee or promise that any information presented here is in any way accurate, safe or correct. Use it at your own risk.
 
 
 <br>
