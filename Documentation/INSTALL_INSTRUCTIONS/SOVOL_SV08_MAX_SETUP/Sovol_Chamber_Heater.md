@@ -30,7 +30,7 @@ The heater is automatically disabled for low temperature printing.
 
 <br>
 
-# Adding The New Thermistor
+# BOM
 
 You will need:
 1. EPCOS 100K B57560G104F glass bead thermistor
@@ -39,6 +39,10 @@ You will need:
 4. 50-70mm length of 2-3mm good quality heat shrink tube
 5. Small cable tie
 6. Drill & 3-4mm drill bit
+
+<br>
+
+# Adding The New Thermistor
 
 Remove the chamber heater from the printer. Open the unit by removing the 6 bolts on the rear.
 
