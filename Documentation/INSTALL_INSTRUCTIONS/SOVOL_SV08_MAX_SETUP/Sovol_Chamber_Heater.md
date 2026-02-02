@@ -44,11 +44,11 @@ lay the thermistor out so it sits over the middle of the heater & NOT at edges &
 Take a 50mm length of Kapton tape & secure the thermistor wire to the small plastic tab that sticks out over the silver heater element.
 
 >[!TIP]
->This is easier if the heater is removed first!
+>This is easier if the heater element is released & moved to one side first from the heater casing!
 
 <br>
 
-It should look like this....
+It should look like this when you're finished....
 
 
 ![IMG_1665](https://github.com/user-attachments/assets/fcbace7a-4c4b-4258-aa68-527e2e1835ad)
@@ -59,7 +59,7 @@ It should look like this....
 If it looks like this it is wrong & will not work well enough as its too enclosed by the poorly placed & designed stock mount & is too far out of the airflow from the heater's fan!
 
 >[!CAUTION]
->This is wrong & WILL NOT WORK
+>This is wrong & WILL NOT WORK if placed like this!
 
 
 
@@ -79,6 +79,9 @@ Reassemble the heater & reattach to the printer. Again it needs to look like thi
 
 ![IMG_1666](https://github.com/user-attachments/assets/047d5382-4e12-44c6-9458-d7defe8a03f4)
 
+>[!CAUTION]
+>DO NOT push the thermistor into the fins of the heater element! JUST NO, DONT DO IT! It must be free of the metal behind it & have no chance of making contact! It MUST remain in free air in front of the heater!
+
 
 <br>
 
@@ -92,3 +95,13 @@ First go to Orca & open your filament settings & uncheck the `Print Temperature`
 
 # New chamber_hot.cfg File
 
+Now download & install the new chamber_hot.cfg file
+
+```
+cd ~/printer_data/config
+wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/chamber_hot.cfg --backups=1
+```
+
+This file will give Klipper the power to monitor & control your chamber heater with it's PID system, it will also be able to Emergency Stop the printer if the chamber heater gets too hot or if it's not heating as expected! This is vitally important as the air coming out of the heater can reach 95ºc or more!! 
+
+It also allows DKEU to actively modify the temperature of the chamber heater while printing, allowing the system to automatically increase or decrease the temperature, or even turn the heater off completely if the chamber temperature is too high & then powering it back on when it gets back in range.
