@@ -16,6 +16,15 @@ You can easily modify your Sovol chamber heater for temperature PID control by a
 
 <br>
 
+# Do I Need To Do This? What Does It Do...?
+
+This is 100% optional!
+
+This modification allows Klipper to monitor & control your chamber heater with it's PID system, it will also be able to Emergency Stop the printer if the chamber heater gets too hot or if it's not heating as expected! This is vitally important & adds a layer of safety to the device that has been omitted out of the box! The air coming out of the heater can reach 95ºc or more!! 
+
+DKEU will now be able to actively modify the temperature of the chamber heater while printing, allowing the system to automatically increase or decrease the temperature, or even turn the heater off completely if the chamber temperature is too high & then powering it back on when it gets back in range.
+
+Plus it gives you a Gcode button switch in Mainsail that allows you to manually override the automated systems & disable the chamber heater until you choose to turn it back on during that print.
 
 
 # Adding The New Thermistor
@@ -102,6 +111,10 @@ cd ~/printer_data/config
 wget https://raw.githubusercontent.com/3DPrintDemon/DEMON-SV08MAX/refs/heads/main/DEMON_SV08_MAX_REPLACEMENT_FILES/chamber_hot.cfg --backups=1
 ```
 
-This file will give Klipper the power to monitor & control your chamber heater with it's PID system, it will also be able to Emergency Stop the printer if the chamber heater gets too hot or if it's not heating as expected! This is vitally important as the air coming out of the heater can reach 95ºc or more!! 
+Now Restart Klipper
 
-It also allows DKEU to actively modify the temperature of the chamber heater while printing, allowing the system to automatically increase or decrease the temperature, or even turn the heater off completely if the chamber temperature is too high & then powering it back on when it gets back in range.
+<br>
+
+
+
+
