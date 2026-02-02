@@ -59,7 +59,7 @@ Add the  EPCOS 100K B57560G104F glass bead thermistor with the JST 1.25mm two pi
 Slide the 50-70mm length of 2-3mm good quality heat shrink tube over the thermistor wires making sure to leave the glass bead exposed! Use gentle heat to shrink the tubing. Note, using a naked flame to do this could very well damage your thermistor!!
 Now take the Kapton tape & wrap a tight spiral from just behind the glass bead all the way back down the heat shrink tubing so everything is protected.
 
-lay the thermistor out so it sits over the middle of the heater & NOT at edges & NOT over a solid plate. It needs to be over the fins so airflow from the fan can heat it.
+Lay the thermistor out so it sits over the middle of the heater & NOT at edges & NOT over a solid plate. It needs to be over the fins so airflow from the fan can heat it.
 
 Take a 50mm length of Kapton tape & secure the thermistor wire to the small plastic tab that sticks out over the silver heater element.
 
