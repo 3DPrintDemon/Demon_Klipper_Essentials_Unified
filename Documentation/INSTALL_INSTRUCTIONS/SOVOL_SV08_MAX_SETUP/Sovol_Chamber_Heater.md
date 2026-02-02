@@ -51,6 +51,9 @@ Add the  EPCOS 100K B57560G104F glass bead thermistor with the JST 1.25mm two pi
 ![IMG_1673](https://github.com/user-attachments/assets/2a3ad818-544b-4a83-a9df-82bee19c5d84)
 ![IMG_1656](https://github.com/user-attachments/assets/bd65f37b-7a1d-4e49-a1f8-2c7b3ff0032a)
 
+<br>
+
+## Protecting The Thermistor Wires
 
 Slide the 50-70mm length of 2-3mm good quality heat shrink tube over the thermistor wires making sure to leave the glass bead exposed! Use gentle heat to shrink the tubing. Note, using a naked flame to do this could very well damage your thermistor!!
 Now take the Kapton tape & wrap a tight spiral from just behind the glass bead all the way back down the heat shrink tubing so everything is protected.
@@ -64,6 +67,8 @@ Take a 50mm length of Kapton tape & secure the thermistor wire to the small plas
 
 <br>
 
+## The Correct Position
+
 It should look like this when you're finished....
 
 
@@ -71,6 +76,8 @@ It should look like this when you're finished....
 
 
 <br>
+
+## The INCORRECT Position!
 
 If it looks like this it is wrong & will not work well enough as its too enclosed by the poorly placed & designed stock mount & is too far out of the airflow from the heater's fan!
 
@@ -84,12 +91,16 @@ If it looks like this it is wrong & will not work well enough as its too enclose
 
 <br>
 
+## Securing The Wires Safely
+
 Drill a small 3mm hole in the plastic next to the thermistor mount. Secure the wires next to heater, making sure that the wires are kept well clear of it!
 
 ![IMG_1674](https://github.com/user-attachments/assets/82f40b25-d586-4157-825d-66249327f61a)
 
 
 <br>
+
+## Reassemble
 
 Reassemble the heater & reattach to the printer. Again it needs to look like this with the tip of the thermistor here...
 
