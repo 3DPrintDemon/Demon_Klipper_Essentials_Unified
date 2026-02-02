@@ -56,13 +56,25 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 <br>
 
-# HOW TO FIX & UPDATE YOUR SOVOL EMMC IMAGE!
+# HOW TO FIX & UPDATE YOUR SOVOL EMMC IMAGE! - OPTIONAL
 
 To update system packages & to update latest software versions, plus how to get rid of those annoying Moonraker Warnings for good!
 
 <br>
 
 [CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Fix_Sovol_EMMC_Images/FIX_SOVOL_EMMC_IMAGES.md)
+
+<br>
+
+****************************************************************************************************************************
+
+<br>
+
+# HOW TO MODIFY THE SOVOL CHAMBER HEATER - OPTIONAL
+
+This allows Klipper & DKEU to monitor the heater's actual temperature & to control it's output power, including adding additional safety features that'll protect you, your printer, & not to mention your home/business property!
+
+[CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/Sovol_Chamber_Heater.md)
 
 <br>
 
