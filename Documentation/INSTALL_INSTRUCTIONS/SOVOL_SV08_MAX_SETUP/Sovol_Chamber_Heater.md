@@ -189,7 +189,7 @@ This will tell DKEU you have a chamber heater & want to use it.
 
 <br>
 
-Now Restart Klipper
+Now Save & Restart Klipper
 
 <br>
 
