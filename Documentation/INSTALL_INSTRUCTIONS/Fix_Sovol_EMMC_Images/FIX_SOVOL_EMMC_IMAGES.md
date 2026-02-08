@@ -22,7 +22,7 @@ Now update to the latest Sovol firmware version for your machine.
 
 <br>
 
-# DISABLE BACKPORTS CHECK
+# UPDATE BACKPORTS CHECK
 
 SSH into the printer.
 
