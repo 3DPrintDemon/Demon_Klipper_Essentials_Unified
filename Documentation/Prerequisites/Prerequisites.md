@@ -45,12 +45,10 @@ These macros only use the G-code Shell Commands to help to keep your `User Files
 
 - https://github.com/dw-0/kiauh/tree/master
 
-Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Command) to install the extension.
+Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to install the extension.
 
-###### NOTE: If using the new V6 alpha release these options change to "E" for extensions, then option 1 for (G-code shell command), then option 1 to install. 
-###### NOTE: BE aware the V6 release of Kiauh is alpha stage software! Be cautious using it, I would recommend using the last stable release instead for this task, just incase!
+<img width="413" height="708" alt="Shell Install" src="https://github.com/user-attachments/assets/889fd85d-aeaf-4227-98bf-4bedee93f4b6" />
 
-![Shell Install](https://github.com/user-attachments/assets/d4897e79-f019-4c67-8474-ed8ca28b3612)
 
 ###### NOTE: Please take extra care of your system & protect it from misuse after installing the Kiauh G-code Shell Command Extension! Responsibility for this is solely on you.
 
