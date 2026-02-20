@@ -33,7 +33,7 @@ The heater is automatically disabled for low temperature printing.
 # BOM
 
 You will need:
-1. EPCOS 100K B57560G104F glass bead thermistor
+1. NTC 3950 100k glas bead thermistor
 2. JST 1.25mm two pin plug
 3. 6mm Heat resistant Kapton Tape (up to 260ºc)
 4. 50-70mm length of 2-3mm good quality heat shrink tube
