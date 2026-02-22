@@ -726,7 +726,7 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 
 <br>
 
-## Demon Themes
+## DEMON THEMES
 
 Instantly add a new exciting look to your mainsail screen with new favicon icons, new backgrounds, colours & even some important new quick links for effortless navigation!
 
