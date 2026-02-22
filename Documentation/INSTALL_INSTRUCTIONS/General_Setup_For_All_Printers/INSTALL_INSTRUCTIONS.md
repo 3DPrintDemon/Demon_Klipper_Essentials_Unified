@@ -5,7 +5,7 @@
 >
 >It really does make a difference & any amount you send is greatly appreciated!
 
-This macro pack is the cumulation of over 2.5 years of work by one person alone, there have been countless late nights, missed family time, bottomless cups of coffee, as well as a boat load of effort & dedication. There’s been endless weeks of writing code & then probably that amount of time again at least thoroughly testing the files so that you can rest assured that they work & these macros will NOT damage or harm your printer in any way! Not counting any improper setup of course…
+DKEU3 IS HERE!!! This macro pack is the cumulation of over 3 years of work by one person alone, there have been countless late nights, missed family time, bottomless cups of coffee, as well as a boat load of effort & dedication. There’s been endless weeks of writing code & then probably that amount of time again at least thoroughly testing the files so that you can rest assured that they work & these macros will NOT damage or harm your printer in any way! Not counting any improper setup of course…
 
 Plus I provide the DEMON DISCORD to help anyone with getting DKEU working on their system!
 
@@ -197,6 +197,10 @@ sudo service klipper start
 >[!TIP]
 >Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
 
+Thanks to the contributing legend that is Rotule666 (very apt name!) we have a brand new hugely expanded config updater tool! Over a few conversations regarding this script he came up with a whole new version of it for DKEU3!
+
+Not only can you now update all the DKEU user files with it but you can also even see the differences in your custom macros & automatically copy them over from your old file to the new one!
+
 <br>
 
 <details>
@@ -220,7 +224,7 @@ Wait for this to complete then run.
 python3 -m pip install ConfigUpdater
 ```
 
-These commands will install the libaries you need to run the interactive user file updater script.
+These commands will install the libraries you need to run the interactive user file updater script.
 
 To use the feature use this command...
 
@@ -242,7 +246,7 @@ Other things you will need to look at when updating!
 
 >[!TIP]
 > BE SURE TO USE THIS WHEN SETTING UP! It's your onboard helper tool!
->This sytem will help you see whats been done, what needs doing & what is not correctly set yet!
+>This system will help you see whats been done, what needs doing & what is not correctly set yet!
 
 <br>
 
