@@ -718,15 +718,18 @@ Copy the code block below & paste it at the top of your `printer.cfg` file!
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 [include ./Demon_User_Files/*.cfg]
 ```
-Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
-
-
-![Includes](https://github.com/user-attachments/assets/0555c56b-a2f8-4efd-b2e1-ebb58a0fd8e6)
 
 >[!TIP]
 >DON'T SAVE & RESTART JUST YET!
 >
 >Complete the sections below regarding the Demon User Files Updater include before you restart Klipper!
+
+
+Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
+
+
+![Includes](https://github.com/user-attachments/assets/0555c56b-a2f8-4efd-b2e1-ebb58a0fd8e6)
+
 
 <br>
 
