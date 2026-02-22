@@ -450,7 +450,7 @@ Use for any machine Voron, SV08 to Ender!
 
 RUN THIS FROM YOUR SSH TERMINAL:
 ```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
+wget https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh && bash Demon_Klipper_Essentials_Installer.sh
 ```
 
 ###### NOTE: The prerequisites installer is no longer required. Simply run the above installer
