@@ -88,7 +88,6 @@ cp /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/DEM
 
 wait
 
-sh /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Installer_Bridge.sh
 
 
 
