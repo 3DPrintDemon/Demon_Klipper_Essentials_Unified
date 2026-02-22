@@ -195,7 +195,7 @@ sudo service klipper start
 ### :recycle: UPDATING FROM A PREVIOUS VERSION - SSH CONFIG UPDATER SCRIPT! :recycle:
 
 >[!TIP]
->Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
+>This script allows you to update ALL your Demon User Files across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
 
 Thanks to the contributing legend that is Rotule666 (very apt name!) we have a brand new hugely expanded config updater tool! Over a few conversations regarding this script he came up with a whole new version of it for DKEU3!
 
