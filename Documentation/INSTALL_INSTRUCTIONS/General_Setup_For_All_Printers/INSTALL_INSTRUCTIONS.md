@@ -1,4 +1,4 @@
-# SUPPORT YOUR FRIENDLY 3DPrintDemon!
+# :gift: SUPPORT YOUR FRIENDLY 3DPrintDemon! :gift:
 
 >[!TIP]
 >Please consider supporting this project…. Even if it’s for a single donation!
@@ -62,9 +62,18 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 >[!IMPORTANT]
 >Click the lines below to expand them to read the contents!
 
-### File Structure Has Changed for v2.9.4 Onwards
+### :file_folder: File Structure Has Changed for v2.9.4 Onwards :file_folder:
 
-` is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
+<details>
+    <summary>
+        <b>
+        Click To Expand - File Structure
+        </b>
+    </summary>
+<p>
+</p>
+
+There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
 
 #### After the initial install of `Demon_Klipper_Essentials_Unified`.
 
@@ -1296,12 +1305,10 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 # NEW EDDY NG SUPPORT!! 
 
-Eddy NG is now fully supported within the macros, adding the tap command to the custom_expansion file is no longer required & can be removed! 
-
-Follow the Eddy NG wiki & install the firmware & klipper files, then be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
-
 >[!IMPORTANT]
 >Don't add any of the Eddy NG macros, just the printer.cfg sections. Their macros are not required with DKEU.
+
+Follow the Eddy NG wiki & install the firmware & klipper files, then be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
 
 Set your chosen values for Eddy NG in the demon_user_settings_vx.x.x.cfg file
 
@@ -1453,7 +1460,7 @@ Recognised slicer filament types at the moment are:
 
 **Fin...**
 
-# SUPPORT 3DPrintDemon!
+# :gift: SUPPORT 3DPrintDemon! :gift:
 
 You can stay a supporter on the 3DPrintDemon Patreon sending donations of your choosing for as long as you like. Maybe it’s for just a month or two for single private users that would like to show your gratitude, or maybe you could consider ongoing support if you’re a business owner & make regular use of my work to aid your business.
 
@@ -1467,7 +1474,7 @@ Active supporters have a special channel on the Demon Discord server & are provi
 
 ****************************************************************************************************************************
 
-# MODEL SPECIFIC INSTRUCTIONS
+# :warning: MODEL SPECIFIC INSTRUCTIONS :warning:
 
 For model specific configuration click below. You need to do all the general setup for all printers as well as these extra steps...!!
 
