@@ -64,17 +64,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 ### File Structure Has Changed for v2.9.4 Onwards
 
-<br>
-
-<details>
-    <summary>
-        <b>
-        Click To Expand - File Structure Has Changed for v2.9.4 Onwards
-        </b>
-    </summary>
-<p>
-</p>
-There is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
+` is a new setup in the file structure of these macros. There is now a second directory that is now auto extracted to your config directory during install. This is done so to keep the main install's "clean" status intact in the Update Manager. This is what the functional system looks like. 
 
 #### After the initial install of `Demon_Klipper_Essentials_Unified`.
 
@@ -488,9 +478,10 @@ Your new files should now be available to you on your printer! Please note you m
 
 # DEMON KLIPPER ESSENTIALS UNIFIED SETUP...
 
-Let's start the setup of these macros, the first and most important step is to make sure a few things are correctly defined.
+Let's start the setup of these macros, the first and most important step is to make sure a few things are correctly defined. There are some additional model specific steps to consider also. Links at the end of these instructions.
 
 <br>
+
 
 ## Define Save Variables Section
 
@@ -734,8 +725,85 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 ****************************************************************************************************************************
 
 <br>
+
+## Demon Themes
+
+Instantly add a new exciting look to your mainsail screen with new favicon icons, new backgrounds, colours & even some important new quick links for effortless navigation!
+
+<br>
+
+<img width="1532" height="1021" alt="Demon_Voron" src="https://github.com/user-attachments/assets/4ee457b2-3ef3-452a-b898-ac06a7b95be2" />
+<a href="https://www.freepik.com/free-photo/fire-flame-with-sparkle-black-background_231608214.htm#fromView=keyword&page=1&position=9&uuid=668eb768-0146-4375-bd24-8a325c51429b&query=Flame+background">Image available at www.freepik.com</a>
+
+
 <br>
 <br>
+
+<details>
+    <summary>
+        <b>
+        Click To Expand - How To Use Demon Themes!
+        </b>
+    </summary>
+<p>
+</p>
+Start by installing the .json file (see next section!) to update Mainsail's macro layout the hit the DEMON THEME LOADER macro button in the General Macros group.
+
+<br>
+<br>
+
+<img width="954" height="456" alt="Demon Theme Loader" src="https://github.com/user-attachments/assets/c7fb6234-b9bb-40e1-a358-17eba1c599eb" />
+
+<br>
+<br>
+<br>
+
+This will bring up the Demon Theme Loader menu where you can choose your theme directly from Mainsail live without the need to restart!
+
+<br>
+
+<img width="360" alt="Demon Them Loader Menu" src="https://github.com/user-attachments/assets/d435735f-f9f3-484d-af5f-ce37009abc03" />
+
+<br>
+<br>
+
+Another way to choose a theme is when you install the macros with the SSH installer.
+
+<br>
+
+There are a few more themes to choose from as well as the one above!!
+
+
+<img width="1447" height="1021" alt="T1" src="https://github.com/user-attachments/assets/8507f9e6-5c44-4ee6-bfb7-bbf65049b64a" />
+<img width="1446" height="1025" alt="T2" src="https://github.com/user-attachments/assets/6cd6f956-64d9-4d90-94df-50eea56e45b0" />
+<img width="1450" height="1025" alt="T3" src="https://github.com/user-attachments/assets/539c2b04-65d4-42cb-ac20-b78d8968df92" />
+
+
+</details>
+
+****************************************************************************************************************************
+
+<br>
+
+## Macro Layout Import/Restore
+
+In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
+
+This will bring in the defualt macro layout.
+- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
+
+It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
+
+
+![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
+
+****************************************************************************************************************************
+
+<br>
+<br>
+<br>
+
+
 
 # Load & Unload Macros
 
@@ -1329,24 +1397,6 @@ If the console only shows `G28` for example there is an issue with your demon_ho
 >[!CAUTION]
 >Improper setup of the macros & the demon_homing_control feature can & will cause damage to your printer! It is down to you to make sure this system is operational before use!
 No liability or responsibility will be accpeted for any damage caused by the use of these macros.
-
-****************************************************************************************************************************
-
-<br>
-<br>
-<br>
-
-# Macro Layout Import/Restore
-
-In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
-
-This will bring in the defualt macro layout.
-- [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
-
-It will not change your toolhead layout, you will need to do this yourself if you wish to. This is done by changing the `Style` option in the `Control` tab of the `Interface Settings` window to `Circle`.
-
-
-![Macro_Layout](https://github.com/user-attachments/assets/2300774a-20ef-4024-8c4d-99a43ee3c2c5)
 
 ****************************************************************************************************************************
 
