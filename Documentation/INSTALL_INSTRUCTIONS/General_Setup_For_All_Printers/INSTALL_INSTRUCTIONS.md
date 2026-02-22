@@ -489,7 +489,7 @@ Your new files should now be available to you on your printer! Please note you m
 <br>
 <br>
 
-# DEMON KLIPPER ESSENTIALS UNIFIED SETUP.....
+# :wrench: DEMON KLIPPER ESSENTIALS UNIFIED SETUP..... :wrench:
 
 Let's start the setup of these macros, the first and most important step is to make sure a few things are correctly defined. There are some additional model specific steps to consider also. Links at the end of these instructions.
 
