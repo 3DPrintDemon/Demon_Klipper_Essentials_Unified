@@ -39,7 +39,7 @@ else
             echo "Directory $PDIR already exists."
         fi
 
-    mv $DDIR PDIR --backup=numbered
+    mv $DDIR/* PDIR --backup=numbered
 fi
 
 cd /home/$U/printer_data/config
