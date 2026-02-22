@@ -7,7 +7,7 @@
 U="$USER"
 CDIR="/home/$U/printer_data/config"
 IDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/General_Prerequisites_Installers"
-TDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/.Demon_Themes/Demon_Themes_Installers"
+TDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Themes/Demon_Themes_Installers"
 RESTART="SVPI_Controller.sh"
 KAMPL="General_KAMP_LiTE_Installer.sh"
 THEME="Demon_Mainsail_Theme_Installer.sh"
