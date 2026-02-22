@@ -12,7 +12,7 @@ DDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified"
 PDIR="/home/$U/printer_data/config/Previous_Demon_Macros"
 
 IDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/General_Prerequisites_Installers"
-TDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/.Demon_Themes/Demon_Themes_Installers"
+TDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Themes/Demon_Themes_Installers"
 RESTART="GPI_Controller.sh"
 KAMPL="General_KAMP_LiTE_Installer.sh"
 HSOAK="General_Heat_Soak_Installer.sh"
