@@ -1435,18 +1435,20 @@ No liability or responsibility will be accpeted for any damage caused by the use
 
 # Orca Slicer Setup
 
-Firmware Retraction is now supported! Go to your `Printer Setting` window & under `Basic Information` check the box that says `Firmware Retraction`.
+## Firmware Retraction is now supported! 
+
+Go to your `Printer Settings` window & under `Basic Information` check the box that says `Firmware Retraction`.
 You may also need to go to the `Extruder` tab & uncheck the `Wipe While Retracting` option.
+
+<br>
+
+## Orca Slicer Machine Gcode!
 
 You have to modify your slicer's `Machine Gcode` that is sent to the printer.
 
-## Orca Slicer Machine Gcode!
 To modifiy the `Machine Gcode` in Orca Slicer [click here...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
-
-## Other Slicers
-- [Other Slicer's click here...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Other_Slicers_Start_G-code/Other_Slicers.md)
-
+<br>
 
 ## Orca Slicer Additional
 
@@ -1461,6 +1463,13 @@ Use this link....
 
 
 ![Orca Fail](https://github.com/user-attachments/assets/2b2c4cb5-912b-470e-86f0-b3526b03fd50)
+
+
+<br>
+
+
+### Other Slicers
+- [Other Slicer's click here...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Other_Slicers_Start_G-code/Other_Slicers.md)
 
 ****************************************************************************************************************************
 
