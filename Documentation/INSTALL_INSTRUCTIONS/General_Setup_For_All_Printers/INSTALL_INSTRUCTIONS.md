@@ -476,7 +476,7 @@ Your new files should now be available to you on your printer! Please note you m
 <br>
 <br>
 
-# DEMON KLIPPER ESSENTIALS UNIFIED SETUP...
+# DEMON KLIPPER ESSENTIALS UNIFIED SETUP.....
 
 Let's start the setup of these macros, the first and most important step is to make sure a few things are correctly defined. There are some additional model specific steps to consider also. Links at the end of these instructions.
 
@@ -563,6 +563,110 @@ If you choose *NOT* to use the Mainsail.cfg...
 ```
 [respond]
 ```
+
+****************************************************************************************************************************
+
+<br>
+
+## Load & Unload Macros
+
+
+>[!NOTE]
+>Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament. 
+
+All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 25 or below will pass the check. 
+
+Be sure your `printer.cfg` file `[extruder]` section contains...
+
+```
+max_extrude_only_velocity: 22
+```
+
+>[!TIP]
+>The Orbiter v2.x extruders tend to like around 15-18 max!
+
+****************************************************************************************************************************
+
+<br>
+
+## Printer Lights (White LEDs)
+Be sure to name any White LEDs that are in the `printer.cfg` file you wish the macros to control to:
+
+```
+[led Printer_Lights]
+white_pin: ### #<<<<<<<< ADD YOUR OWN PIN
+cycle_time: 0.0010
+initial_WHITE: 1.0
+```
+
+>[!TIP]
+>If you were using the `Heat_Soak.cfg` (not the others but that specific one!) please redownload the new version here...
+>- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+
+****************************************************************************************************************************
+
+<br>
+
+## Filament Sensor
+If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `DEMON_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
+```
+[filament_switch_sensor filament_sensor]
+switch_pin: ^### <<<<<< Insert board pin for sensor
+pause_on_runout: False
+insert_gcode:
+    { action_respond_info("Insert Detected") }  
+runout_gcode:
+    { action_respond_info("Runout Detected") }
+    {% if printer.print_stats.state == "printing" %}
+      _FIL_CHANGE_PARK
+    {% endif %}
+```
+
+If you have an encoder based sensor like the BTT Smart Sensor add this:
+```
+[filament_motion_sensor encoder_sensor]
+switch_pin: ^### <<<<<< insert board pin
+detection_length: 9
+extruder: extruder
+pause_on_runout: False
+insert_gcode:
+    { action_respond_info("Filament Encoder is Running") }
+runout_gcode:
+    { action_respond_info("Filament Encoder Stall Detected") }
+    {% if printer.print_stats.state == "printing" %}
+      _FIL_CHANGE_PARK
+    {% endif %}
+
+[delayed_gcode encoder_sensor]
+initial_duration: 1
+gcode:
+    SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
+```
+
+>[!NOTE]
+>SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set it as above.
+
+****************************************************************************************************************************
+
+<br>
+
+## Neopixel Toolhead LEDs 
+
+....if using a Voron or another machine with neopixel LEDs in the toolhead. Be sure to name any neopixel toolhead LEDs:
+
+```
+[neopixel sb_leds]   
+```
+Or you will get an invalid for LED error.
+
+....If you're using an SV08 leave the neopixel LEDs their defualt name:
+```
+[neopixel Screen_Colour]
+```
+If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
+You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
+
+![LED Chain Settings](https://github.com/user-attachments/assets/0b5c7bda-73e0-4cda-ba0c-f4edf0c03c96)
 
 ****************************************************************************************************************************
 
@@ -726,7 +830,7 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 
 <br>
 
-## DEMON THEMES
+# DEMON THEMES
 
 Instantly add a new exciting look to your mainsail screen with new favicon icons, new backgrounds, colours & even some important new quick links for effortless navigation!
 
@@ -785,7 +889,7 @@ There are a few more themes to choose from as well as the one above!!
 
 <br>
 
-## Macro Layout Import/Restore
+# Macro Layout Import/Restore
 
 In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
@@ -804,112 +908,6 @@ It will not change your toolhead layout, you will need to do this yourself if yo
 <br>
 
 
-
-# Load & Unload Macros
-
-
->[!NOTE]
->Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament. 
-
-All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 25 or below will pass the check. 
-
-Be sure your `printer.cfg` file `[extruder]` section contains...
-
-```
-max_extrude_only_velocity: 22
-```
-
->[!TIP]
->The Orbiter v2.x extruders tend to like around 15-18 max!
-
-****************************************************************************************************************************
-
-<br>
-
-# Printer Lights (White LEDs)
-Be sure to name any White LEDs that are in the `printer.cfg` file you wish the macros to control to:
-
-```
-[led Printer_Lights]
-white_pin: ### #<<<<<<<< ADD YOUR OWN PIN
-cycle_time: 0.0010
-initial_WHITE: 1.0
-```
-
->[!TIP]
->If you were using the `Heat_Soak.cfg` (not the others but that specific one!) please redownload the new version here...
->- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
-
-****************************************************************************************************************************
-
-<br>
-
-# Filament Sensor
-If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `DEMON_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
-```
-[filament_switch_sensor filament_sensor]
-switch_pin: ^### <<<<<< Insert board pin for sensor
-pause_on_runout: False
-insert_gcode:
-    { action_respond_info("Insert Detected") }  
-runout_gcode:
-    { action_respond_info("Runout Detected") }
-    {% if printer.print_stats.state == "printing" %}
-      _FIL_CHANGE_PARK
-    {% endif %}
-```
-
-If you have an encoder based sensor like the BTT Smart Sensor add this:
-```
-[filament_motion_sensor encoder_sensor]
-switch_pin: ^### <<<<<< insert board pin
-detection_length: 9
-extruder: extruder
-pause_on_runout: False
-insert_gcode:
-    { action_respond_info("Filament Encoder is Running") }
-runout_gcode:
-    { action_respond_info("Filament Encoder Stall Detected") }
-    {% if printer.print_stats.state == "printing" %}
-      _FIL_CHANGE_PARK
-    {% endif %}
-
-[delayed_gcode encoder_sensor]
-initial_duration: 1
-gcode:
-    SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
-```
-
->[!NOTE]
->SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set it as above.
-
-****************************************************************************************************************************
-
-<br>
-
-# Neopixel Toolhead LEDs 
-
-....if using a Voron or another machine with neopixel LEDs in the toolhead. Be sure to name any neopixel toolhead LEDs:
-
-```
-[neopixel sb_leds]   
-```
-Or you will get an invalid for LED error.
-
-....If you're using an SV08 leave the neopixel LEDs their defualt name:
-```
-[neopixel Screen_Colour]
-```
-If you have more than 3 neopixel LEDs in your chain be sure to correctly edit the file you're using to include all LEDs in the chain. By default it is set for 3 Stealthburner style toolhead LEDs.
-You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
-
-![LED Chain Settings](https://github.com/user-attachments/assets/0b5c7bda-73e0-4cda-ba0c-f4edf0c03c96)
-
-****************************************************************************************************************************
-
-<br>
-<br>
-<br>
 
 # Demon Klipper Essentials Mainsail Updates
 
