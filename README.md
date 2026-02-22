@@ -89,7 +89,7 @@ Changes list if you ran previous older versions.
 >
 >It really does make a difference & any amount you send is greatly appreciated!
 
-This macro pack is the cumulation of over 2.5 years of work by one person alone, there have been countless late nights, missed family time, bottomless cups of coffee, as well as a boat load of effort & dedication. There’s been endless weeks of writing code & then probably that amount of time again at least thoroughly testing the files so that you can rest assured that they work & these macros will NOT damage or harm your printer in any way! Not counting any improper setup of course…
+This macro pack is the cumulation of 3 years of work by one person alone, there have been countless late nights, missed family time, bottomless cups of coffee, as well as a boat load of effort & dedication. There’s been endless weeks of writing code & then probably that amount of time again at least thoroughly testing the files so that you can rest assured that they work & these macros will NOT damage or harm your printer in any way! Not counting any improper setup of course…
 
 Plus I provide the DEMON DISCORD to help anyone with getting DKEU working on their system!
 
