@@ -448,7 +448,7 @@ Use for any machine Voron, SV08 to Ender!
 >[!IMPORTANT]
 >It is highly recommended to use this installer if you're installing fresh or updating from an older version and are not using Moonraker's Update Manager! It will archive your old files for you.
 
-RUN THIS FIRST:
+RUN THIS FROM YOUR SSH TERMINAL:
 ```
 wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Klipper_Essentials_Installer.sh | bash
 ```
@@ -468,7 +468,7 @@ wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essential
 
 # ...Your new files should now be Installed! 
 
-Your new files should now be avaiable to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
+Your new files should now be available to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
 
 >[!NOTE]
 >Don't forget to reload your web browser window so new items will show & work correctly after installation!
@@ -488,7 +488,7 @@ Your new files should now be avaiable to you on your printer! Please note you ma
 
 # DEMON KLIPPER ESSENTIALS UNIFIED SETUP...
 
-Lets start the setup of these macros, the first and most important step is to make sure a few things are correctly defined.
+Let's start the setup of these macros, the first and most important step is to make sure a few things are correctly defined.
 
 <br>
 
