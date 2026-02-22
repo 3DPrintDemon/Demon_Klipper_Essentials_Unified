@@ -20,7 +20,7 @@ else
     echo "
 ************************************************************************************************"
 
-    if [ "$(ls -A $DUF)" ]; then    
+    if [ "$(ls -A $DDIR)" ]; then    
         # prompting
         read -p "Preparing the Prerequisites installers. Please choose which one to use...
             1. General - Use with any printer from a Voron to Ender, including Sovol SV08 MAX printers.
