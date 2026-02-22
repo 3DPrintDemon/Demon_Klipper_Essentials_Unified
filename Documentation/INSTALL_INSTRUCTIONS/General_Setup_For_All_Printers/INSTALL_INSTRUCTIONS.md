@@ -57,7 +57,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 <br>
 <br>
 
-# IMPORTANT INFO BEFORE YOU START...
+# :warning: IMPORTANT INFO BEFORE YOU START... :warning:
 
 >[!IMPORTANT]
 >Click the lines below to expand them to read the contents!
@@ -86,7 +86,7 @@ If your directory is empty please click the reload button for your web browser t
 
 <br>
 
-### TROUBLESHOOTING SECTION
+### :interrobang: TROUBLESHOOTING SECTION :interrobang:
 
 >[!TIP]
 >This is important so it's at the top where you might see it, as if not correct it'll cause the following issues...
@@ -183,7 +183,7 @@ sudo service klipper start
 
 <br>
 
-### UPDATING FROM A PREVIOUS VERSION - SSH CONFIG UPDATER SCRIPT!
+### :recycle: UPDATING FROM A PREVIOUS VERSION - SSH CONFIG UPDATER SCRIPT! :recycle:
 
 >[!TIP]
 >Thanks to this amazing community we have our first official contribution to Demon Klipper Essentials Unified! This contribution now allows you to update your demon_user_settings cfg file across versions via interactive SSH Python script where it'll give you choices to bring in or bypass previously set values from your old files!!
@@ -229,7 +229,7 @@ Other things you will need to look at when updating!
 
 <br>
 
-### FEATURE: DEMON DIAGNOSTICS!
+### :construction_worker: FEATURE: DEMON DIAGNOSTICS! :construction_worker:
 
 >[!TIP]
 > BE SURE TO USE THIS WHEN SETTING UP! It's your onboard helper tool!
@@ -305,7 +305,7 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 <br>
 
 
-# Preparing Your Current System
+# :bangbang: Preparing Your Current System :bangbang:
 
 ### MAKE A BACKUP!
 
@@ -430,7 +430,7 @@ Once installed navigate to option 4 (Advanced), then option 8 (G-code Shell Comm
 <br>
 
 
-# MAIN SSH INSTALLER HERE:
+# :warning: MAIN SSH INSTALLER HERE: :warning:
 ### RUN THIS FIRST FROM YOUR SSH TERMINAL TO START YOUR FULL INSTALL!
 
 Use for any machine Voron, SV08 to Ender!
@@ -456,7 +456,7 @@ wget https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Uni
 <br>
 
 
-# ...Your new files should now be Installed! 
+# :white_check_mark: ...Your new files should now be Installed! :white_check_mark:
 
 Your new files should now be available to you on your printer! Please note you may need to reload your `Mainsail` browser page for new items to show correctly.
 
