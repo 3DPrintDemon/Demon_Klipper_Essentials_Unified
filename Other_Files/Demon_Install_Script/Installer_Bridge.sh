@@ -9,7 +9,7 @@ IDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/
 RDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script"
 RESTART="Installer_Bridge.sh"
 GEN="GPI_Controller.sh"
-SOVOL="SPI_Controller.sh"
+SOVOL="SVPI_Controller.sh"
 
 if [ ! -d "$DDIR" ]; then
    echo "Directory $DDIR does not exist, Installation process CANCELLED! 
