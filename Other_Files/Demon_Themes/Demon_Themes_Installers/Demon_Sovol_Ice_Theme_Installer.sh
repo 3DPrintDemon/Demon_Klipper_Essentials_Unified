@@ -8,7 +8,7 @@
 U="$USER"
 TDIR="/home/$U/printer_data/config/.theme"
 PDIR="/home/$U/printer_data/config/Previous_Themes"
-SDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/.Demon_Themes/Demon_Sovol_Ice_Theme"
+SDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Themes/Demon_Sovol_Ice_Theme"
 
 # Check if directory not exist
 if [ ! -d "$TDIR" ]; then
