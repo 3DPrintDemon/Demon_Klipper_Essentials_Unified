@@ -4,7 +4,7 @@
 
 # Define
 U="$USER"
-IDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/.Demon_Themes/Demon_Themes_Installers"
+IDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Themes/Demon_Themes_Installers"
 RESTART="Demon_Mainsail_Theme_Installer.sh"
 DEMON="Demon_Theme_Installer.sh"
 DVOR="Demon_Voron_Theme_Installer.sh"
