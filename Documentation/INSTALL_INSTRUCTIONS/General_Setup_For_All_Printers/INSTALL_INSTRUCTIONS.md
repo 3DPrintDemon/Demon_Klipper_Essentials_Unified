@@ -1276,7 +1276,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 # :house: FEATURE: DEMON HOMING CONTROL! :house:
 
-This sort of thing has been available for some time elsewhere but this is the first time we have a version integrated here in the 3DPrintDemon macros. This feature will lower the motor current on the X & Y axis motors when homing the printer & then increase it again to normal levels afterwards! This means your printer will be a little more gentle when homing. 
+This feature will lower the motor current on the X & Y axis motors when homing the printer & then increase it again to normal levels afterwards! This means your printer will be a little more gentle when homing. 
 
 This system will also not let you home the printer with the toolhead under 5mm high & it’ll always raise the Z axis by an amount of your choosing if the motors are disarmed BEFORE actually homing the printer in the Z & Y axes. Plus when the motors are armed & the printer is in a homed state after that initial raise it won’t raise the axis again when homing until they’re disarmed or homing is commanded at <5mm! 
 So there’s no more risk of homing at Z0.2mm after a stoppage or a Z offset calibration test or risk hitting any clips or nozzle cleaners etc!
@@ -1335,7 +1335,7 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 >[!IMPORTANT]
 >Don't add any of the Eddy NG macros, just the printer.cfg sections. Their macros are not required with DKEU.
 
-Follow the Eddy NG wiki & install the firmware & klipper files, then be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
+Follow the Eddy NG wiki & install Eddy NG, then build & install the MCU firmware, be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
 
 Set your chosen values for Eddy NG in the demon_user_settings_vx.x.x.cfg file
 
