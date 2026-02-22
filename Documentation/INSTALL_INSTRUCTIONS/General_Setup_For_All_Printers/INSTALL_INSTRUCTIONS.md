@@ -155,7 +155,13 @@ filename = ~/demon_vars.cfg
 
 Also double check you have no other `[save_variables]` sections defined in your system. 
 
-Then Save & Restart.
+Then...
+
+<br>
+
+:floppy_disk: SAVE & RESTART :floppy_disk:
+
+<br>
 
 </details>
 
@@ -703,7 +709,7 @@ Time to include the main macro files & their prerequisites, as well as the Demon
 
 Now is a good time to use the include commands to bring the files into your system as you have the very basic requirements for the macros to run. 
 
-Copy the code block below & paste it at the top of your `printer.cfg` file & then click the `Save & Restart` button to restart Klipper!
+Copy the code block below & paste it at the top of your `printer.cfg` file!
 
 >[!IMPORTANT]
 >It is vitally important that you have the `demon_vars.cfg` file & `[save_variables]` section in-place before you include these files, If you used the new SSH installer it will have been placed for you. You can jump back to [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#define-save-variables-section) to confirm you did the step for the `[save_variables]` section, there is even a SSH command to manually place the `demon_vars.cfg` file if you need it.
@@ -833,7 +839,11 @@ If you have a MKS based system:
 
 After selecting & including your file above...
 
-SAVE & RESTART 
+<br>
+
+:floppy_disk: SAVE & RESTART :floppy_disk:
+
+<br>
 
 Then once you restart your system you'll be greeted by new system prompts telling you if anyhting needs to be done to get your system ready for use, & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
 
@@ -1013,7 +1023,11 @@ To use correctly ensure your `extruder` section in your `printer.cfg` has the li
 max_extrude_cross_section: 5
 ```
 
-Save & restart!
+<br>
+
+:floppy_disk: Save & restart! :floppy_disk:
+
+<br>
 
 >[!NOTE]
 >If `variable_adaptive_meshing` is set to `True` then the system will override the values for `variable_use_kamp_adaptive_purge` & `variable_use_kamp_smart_park`. It will always use the adaptive purge & smart park features no matter what the >settings are. Even if they're set to false. User control is handed back once `variable_adaptive_meshing` is set to `False`
@@ -1041,7 +1055,7 @@ If you use another slicer:
 <br>
 <br>
 
-# Modifying KlipperScreen For New Features
+# :tv: Modifying KlipperScreen For New Features :tv:
 
 <img width="600" alt="KlipperScreen" src="https://github.com/user-attachments/assets/032f6675-3a0b-4bfd-acc9-4fd8e2f5d720" />
 
@@ -1257,7 +1271,7 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 <br>
 <br>
 
-# FEATURE: DEMON HOMING CONTROL!
+# :house: FEATURE: DEMON HOMING CONTROL! :house:
 
 This sort of thing has been available for some time elsewhere but this is the first time we have a version integrated here in the 3DPrintDemon macros. This feature will lower the motor current on the X & Y axis motors when homing the printer & then increase it again to normal levels afterwards! This means your printer will be a little more gentle when homing. 
 
