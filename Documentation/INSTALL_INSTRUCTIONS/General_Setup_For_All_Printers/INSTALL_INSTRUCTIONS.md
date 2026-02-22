@@ -61,6 +61,8 @@ alt="IMAGE ALT TEXT HERE" width="500" height="360" border="10" /></a>
 
 For DKEU3 there's been MANY upgrades & improvements that have taken weeks to complete! Totally new installers have been written, with the need for a separate prerequisites installer being removed! You can now install with just a single SSH command! Theres also been a massive restructuring of the Demon User Files that allow you to find variables you need MUCH FASTER by using the sidebar within the files on Mainsail. To accomplish this the ENTIRE macro pack had to be re-worked!! That was no small task!
 
+Plus the introduction of the new DEMON THEMES system for DKEU3!!
+
 <br>
 
 >[!IMPORTANT]
