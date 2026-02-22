@@ -39,7 +39,7 @@ else
             echo "Directory $PDIR already exists."
         fi
 
-    mv $DDIR PDIR --backup=numbered
+    mv /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified /home/$U/printer_data/config/Previous_Demon_Macros --backup=numbered
 fi
 
 cd /home/$U/printer_data/config
@@ -75,7 +75,8 @@ else
             echo "Directory $PDUF already exists."
         fi
         echo "Archiving current Demon_User_Files to $PDUF."
-        mv $DUF/*.cfg $PDUF --backup=numbered
+        cp /home/$U/printer_data/config/Demon_User_Files/*.cfg /home/$U/printer_data/config/Demon_User_Files/Previous_Versions --backup=numbered
+        rm /home/$U/printer_data/config/Demon_User_Files/*.cfg
          
     else
         echo "Directory $DUF is empty."
@@ -83,14 +84,14 @@ else
 fi
 
 echo "Extracting Demon_User_Files to $DUF."
-cp $SDIR/*.cfg $DUF --backup=numbered
+cp /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE/*.cfg /home/$U/printer_data/config/Demon_User_Files --backup=numbered
 
 wait
 
 
 
 
-
+sh /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/Installer_Bridge.sh
 
 
 
