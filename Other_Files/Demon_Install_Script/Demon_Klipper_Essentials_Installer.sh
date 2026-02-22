@@ -87,9 +87,7 @@ cp $SDIR/*.cfg $DUF --backup=numbered
 
 wait
 
-echo "Main installer operations complete. Loading the Installer Bridge....."
 
-sh $IDIR/$BRIDGE
 
 
 
