@@ -73,7 +73,7 @@ Plus the introduction of the new DEMON THEMES system for DKEU3!!
 <details>
     <summary>
         <b>
-        Click To Expand - File Structure
+        :red_circle: Click To Expand - File Structure
         </b>
     </summary>
 <p>
@@ -109,7 +109,7 @@ If your directory is empty please click the reload button for your web browser t
 <details>
     <summary>
         <b>
-        Click To Expand - What if you get a EOF error?
+        :red_circle: Click To Expand - What if you get a EOF error?
         </b>
     </summary>
 <p>
@@ -128,7 +128,7 @@ Don't worry though this is just telling you the system created the file but it d
 <details>
   <summary>
         <b>
-        Click To Expand - What if you get a popup boot loop welcome message?
+        :red_circle: Click To Expand - What if you get a popup boot loop welcome message?
         </b>
     </summary>
 <p>
@@ -168,7 +168,7 @@ Then...
 <details>
   <summary>
         <b>
-        Click To Expand - What if you get a popup boot loop extract files message?
+        :red_circle: Click To Expand - What if you get a popup boot loop extract files message?
         </b>
     </summary>
 <p>
@@ -183,7 +183,7 @@ Also. Due to the way the Kiauh Shell Script Extension works if you have a custom
 <details>
     <summary>
         <b>
-        Click To Expand - Manually reinstall your demon_vars.cfg file
+        :red_circle: Click To Expand - Manually reinstall your demon_vars.cfg file
         </b>
     </summary>
 <p>
@@ -218,7 +218,7 @@ Not only can you now update all the DKEU user files with it but you can also eve
 <details>
     <summary>
         <b>
-        Click To Expand - SCRIPT: USER SETTING FILE UPDATER!
+        :red_circle: Click To Expand - SCRIPT: USER SETTING FILE UPDATER!
         </b>
     </summary>
 <p>
@@ -265,7 +265,7 @@ Other things you will need to look at when updating!
 <details>
     <summary>
         <b>
-        Click To Expand - FEATURE: DEMON DIAGNOSTICS!
+        :red_circle: Click To Expand - FEATURE: DEMON DIAGNOSTICS!
         </b>
     </summary>
 <p>
@@ -343,7 +343,7 @@ Make a backup of your current system now! Be sure you at least download your cur
 <details>
     <summary>
         <b>
-        Click To Expand - How To Disable You Current Macros
+        :red_circle: Click To Expand - How To Disable You Current Macros
         </b>
     </summary>
 <p>
@@ -376,7 +376,7 @@ Now click `Save` & exit the file, no need to restart just yet, unless you want t
 <details>
     <summary>
         <b>
-        Click To Expand - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly
+        :red_circle: Click To Expand - If you're not too sure on how to "SSH" or would simply like to check you're doing things correctly
         </b>
     </summary>
 <p>
@@ -424,7 +424,7 @@ You're now ready to begin issuing commands to install the macros.
 <details>
     <summary>
         <b>
-        Click To Expand - OPTIONAL BUT RECOMMENDED - Kiauh G-code Shell Command Extension - OPTIONAL!
+        :red_circle: Click To Expand - OPTIONAL BUT RECOMMENDED - Kiauh G-code Shell Command Extension - OPTIONAL!
         </b>
     </summary>
 <p>
@@ -523,7 +523,7 @@ filename = ~/demon_vars.cfg
 <details>
     <summary>
         <b>
-        Click To Expand - Manually reinstall your demon_vars.cfg file
+        :red_circle: Click To Expand - Manually reinstall your demon_vars.cfg file
         </b>
     </summary>
 <p>
@@ -743,7 +743,7 @@ Your full include list should look like this example from my Voron 2.4 - the add
 <details>
     <summary>
         <b>
-        Click To Expand - FEATURE: DEMON USER FILES UPDATER!
+        :red_circle: Click To Expand - FEATURE: DEMON USER FILES UPDATER!
         </b>
     </summary>
 <p>
@@ -788,7 +788,7 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 <details>
     <summary>
         <b>
-        Click To Expand - If You Have A Host SBC with Custom User Account Name
+        :red_circle: Click To Expand - If You Have A Host SBC with Custom User Account Name
         </b>
     </summary>
 <p>
@@ -878,7 +878,7 @@ Instantly add a new exciting look to your mainsail screen with new favicon icons
 <details>
     <summary>
         <b>
-        Click To Expand - How To Use Demon Themes!
+        :red_circle: Click To Expand - How To Use Demon Themes!
         </b>
     </summary>
 <p>
@@ -1076,7 +1076,7 @@ Add this to the top of the file, it defines the file section by naming your prin
 <details>
     <summary>
         <b>
-        Click To Expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
+        :red_circle: Click To Expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
         </b>
     </summary>
 <p>
@@ -1200,7 +1200,7 @@ Lights stay on while printing, but the screen will still go to sleep.
 <details>
     <summary>
         <b>
-        Click To Expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
+        :red_circle: Click To Expand - CODE BLOCK TO COPY FOR KLIPPERSCREEN MOD
         </b>
     </summary>
 <p>
@@ -1375,7 +1375,7 @@ Once Your probe is setup correctly & tested working all Demon Z_Probe calibratio
 <details>
     <summary>
         <b>
-        Click To Expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
+        :red_circle: Click To Expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
         </b>
     </summary>
 <p>
@@ -1567,7 +1567,7 @@ gcode_id: C
 <details>
     <summary>
         <b>
-        Click To Expand - OR the old verion is here...
+        :red_circle: Click To Expand - OR the old verion is here...
         </b>
     </summary>
 <p>
