@@ -60,8 +60,6 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 
 To update system packages & to update latest software versions, plus how to get rid of those annoying Moonraker Warnings for good!
 
-<br>
-
 :red_circle: [CLICK HERE!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/Fix_Sovol_EMMC_Images/FIX_SOVOL_EMMC_IMAGES.md)
 
 <br>
@@ -289,7 +287,7 @@ sudo reboot now
 
 <br>
 
-## Optional Download & Manual Install
+## Optional Manual Install - If you didn't do either of the ssh installs above
 
 <br>
 
