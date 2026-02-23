@@ -1,4 +1,4 @@
-# SUPPORT YOUR FRIENDLY 3DPrintDemon!
+# :gift: SUPPORT YOUR FRIENDLY 3DPrintDemon! :gift:
 
 >[!TIP]
 >Please consider supporting this project…. Even if it’s for a single donation!
@@ -17,7 +17,7 @@ You can stay a supporter on the 3DPrintDemon Patreon sending donations of your c
 
 Active supporters have a special channel on the Demon Discord server & are provided with a higher level of support over non supporting members. Just make your discord user name known & you’ll be granted “supporter” privileges.
 
-[JOIN THE 3DPRINTDEMON PATREON](https://patreon.com/3dprintdemon) as an active donating member & show your support for my work!
+:red_circle: [JOIN THE 3DPRINTDEMON PATREON](https://patreon.com/3dprintdemon) as an active donating member & show your support for my work!
 
 Your donations are used to feed my printers & give them the latest fancy pants new parts so I can continue adding new features, fixing bugs & providing time for helping you all to get the macros running & fixing issues you might experience!
 
@@ -34,7 +34,7 @@ Be sure to use the website not the IOS app, it's cheaper!
 
 
 ****************************************************************************************************************************
-### You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) first!
+### :red_circle: You need to complete everything in the [General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards) first!
 
 ****************************************************************************************************************************
 
@@ -383,13 +383,13 @@ initial_BLUE: 0.7
 
 <br>
 
-# SUPPORT 3DPrintDemon!
+# :gift: SUPPORT 3DPrintDemon! :gift:
 
 You can stay a supporter on the 3DPrintDemon Patreon sending donations of your choosing for as long as you like. Maybe it’s for just a month or two for single private users that would like to show your gratitude, or maybe you could consider ongoing support if you’re a business owner & make regular use of my work to aid your business.
 
 Active supporters have a special channel on the Demon Discord server & are provided with a higher level of support over non supporting members. Just make your discord user name known & you’ll be granted “supporter” privileges.
 
-[JOIN THE 3DPRINTDEMON PATREON](https://patreon.com/3dprintdemon) as an active donating member & show your support for my work!
+:red_circle: [JOIN THE 3DPRINTDEMON PATREON](https://patreon.com/3dprintdemon) as an active donating member & show your support for my work!
 
 <br>
 <br>
