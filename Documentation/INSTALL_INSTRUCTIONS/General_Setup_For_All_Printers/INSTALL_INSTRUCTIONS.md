@@ -567,21 +567,19 @@ This will call the new Demon timeout macro after 1 hour & execute the functions 
 
 <br>
 
-## Set Up Your Mainsail.cfg File!
-
-You will need to configure your `Mainsail.cfg` `_CLIENT_VARIABLE` macro, set it up now! 
-
-### :red_circle: [Click here to do that!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Set_Up%20_Your_Mainsail.cfg.md)
-
-If you choose *NOT* to use the Mainsail.cfg...
+## Firmware Retraction
+Add this section to your printer.cfg file
 
 >[!TIP]
->These macros make use of the `respond` command & is already defined in the your `Mainsail.cfg` file so if you are not going to use it please make sure your printer.cfg has this defined for use in the system, you will need to add the section manually. 
+>The counterpart slicer settings you'll need are listed later on...
 
 ```
-[respond]
+[firmware_retraction]
+retract_length: 0.8
+retract_speed: 30
+unretract_extra_length: 0.0
+unretract_speed: 30
 ```
-
 ****************************************************************************************************************************
 
 <br>
@@ -685,6 +683,25 @@ If you have more than 3 neopixel LEDs in your chain be sure to correctly edit th
 You will need to change this if you have a long chain or use neopixels elsewhere on your printer.
 
 ![LED Chain Settings](https://github.com/user-attachments/assets/0b5c7bda-73e0-4cda-ba0c-f4edf0c03c96)
+
+****************************************************************************************************************************
+
+<br>
+
+## Set Up Your Mainsail.cfg File!
+
+You will need to configure your `Mainsail.cfg` `_CLIENT_VARIABLE` macro, set it up now! 
+
+### :red_circle: [Click here to do that!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Set_Up%20_Your_Mainsail.cfg.md)
+
+If you choose *NOT* to use the Mainsail.cfg...
+
+>[!TIP]
+>These macros make use of the `respond` command & is already defined in the your `Mainsail.cfg` file so if you are not going to use it please make sure your printer.cfg has this defined for use in the system, you will need to add the section manually. 
+
+```
+[respond]
+```
 
 ****************************************************************************************************************************
 
