@@ -923,7 +923,7 @@ There are a few more themes to choose from as well as the one above!!
 
 # Macro Layout Import/Restore
 
-In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v2.9.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
+In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v3.0.0.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
 
 This will bring in the defualt macro layout.
 - [CLICK HERE FOR MACRO LAYOUT FILE](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON)
