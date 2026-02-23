@@ -467,10 +467,6 @@ cd ~/ && wget https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essen
 
 ###### NOTE: The prerequisites installer is no longer required. Simply run the above installer
 
-<br>
-<br>
-<br>
-
 ****************************************************************************************************************************
 
 <br>
