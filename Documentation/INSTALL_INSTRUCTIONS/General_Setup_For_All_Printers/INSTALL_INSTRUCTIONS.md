@@ -260,6 +260,9 @@ Other things you will need to look at when updating!
 > BE SURE TO USE THIS WHEN SETTING UP! It's your onboard helper tool!
 >This system will help you see whats been done, what needs doing & what is not correctly set yet!
 
+>[!NOTE]
+>This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
+
 <br>
 
 <details>
@@ -305,9 +308,6 @@ It just scans them safely & leaves them unedited & unchanged!
 <br>
 
 ![DD-1](https://github.com/user-attachments/assets/24fcda75-5418-4b3f-95c1-73c2197f6e45)
-
->[!NOTE]
->This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
 
 <br>
 <br>
