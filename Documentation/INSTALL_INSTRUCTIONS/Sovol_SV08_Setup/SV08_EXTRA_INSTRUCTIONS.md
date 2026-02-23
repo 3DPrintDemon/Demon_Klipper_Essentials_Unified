@@ -399,26 +399,26 @@ Active supporters have a special channel on the Demon Discord server & are provi
 ![DEMON_Armbian_Boot](https://github.com/user-attachments/assets/a3d92371-929e-4850-b05f-acfaed6575ba)
 
 
-- [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
+:red_circle: [HDMI DEMON Boot Screen!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/DEMON_Armbian_HDMI_Boot_Screen/DEMON_HDMI_Boot_Screen_Install.md)
 
 ## Other Great Upgrade Options For All SV08's
 Here is my SV08 nozzle cleaning & purge bucket!
 
-- https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
+:red_circle: https://www.printables.com/model/873006-sovol-sv08-silicone-nozzle-cleaner-purge-bucket-mi
 
 Anti-vibration feet
 
-- https://www.printables.com/model/867321-sovol-sv08-low-profile-vibration-isolation-feet
+:red_circle: https://www.printables.com/model/867321-sovol-sv08-low-profile-vibration-isolation-feet
 
 M12 Probe mount
 
-- https://www.printables.com/model/870302-sovol-sv08-m12-inductive-probe-mount-lj12a3-4-zax
+:red_circle: https://www.printables.com/model/870302-sovol-sv08-m12-inductive-probe-mount-lj12a3-4-zax
 
 DIN rail mount
 
- - https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
+ :red_circle: https://www.printables.com/model/867676-sovol-sv08-recessed-din-rail-mount-bracket
 
 ****************************************************************************************************************************
 
 
-- [Head on to General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
+:red_circle: [Head on to General Setup For All Printers](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
