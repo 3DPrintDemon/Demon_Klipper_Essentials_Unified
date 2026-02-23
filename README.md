@@ -25,7 +25,7 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 
 <br>
 
-## Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
+## :red_circle: Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
 There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
 
@@ -145,7 +145,7 @@ Activate with the demon_user_settings_cleaner_variables .cfg file!
 <details>
     <summary>
         <b>
-        Click to expand - FEATURE: PELLET FORMING PURGE SYSTEM!
+        :red_circle: Click to expand - FEATURE: PELLET FORMING PURGE SYSTEM!
         </b>
     </summary>
 <p>
@@ -213,7 +213,7 @@ Do NOT use Orca Slicer from anywhere other than GitHub or Flathub. Orca Slicer D
 
 Use this link....
 
-- https://github.com/SoftFever/OrcaSlicer/releases
+:red_circle: https://github.com/SoftFever/OrcaSlicer/releases
 
 ![Orca Fail](https://github.com/user-attachments/assets/873834af-e9ce-4632-af02-4e3ea133071a)
 
@@ -228,12 +228,12 @@ How about fully automated power on/off control with auto cool down & shutdown af
 
 Find out here!
 
-- [Auto Shutdown Relay!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#auto-shutdown-moonraker-power-device)
+:red_circle: [Auto Shutdown Relay!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#auto-shutdown-moonraker-power-device)
 
 Or maybe you're using a printer with a bedside mounted Z endstop switch & sensorless homing & you want an AUTO E STOP system so that if your nozzle misses your endstop switch the printer knows there's a problem!
 
-- [Voron 2.4 Auto Emergency Stop System (AES)](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Documentation/INSTALL_INSTRUCTIONS/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch/AES.md)
+:red_circle: [Voron 2.4 Auto Emergency Stop System (AES)](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Documentation/INSTALL_INSTRUCTIONS/Voron_2.4_AES_System_Auto_Emergency_Stop_For_Z_Endstop_Switch/AES.md)
 
 If thats not enough how about creating your very own online auto updating backup of all your config files here on Github in your own private repo?!
 
-- [Auto backup your printer!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Documentation/INSTALL_INSTRUCTIONS/Auto_Backup_Your_Printer/Git_Backup.md)
+:red_circle: [Auto backup your printer!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Documentation/INSTALL_INSTRUCTIONS/Auto_Backup_Your_Printer/Git_Backup.md)
