@@ -868,7 +868,6 @@ Instantly add a new exciting look to your mainsail screen with new favicon icons
 <img width="1532" height="1021" alt="Demon_Voron" src="https://github.com/user-attachments/assets/4ee457b2-3ef3-452a-b898-ac06a7b95be2" />
 <a href="https://www.freepik.com/free-photo/fire-flame-with-sparkle-black-background_231608214.htm#fromView=keyword&page=1&position=9&uuid=668eb768-0146-4375-bd24-8a325c51429b&query=Flame+background">Image available at www.freepik.com</a>
 
-
 <br>
 <br>
 
@@ -882,6 +881,7 @@ Instantly add a new exciting look to your mainsail screen with new favicon icons
 </p>
 Start by installing the .json file (see next section!) to update Mainsail's macro layout the hit the DEMON THEME LOADER macro button in the General Macros group.
 
+<br>
 <br>
 <br>
 
@@ -913,6 +913,13 @@ There are a few more themes to choose from as well as the one above!!
 
 
 </details>
+
+<br>
+
+> [!NOTE]
+> Users with custom account names who wish to use this feature will need to redo their Extract_Demon_User_Files_Custom.cfg file
+> [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-updater-includes) as it has been updated!
+
 
 ****************************************************************************************************************************
 
