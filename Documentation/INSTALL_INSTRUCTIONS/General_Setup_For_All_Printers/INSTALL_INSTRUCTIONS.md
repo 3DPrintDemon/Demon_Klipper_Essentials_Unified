@@ -913,8 +913,8 @@ There are a few more themes to choose from as well as the one above!!
 <br>
 
 > [!NOTE]
-> Users with custom account names who wish to use this feature will need to redo their Extract_Demon_User_Files_Custom.cfg file
-> [here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-updater-includes) as it has been updated!
+> Users with custom account names who wish to use this feature will need to redo their Extract_Demon_User_Files_Custom.cfg file as it has been updated!
+> [Click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-updater-includes) 
 
 
 ****************************************************************************************************************************
