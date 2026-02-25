@@ -214,10 +214,20 @@ sudo service klipper start
 If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES UPDATER. This system has changed & you need to update your include command for it.
 Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
 
+Also if you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall using Kiauh & install the newest version! 
+
+HOWEVER.......!
+
+Doing this will give you ANOTHER error!! :sweat:
+
+This is because KIAUH (for whatever reason!!) puts a shell script include command right at the very bottom of your printer.cfg which confuses the printer because that is NOT meant to go there!
+
+JUST DELETE it being careful not to mess up the green auto save data above it.
+
+Save & restart!
+
 <img width="580" alt="Error2" src="https://github.com/user-attachments/assets/0f465dcf-9cd8-49d1-800e-fbbce533a63b" />
 
-
-    
 </details>
 
 <br>
@@ -810,6 +820,31 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 >[!IMPORTANT]
 >Be sure to delete your OLD include command for the OLD version of this file you previously had if you are not installing the macros fresh & are visiting this section to update your include command.
+
+<br>
+
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - EXTRA NOTE IMPORTANT PLEASE READ!
+        </b>
+    </summary>
+<p>
+</p>
+    
+If you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall using Kiauh & install the newest version! 
+
+HOWEVER.......!
+
+Doing this will give you ANOTHER error!! :sweat:
+
+This is because KIAUH (for whatever reason!!) puts a shell script include command right at the very bottom of your printer.cfg which confuses the printer because that is NOT meant to go there!
+
+JUST DELETE it being careful not to mess up the green auto save data above it.
+
+Save & restart!
+
+</details>
 
 
 <br>
