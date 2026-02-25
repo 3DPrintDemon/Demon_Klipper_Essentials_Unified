@@ -834,7 +834,7 @@ Save & restart!
 
 <br>
 
-###### Paste this into your printer.cfg file - *THIS REPLACES ANY OLD ONES YOU MIGHT HAVE HAD!*
+###### Paste this into your printer.cfg file - *THIS REPLACES ANY SIMILAR INCLUDES FOR THE OLD VERSION OF THE FILES YOU MIGHT HAVE HAD!*
 
 ```
 [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v*.cfg]
