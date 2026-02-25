@@ -834,7 +834,9 @@ Save & restart!
 
 <br>
 
-###### Paste this into your printer.cfg file - *THIS REPLACES ANY SIMILAR INCLUDES FOR THE OLD VERSION OF THE FILES YOU MIGHT HAVE HAD!*
+#### Paste this include command into your printer.cfg file next to the main DKEU3 includes.
+
+###### *THIS REPLACES ANY SIMILAR INCLUDES FOR THE OLD VERSION OF THE FILES YOU MIGHT HAVE HAD! DO NOT USE BOTH OLD AND NEW!!*
 
 ```
 [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v*.cfg]
