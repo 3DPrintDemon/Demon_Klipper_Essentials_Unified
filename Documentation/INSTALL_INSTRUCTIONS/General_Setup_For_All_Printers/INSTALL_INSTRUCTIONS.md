@@ -619,6 +619,11 @@ max_extrude_only_velocity: 22
 <br>
 
 ## Printer Lights (White LEDs)
+
+>[!TIP]
+>If you were using the `Heat_Soak.cfg` (not the others but that specific one!) please redownload the new version here...
+>- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
+
 Be sure to name any White LEDs that are in the `printer.cfg` file you wish the macros to control to:
 
 ```
@@ -628,10 +633,6 @@ cycle_time: 0.0010
 initial_WHITE: 1.0
 ```
 
->[!TIP]
->If you were using the `Heat_Soak.cfg` (not the others but that specific one!) please redownload the new version here...
->- https://github.com/3DPrintDemon/Non_Blocking_Wait/releases/tag/Heat_Soak_Timers_V1.0
-
 ****************************************************************************************************************************
 
 <br>
@@ -639,7 +640,7 @@ initial_WHITE: 1.0
 ## Filament Sensor
 
 >[!NOTE]
->SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set it as above.
+>SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set unless you're using your printer with another filament sensor.
 
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `DEMON_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
 ```
