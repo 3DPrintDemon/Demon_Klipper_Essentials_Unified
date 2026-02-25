@@ -40,7 +40,7 @@ This update now uses custom names & also provides a means of checking that you s
 ## :red_circle: DEMON USER FILES UPDATER include command has changed! 
 
 If you're using the shell script extension then this is for you! This change greatly simplifies the setup & use of this feature, as well as a few others too!
-You will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disck checker is no longer working.
+You will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disk checker is no longer working.
 
 ### [Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include)
 
