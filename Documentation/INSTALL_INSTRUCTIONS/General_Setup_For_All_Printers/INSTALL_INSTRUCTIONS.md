@@ -745,8 +745,14 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 ## FEATURE: DEMON USER FILES UPDATER!
 
-> [!IMPORTANT]
-> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
+
+>[!WARNING]
+>THIS SETUP HAS CHANGED!
+>
+>Due to an update some time back Kiauh is now able to make use of a variable that defines your user account!
+>This means we now only need a single file & you no longer need to choose which one suits your system.
+>
+>PLUS! For those of you with custom user account names it means you no longer need to edit a custom file for this system!
 
 <br>
 
@@ -763,7 +769,7 @@ This new feature is a quality of life system that's useful if you'd like the mac
 
 This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. If your user files need updating it will prompt you to extract the required files from the main `Demon Klipper Essentials Unified` directory & place them in the new directory `Demon_User_Files` outside of the managed main directory, this is directly inside your printer's `config` directory. It will also move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them. This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
 
-To use this awesome new feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add *ONE* of these include commands to activate the feature depending on what Pi system you're using. There are 4 pre-made ones for the most popular systems.
+To use this awesome feature you have to have the `Kiauh` `G-code Shell Command Extension` installed on your system as mentioned in the [prerequisites section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Prerequisites/Prerequisites.md#optional---kiauh-g-code-shell-command-extension---optional). Then you need to add this include command to activate the feature!
 
 <br>
 
@@ -782,75 +788,13 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 <br>
 
-## DEMON USER FILES UPDATER INCLUDES
-
-
-> [!TIP]
-> If you run this system but include the wrong file or it contains the wrong user account name the system will still be able to run but have an error due to the user account name & NO FILES WILL BE WRITTEN!
-> 
-> You will also get a extract files message everytime you restart Klipper!
-> 
->If you have a custom, non-standard user account name you will need to go in & adjust the file paths in the actual file you choose for it to work.
+## DEMON USER FILES HANDLER INCLUDE
 
 <br>
 
-### For Custom User Account Names
-<details>
-    <summary>
-        <b>
-        :red_circle: Click To Expand - If You Have A Host SBC with Custom User Account Name
-        </b>
-    </summary>
-<p>
-</p>
-
-If you have a custom host name for your SBC you will need to adjust the file paths in one of the `Extract_Demon_User_Files_xxxx.cfg` files. This is due to how the Kiauh Shell Script Extension works. It requires the full file path to be specified including the host's custom user account name! 
-
-* To do this you will need to copy the entire contents of a [Extract_Demon_User_Files_xxxx.cfg](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/Demon_User_Files_Updater) file of your choice.
-* Create a new file in the Demon_User_Files directory.
-* name it...
-  
 ```
-Extract_Demon_User_Files_Custom.cfg
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v*.cfg]
 ```
-
-* Paste in the contents of your clipboard to the new file.
-* Use `ctrl+F` on Windows or `cmd+F` on MacOS
-* Search for the standard user account name in the file you chose to copy, e.g. sovol/biqu/mks/pi
-* Then replace your user account name to read your actual user account name...
-
-```
-EXAMPLE!
-command: /usr/bin/bash /home/<YOUR USER ACCOUNT NAME HERE>/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Settings.sh
-```
-
-* Do the same for the rest of the file paths in the cfg file.
-* Save & Restart
-
-</details>
-
-<br>
-
-### For Standard User Account Names
-
-If you have a Raspberry Pi based system:
-```
-[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Rpi.cfg]
-```
-If you have a Biqu based system:
-```
-[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Biqu.cfg]
-```
-If you have a Sovol based system:
-```
-[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Sovol.cfg]
-```
-If you have a MKS based system:
-```
-[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_MKS.cfg]
-```
-
-After selecting & including your file above...
 
 <br>
 
