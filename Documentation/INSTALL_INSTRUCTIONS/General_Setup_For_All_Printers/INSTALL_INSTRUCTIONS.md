@@ -214,7 +214,7 @@ sudo service klipper start
 If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES UPDATER. This system has changed & you need to update your include command for it.
 Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
 
-Also if you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall using Kiauh & install the newest version! 
+Also if you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall it using Kiauh & install the newest version! 
 
 HOWEVER.......!
 
@@ -832,7 +832,7 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 <p>
 </p>
     
-If you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall using Kiauh & install the newest version! 
+If you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall it using Kiauh & install the newest version! 
 
 HOWEVER.......!
 
