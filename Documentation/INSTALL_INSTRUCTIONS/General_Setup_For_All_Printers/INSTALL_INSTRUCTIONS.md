@@ -599,9 +599,8 @@ unretract_speed: 30
 
 ## Load & Unload Macros
 
-
->[!NOTE]
->Klipperscreen Macros copy/paste into file is no longer required. Any previous copies of these LOAD/UNLOAD macros must be removed from any additional macro.cfg files in favour of the new included LOAD/UNLOAD macros. If you do not do this then there will be issues with the loading & unloading of filament. 
+>[!TIP]
+>The Orbiter v2.x extruders tend to like around 15-18 max!
 
 All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 25 or below will pass the check. 
 
@@ -610,9 +609,6 @@ Be sure your `printer.cfg` file `[extruder]` section contains...
 ```
 max_extrude_only_velocity: 22
 ```
-
->[!TIP]
->The Orbiter v2.x extruders tend to like around 15-18 max!
 
 ****************************************************************************************************************************
 
@@ -868,12 +864,8 @@ These files are placed here outside of the main `Demon Klipper Essentials Unifie
 
 Instantly add a new exciting look to your mainsail screen with new favicon icons, new backgrounds, colours & even some important new quick links for effortless navigation!
 
-<br>
+There are 5 built in themes to choose from, you can also even add your own custom theme to the system too!
 
-<img width="1532" height="1021" alt="Demon_Voron" src="https://github.com/user-attachments/assets/4ee457b2-3ef3-452a-b898-ac06a7b95be2" />
-<a href="https://www.freepik.com/free-photo/fire-flame-with-sparkle-black-background_231608214.htm#fromView=keyword&page=1&position=9&uuid=668eb768-0146-4375-bd24-8a325c51429b&query=Flame+background">Image available at www.freepik.com</a>
-
-<br>
 <br>
 
 <details>
@@ -904,20 +896,42 @@ This will bring up the Demon Theme Loader menu where you can choose your theme d
 
 <br>
 <br>
+<br>
 
-Another way to choose a theme is when you install the macros with the SSH installer.
+Another way to choose a theme is when you install the macros with the SSH installer. 
+
+## Demon User Themes!
+
+You can also now install your own custom made theme & have be used as part of the Demon Theme Loader system!
+
+- Click the "Enable User Themes" button when you don't have any themes installed.
+- This creates a new directory in your Demon_User_Files directory called Demon_Useer_Themes.
+- Place correctly processed & formatted custom theme files insdie.
+- Then click the Demon Theme Loader button again & press "Install User Theme" to load your theme.
+
+- To remove it simple click "Remove Theme". Don't worry your theme is perfectly safe still in your Demon_Useer_Themes directory!
+
+<br>
+<img width="393" height="249" alt="Enable CDT" src="https://github.com/user-attachments/assets/9f967e3a-0791-43f3-b08d-38d4baa78c9d" />
+<img width="396" height="249" alt="Install CDT" src="https://github.com/user-attachments/assets/00800be3-8943-411d-a5ef-9f6a688c6be2" />
+
+###### NOTE: If something goes wrong with the Demon Theme Loader system you'll get a popup error message. However if you get no message but your theme is not displayed then there is an issue with the files you uploaded & are trying to use. Remember even a single digit out of place will cause it not to work!
 
 <br>
 
-There are a few more themes to choose from as well as the one above!!
+## Built-in Demon Themes!
+
+There are a few more themes to choose from as well!!
 
 
 <img width="1447" height="1021" alt="T1" src="https://github.com/user-attachments/assets/8507f9e6-5c44-4ee6-bfb7-bbf65049b64a" />
 <img width="1446" height="1025" alt="T2" src="https://github.com/user-attachments/assets/6cd6f956-64d9-4d90-94df-50eea56e45b0" />
 <img width="1450" height="1025" alt="T3" src="https://github.com/user-attachments/assets/539c2b04-65d4-42cb-ac20-b78d8968df92" />
 
-
 </details>
+
+<img width="1532" height="1021" alt="Demon_Voron" src="https://github.com/user-attachments/assets/4ee457b2-3ef3-452a-b898-ac06a7b95be2" />
+<a href="https://www.freepik.com/free-photo/fire-flame-with-sparkle-black-background_231608214.htm#fromView=keyword&page=1&position=9&uuid=668eb768-0146-4375-bd24-8a325c51429b&query=Flame+background">Image available at www.freepik.com</a>
 
 ****************************************************************************************************************************
 
