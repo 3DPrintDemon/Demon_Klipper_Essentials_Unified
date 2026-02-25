@@ -876,10 +876,9 @@ There are 5 built in themes to choose from, you can also even add your own custo
     </summary>
 <p>
 </p>
-Start by installing the .json file (see next section!) to update Mainsail's macro layout the hit the DEMON THEME LOADER macro button in the General Macros group.
+    
+- Start by installing the .json file (see next section!) to update Mainsail's macro layout the hit the DEMON THEME LOADER macro button in the General Macros group.
 
-<br>
-<br>
 <br>
 
 <img width="954" height="456" alt="Demon Theme Loader" src="https://github.com/user-attachments/assets/c7fb6234-b9bb-40e1-a358-17eba1c599eb" />
@@ -888,7 +887,7 @@ Start by installing the .json file (see next section!) to update Mainsail's macr
 <br>
 <br>
 
-This will bring up the Demon Theme Loader menu where you can choose your theme directly from Mainsail live without the need to restart!
+- This will bring up the Demon Theme Loader menu where you can choose your theme directly from Mainsail live without the need to restart!
 
 <br>
 
@@ -898,7 +897,9 @@ This will bring up the Demon Theme Loader menu where you can choose your theme d
 <br>
 <br>
 
-Another way to choose a theme is when you install the macros with the SSH installer. 
+- Another way to choose a theme is when you install the macros with the SSH installer. 
+
+<br>
 
 ## Demon User Themes!
 
@@ -929,6 +930,8 @@ There are a few more themes to choose from as well!!
 <img width="1450" height="1025" alt="T3" src="https://github.com/user-attachments/assets/539c2b04-65d4-42cb-ac20-b78d8968df92" />
 
 </details>
+
+<br>
 
 <img width="1532" height="1021" alt="Demon_Voron" src="https://github.com/user-attachments/assets/4ee457b2-3ef3-452a-b898-ac06a7b95be2" />
 <a href="https://www.freepik.com/free-photo/fire-flame-with-sparkle-black-background_231608214.htm#fromView=keyword&page=1&position=9&uuid=668eb768-0146-4375-bd24-8a325c51429b&query=Flame+background">Image available at www.freepik.com</a>
