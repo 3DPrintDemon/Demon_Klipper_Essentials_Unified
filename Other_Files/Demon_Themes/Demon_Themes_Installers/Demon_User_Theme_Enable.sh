@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon User Theme Enable Script v1.0.0
+# 3DPrintDemon Demon User Theme Enable Script v1.0.1
 
 # Define
 U="$USER"
@@ -61,7 +61,7 @@ else
 fi
 
 wait
-cp  $SDIR/DTI.txt $TDIR  
+# cp  $SDIR/DTI.txt $TDIR  
 echo "Demon User Theme enabled!"
 
 echo "Operations complete."
