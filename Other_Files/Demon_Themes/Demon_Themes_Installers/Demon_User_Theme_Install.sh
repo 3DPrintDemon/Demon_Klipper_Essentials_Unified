@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon User Theme Installer Script v1.0.0
+# 3DPrintDemon Demon User Theme Installer Script v1.0.2
 
 # Define
 U="$USER"
