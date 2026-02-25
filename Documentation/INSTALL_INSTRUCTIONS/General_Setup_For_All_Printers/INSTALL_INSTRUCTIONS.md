@@ -202,6 +202,24 @@ sudo service klipper start
 ```
 </details>
 
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - _USER_FILES_HANDLER_VERISON has no attribute & Demon Theme Loader is not working?
+        </b>
+    </summary>
+<p>
+</p>
+    
+If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES UPDATER. This system has changed & you need to update your include command for it.
+Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
+
+<img width="580" alt="Error2" src="https://github.com/user-attachments/assets/0f465dcf-9cd8-49d1-800e-fbbce533a63b" />
+
+
+    
+</details>
+
 <br>
 
 ### :recycle: UPDATING FROM A PREVIOUS VERSION - SSH CONFIG UPDATER SCRIPT! :recycle:
