@@ -28,7 +28,7 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 # IMPORTANT NOTICES:
 
 ## :red_circle: Slicer G-code has changed! 
-[Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
+### [Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
 There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
 
@@ -37,7 +37,7 @@ This update now uses custom names & also provides a means of checking that you s
 <br>
 
 ## :red_circle: DEMON USER FILES UPDATER include command has changed! 
-[Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include)
+### [Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include)
 
 If you're using the shell script extension then this is for you! This change greatly simplifies the setup & use of this feature, as well as few others too!
 You will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disck checker is no longer working.
