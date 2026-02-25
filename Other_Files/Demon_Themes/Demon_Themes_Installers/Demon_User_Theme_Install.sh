@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon User Theme Installer Script v1.0.1
+# 3DPrintDemon Demon User Theme Installer Script v1.0.0
 
 # Define
 U="$USER"
@@ -69,8 +69,8 @@ elif [ "$(ls -A $UDIR)" ]; then
     cp  $SDIR/DTI.txt $TDIR  
     cp  $UDIR/* $TDIR
     wait
-    echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=user_theme_enabled VALUE=True"
-    echo "SAVE_VARIABLE VARIABLE=user_theme_enabled VALUE=True" >~/printer_data/comms/klippy.serial
+    echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=user_theme_installed VALUE=True"
+    echo "SAVE_VARIABLE VARIABLE=user_theme_installed VALUE=True" >~/printer_data/comms/klippy.serial
     wait
     echo "Demon User Theme installed!"
     echo "Requesting Klipper call DEMON_THEME_LOADER macro..."
