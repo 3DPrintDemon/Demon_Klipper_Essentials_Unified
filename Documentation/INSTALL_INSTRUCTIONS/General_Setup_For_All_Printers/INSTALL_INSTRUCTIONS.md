@@ -808,6 +808,10 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 ## DEMON USER FILES HANDLER INCLUDE
 
+>[!IMPORTANT]
+>Be sure to delete your OLD include command for the OLD version of this file you previously had if you are not installing the macros fresh & are visiting this section to update your include command.
+
+
 <br>
 
 ```
