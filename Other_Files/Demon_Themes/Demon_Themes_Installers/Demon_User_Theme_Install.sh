@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon User Theme Installer Script v1.0.0
+# 3DPrintDemon Demon User Theme Installer Script v1.0.1
 
 # Define
 U="$USER"
@@ -27,7 +27,7 @@ if [ ! -d "$UDIR" ]; then
     wait
     exit
 
-else
+elif [ "$(ls -A $UDIR)" ]; then
     # Check if directory not exist
     if [ ! -d "$TDIR" ]; then
         echo "$TDIR does not exist."
@@ -66,11 +66,26 @@ else
     fi
 
     wait
-    cp  $UDIR/* $TDIR  
+    cp  $SDIR/DTI.txt $TDIR  
+    cp  $UDIR/* $TDIR
+    wait
+    echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=user_theme_enabled VALUE=True"
+    echo "SAVE_VARIABLE VARIABLE=user_theme_enabled VALUE=True" >~/printer_data/comms/klippy.serial
+    wait
     echo "Demon User Theme installed!"
     echo "Requesting Klipper call DEMON_THEME_LOADER macro..."
     echo "DEMON_THEME_LOADER" >~/printer_data/comms/klippy.serial
 
     echo "Operations complete."
     
+    
+
+else
+    echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=user_theme_installed VALUE=False"
+    echo "SAVE_VARIABLE VARIABLE=user_theme_installed VALUE=False" >~/printer_data/comms/klippy.serial
+    echo "Requesting Klipper to RESPOND TYPE=command MSG=action:prompt_end"
+    echo "RESPOND TYPE=command MSG=action:prompt_end" >~/printer_data/comms/klippy.serial
+    
+    echo "Directory $UDIR is empty! Please copy your User Theme into directory $UDIR then try again!"
+    exit
 fi
