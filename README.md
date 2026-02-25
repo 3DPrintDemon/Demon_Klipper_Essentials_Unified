@@ -25,11 +25,21 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 
 <br>
 
+# IMPORTANT NOTICES:
+
 ## :red_circle: Slicer G-code has changed please [check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
 
 There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
 
 This update now uses custom names & also provides a means of checking that you sent a file with the correct START Gcode for these macros! The system will halt the print & warn you if not! So no more sending a file to print with the wrong START Gcode & bad things happening!!
+
+<br>
+
+## :red_circle: The DEMON USER FILES UPDATER include command has changed! 
+
+If you're using the shell script extension then this is for you! This change greatly simplifies the setup & use of this feature, as well as few others too!
+Please see [this section](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) for details as you will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disck checker is no longer working.
+
 
 <br>
 
