@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon User Theme Installer Script v1.0.2
+# 3DPrintDemon Demon User Theme Installer Script v1.0.3
 
 # Define
 U="$USER"
@@ -22,8 +22,8 @@ if [ ! -d "$UDIR" ]; then
     bash $IDIR/Themes_Uninstaller.sh
     wait
     echo "Operations cancelled, please enable Demon User Themes first!"
-    echo "Requesting Klipper call DEMON_THEME_LOADER macro..."
-    echo "DEMON_THEME_LOADER" >~/printer_data/comms/klippy.serial
+    echo "Requesting Klipper call _DEMON_USER_THEME_DIR_MISSING_ERROR macro..."
+    echo "_DEMON_USER_THEME_DIR_MISSING_ERROR" >~/printer_data/comms/klippy.serial
     wait
     exit
 
@@ -87,5 +87,8 @@ else
     echo "RESPOND TYPE=command MSG=action:prompt_end" >~/printer_data/comms/klippy.serial
     
     echo "Directory $UDIR is empty! Please copy your User Theme into directory $UDIR then try again!"
+    echo "Requesting Klipper to call _DEMON_USER_THEME_ERROR macro..."
+    echo "_DEMON_USER_THEME_ERROR" >~/printer_data/comms/klippy.serial
+
     exit
 fi
