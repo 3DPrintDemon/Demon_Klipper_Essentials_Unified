@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 3DPrintDemon Demon Theme Installer Script v1.0.0
+# 3DPrintDemon Demon Theme Installer Script v1.0.1
 
 # Define
 U="$USER"
@@ -40,18 +40,21 @@ case $choice in
     [1]* ) echo "Installing Demon Theme...."
         bash $IDIR/$DEMON
         echo "Saving install state & exiting..."
+        echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True"
         echo "SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True" >~/printer_data/comms/klippy.serial
         ;;
 
     [2]* ) echo "Installing Demon Voron Theme...."
         bash $IDIR/$DVOR
         echo "Saving install state & exiting..."
+        echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True"
         echo "SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True" >~/printer_data/comms/klippy.serial
         ;;
 
     [3]* ) echo "Installing Demon Tastic Theme...."
         bash $IDIR/$DTASTIC
         echo "Saving install state & exiting..."
+        echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True"
         echo "SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True" >~/printer_data/comms/klippy.serial
         ;;
     
@@ -59,12 +62,14 @@ case $choice in
     [4]* ) echo "Installing Demon Sovol Theme...."
         bash $IDIR/$SOVOL
         echo "Saving install state & exiting..."
+        echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True"
         echo "SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True" >~/printer_data/comms/klippy.serial
         ;;
 
     [5]* ) echo "Installing Demon Sovol Ice Theme...."
         bash $IDIR/$SICE
         echo "Saving install state & exiting..."
+        echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True"
         echo "SAVE_VARIABLE VARIABLE=demon_theme_installed VALUE=True" >~/printer_data/comms/klippy.serial
         ;;
 
@@ -86,4 +91,3 @@ case $choice in
 ;;
   
 esac
-
