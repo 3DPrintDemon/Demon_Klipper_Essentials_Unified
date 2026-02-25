@@ -6,6 +6,7 @@
 U="$USER"
 DDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified"
 IDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/General_Prerequisites_Installers"
+SIDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script/SV08_Prerequisites_Installers"
 RDIR="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Install_Script"
 RESTART="Installer_Bridge.sh"
 GEN="GPI_Controller.sh"
@@ -35,7 +36,7 @@ else
                 ;;
 
             [2]* ) echo "Running Sovol SV08 model specific installer...."
-                bash $IDIR/$SOVOL
+                bash $SIDIR/$SOVOL
                 ;;
 
             [3]* ) echo "Exitiing the installer bridge, be sure to install the correct Prerequisite files before trying to use DKEU!"  
