@@ -637,6 +637,10 @@ initial_WHITE: 1.0
 <br>
 
 ## Filament Sensor
+
+>[!NOTE]
+>SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set it as above.
+
 If you have or are going to install a filament sensor this must be added to your `printer.cfg` file to run the filament sensor. The filament runout check in the `DEMON_START` macro can then be enabled & disabled in the `_START_VARIABLES` macro if you dont have one or dont want to perform the check at the start of the print.
 ```
 [filament_switch_sensor filament_sensor]
@@ -671,9 +675,6 @@ initial_duration: 1
 gcode:
     SET_FILAMENT_SENSOR SENSOR=encoder_sensor ENABLE=0
 ```
-
->[!NOTE]
->SV08 Max owners skip this step - The SV08 Max printer already has it's filament sensor defined in the buffer_sepper.cfg file, there is no need to set it as above.
 
 ****************************************************************************************************************************
 
@@ -957,11 +958,7 @@ managed_services: klipper
 
 Here's some info on the `update_manager` section if you need it. https://docs.mainsail.xyz/setup/updates/update-manager
 
-Also please note that if you did not use the new installer to update but instead jusy want to rely on Update Manager to update from v2.9.3 or lower you must run this ssh script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for the latest version! 
-
-```
-wget -O - https://raw.githubusercontent.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/refs/heads/main/Other_Files/Demon_Install_Script/Demon_Vars_Installer.sh | bash
-```
+Also please note that if you did not use the new installer to update but instead just want to rely on Update Manager to update from v2.9.3 or lower you must run rhe above mains ssh installer script before you update via mainsail from your old version for the first time. It will make sure your demon_vars.cfg file is also updated & ready for the latest version! 
 
 ****************************************************************************************************************************
 
