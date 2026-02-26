@@ -93,5 +93,20 @@ cp $SDIR/$DCE $DIR
 echo "Auto extracting new version of $DUSFV"
 cp $SDIR/$DUSFV $DIR
 
+wait
+
+echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=first_boot VALUE=False"
+echo "SAVE_VARIABLE VARIABLE=first_boot VALUE=False" >~/printer_data/comms/klippy.serial
+
+echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=first_boot_msg VALUE=True"
+echo "SAVE_VARIABLE VARIABLE=first_boot_msg VALUE=True" >~/printer_data/comms/klippy.serial
+
+echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=version_dvars_updated VALUE=False"
+echo "SAVE_VARIABLE VARIABLE=version_dvars_updated VALUE=False" >~/printer_data/comms/klippy.serial
+
+wait
+
+echo "Requesting Klipper to RESTART"
+echo "RESTART" >~/printer_data/comms/klippy.serial
 
 echo "Operations complete."
