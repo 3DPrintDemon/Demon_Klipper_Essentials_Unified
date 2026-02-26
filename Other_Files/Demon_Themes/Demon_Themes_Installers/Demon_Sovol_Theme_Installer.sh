@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon Theme Installer Script v1.0.0
+# 3DPrintDemon Demon Theme Installer Script v1.0.1
 
 # Define
 U="$USER"
@@ -17,6 +17,7 @@ if [ ! -d "$TDIR" ]; then
     # Make Directory
     mkdir "$TDIR"
     echo "Directory $TDIR created."
+    wait
 
 else
     echo "Directory $TDIR already exists."
