@@ -966,6 +966,30 @@ There are a few more themes to choose from as well!!
 
 <br>
 
+# Demon Mainsail Safari/iPhone Icon
+
+Run ONE of the commands below to add the Demon logo to your bookmarked Mainsail icon on MacOS or iOS Safari!
+
+Send this command in the Klipper console:
+```
+RUN_SHELL_COMMAND CMD=demon_safari_icon_installer
+```
+
+Or Send this in your ssh terminal:
+```
+bash ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Themes/Demon_Themes_Installers/Demon_Safari_Icon_Installer.sh
+```
+
+It will install the icon & make a backup of the original Mainsail one for you. Then all you need do is navigate to a non-cached address for your printer & select either save bookmark or add to homescreen!
+
+<img width="440" alt="Phone Demon" src="https://github.com/user-attachments/assets/c6e2e8fc-be32-4b31-bd44-2155e6700459" />
+
+<br>
+
+>[!NOTE]
+>When you update mainsail you'll might need to re-apply the image if it gets updated or replaced in the update process.
+
+
 # Macro Layout Import/Restore
 
 In Mainsail click the cogs top right of the screen & then click the `RESTORE` button in the `Interface Settings` window under the `General` tab. Now find the `backup-mainsail-DEMON-MACROS-v3.0.0.json` file, click open & then select the macros option, then click `Restore` to bring in the macro setup.
