@@ -788,7 +788,7 @@ To use this awesome feature you have to have the `Kiauh` `G-code Shell Command E
 
 ### Manual User File Placement
 
-If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Updater` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
+If you choose to manage the system yourself manually & not to use the `Demon_User_Files_Handler` you will need to create a new directory inside your `config` directory called `Demon_User_Files`.
 
 Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE` & copy the three user settings .cfg files inside into your new `Demon_User_Files` directory that you just created outside of the main `Demon Klipper Essentials` directory. So the file structure looks like [this...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#the-file-structure-has-changed-for-v294-onwards)
 
