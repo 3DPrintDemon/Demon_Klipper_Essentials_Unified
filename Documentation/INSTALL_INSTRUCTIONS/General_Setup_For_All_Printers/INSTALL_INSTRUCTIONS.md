@@ -190,7 +190,7 @@ sudo service klipper start
 <details>
     <summary>
         <b>
-        :red_circle: Click To Expand - _USER_FILES_HANDLER_VERISON has no attribute & Demon Theme Loader is not working?
+        :red_circle: Click To Expand - Fix a red warning for a missing include for Demon User Files Handler 
         </b>
     </summary>
 <p>
@@ -199,7 +199,9 @@ sudo service klipper start
 If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES UPDATER. This system has changed & you need to update your include command for it.
 Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
 
-Also if you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall it using Kiauh & install the newest version! 
+If this system is not functional then all shell functions will be impacted, as you can see from the image below with it's unknown commands. 
+
+Also if you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension & you need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
 
 HOWEVER.......!
 
@@ -211,7 +213,7 @@ JUST DELETE it being careful not to mess up the green auto save data above it.
 
 Save & restart!
 
-<img width="580" alt="Error2" src="https://github.com/user-attachments/assets/0f465dcf-9cd8-49d1-800e-fbbce533a63b" />
+<img width="442" height="207" alt="Error3" src="https://github.com/user-attachments/assets/e278bb36-e452-48a2-81c4-addf0dd06f5b" />
 
 </details>
 
@@ -815,7 +817,7 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 <p>
 </p>
     
-If you updated your include command but the error now says the file/directory cannot be found, then you're using an old verion of the shell script extension & you need to uninstall it using Kiauh & install the newest version! 
+Also if you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension & you need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
 
 HOWEVER.......!
 
