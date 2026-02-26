@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Demon User Theme Enable Script v1.0.1
+# 3DPrintDemon Demon User Theme Enable Script v1.0.2
 
 # Define
 U="$USER"
@@ -18,6 +18,7 @@ if [ ! -d "$UDIR" ]; then
     # Make Directory
     mkdir "$UDIR"
     echo "Directory $UDIR created."
+    wait
 
 else
     echo "Directory $UDIR already exists."
@@ -30,6 +31,7 @@ if [ ! -d "$TDIR" ]; then
     # Make Directory
     mkdir "$TDIR"
     echo "Directory $TDIR created."
+    wait
 
 else
     echo "Directory $TDIR already exists."
