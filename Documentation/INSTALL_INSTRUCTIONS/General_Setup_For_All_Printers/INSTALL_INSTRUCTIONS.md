@@ -982,13 +982,14 @@ bash ~/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/Demon_Th
 
 It will install the icon & make a backup of the original Mainsail one for you. Then all you need do is navigate to a non-cached address for your printer & select either save bookmark or add to homescreen!
 
+>[!NOTE]
+>When you update mainsail in the future you might need to re-apply the image if it gets updated or replaced in the update process.
+
 <img width="440" alt="Phone Demon" src="https://github.com/user-attachments/assets/c6e2e8fc-be32-4b31-bd44-2155e6700459" />
 
 <br>
-
->[!NOTE]
->When you update mainsail you'll might need to re-apply the image if it gets updated or replaced in the update process.
-
+<br>
+<br>
 
 # Macro Layout Import/Restore
 
