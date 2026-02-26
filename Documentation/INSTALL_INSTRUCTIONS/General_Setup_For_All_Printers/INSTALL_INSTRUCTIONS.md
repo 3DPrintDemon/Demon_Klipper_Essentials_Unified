@@ -196,7 +196,7 @@ sudo service klipper start
 <p>
 </p>
     
-If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES UPDATER. This system has changed & you need to update your include command for it.
+If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES HANDLER. This system has changed & you need to update your include command for it.
 Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
 
 If this system is not functional then all shell functions will be impacted, as you can see from the image below with it's unknown commands. 
@@ -756,7 +756,7 @@ Your full include list should look like this example from my Voron 2.4 - the add
 
 <br>
 
-## FEATURE: DEMON USER FILES UPDATER!
+## FEATURE: DEMON USER FILES HANDLER!
 
 
 >[!WARNING]
@@ -772,13 +772,13 @@ Your full include list should look like this example from my Voron 2.4 - the add
 <details>
     <summary>
         <b>
-        :red_circle: Click To Expand - FEATURE: DEMON USER FILES UPDATER!
+        :red_circle: Click To Expand - FEATURE: DEMON USER FILES HANDLER!
         </b>
     </summary>
 <p>
 </p> 
 
-This new feature is a quality of life system that's useful if you'd like the macros to help manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to auto extract the new versions from your updated macros.
+This feature is a quality of life system that's useful if you'd like the macros to help manage your new `Demon_User_Files` directory & for it to automatically notify you if the version number has changed on these files & give you the option to auto extract the new versions from your updated macros.
 
 This new system uses the `Kiauh` `G-code Shell Command Extension` optional install. If your user files need updating it will prompt you to extract the required files from the main `Demon Klipper Essentials Unified` directory & place them in the new directory `Demon_User_Files` outside of the managed main directory, this is directly inside your printer's `config` directory. It will also move your current files to a `Previous_Versions` directory & place the new updated files in the `Demon_User_Files` directory ready for you to transpose your previous settings onto them. This system will even create numbered backups of the files it moves if the version numbers are the same as before so you will never lose your settings. 
 
