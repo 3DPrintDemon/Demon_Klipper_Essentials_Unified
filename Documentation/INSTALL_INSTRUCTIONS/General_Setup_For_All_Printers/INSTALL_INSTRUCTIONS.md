@@ -203,7 +203,7 @@ If this system is not functional then all shell functions will be impacted, as y
 
 Also if you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
 
-HOWEVER.......!
+HOWEVER be sure NOT to create an example file when asked by Kiauh!
 
 Doing this will give you ANOTHER error!! :sweat:
 
@@ -819,7 +819,8 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
     
 Also if you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
 
-HOWEVER.......!
+
+HOWEVER be sure NOT to create an example file when asked by Kiauh!
 
 Doing this will give you ANOTHER error!! :sweat:
 
