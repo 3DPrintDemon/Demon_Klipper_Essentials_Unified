@@ -42,4 +42,14 @@
 
  cp /home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/DEMON_User_Files_SOURCE/demon_user_settings_cleaner_variables_v*.cfg /home/$U/printer_data/config/Demon_User_Files --backup=numbered
 
+ wait
+
+ echo "Requesting Klipper to set SAVE_VARIABLE VARIABLE=updated_cleaner VALUE=True"
+ echo "SAVE_VARIABLE VARIABLE=updated_cleaner VALUE=True" >~/printer_data/comms/klippy.serial
+
+ wait
+
+ echo "Requesting Klipper to RESTART"
+ echo "RESTART" >~/printer_data/comms/klippy.serial
+
  echo "Operations complete."
