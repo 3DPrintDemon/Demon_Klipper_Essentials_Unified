@@ -195,13 +195,20 @@ sudo service klipper start
     </summary>
 <p>
 </p>
-    
+
+You must have the latest version of Kiauh installed & be using the latest shell script extension!
+
 If you get this error you'll probably be using the shell script extension, & the DEMON USER FILES HANDLER. This system has changed & you need to update your include command for it.
 Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
 
 If this system is not functional then all shell functions will be impacted, as you can see from the image below with it's unknown commands. 
 
 Also if you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
+
+To update Kiauh:
+```
+cd kiauh && git pull
+```
 
 HOWEVER be sure NOT to create an example file when asked by Kiauh!
 
@@ -808,6 +815,8 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 <br>
 
+You must have the latest version of Kiauh installed & be using the latest shell script extension!
+
 <details>
     <summary>
         <b>
@@ -816,9 +825,13 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
     </summary>
 <p>
 </p>
-    
-Also if you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
 
+If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
+
+To update Kiauh:
+```
+cd kiauh && git pull
+```
 
 HOWEVER be sure NOT to create an example file when asked by Kiauh!
 
