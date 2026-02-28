@@ -614,16 +614,19 @@ unretract_speed: 30
 
 ## Load & Unload Macros
 
+>[!IMPORTANT]
+>This variable has moved to the demon_user_settings file within the LOAD/UNLOAD SETTIINGS section
+
 >[!TIP]
 >The Orbiter v2.x extruders tend to like around 15-18 max!
 
-All load & unload macros now check the printer's `max_extrude_only_velocity` setting, a value of 25 or below will pass the check. 
+### Editing the old recomemendation:
 
-Be sure your `printer.cfg` file `[extruder]` section contains...
+max_extrude_only_velocity in your printer.cfg [extruder] section is no longer used or required by DKEU!
 
-```
-max_extrude_only_velocity: 22
-```
+You can either comment out this value in your printer.cfg or set it just above your fastest printing retraction speed!"
+
+
 
 ****************************************************************************************************************************
 
