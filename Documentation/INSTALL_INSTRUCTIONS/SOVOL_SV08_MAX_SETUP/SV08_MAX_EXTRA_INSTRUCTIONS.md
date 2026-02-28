@@ -210,6 +210,23 @@ By doing this you make sure the printer has the correct Z Offset for printing!
 
 <br>
 
+# Modify your Metal Cleaner Strip! - IMPORTANT!!
+
+>[!CAUTION]
+>Be sure to use bolts with low profile heads & be SURE to test your modification will not catch the nozzle or Eddy probe while the printer is in use!
+
+Sovol placed the metal cleaner strip BELOW the surface height of your build plate. 
+
+This fine until it isn't & will 100% cause damage if for any reason you have issue homing & the printer gets things wrong! 
+
+So DKEU has changed this! Add 3-4 M2 washers under the strip to raise it to a safer height. DKEU is set to use the cleaner strip at this raised height!
+
+<img width="599" height="383" alt="Max Strip" src="https://github.com/user-attachments/assets/c2b39b83-6130-42af-a547-37b64e3aecc4" />
+
+<br>
+<br>
+<br>
+
 # THE TRICKY SSH BIT!
 
 In this section you'll modify the way your SV08 MAX deals with a couple of things, firstly when you insert filament into the auto feeder unit it'll now automatically grab the end & start feeding the filament to the extruder - you will no longer have to hit the button to start it! The button will still be fully functional as before.
@@ -362,12 +379,11 @@ filename = ~/demon_vars.cfg
 Be sure your `printer.cfg` file `[extruder]` section contains...
 
 ```
-max_extrude_only_velocity: 22
+max_extrude_only_distance: 200
 ```
 ```
 max_extrude_cross_section: 5
 ```
-This is used by the load/unload macros & is converted into feedrate of mm/s & is limited to 20.
 
 <br>
 
