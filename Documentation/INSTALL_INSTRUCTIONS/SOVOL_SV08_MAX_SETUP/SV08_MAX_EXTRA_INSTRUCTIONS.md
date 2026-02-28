@@ -275,6 +275,15 @@ sudo reboot now
 
 <br>
 
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - Other ways to install these files.
+        </b>
+    </summary>
+<p>
+</p>
+
 ## The second way is available if you simply want to overwrite your current files & not make a backup - USE WITH CAUTION!!
 
 You need ALL FOUR of these files!
@@ -341,6 +350,7 @@ Now upload the modified files, overwriting the current files.
 
 Restart the printer.
 
+</details>
 
 *********************************
 
