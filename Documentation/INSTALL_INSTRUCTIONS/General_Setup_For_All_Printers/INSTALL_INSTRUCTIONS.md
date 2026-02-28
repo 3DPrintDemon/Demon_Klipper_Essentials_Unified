@@ -910,17 +910,26 @@ There are 5 built in themes to choose from, you can also even add your own custo
 
 <br>
 
-<img width="954" height="456" alt="Demon Theme Loader" src="https://github.com/user-attachments/assets/c7fb6234-b9bb-40e1-a358-17eba1c599eb" />
+<img width="751" height="344" alt="DKEU Theme Loader" src="https://github.com/user-attachments/assets/2250957e-00ed-42d2-8118-0a18a21997eb" />
+
 
 <br>
 <br>
 <br>
 
-- This will bring up the Demon Theme Loader menu where you can choose your theme directly from Mainsail live without the need to restart!
+- This will bring up the Demon Theme Loader Select menu where you can choose which style theme you want directly from Mainsail live without the need to restart!
 
 <br>
 
-<img width="360" alt="Demon Them Loader Menu" src="https://github.com/user-attachments/assets/d435735f-f9f3-484d-af5f-ce37009abc03" />
+<img width="660" height="596" alt="DKEU THEME SELECT" src="https://github.com/user-attachments/assets/3da240f9-8740-42fb-b6a1-92f16a28ec71" />
+
+- You can select the traditional retro style themes or a slick & smooth modernised themes with cleaner layouts & translucent cards! My favourite!
+  
+<img width="655" height="752" alt="DKEU RETRO" src="https://github.com/user-attachments/assets/48ac3868-57bb-4414-8532-dca02d21dddc" />
+
+<img width="667" height="614" alt="DKEU MODERN" src="https://github.com/user-attachments/assets/47e61ffc-389e-4e65-b194-ebe1ca516f06" />
+
+
 
 <br>
 <br>
@@ -953,7 +962,15 @@ You can also now install your own custom made theme & have be used as part of th
 
 There are a few more themes to choose from as well!!
 
+## Mainsail Modern
 
+<img width="2698" height="2048" alt="SOVOL ICE MOD" src="https://github.com/user-attachments/assets/433f2737-e744-49bc-8e51-d617d80c3cba" />
+<img width="2699" height="2048" alt="SOVOL MOD" src="https://github.com/user-attachments/assets/30dcd229-d786-45f4-9723-240a5ba82297" />
+<img width="2696" height="2025" alt="VORON MOD" src="https://github.com/user-attachments/assets/e0819d09-a84e-46a8-94b5-387004b7e377" />
+<a href="https://www.freepik.com/free-photo/fire-flame-with-sparkle-black-background_231608214.htm#fromView=keyword&page=1&position=9&uuid=668eb768-0146-4375-bd24-8a325c51429b&query=Flame+background">Image available at www.freepik.com</a>
+
+
+## Mainsail Retro
 <img width="1447" height="1021" alt="T1" src="https://github.com/user-attachments/assets/8507f9e6-5c44-4ee6-bfb7-bbf65049b64a" />
 <img width="1446" height="1025" alt="T2" src="https://github.com/user-attachments/assets/6cd6f956-64d9-4d90-94df-50eea56e45b0" />
 <img width="1450" height="1025" alt="T3" src="https://github.com/user-attachments/assets/539c2b04-65d4-42cb-ac20-b78d8968df92" />
