@@ -402,7 +402,7 @@ Includes should look like this!
 # [include moonraker_obico_macros.cfg]
 [include ./Demon_Klipper_Essentials_Unified/*.cfg]
 [include ./Demon_User_Files/*.cfg]
-[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Sovol.cfg]
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v*.cfg]
 [include ./KAMP_LiTE/*.cfg]
 [include ./Heat_Soak.cfg]
 [include ./My_Macros.cfg]
