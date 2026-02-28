@@ -210,7 +210,7 @@ By doing this you make sure the printer has the correct Z Offset for printing!
 
 <br>
 
-# Modify your Metal Cleaner Strip! - IMPORTANT!!
+# :warning: Modify your Metal Cleaner Strip! :warning: - IMPORTANT!!
 
 >[!CAUTION]
 >Be sure to use bolts with low profile heads & be SURE to test your modification will not catch the nozzle or Eddy probe while the printer is in use!
