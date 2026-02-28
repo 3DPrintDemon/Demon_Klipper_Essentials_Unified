@@ -50,6 +50,6 @@ fi
 
 wait
 cp  $SDIR/* $TDIR  
-echo "Demon Sovol Theme installed!"
+echo "Demon Sovol Ice Theme installed!"
 
 echo "Operations complete."
