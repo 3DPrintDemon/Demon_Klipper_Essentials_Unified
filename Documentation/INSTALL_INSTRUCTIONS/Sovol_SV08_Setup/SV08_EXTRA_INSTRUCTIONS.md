@@ -156,11 +156,7 @@ Now be sure to include these...
 [include ./Heat_Soak_Sovol_SV08.cfg]
 [include ./RGB_LEDs.cfg]
 
-# FOR SOVOL KLIPPER UNCOMMENT LINE BELOW 
-# [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Sovol.cfg]
-
-# FOR MAINLINE UNCOMMENT LINE BELOW 
-# [include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_Biqu.cfg]
+[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v*.cfg]
 ```
 
 Be sure your `printer.cfg` file `[extruder]` section contains...
