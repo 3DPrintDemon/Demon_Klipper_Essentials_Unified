@@ -172,6 +172,8 @@ max_extrude_only_distance: 200
 max_extrude_cross_section: 5
 ```
 
+Then add this...
+
 ```
 [idle_timeout]
 gcode:
