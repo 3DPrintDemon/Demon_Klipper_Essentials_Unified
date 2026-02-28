@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.3
+# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.4
 
 # Time/Date
 TIME="$(date)"
@@ -62,7 +62,7 @@ SPFMT=$(grep -Fxc "enable_force_move: True" $DIR/printer.cfg)
 SPPR=$(grep -Fxc "[pause_resume]" $DIR/printer.cfg)
 SPXTRDR=$(grep -Fxc "[extruder]" $DIR/printer.cfg)
 SPMXE=$(egrep -c '^max_extrude_cross_section' $DIR/printer.cfg)
-SPMXEV=$(egrep -c '^max_extrude_only_velocity' $DIR/printer.cfg)
+# SPMXEV=$(egrep -c '^max_extrude_only_velocity' $DIR/printer.cfg)
 SPEXOB=$(grep -Fxc "[exclude_object]" $DIR/printer.cfg)
 SPFMN=$(grep -Fxc "[file_manager]" $DIR/moonraker.conf)
 SPFMNT=$(grep -Fxc "enable_object_processing: True" $DIR/moonraker.conf)
@@ -77,7 +77,7 @@ echo "--------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.3
+                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.4
                          The Demon_Klipper_Essentials_Unified System Report Generator!${reset}
 
 --------------------------------------------------------------------------------------------------------------
@@ -774,37 +774,37 @@ fi
 echo "--------------------------------------------------------------------------------------------------------------"
 echo
 
-# max_extrude_velocity Checks
-echo "${blue}Checking max_extrude_only_velocity printer.cfg Section${reset}"
-echo
-if [ "$SPXTRDR" -eq 0 ]; then
-    echo "${blue}The extruder section is NOT defined in the printer.cfg file, check bypassed.${reset}"
-    
-else    
-    if [ "$SPMXEV" -eq 1 ]; then
-    echo "${green}The max_extrude_only_velocity section is defined in the printer.cfg file.${reset}"
-
-    elif [ "$SPMXEV" -eq 0 ]; then
-        echo
-        echo "NOTE: This search is only within your printer.cfg file! It is expected to give a warning if you" 
-        echo "have a separate cfg file for your toolhead that contains your extruder section, pleasse manually check it!"
-        echo
-        echo "${red}##########################################################################################################"
-        echo "WARNING: The max_extrude_only_velocity is NOT defined in the printer.cfg file."
-        echo "##########################################################################################################${reset}"
-        echo
-
-    elif [ "$SPMXEV" -gt 1 ]; then
-        echo
-        echo "${red}##########################################################################################################"
-        echo "WARNING: The max_extrude_only_velocity is defined in the printer.cfg file more than once!!"
-        echo "##########################################################################################################${reset}"
-        echo
-    fi
-fi
-
-echo "--------------------------------------------------------------------------------------------------------------"
-echo
+# max_extrude_velocity Checks ----- ARE NO LONGER REQUIRED!
+# echo "${blue}Checking max_extrude_only_velocity printer.cfg Section${reset}"
+# echo
+# if [ "$SPXTRDR" -eq 0 ]; then
+#    echo "${blue}The extruder section is NOT defined in the printer.cfg file, check bypassed.${reset}"
+#    
+# else    
+#     if [ "$SPMXEV" -eq 1 ]; then
+#     echo "${green}The max_extrude_only_velocity section is defined in the printer.cfg file.${reset}"
+#
+#     elif [ "$SPMXEV" -eq 0 ]; then
+#         echo
+#         echo "NOTE: This search is only within your printer.cfg file! It is expected to give a warning if you" 
+#         echo "have a separate cfg file for your toolhead that contains your extruder section, pleasse manually check it!"
+#         echo
+#         echo "${red}##########################################################################################################"
+#         echo "WARNING: The max_extrude_only_velocity is NOT defined in the printer.cfg file."
+#         echo "##########################################################################################################${reset}"
+#         echo
+#
+#     elif [ "$SPMXEV" -gt 1 ]; then
+#         echo
+#         echo "${red}##########################################################################################################"
+#         echo "WARNING: The max_extrude_only_velocity is defined in the printer.cfg file more than once!!"
+#         echo "##########################################################################################################${reset}"
+#         echo
+#     fi
+# fi
+#
+# echo "--------------------------------------------------------------------------------------------------------------"
+# echo
 
 # exclude_objects Checks
 echo "${blue}Checking exclude_objects printer.cfg Section${reset}"
