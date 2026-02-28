@@ -166,12 +166,11 @@ Now be sure to include these...
 Be sure your `printer.cfg` file `[extruder]` section contains...
 
 ```
-max_extrude_only_velocity: 15
+max_extrude_only_distance: 200
 ```
 ```
 max_extrude_cross_section: 5
 ```
-This is used by the load/unload macros & is converted into feedrate of mm/s & is limited to 20
 
 ```
 [idle_timeout]
