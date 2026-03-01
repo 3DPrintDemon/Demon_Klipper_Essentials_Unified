@@ -608,6 +608,13 @@ retract_speed: 30
 unretract_extra_length: 0.0
 unretract_speed: 30
 ```
+
+Lastly don't forget to set `use_firmware_retract` True in your `My_Macros.cfg` file
+
+```
+variable_use_fw_retract   : True
+```
+
 ****************************************************************************************************************************
 
 <br>
