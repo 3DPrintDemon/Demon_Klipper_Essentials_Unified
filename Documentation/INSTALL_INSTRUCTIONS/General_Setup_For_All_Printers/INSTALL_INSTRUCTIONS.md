@@ -767,7 +767,7 @@ Copy the code block below & paste it at the top of your `printer.cfg` file!
 Your full include list should look like this example from my Voron 2.4 - the additional files used for your printer may well be different to mine depending on your machine & setup
 
 
-![Includes](https://github.com/user-attachments/assets/0555c56b-a2f8-4efd-b2e1-ebb58a0fd8e6)
+<img width="1105" height="246" alt="Includes" src="https://github.com/user-attachments/assets/05f7731c-daa9-4904-a7c1-9187b54cdc79" />
 
 
 <br>
