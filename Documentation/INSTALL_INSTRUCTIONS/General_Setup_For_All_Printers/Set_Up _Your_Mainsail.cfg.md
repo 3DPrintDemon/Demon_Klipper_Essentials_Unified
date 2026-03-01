@@ -42,6 +42,13 @@ Now set the printer to park on print cancel. You can even define two locations i
 < variable_park_at_cancel_x : None >
 < variable_park_at_cancel_y : None >
 ```
+
+Also set use firmware retract True
+
+```
+variable_use_fw_retract   : True
+```
+
 You must set...
 
 Idle_timeout. This is set in seconds so 600 is 10 minutes. This will be used for your mid print timeout after which Klipper can be set to kill your hotend heater & parts cooling fan while keeping the motors engaged & bed hot. 
@@ -90,6 +97,7 @@ Your new uncommented `_CLIENT_VARIABLE` macro should look like this when you're 
 
 BE SURE TO SAVE & RESTART!
 
-![Mainsail_Client_Var](https://github.com/user-attachments/assets/bf10ec6c-7a72-4edb-b25d-7428429329bd)
+<img width="1627" height="728" alt="Mainsail Client Vars" src="https://github.com/user-attachments/assets/1af9b282-b1ca-4e44-8d25-4ee268d28a1d" />
+
 
 ### [Head back to where you were...](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#set-up-your-mainsailcfg-file)
