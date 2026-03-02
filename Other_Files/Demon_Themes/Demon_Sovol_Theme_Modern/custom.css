@@ -5,7 +5,7 @@
 
 .v-application .primary {
   background-color: #207fc9 !important;
-  /* border-color: var(--v-primary-base) !important; */
+  border-color: var(--v-primary-base) !important;
 }
 
 .v-application .success {
