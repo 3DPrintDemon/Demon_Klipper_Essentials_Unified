@@ -5,7 +5,7 @@
 /* Main Background */
 .theme--dark.v-sheet {
     background-color: rgba(35, 35, 40, 0.44)!important;
-    backdrop-filter: blur(9px);
+    /* backdrop-filter: blur(9px); */
     border: none!important;
     box-shadow: none!important;
 }
@@ -82,7 +82,7 @@
 .filesGcodeCard.theme--dark.v-sheet,
 .cm-gutters
 {
-    backdrop-filter: blur(0px);
+    /* backdrop-filter: blur(0px); */
     background-color: transparent !important;
     border: none!important;
     box-shadow: none!important;
