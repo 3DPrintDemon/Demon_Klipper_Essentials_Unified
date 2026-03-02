@@ -80,7 +80,7 @@
 .filesGcodeCard.theme--dark.v-sheet,
 .cm-gutters
 {
-    backdrop-filter: blur(0px);
+    /* backdrop-filter: blur(0px); */
     background-color: transparent !important;
     border: none!important;
     box-shadow: none!important;
