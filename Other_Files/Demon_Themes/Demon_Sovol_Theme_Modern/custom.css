@@ -5,7 +5,7 @@
 
 .v-application .primary {
   background-color: #207fc9 !important;
-  border-color: var(--v-primary-base) !important;
+  /* border-color: var(--v-primary-base) !important; */
 }
 
 .v-application .success {
@@ -33,7 +33,7 @@ element {
 /* Main Background */
 .theme--dark.v-sheet {
     background-color: rgba(0, 0, 0, 0.32)!important;
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
     border: none!important;
     box-shadow: none!important;
 }
@@ -71,7 +71,7 @@ element {
 .theme--dark.v-navigation-drawer,
 .v-navigation-drawer__image>.v-image>.v-image__image.v-image__image--cover {
     /* background: rgba(0, 0, 0, 0.32); */
-    background: transparent;
+    /* background: transparent; */
     /* background-image: none!important; */
     border: none!important;
     box-shadow: none!important;
@@ -154,7 +154,7 @@ element {
   color:#d7d7d7!important;
 }
 .theme--dark.v-application .text--disabled {
-  color:#d7d7d7!important;
+  color:#b6b6b6!important;
 }
 .theme--dark.v-sheet {
   background-color:#1e1e1e;
