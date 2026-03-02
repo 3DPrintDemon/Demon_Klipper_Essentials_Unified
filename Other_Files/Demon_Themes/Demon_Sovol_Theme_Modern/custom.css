@@ -33,7 +33,7 @@ element {
 /* Main Background */
 .theme--dark.v-sheet {
     background-color: rgba(0, 0, 0, 0.32)!important;
-    /* backdrop-filter: blur(15px); */
+    backdrop-filter: blur(15px);
     border: none!important;
     box-shadow: none!important;
 }
