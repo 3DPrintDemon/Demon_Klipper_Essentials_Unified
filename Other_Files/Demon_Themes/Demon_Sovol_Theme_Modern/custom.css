@@ -33,7 +33,7 @@ element {
 /* Main Background */
 .theme--dark.v-sheet {
     background-color: rgba(0, 0, 0, 0.32)!important;
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
     border: none!important;
     box-shadow: none!important;
 }
@@ -110,7 +110,7 @@ element {
 .filesGcodeCard.theme--dark.v-sheet,
 .cm-gutters
 {
-    backdrop-filter: blur(0px);
+    /* backdrop-filter: blur(0px); */
     background-color: transparent !important;
     border: none!important;
     box-shadow: none!important;
@@ -232,12 +232,12 @@ element {
 
 
 /* File select menu */
-/* .v-application .panel {
-    background-color: rgba(40, 40, 40, 0.48)!important;
+.v-application .panel {
+    /* background-color: rgba(40, 40, 40, 0.48)!important; */
     backdrop-filter: blur(13px);
     box-shadow: none!important;
     border: none;
-} */
+}
 
 
 /* .v-sheet.v-list 
