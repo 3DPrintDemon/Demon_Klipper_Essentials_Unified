@@ -39,6 +39,8 @@ This update now uses custom names & also provides a means of checking that you s
 
 ## :red_circle: DEMON USER FILES UPDATER include command has changed! 
 
+The multiple Extract_Demon_User_Files_xxxx.cfg files have been superseded & removed for the latest version & replaced with a single file instead! You need to update your include command to account for this!
+
 If you're using the shell script extension then this is for you! This change greatly simplifies the setup & use of this feature, as well as a few others too!
 You will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disk checker is no longer working.
 
