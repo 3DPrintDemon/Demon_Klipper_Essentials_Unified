@@ -190,6 +190,46 @@ sudo service klipper start
 <details>
     <summary>
         <b>
+        :red_circle: Click To Expand - Fix Red [include] Klipper Error for Extract_Demon_User_Files_xxxx.cfg does not exist 
+        </b>
+    </summary>
+<p>
+</p>
+
+If you get this error you'll probably be using the shell script extension, & the Extract_Demon_User_Files_xxxx.cfg. This system has changed & you need to update your include command for it.
+
+Please [click here](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include) to jump down to this section & update the include command for this feature!
+
+If this system is not functional then all shell functions will be impacted. 
+
+<br>
+
+### STILL NOT WORKING?? ....UPDATING KIAUH
+
+You must have the latest version of Kiauh installed & be using the latest shell script extension!
+
+If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the version you just downloaded!
+
+To update Kiauh:
+```
+cd kiauh && git pull
+```
+
+HOWEVER be sure NOT to create an example file when asked by Kiauh!
+
+Doing this will give you ANOTHER error!! :sweat:
+
+This is because KIAUH (for whatever reason!!) puts a shell script include command right at the very bottom of your printer.cfg which confuses the printer because that is NOT meant to go there!
+
+JUST DELETE it being careful not to mess up the green auto save data above it.
+
+Save & restart!
+
+</details>
+
+<details>
+    <summary>
+        <b>
         :red_circle: Click To Expand - Fix a red warning for a missing include for Demon User Files Handler 
         </b>
     </summary>
@@ -209,7 +249,7 @@ If this system is not functional then all shell functions will be impacted, as y
 
 You must have the latest version of Kiauh installed & be using the latest shell script extension!
 
-If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
+If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the version you just downloaded!
 
 To update Kiauh:
 ```
