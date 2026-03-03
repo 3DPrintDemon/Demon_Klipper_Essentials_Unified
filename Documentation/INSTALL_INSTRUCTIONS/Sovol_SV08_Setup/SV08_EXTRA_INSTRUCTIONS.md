@@ -62,7 +62,7 @@ Come & join the community! We've just launched Demon Discord, help us start buil
 >
 >Unitl I can update some systems within the macros you'll need to add the below commands, it will not make use of the nozzle scraper just yet, please watch this space.
 
-You must paste this into the demon_custom_expansion file under the commands in the _CUSTOM_PRE_MESH macro. Remember to enable it & the master enable at the top of the file.
+You must paste this into the demon_custom_expansion file under the commands in the _CUSTOM_PRE_LEVEL macro. Remember to enable it & the master enable at the top of the file.
 
 ```
     _Z_PARK
