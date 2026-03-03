@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.0.4
+# 3DPrintDemon Klipper Essentials Unified System Report Generator Script v1.1.0
 
 # Time/Date
 TIME="$(date)"
@@ -25,47 +25,49 @@ EDUF="/home/$U/printer_data/config/Demon_Klipper_Essentials_Unified/Other_Files/
 KAMP="/home/$U/printer_data/config/KAMP_LiTE"
 
 # Include Searches
-SDEM=$(grep -Fxc "[include ./Demon_Klipper_Essentials_Unified/*.cfg]" $DIR/printer.cfg)
-SDEMB=$(grep -Fxc "[include Demon_Klipper_Essentials_Unified/*.cfg]" $DIR/printer.cfg)
-SDUF=$(grep -Fxc "[include ./Demon_User_Files/*.cfg]" $DIR/printer.cfg)
-SDUFB=$(grep -Fxc "[include Demon_User_Files/*.cfg]" $DIR/printer.cfg)
-SEDUF=$(egrep -c '^\[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_' $DIR/printer.cfg)
-SEDUFB=$(egrep -c '^\[include Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Extract_Demon_User_Files_' $DIR/printer.cfg)
-SKPL=$(grep -Fxc "[include ./KAMP_LiTE/*.cfg]" $DIR/printer.cfg)
-SKPLB=$(grep -Fxc "[include KAMP_LiTE/*.cfg]" $DIR/printer.cfg)
-SMNSL=$(grep -Fxc "[include ./mainsail.cfg]" $DIR/printer.cfg)
-SMNSLB=$(grep -Fxc "[include mainsail.cfg]" $DIR/printer.cfg)
+SDEM=$(egrep -c '^\[include ./Demon_Klipper_Essentials_Unified/\*.cfg\]' $DIR/printer.cfg)
+SDEMB=$(egrep -c '^\[include Demon_Klipper_Essentials_Unified/\*.cfg\]' $DIR/printer.cfg)
+SDUF=$(egrep -c '^\[include ./Demon_User_Files/\*.cfg\]' $DIR/printer.cfg)
+SDUFB=$(egrep -c '^\[include Demon_User_Files/\*.cfg\]' $DIR/printer.cfg)
+SEDUF=$(egrep -c '^\[include ./Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v\*.cfg\]' $DIR/printer.cfg)
+SEDUFB=$(egrep -c '^\[include /Demon_Klipper_Essentials_Unified/Other_Files/Demon_User_Files_Updater/Demon_User_Files_Handler_v\*.cfg\]' $DIR/printer.cfg)
+SKPL=$(egrep -c '^\[include ./KAMP_LiTE/\*.cfg\]' $DIR/printer.cfg)
+SKPLB=$(egrep -c '^\[include KAMP_LiTE/\*.cfg\]' $DIR/printer.cfg)
+SMNSL=$(egrep -c '^\[include ./mainsail.cfg\]' $DIR/printer.cfg)
+SMNSLB=$(egrep -c '^\[include mainsail.cfg\]' $DIR/printer.cfg)
 SHSK=$(egrep -ic '^\[include ./Heat_Soak' $DIR/printer.cfg)
 SHSKB=$(egrep -ic '^\[include Heat_Soak' $DIR/printer.cfg)
-SMYMC=$(grep -Fxc "[include ./My_Macros.cfg]" $DIR/printer.cfg)
-SMYMCB=$(grep -Fxc "[include My_Macros.cfg]" $DIR/printer.cfg)
+SMYMC=$(egrep -c '^\[include ./My_Macros.cfg\]' $DIR/printer.cfg)
+SMYMCB=$(egrep -c '^\[include My_Macros.cfg\]' $DIR/printer.cfg)
 
-SSMF=$(grep -Fxc "[include ./Macro.cfg]" $DIR/printer.cfg)
-SSMFB=$(grep -Fxc "[include Macro.cfg]" $DIR/printer.cfg)
-SSMLMF=$(grep -Fxc "[include ./sovol-macros.cfg]" $DIR/printer.cfg)
-SSMLMFB=$(grep -Fxc "[include sovol-macros.cfg]" $DIR/printer.cfg)
+SSMF=$(egrep -c '^\[include ./Macro.cfg\]' $DIR/printer.cfg)
+SSMFB=$(egrep -c '^\[include Macro.cfg\]' $DIR/printer.cfg)
+SSMLMF=$(egrep -c '^\[include ./sovol-macros.cfg\]' $DIR/printer.cfg)
+SSMLMFB=$(egrep -c '^\[include sovol-macros.cfg\]' $DIR/printer.cfg)
 
-SNPCTRL=$(grep -Fxc "[include ./Neopixel_Control.cfg]" $DIR/printer.cfg)
-SNPCTRLB=$(grep -Fxc "[include Neopixel_Control.cfg]" $DIR/printer.cfg)
-SRGBLED=$(grep -Fxc "[include ./RGB_LEDs.cfg]" $DIR/printer.cfg)
-SRGBLEDB=$(grep -Fxc "[include RGB_LEDs.cfg]" $DIR/printer.cfg)
-SSBLED=$(grep -Fxc "[include ./stealthburner_leds.cfg]" $DIR/printer.cfg)
-SSBLEDB=$(grep -Fxc "[include stealthburner_leds.cfg]" $DIR/printer.cfg)
+SNPCTRL=$(egrep -c '^\[include ./Neopixel_Control.cfg\]' $DIR/printer.cfg)
+SNPCTRLB=$(egrep -c '^\[include Neopixel_Control.cfg\]' $DIR/printer.cfg)
+SRGBLED=$(egrep -c '^\[include ./RGB_LEDs.cfg\]' $DIR/printer.cfg)
+SRGBLEDB=$(egrep -c '^\[include RGB_LEDs.cfg\]' $DIR/printer.cfg)
+SSBLED=$(egrep -c '^\[include ./stealthburner_leds.cfg\]' $DIR/printer.cfg)
+SSBLEDB=$(egrep -c '^\[include stealthburner_leds.cfg\]' $DIR/printer.cfg)
 
 # printer.cfg Searches
-SPSVV=$(grep -Fxc "[save_variables]" $DIR/printer.cfg)
-SPSVVD=$(grep -Fxc "filename: ~/demon_vars.cfg" $DIR/printer.cfg)
-SPSVVDB=$(grep -Fxc "filename = ~/demon_vars.cfg" $DIR/printer.cfg)
-SPRESP=$(grep -Fxc "[respond]" $DIR/printer.cfg)
-SPFM=$(grep -Fxc "[force_move]" $DIR/printer.cfg)
-SPFMT=$(grep -Fxc "enable_force_move: True" $DIR/printer.cfg)
-SPPR=$(grep -Fxc "[pause_resume]" $DIR/printer.cfg)
-SPXTRDR=$(grep -Fxc "[extruder]" $DIR/printer.cfg)
+SPSVV=$(egrep -c '^\[save_variables\]' $DIR/printer.cfg)
+SPSVVD=$(egrep -c '^\filename: ~/demon_vars.cfg' $DIR/printer.cfg)
+SPSVVDB=$(egrep -c '^\filename = ~/demon_vars.cfg' $DIR/printer.cfg)
+SPRESP=$(egrep -c '^\[respond\]' $DIR/printer.cfg)
+SPFM=$(egrep -c '^\[force_move\]' $DIR/printer.cfg)
+SPFMT=$(egrep -c '^\enable_force_move: True' $DIR/printer.cfg)
+SPPR=$(egrep -c '^\[pause_resume\]' $DIR/printer.cfg)
+SPXTRDR=$(egrep -c '^\[extruder\]' $DIR/printer.cfg)
 SPMXE=$(egrep -c '^max_extrude_cross_section' $DIR/printer.cfg)
 # SPMXEV=$(egrep -c '^max_extrude_only_velocity' $DIR/printer.cfg)
-SPEXOB=$(grep -Fxc "[exclude_object]" $DIR/printer.cfg)
-SPFMN=$(grep -Fxc "[file_manager]" $DIR/moonraker.conf)
-SPFMNT=$(grep -Fxc "enable_object_processing: True" $DIR/moonraker.conf)
+SPEXOB=$(egrep -c '^\[exclude_object\]' $DIR/printer.cfg)
+SPFMN=$(egrep -c '^\[file_manager\]' $DIR/moonraker.conf)
+SPFMNT=$(egrep -c '^\enable_object_processing: True' $DIR/moonraker.conf)
+
+
 
 
 
@@ -77,7 +79,7 @@ echo "--------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.0.4
+                                     ${green}Welcome to DEMON_DIAGNOSTICS v1.1.0
                          The Demon_Klipper_Essentials_Unified System Report Generator!${reset}
 
 --------------------------------------------------------------------------------------------------------------
