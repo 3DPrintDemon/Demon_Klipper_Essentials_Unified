@@ -289,7 +289,9 @@ Other things you will need to look at when updating!
 >This system will help you see whats been done, what needs doing & what is not correctly set yet!
 
 >[!NOTE]
->This diagnostic tool is extremely strict & will not allow hashed out comments or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind if you can't turn a section green!
+>This diagnostic tool WILL NOW ALLOW hashed out comments &/or white space (spaces) after any printer.cfg sections or include commands. Keep this in mind as anything you put after the scanned for line will not be flagged!
+>
+>It's down to you to make sure any added comment on that line is correctly "#"ed out!
 
 <br>
 
