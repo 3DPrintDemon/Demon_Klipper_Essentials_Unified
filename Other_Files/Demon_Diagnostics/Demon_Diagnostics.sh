@@ -222,7 +222,7 @@ else
             echo "${green}Extract_Demon_User_Files is included in the system.${reset}"
 
         elif [ "$SEDUF" -eq 0 ] && [ "$SEDUFB" -eq 1 ]; then
-            echo "${green}Extract_Demon_User_Filess is included in the system.${reset}"
+            echo "${green}Extract_Demon_User_Files is included in the system.${reset}"
 
         elif [ "$SEDUF" -gt 1 ] || [ "$SEDUFB" -gt 1 ]; then
             echo
