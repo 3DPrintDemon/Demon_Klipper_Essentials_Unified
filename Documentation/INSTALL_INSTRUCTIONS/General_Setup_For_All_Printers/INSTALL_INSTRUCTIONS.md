@@ -827,6 +827,9 @@ Your full include list should look like this example from my Voron 2.4 - the add
 >[!WARNING]
 >THIS SETUP HAS CHANGED!
 >
+>The multiple Extract_Demon_User_Files_xxxx.cfg files have been superseded & removed for the latest version & replaced with a single file instead! You need to update your include command to account for this!
+>The new include command is in the next section below.
+>
 >Due to an update some time back Kiauh is now able to make use of a variable that defines your user account!
 >This means we now only need a single file & you no longer need to choose which one suits your system.
 >
