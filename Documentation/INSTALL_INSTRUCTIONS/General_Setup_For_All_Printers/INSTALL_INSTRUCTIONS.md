@@ -266,11 +266,45 @@ JUST DELETE it being careful not to mess up the green auto save data above it.
 
 Save & restart!
 
-
-
 </details>
 
+
+#### :warning: YOU MAY ALSO NEED TO UPDATE KIAUH & REINSTALL IT'S SHELL EXTENSION SCRIPT FOR NEW VERSION!! :warning:
+
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - How to do this!
+        </b>
+    </summary>
+<p>
+</p>
+
+To update Kiauh:
+```
+cd kiauh && git pull
+```
+
+HOWEVER be sure NOT to create an example file when asked by Kiauh!
+
+Doing this will give you ANOTHER error!! :sweat:
+
+This is because KIAUH (for whatever reason!!) puts a shell script include command right at the very bottom of your printer.cfg which confuses the printer because that is NOT meant to go there!
+
+JUST DELETE it being careful not to mess up the green auto save data above it.
+
+Save & restart!
+
+Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to REMOVE & the INSTALL the extension over.
+
+<img width="413" height="708" alt="Shell Install" src="https://github.com/user-attachments/assets/889fd85d-aeaf-4227-98bf-4bedee93f4b6" />
+
+</details>
 <br>
+
+
+
+
 
 ### :recycle: UPDATING FROM A PREVIOUS VERSION - SSH CONFIG UPDATER SCRIPT! :recycle:
 
@@ -876,6 +910,7 @@ Then you'll need to navigate to `/Demon_Klipper_Essentials_Unified/Other_Files/D
 
 <br>
 
+#### :warning: YOU MAY ALSO NEED TO UPDATE KIAUH & REINSTALL IT'S SHELL EXTENSION SCRIPT FOR NEW VERSION!! :warning:
 You must have the latest version of Kiauh installed & be using the latest shell script extension!
 
 <details>
@@ -905,6 +940,12 @@ This is because KIAUH (for whatever reason!!) puts a shell script include comman
 JUST DELETE it being careful not to mess up the green auto save data above it.
 
 Save & restart!
+
+Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to REMOVE & the INSTALL the extension over.
+
+<img width="413" height="708" alt="Shell Install" src="https://github.com/user-attachments/assets/889fd85d-aeaf-4227-98bf-4bedee93f4b6" />
+
+<br>
 
 *********************************************
 
