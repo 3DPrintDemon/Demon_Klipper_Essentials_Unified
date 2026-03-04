@@ -890,7 +890,7 @@ You must have the latest version of Kiauh installed & be using the latest shell 
 <details>
     <summary>
         <b>
-        :red_circle: Click To Expand - EXTRA NOTE IMPORTANT PLEASE READ!
+        :red_circle: Click To Expand - HOW TO DO THIS - IMPORTANT PLEASE READ!
         </b>
     </summary>
 <p>
