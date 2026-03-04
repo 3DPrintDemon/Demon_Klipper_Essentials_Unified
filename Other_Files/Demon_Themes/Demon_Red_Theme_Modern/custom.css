@@ -55,13 +55,13 @@ element {
     border-right: 4px solid #f32121;
     border-right-width: 4px;
     border-right-style: solid;
-    border-right-color: rgb(100, 200, 500);
+    border-right-color: rgb(243, 33, 33);
 }
 
 /* Sidebar Active BG */
 .v-list .v-list-item--active,
 .v-list .v-list-item--active .v-icon { 
-  color:rgb(100, 200, 500);
+  color:rgb(335, 33, 33);
   /* color:inherit; */
 }
 
