@@ -13,6 +13,13 @@
     box-shadow: none!important;
 }
 
+.theme--dark.v-sheet.v-card[data-v-18926b66] {
+    background-color: rgba(35, 35, 40, 0.44)!important;
+    backdrop-filter: blur(15px);
+    border: none!important;
+    box-shadow: none!important;
+}
+
 /* Titlebar Transparancy & Blur */
 .theme--dark.v-app-bar.v-toolbar.v-sheet {
     background-color: rgba(0, 0, 0, 0.32)!important;
