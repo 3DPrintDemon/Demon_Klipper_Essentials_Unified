@@ -1,0 +1,47 @@
+
+.theme--dark.v-app-bar.v-toolbar.v-sheet 
+{
+  background-color:#1e0000;
+}
+
+.theme--dark.v-toolbar.v-sheet 
+{
+  background-color:#242323 
+}
+
+.theme--dark.v-tabs>.v-tabs-bar 
+{
+  background-color:#110e0e
+}
+
+.active-nav-item[data-v-640efc00]
+{
+  border-right: 4px solid #f32121;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-right-color: rgb(243, 33, 33);
+}
+
+.theme--dark.v-data-table 
+{
+  background-color:#110e0e;
+}
+
+.theme--dark.v-list 
+{
+  color: #ff1414;
+}
+
+.theme--dark.v-card {
+  background-color:#110e0e;
+}
+
+.ͼ16 {
+  background-color: #0d0d0d;
+}
+
+.ͼ16 .cm-gutters {
+  background-color: #161515;
+}
+
+

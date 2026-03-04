@@ -1,0 +1,43 @@
+.theme--dark.v-application
+{
+  background:#1b2c2f67;
+  color:#1b2c2f67;
+}
+
+.theme--dark.v-app-bar.v-toolbar.v-sheet 
+{
+  background-color:#0b272d
+}
+
+.theme--dark.v-toolbar.v-sheet 
+{
+  background-color:#447d8f
+}
+
+.theme--dark.v-tabs>.v-tabs-bar 
+{
+  background-color:#2d474f
+}
+
+.theme--dark.v-data-table 
+{
+  background-color:#1f2f33;
+  color:#fff
+}
+
+.theme--dark.v-list 
+{
+  background:#1e1e1e;
+  color:#6ccfff;
+}
+
+.theme--dark.v-card
+{
+  background-color: #1f2f33;
+  color: #fff;
+}
+
+.ͼo 
+{
+  background-color: #121e20; color: #9cdcfe
+}
