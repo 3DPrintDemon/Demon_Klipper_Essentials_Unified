@@ -210,20 +210,7 @@ You must have the latest version of Kiauh installed & be using the latest shell 
 
 If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the version you just downloaded!
 
-To update Kiauh:
-```
-cd kiauh && git pull
-```
-
-HOWEVER be sure NOT to create an example file when asked by Kiauh!
-
-Doing this will give you ANOTHER error!! :sweat:
-
-This is because KIAUH (for whatever reason!!) puts a shell script include command right at the very bottom of your printer.cfg which confuses the printer because that is NOT meant to go there!
-
-JUST DELETE it being careful not to mess up the green auto save data above it.
-
-Save & restart!
+See the dedictated instructions in the section below how to do that...
 
 </details>
 
@@ -251,20 +238,7 @@ You must have the latest version of Kiauh installed & be using the latest shell 
 
 If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the version you just downloaded!
 
-To update Kiauh:
-```
-cd kiauh && git pull
-```
-
-HOWEVER be sure NOT to create an example file when asked by Kiauh!
-
-Doing this will give you ANOTHER error!! :sweat:
-
-This is because KIAUH (for whatever reason!!) puts a shell script include command right at the very bottom of your printer.cfg which confuses the printer because that is NOT meant to go there!
-
-JUST DELETE it being careful not to mess up the green auto save data above it.
-
-Save & restart!
+See the dedictated instructions in the section below how to do that...
 
 </details>
 
