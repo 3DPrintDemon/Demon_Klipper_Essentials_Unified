@@ -898,7 +898,7 @@ You must have the latest version of Kiauh installed & be using the latest shell 
 
 ### UPDATING KIAUH
 
-If you updated your include command but the error now says the file/directory can not be found, then you're using an old verion of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extesnion using Kiauh & install the newest version of it from the versoin you just downloaded!
+If you updated your include command but the error now says the file/directory can not be found, then you're using an old version of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extension using Kiauh & install the newest version of it from the version you just downloaded!
 
 To update Kiauh:
 ```
@@ -942,12 +942,12 @@ Once installed navigate to option E (Community: Extensions), then option 1 (G-co
 
 <br>
 
-Then once you restart your system you'll be greeted by new system prompts telling you if anyhting needs to be done to get your system ready for use, & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
+Then once you restart your system you'll be greeted by new system prompts telling you if anything needs to be done to get your system ready for use, & the option to let the system handle it or if you'd like to do it manually. If you select the `EXTRACT` option the system will copy the default files ready for you to edit & setup to a new directory. It will also handle any old files already there if there are any, you wont loose them.
 
 
 If you're using the `Demon User Files Updater` after the restart & if any file needs updating your system will present you with extract files prompt where you should select `EXTRACT` & after the automated restart you should reload your browser page to display the new `Demon_User_Files` directory that will contain your new editable settings files & `demon_custom_expansion` macro file.
 
-These files are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain prestine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
+These files are placed here outside of the main `Demon Klipper Essentials Unified` directory so that it will remain pristine for use with Mainsails `Update Manager` as described below. this means you wont loose your edits to the settings files when the system detects you have modified the managed files, or when you update the `Demon Klipper Essentials Unified` macros in the future. The local `Demon User Files Updater` will then see the updated files & offer to extract a new set of `Demon_User_Files` for you automatically while archiving your old ones for safekeeping & reference. New files will be at default values.
 
 >[!NOTE]
 >Don't home the printer yet unless you have the `force_move` section defined & know the default homing settings are suitable for your machine!
