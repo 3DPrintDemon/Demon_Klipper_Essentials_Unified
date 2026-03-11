@@ -13,7 +13,8 @@
     box-shadow: none!important;
 }
 
-.theme--dark.v-sheet.v-card[data-v-18926b66] {
+.theme--dark.v-sheet.v-card[data-v-18926b66],
+.theme--dark.v-sheet.v-card[data-v-63e954e1] {
     background-color: rgba(0, 0, 0, 0.55)!important;
     backdrop-filter: blur(15px);
     border: none!important;
