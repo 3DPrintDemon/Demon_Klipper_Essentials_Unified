@@ -37,10 +37,11 @@ element {
 
 /* Main Background */
 .theme--dark.v-sheet {
-    background-color: rgba(0, 0, 0, 0.32)!important;
+    /* background-color: rgba(0, 0, 0, 0.32)!important; */
     /* backdrop-filter: blur(15px); */
     border: none!important;
     box-shadow: none!important;
+    color:#ddd;
 }
 
 .v-alert.mb-0.mb-6.v-sheet.theme--dark.v-alert--border.v-alert--dense.v-alert--text.v-alert--border-left.warning--text,
@@ -179,11 +180,11 @@ element {
 .theme--dark.v-application .text--disabled {
   color:#b6b6b6!important;
 }
-.theme--dark.v-sheet {
+/* .theme--dark.v-sheet {
   background-color:#1e1e1e;
   border-color:#1e1e1e;
   color:#ddd;
-}
+} */
 .theme--dark.v-card {
   background-color:#1e1e1e;
   color:#ddd;
@@ -256,7 +257,7 @@ element {
 
 /* File select menu */
 .v-application .panel {
-    /* background-color: rgba(40, 40, 40, 0.48)!important; */
+    background-color: rgba(10, 10, 10, 0.48)!important;
     backdrop-filter: blur(13px);
     box-shadow: none!important;
     border: none;
