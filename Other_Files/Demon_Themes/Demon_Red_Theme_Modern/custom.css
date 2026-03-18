@@ -37,7 +37,7 @@ element {
 
 /* Main Background */
 .theme--dark.v-sheet {
-    background-color: rgba(0, 0, 0, 0.32)!important;
+    /* background-color: rgba(0, 0, 0, 0.32)!important; */
     /* backdrop-filter: blur(15px); */
     border: none!important;
     box-shadow: none!important;
@@ -256,7 +256,7 @@ element {
 
 /* File select menu */
 .v-application .panel {
-    /* background-color: rgba(40, 40, 40, 0.48)!important; */
+    background-color: rgba(10, 10, 10, 0.48)!important;
     backdrop-filter: blur(13px);
     box-shadow: none!important;
     border: none;
