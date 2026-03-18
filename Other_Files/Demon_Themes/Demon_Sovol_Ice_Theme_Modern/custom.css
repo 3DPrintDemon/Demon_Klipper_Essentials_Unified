@@ -7,10 +7,11 @@
 
 /* Main Background */
 .theme--dark.v-sheet {
-    background-color: rgba(0, 0, 0, 0.55)!important;
+    /* background-color: rgba(0, 0, 0, 0.55)!important; */
     /* backdrop-filter: blur(12px); */
     border: none!important;
     box-shadow: none!important;
+    color:#ddd;
 }
 
 .v-alert.mb-0.mb-6.v-sheet.theme--dark.v-alert--border.v-alert--dense.v-alert--text.v-alert--border-left.warning--text,
@@ -149,11 +150,11 @@
 .theme--dark.v-application .text--disabled {
   color:#b6b6b6!important;
 }
-.theme--dark.v-sheet {
+/* .theme--dark.v-sheet {
   background-color:#1e1e1e;
   border-color:#1e1e1e;
   color:#ddd;
-}
+} */
 .theme--dark.v-card {
   background-color:#1e1e1e;
   color:#ddd;
