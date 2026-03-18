@@ -13,6 +13,16 @@
     box-shadow: none!important;
 }
 
+.v-alert.mb-0.mb-6.v-sheet.theme--dark.v-alert--border.v-alert--dense.v-alert--text.v-alert--border-left.warning--text,
+.v-alert.mb-0.mb-6.v-sheet.theme--dark.v-alert--border.v-alert--dense.v-alert--text.v-alert--border-left.info--text,
+.v-alert.mb-0.mb-6.v-sheet.theme--dark.v-alert--border.v-alert--dense.v-alert--text.v-alert--border-left.error--text,
+.v-alert.mb-6.v-sheet.theme--dark.v-alert--border.v-alert--dense.v-alert--text.v-alert--border-left {
+    background-color: rgba(0, 0, 0, 0.75)!important;
+    backdrop-filter: blur(9px);
+    border: none!important;
+    box-shadow: none!important;
+}
+
 .theme--dark.v-sheet.v-card[data-v-18926b66],
 .theme--dark.v-sheet.v-card[data-v-63e954e1] {
     background-color: rgba(35, 35, 40, 0.44)!important;
