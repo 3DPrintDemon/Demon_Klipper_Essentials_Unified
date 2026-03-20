@@ -57,7 +57,7 @@ Users with new systems & mainline klipper need not do anything. However users wi
 
 #### :warning: If users of old stuck systems don’t set this variable True then BED_CHECKER heat soak will error out & cancel your print as your old version of klipper is no longer compatible with commands required to run it so a legacy mode must be enabled. :warning:
 
-### [Check the Setting here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/de6fdcd4f785417c680e994f886e6eae8dd0736d/Other_Files/DEMON_User_Files_SOURCE/demon_user_settings_v3.0.3.cfg#L226)
+<img width="555" height="96" alt="BCHS Old Klipper" src="https://github.com/user-attachments/assets/bbc1c7b6-7e52-4419-b034-27c82f930e43" />
 
 <br>
 
