@@ -1959,14 +1959,24 @@ Timer:2
 ```
 You need these two pins as the BTT relay firmware requires a reset command while the `PSon` pin is high. If this is not the case & the `PSon` pin is low (off) & you hit reset the relay power up but trip out again after 8 seconds. This is normal. The `PSon` pin must be high (on) when the reset is pressed. The PowerUp physical button will activate both GPIO pins together when pushed meaning you only need a single push of the physical button to control both pins & re-power the printer instantly.
 
-After that add this macro to your `macros.cfg`
+### OR.... IP Smart Plug With Power off Delay
+
+You MUST set the delay off feature in your plug's software so to give the printer a chance to send the command & then shut itself down safely before the plug cuts the power.
+
 ```
-[gcode_macro M81]
-gcode:
- {action_call_remote_method("set_device_power",device="Printer Power",state="off")}
+[power Printer Power]
+type:tplink_smartplug
+address: xxx.xxx.xx.xx #<<<<<<<<< ADD YOUR PLUG ADDRESS HERE!
+on_when_job_queued: True
+initial_state:on
+locked_while_printing: True
+restart_klipper_when_powered: True
+restart_delay: 2
+bound_services:
+
 ```
 
-Lastly this is used by the `PRINT_END` macro to select the Auto Shutdown feature & should be pasted into your `printer.cfg` file.
+Lastly this is used by the `DEMON_END` macro to select the Auto Shutdown feature & should be pasted into your `printer.cfg` file.
 ```
 [output_pin PRINTER_AUTO_OFF]
 pin: ### <<<<<< Insert unused board pin for state change only, monitored by system
