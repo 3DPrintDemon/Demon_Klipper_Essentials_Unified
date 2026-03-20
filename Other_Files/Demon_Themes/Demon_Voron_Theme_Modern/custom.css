@@ -111,6 +111,10 @@
     box-shadow: none!important;
 }
 
+.cm-gutters {
+   background-color: rgba(15, 12, 15, 1) !important;
+}
+
 /* Editor Transparancy */
 .cm-editor {
     backdrop-filter: blur(20px);
@@ -121,7 +125,9 @@
 
 /* Editor sidebar */
 .theme--dark.v-treeview {
-  color:#ddd;
+    backdrop-filter: blur(20px);
+    background-color: rgba(7, 5, 7, 0.8) !important;
+    color:#ddd;
 }
 
 .theme--dark.v-icon {
