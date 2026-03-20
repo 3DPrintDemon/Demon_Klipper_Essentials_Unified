@@ -248,7 +248,7 @@ See the dedictated instructions in the section below how to do that...
 <details>
     <summary>
         <b>
-        :red_circle: Click To Expand - How to do this!
+        :red_circle: Click To Expand - Update Kiauh & reinstall the Shell Script Extension!
         </b>
     </summary>
 <p>
@@ -274,10 +274,31 @@ Once installed navigate to option E (Community: Extensions), then option 1 (G-co
 <img width="413" height="708" alt="Shell Install" src="https://github.com/user-attachments/assets/889fd85d-aeaf-4227-98bf-4bedee93f4b6" />
 
 </details>
+
+#### :warning: NEW BED_CHECKER SETTING FOR OLDER &/OR "FIXED" KLIPPER FACTORY MACHINES :warning:
+
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - BED_CHECKER Macro errors out & stops the print!
+        </b>
+    </summary>
+<p>
+</p>
+
+### BED_CHECKER HEAT SOAK - NEW SETTING FOR OLDER KLIPPER VERSIONS! 
+
+In order to bring DKEU inline with recent changes to Klipper’s probing & measuring systems where the old method is now depreciated & is being removed the macros have been updated. 
+Users with new systems & mainline klipper need not do anything. However users with “stuck” or “fixed” versions of klipper like on Sovol printers for example will need to activate the old_klipper_version variable to continue using the BED_CHECKER heat soak system. 
+
+#### :warning: If users of old stuck systems don’t set this variable True then BED_CHECKER heat soak will error out & cancel your print as your old version of klipper is no longer compatible with commands required to run it so a legacy mode must be enabled. :warning:
+
+### [Check the Setting here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/de6fdcd4f785417c680e994f886e6eae8dd0736d/Other_Files/DEMON_User_Files_SOURCE/demon_user_settings_v3.0.3.cfg#L226)
+
+
+</details>
+
 <br>
-
-
-
 
 
 ### :recycle: UPDATING FROM A PREVIOUS VERSION - SSH CONFIG UPDATER SCRIPT! :recycle:
