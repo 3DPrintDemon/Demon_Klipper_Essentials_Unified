@@ -60,6 +60,7 @@ Users with new systems & mainline klipper need not do anything. However users wi
 <img width="555" height="96" alt="BCHS Old Klipper" src="https://github.com/user-attachments/assets/bbc1c7b6-7e52-4419-b034-27c82f930e43" />
 
 <br>
+<br>
 
 ## SUPPORT FOR SOVOL'S PLR SYSTEM ADDED!!
 
