@@ -62,6 +62,12 @@ Users with new systems & mainline klipper need not do anything except update the
 <br>
 <br>
 
+## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.0.5.cfg
+
+Voron users with a Voron style physical Z endstop switch, spelling of the variable has been corrected so the config updater script will not recognise it as the same so user will need to manually re-input the position of their z endstop switch from the previous demon_user_settings_v.x.x.x.cfg file.
+
+<br>
+
 ## SUPPORT FOR SOVOL'S PLR SYSTEM ADDED!!
 
 If you have a Klipper error or power outage on your Sovol printer running stock firmware don't worry! The DKEU macros now can make use of the Sovol PLR feature!
