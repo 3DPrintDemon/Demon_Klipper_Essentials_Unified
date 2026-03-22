@@ -25,7 +25,7 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 
 <br>
 
-# IMPORTANT NOTICES:
+# IMPORTANT NOTICES - READ BEFORE YOU UPDATE DKEU:
 
 ## :red_circle: Slicer G-code has changed! 
 
