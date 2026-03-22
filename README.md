@@ -53,7 +53,7 @@ You will probably be seeing an error about the Demon User Files Handler Version 
 ## :red_circle: BED_CHECKER HEAT SOAK - NEW SETTING FOR OLDER KLIPPER VERSIONS! 
 
 In order to bring DKEU inline with recent changes to Klipper’s probing & measuring systems where the old method is now depreciated & is being removed the macros have been updated. 
-Users with new systems & mainline klipper need not do anything. However users with “stuck” or “fixed” versions of klipper like on Sovol printers for example will need to activate the old_klipper_version variable to continue using the BED_CHECKER heat soak system. 
+Users with new systems & mainline klipper need not do anything except update their Klipper version to the latest commit. However users with “stuck” or “fixed” versions of klipper like on Sovol printers for example will need to activate the old_klipper_version variable to continue using the BED_CHECKER heat soak system. 
 
 #### :warning: If users of old stuck systems don’t set this variable True then BED_CHECKER heat soak will error out & cancel your print as your old version of klipper is no longer compatible with commands required to run it so a legacy mode must be enabled. :warning:
 
