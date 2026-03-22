@@ -25,14 +25,14 @@ Checks & Error Handling with clear & easy to understand messages to tell you wha
 
 ***Made to make your printing life easier & your printer SMARTER!***
 
-- FULLY AI CODE FREE!
-  No AI has been used to create them! A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human!
+FULLY AI CODE FREE!
+No AI has been used to create them! A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human!
 
-- FULL EDDY NG SUPPORT!!
-  No need to add any Eddy NG macros, just add the correct Eddy NG config sections & DKEU will just know if you have Eddy NG installed, then all you need do is set variables in the user settings file. 
+FULL EDDY NG SUPPORT!!
+No need to add any Eddy NG macros, just add the correct Eddy NG config sections & DKEU will just know if you have Eddy NG installed, then all you need do is set variables in the user settings file. 
 
-- SUPPORT FOR SOVOL'S PLR SYSTEM!!
-  If you have a Klipper error or power outage on your Sovol SV08 or SV08 MAX printer running stock firmware don't worry! The DKEU macros now can make use of the Sovol PLR feature!
+SUPPORT FOR SOVOL'S PLR SYSTEM!!
+If you have a Klipper error or power outage on your Sovol SV08 or SV08 MAX printer running stock firmware don't worry! The DKEU macros now can make use of the Sovol PLR feature!
 
 ****************************************************************************************************************************
 
