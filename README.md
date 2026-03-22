@@ -83,11 +83,6 @@ A lot of time, love, coffee & lack of sleep testing has been poured into these m
 
 <br>
 
->[!IMPORTANT]
->These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
-
-<br>
-
 
 A macro pack features list is here....
 
@@ -98,6 +93,12 @@ A macro pack features list is here....
 <br>
 
  # START HERE....!!!
+
+ >[!IMPORTANT]
+>These macros rely on you setting the correct filament type in your slicer! BE SURE YOU DO THIS!
+
+<br>
+
 
 Click the link below to begin reading how to install!
 
