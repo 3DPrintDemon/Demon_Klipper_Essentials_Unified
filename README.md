@@ -23,6 +23,19 @@ So for example if you hit `MACHINE_LEVEL` on a COREXY printer you'll get a `QUAD
 
 Checks & Error Handling with clear & easy to understand messages to tell you what's wrong!
 
+***Made to make your printing life easier & your printer SMARTER!***
+
+- FULLY AI CODE FREE!
+  No AI has been used to create them! A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human!
+
+- FULL EDDY NG SUPPORT!!
+  No need to add any Eddy NG macros, just add the correct Eddy NG config sections & DKEU will just know if you have Eddy NG installed, then all you need do is set variables in the user settings file. 
+
+- SUPPORT FOR SOVOL'S PLR SYSTEM!!
+  If you have a Klipper error or power outage on your Sovol SV08 or SV08 MAX printer running stock firmware don't worry! The DKEU macros now can make use of the Sovol PLR feature!
+
+****************************************************************************************************************************
+
 <br>
 
 # IMPORTANT NOTICES - READ BEFORE YOU UPDATE DKEU:
@@ -65,30 +78,6 @@ Users with new systems & mainline klipper need not do anything except update the
 ## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.0.5.cfg
 
 Voron users with a Voron style physical Z endstop switch, spelling of the variable has been corrected so the config updater script will not recognise it as the same so user will need to manually re-input the position of their z endstop switch from the previous demon_user_settings_v.x.x.x.cfg file.
-
-****************************************************************************************************************************
-<br>
-
-## SUPPORT FOR SOVOL'S PLR SYSTEM!!
-
-If you have a Klipper error or power outage on your Sovol SV08 or SV08 MAX printer running stock firmware don't worry! The DKEU macros now can make use of the Sovol PLR feature!
-
-<br>
-
-## FULL EDDY NG SUPPORT!!!
-
-A lot of time, love, coffee & lack of sleep testing has been poured into these macros! They have all been written 100% by a human! Fully ai code Free! No ai has been used to create them! 
-
-**Made to make your printing life easier & your printer SMARTER!**
-
-****************************************************************************************************************************
-
-<br>
-
-
-A macro pack features list is here....
-
-- #### [FEATURES LIST](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Features/Features.md)
 
 ****************************************************************************************************************************
 
@@ -239,6 +228,14 @@ If you have a longer way to run your filament to your extruder, or if you run la
 >[!NOTE]
 >Recent Klipper updates have changed the way motion is controlled. This has rendered these units unusable with mainline Klipper for now.
 >Stock Sovol versions should be fine, as they're older.
+
+****************************************************************************************************************************
+
+<br>
+
+A macro pack features list is here....
+
+- #### [FEATURES LIST](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/Features/Features.md)
 
 ****************************************************************************************************************************
 
