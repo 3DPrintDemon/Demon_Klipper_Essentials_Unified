@@ -63,7 +63,7 @@ You will probably be seeing an error about the Demon User Files Handler Version 
 
 <br>
 
-## :red_circle: :warning: CARTOGRAPHER & NEW KLIPPER USERS READ THIS!! :warning: :red_circle:
+## :red_circle: :warning: CARTOGRAPHER & LATEST KLIPPER USERS READ THIS!! :warning: :red_circle:
 
 Due the recent changes to how Klipper reads/recalls probed Z values & how Cartographer software interacts & deals with these changes, it seems their edited Klipper software can not deal effectively with recalled/used/displayed probe tuple objects/values outside it's own system. This causes the BED_CHECKER heat soak macro to fail & your print to get cancelled as DKEU sees a problem happening. 
 
