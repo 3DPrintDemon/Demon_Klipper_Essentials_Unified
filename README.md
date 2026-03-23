@@ -63,6 +63,14 @@ You will probably be seeing an error about the Demon User Files Handler Version 
 
 <br>
 
+## :red_circle: :warning: CARTOGRAPHER & NEW KLIPPER USERS READ THIS!! :warning: :red_circle:
+
+Due the recent changes to how Klipper reads & recalls probed Z values Cartographer software interacts & deals with these changes, it seems their edited Klipper software can not deal effectively with recalled/used/displayed probe tuple objects/values outside it's own system. This causes the BED_CHECKER heat soak macro to fail & your print to get cancelled as DKEU sees a problem happening. 
+
+If you experience this issue please try disabling the BED_CHECKER heat soak system in the Demon user settings cfg file & wait for Cartographer to release a firmware fix for this issue to improve compatibility.
+
+<br>
+
 ## :red_circle: BED_CHECKER HEAT SOAK - NEW SETTING FOR OLDER KLIPPER VERSIONS! 
 
 In order to bring DKEU inline with recent changes to Klipper’s probing & measuring systems where the old method is now depreciated & is being removed the macros have been updated. 
