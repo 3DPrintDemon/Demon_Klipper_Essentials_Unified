@@ -67,7 +67,7 @@ You will probably be seeing an error about the Demon User Files Handler Version 
 
 Due to the recent changes to how Klipper reads/recalls probed Z values it seems it differs very slightly from how the Cartographer3d software is currently configured. This causes the BED_CHECKER heat soak macro to fail & your print to get cancelled as DKEU sees a problem happening. The latest DKEU posted 24th March 2026 implements a possible workaround for this discrepancy & will hopefully restore BED_CHECKER functionality. Please update DKEU to the latest available version if you have been effected by this issue & let me know if it helped.
 
-We have made the Cartographer3D aware of this issue & they have now released an update to their plugin to resolve this issue & improve compatibility.
+We have made the Cartographer3D aware of this issue & they have now released an update to their plugin to resolve this issue & improve compatibility. Please update your Cartographer3D software!
 
 <br>
 
