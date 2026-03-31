@@ -64,6 +64,14 @@ To update system packages & to update latest software versions, plus how to get 
 
 <br>
 
+## :red_circle: :warning: UPDATE KIAUH & REINSTALL THE SHELL SCRIPT EXTENSION! :warning: :red_circle:
+If your version of Kiauh & its installed shell script extension is too old it will impact DKEU functionality & stop all File Handler operations from completing correctly.
+Click the link below to see how to do this within the DKEU Troubleshooting section.
+
+### [CLICK HERE - TROUBLESHOOTING - KIAUH](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#warning-you-may-also-need-to-update-kiauh--reinstall-its-shell-extension-script-for-new-version-warning)
+
+<br>
+
 ****************************************************************************************************************************
 
 <br>
