@@ -368,6 +368,17 @@ Restart the printer.
 
 [DON'T FORGET TO DO ALL THE OTHER STUFF IN THE GENERAL SETUP TOO!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md)
 
+<br>
+
+>[!WARNING]
+>Make sure you comment out the line below as it will give you a big red Klipper error screen if not!
+
+In the `[z_offest_calibration]` section comment out...
+
+```
+center_xy_position: -10,10
+```
+
 >[!IMPORTANT]
 >Be sure to comment out the Sovol/Mainline [save_variables] section in the printer.cfg file!!
 
