@@ -40,34 +40,19 @@ If you have a Klipper error or power outage on your Sovol SV08 or SV08 MAX print
 
 # IMPORTANT NOTICES - READ BEFORE YOU UPDATE DKEU:
 
-## :red_circle: Slicer G-code has changed! 
+<br>
 
-There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
+## :red_circle: :warning: UPDATE KIAUH & REINSTALL THE SHELL SCRIPT EXTENSION! :warning: :red_circle:
+If your version of Kiauh & its installed shell script extension is too old it will impact DKEU functionality & stop all File Handler operations from completing correctly.
+Click the link below to see how to do this within the DKEU Troubleshooting section.
 
-This update now uses custom names & also provides a means of checking that you sent a file with the correct START Gcode for these macros! The system will halt the print & warn you if not! So no more sending a file to print with the wrong START Gcode & bad things happening!!
-
-### [Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
+### [CLICK HERE - TROUBLESHOOTING - KIAUH](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#warning-you-may-also-need-to-update-kiauh--reinstall-its-shell-extension-script-for-new-version-warning)
 
 <br>
 
-## :red_circle: DEMON USER FILES UPDATER include command has changed! 
+## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.0.5.cfg
 
-The multiple Extract_Demon_User_Files_xxxx.cfg files have been superseded & removed for the latest version & replaced with a single file instead! You need to update your include command to account for this!
-
-If you're using the shell script extension then this is for you! This change greatly simplifies the setup & use of this feature, as well as a few others too!
-You will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disk checker is no longer working.
-
-#### :warning: YOU MAY ALSO NEED TO UPDATE KIAUH & REINSTALL IT'S SHELL EXTENSION SCRIPT FOR NEW VERSION!! :warning:
-
-### [Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/INSTALL_INSTRUCTIONS.md#demon-user-files-handler-include)
-
-<br>
-
-## :red_circle: :warning: CARTOGRAPHER & LATEST KLIPPER USERS READ THIS!! :warning: :red_circle:
-
-Due to the recent changes to how Klipper reads/recalls probed Z values it seems it differs very slightly from how the Cartographer3d software is currently configured. This causes the BED_CHECKER heat soak macro to fail & your print to get cancelled as DKEU sees a problem happening. The latest DKEU posted 24th March 2026 implements a possible workaround for this discrepancy & will hopefully restore BED_CHECKER functionality. Please update DKEU to the latest available version if you have been effected by this issue & let me know if it helped.
-
-We have made the Cartographer3D team aware of this issue & they have now released an update to their plugin to resolve this issue & improve compatibility. Please update your Cartographer3D software!
+Voron users with a Voron style physical Z endstop switch, spelling of the variable has been corrected so the config updater script will not recognise it as the same so user will need to manually re-input the position of their z endstop switch from the previous demon_user_settings_v.x.x.x.cfg file.
 
 <br>
 
@@ -83,9 +68,34 @@ Users with new systems & mainline klipper need not do anything except update the
 <br>
 <br>
 
-## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.0.5.cfg
 
-Voron users with a Voron style physical Z endstop switch, spelling of the variable has been corrected so the config updater script will not recognise it as the same so user will need to manually re-input the position of their z endstop switch from the previous demon_user_settings_v.x.x.x.cfg file.
+## :red_circle: :warning: CARTOGRAPHER & LATEST KLIPPER USERS READ THIS!! :warning: :red_circle:
+
+Due to the recent changes to how Klipper reads/recalls probed Z values it seems it differs very slightly from how the Cartographer3d software is currently configured. This causes the BED_CHECKER heat soak macro to fail & your print to get cancelled as DKEU sees a problem happening. The latest DKEU posted 24th March 2026 implements a possible workaround for this discrepancy & will hopefully restore BED_CHECKER functionality. Please update DKEU to the latest available version if you have been affected by this issue & let me know if it helped.
+
+We have made the Cartographer3D team aware of this issue & they have now released an update to their plugin to resolve this issue & improve compatibility. Please update your Cartographer3D software!
+
+<br>
+
+## :red_circle: DEMON USER FILES UPDATER include command has changed! 
+
+The multiple Extract_Demon_User_Files_xxxx.cfg files have been superseded & removed for the latest version & replaced with a single file instead! You need to update your include command to account for this!
+
+If you're using the shell script extension then this is for you! This change greatly simplifies the setup & use of this feature, as well as a few others too!
+You will probably be seeing an error about the Demon User Files Handler Version having no attribute & your disk checker is no longer working.
+
+<br>
+
+## :red_circle: Slicer G-code has changed! 
+
+There is a change to the BED placeholder for version 1.3 to correct an issue with temperatures when using Orca's multi surface options.
+
+This update now uses custom names & also provides a means of checking that you sent a file with the correct START Gcode for these macros! The system will halt the print & warn you if not! So no more sending a file to print with the wrong START Gcode & bad things happening!!
+
+### [Check & update here!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/General_Setup_For_All_Printers/Orca_Slicer_Setup.md)
+
+<br>
+
 
 ****************************************************************************************************************************
 
