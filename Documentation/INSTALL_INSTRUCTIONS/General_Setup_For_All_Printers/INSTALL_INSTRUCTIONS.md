@@ -269,7 +269,7 @@ JUST DELETE it being careful not to mess up the green auto save data above it.
 
 Save & restart!
 
-Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to REMOVE & the INSTALL the extension over.
+Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to REMOVE & then INSTALL the extension over.
 
 <img width="413" height="708" alt="Shell Install" src="https://github.com/user-attachments/assets/889fd85d-aeaf-4227-98bf-4bedee93f4b6" />
 
@@ -937,7 +937,7 @@ JUST DELETE it being careful not to mess up the green auto save data above it.
 
 Save & restart!
 
-Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to REMOVE & the INSTALL the extension over.
+Once installed navigate to option E (Community: Extensions), then option 1 (G-code Shell Command) to REMOVE & then INSTALL the extension over.
 
 <img width="413" height="708" alt="Shell Install" src="https://github.com/user-attachments/assets/889fd85d-aeaf-4227-98bf-4bedee93f4b6" />
 
