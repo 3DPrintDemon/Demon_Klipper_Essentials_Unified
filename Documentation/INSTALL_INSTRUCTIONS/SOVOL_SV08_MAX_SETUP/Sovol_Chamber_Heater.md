@@ -47,7 +47,7 @@ You will need:
 
 Remove the chamber heater from the printer. Open the unit by removing the 6 bolts on the rear.
 
-Add the  EPCOS 100K B57560G104F glass bead thermistor with the JST 1.25mm two pin plug to the MCU board inside next to the cable that'll say `TEMP 1`.
+Add the Generic 3950 glass bead thermistor with the JST 1.25mm two pin plug to the MCU board inside next to the cable that'll say `TEMP 1`.
 
 ![IMG_1673](https://github.com/user-attachments/assets/2a3ad818-544b-4a83-a9df-82bee19c5d84)
 ![IMG_1656](https://github.com/user-attachments/assets/bd65f37b-7a1d-4e49-a1f8-2c7b3ff0032a)
