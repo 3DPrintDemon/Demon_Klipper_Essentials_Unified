@@ -153,7 +153,10 @@ hit `Q` to exit!
 
 <br>
 
-Next head over to [Eddy NG](https://github.com/vvuk/eddy-ng) & install their fine upgrade!
+# NOTE EDDY NG IS LOOKING LIKE AN ABANDONED PROJECT RIGHT NOW. MAYBE SKIP THIS ONE!
+...you'll have to fix a lot of stuff if you install it! 
+
+Next head over to [Eddy NG](https://github.com/vvuk/eddy-ng)
 
 ```
 cd ~
