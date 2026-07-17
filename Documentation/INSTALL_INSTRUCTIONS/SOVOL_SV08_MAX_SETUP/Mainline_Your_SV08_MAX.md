@@ -381,7 +381,7 @@ https://github.com/vvuk/eddy-ng/wiki/Calibration
 
 <br>
 
-### If automatic calibrateion keeps failing try running these commands top to bottom....
+### If automatic calibration keeps failing try running these commands top to bottom....
 
 >[!NOTE]
 >You can change the DRIVE_CURRENT from 15 to whatever value you want to calibrate at
