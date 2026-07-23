@@ -153,81 +153,13 @@ hit `Q` to exit!
 
 <br>
 
-# NOTE EDDY NG IS LOOKING LIKE AN ABANDONED PROJECT RIGHT NOW. MAYBE SKIP THIS ONE!
-...you'll have to fix a lot of stuff if you install it! 
-
-Next head over to [Eddy NG](https://github.com/vvuk/eddy-ng)
-
-```
-cd ~
-git clone https://github.com/vvuk/eddy-ng
-```
-
-& run the installer...
-
-```
-cd ~/eddy-ng
-./install.sh
-```
-
-Reboot now!
-
-```
-sudo reboot now
-```
-
-<br>
-
-# :red_circle: NOW THE TRICKY BIT! :cold_sweat:
-
-# NOTE THE VERY LATEST VERSION OF KLIPPER DOES NOT REQUIRE THIS STEP - SKIP AHEAD A SECTION!
-
-At the time of writing we need to edit Klipper to let us use a 128kib bootloader for the mainboard MCU! To do this we need to......
-
-```
-sudo service klipper stop
-```
-
->[!CAUTION]
->Be EXTREMELY careful with this file & do NOT make any other edits or disrupt it's formatting in any way!
-
-```
-sudo nano ~/klipper/src/stm32/Kconfig
-```
-
-Scroll down to where it says `Bootloader` section surrounded by hashes in blue 
-
-now add...
-
-```
-|| MACH_STM32H750
-```
-
-...to the end of the line that says `bool "128KiB bootloader" so it looks exactly the same as the rest of the section as per the image below.
-
-<br>
-
-<img width="895" height="576" alt="EDIT" src="https://github.com/user-attachments/assets/801e1a3d-1fab-42a1-a32f-d7b68d255568" />
-
-<br>
-<br>
-<br>
-
-Once you have confirmed this is done correctly press `ctrl+X` & press `Y` to save the file & the hit `return` to confirm the name - leave it unchanged!
-
-```
-sudo service klipper start
-```
-
-....& remember to breathe! Phew!
-
-<br>
 
 # :red_circle: BIG RED ERROR TIME!
 
 We should now have a new mainline install of Klipper & it'll probably be giving you a big red error screen & some Moonraker warnings about depreciated MCU firmware. Don't worry this is totally normal & expected!
 
 Its just telling you your current MCU firmware is out of date! We're gonna fix that in a minute!
+
 
 <br>
 
@@ -337,31 +269,18 @@ Commenting out these Sovol sections shown here.
 Now add this expanded section below to your printer.cfg
 
 ```
-[probe_eddy_ng eddy]
+[probe_eddy_current eddy]
 sensor_type: ldc1612
+max_sensor_hz: 6031173
+descend_z: 3.50
 i2c_mcu: extra_mcu
 i2c_software_scl_pin: extra_mcu:PB10
 i2c_software_sda_pin: extra_mcu:PB11
-# i2c_bus: i2c2
 x_offset: -19.8
 y_offset: -0.75
+# tap_threshold:
+tap_z_offset: 0.0
 
-probe_speed: 5.0
-lift_speed: 10.0
-move_speed: 50.0
-home_trigger_height: 2.0
-calibration_z_max: 5.0
-reg_drive_current: 15
-tap_drive_current: 0
-tap_start_z: 3.0
-tap_target_z: -0.350
-tap_mode: butter
-tap_threshold: 250
-tap_speed: 3.0
-tap_adjust_z: 0.000
-tap_samples: 3
-tap_max_samples: 8
-tap_samples_stddev: 0.025
 ```
 
 Save & Restart
@@ -372,34 +291,14 @@ Save & Restart
 
 Before you start using your new system be sure to disable this macro in the DKEU custom_exapansion file! It is no longer required.
 
-## :red_circle: [CLICK HERE - DISBALE THIS MACRO!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_EXTRA_INSTRUCTIONS.md#sv08-max-custom-expansion-file---required)
+## :red_circle: [CLICK HERE - DISBALE THIS MACRO CALL!!](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/blob/main/Documentation/INSTALL_INSTRUCTIONS/SOVOL_SV08_MAX_SETUP/SV08_MAX_EXTRA_INSTRUCTIONS.md#sv08-max-custom-expansion-file---required)
 
 <br>
 
-# :red_circle: CONFIGURE EDDY NG!
+# :red_circle: CONFIGURE EDDY!
 
-Follow the configuration steps here.
-https://github.com/vvuk/eddy-ng/wiki/Calibration
-
-<br>
-
-### If automatic calibration keeps failing try running these commands top to bottom....
-
->[!NOTE]
->You can change the DRIVE_CURRENT from 15 to whatever value you want to calibrate at
-
-```
-SET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=60
-```
-```
-TEMPERATURE_WAIT SENSOR=heater_bed MINIMUM=58 MAXIMUM=62
-```
-```
-G28 X Y
-```
-```
-PROBE_EDDY_NG_CALIBRATE DRIVE_CURRENT=15
-```
+Follow the configuration steps here to correctly setup your probe.
+https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md
 
 <br>
 
@@ -522,3 +421,153 @@ Then do the above section on flashing Klipper with the ST Link.
 <br>
 <br>
 <br>
+
+# REDUNDANT SECTIONS - REFERENCE ONLY - DO NOT FOLLOW
+
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - Install Eddy NG - NO LONGER REQUIRED
+        </b>
+    </summary>
+<p>
+</p>
+  
+# NOTE EDDY NG IS LOOKING LIKE AN ABANDONED PROJECT RIGHT NOW. MAYBE SKIP THIS ONE!
+...you'll have to fix a lot of stuff if you install it! 
+
+Next head over to [Eddy NG](https://github.com/vvuk/eddy-ng)
+
+```
+cd ~
+git clone https://github.com/vvuk/eddy-ng
+```
+
+& run the installer...
+
+```
+cd ~/eddy-ng
+./install.sh
+```
+
+printer.cfg section:
+
+```
+[probe_eddy_ng eddy]
+sensor_type: ldc1612
+i2c_mcu: extra_mcu
+i2c_software_scl_pin: extra_mcu:PB10
+i2c_software_sda_pin: extra_mcu:PB11
+# i2c_bus: i2c2
+x_offset: -19.8
+y_offset: -0.75
+
+probe_speed: 5.0
+lift_speed: 10.0
+move_speed: 50.0
+home_trigger_height: 2.0
+calibration_z_max: 5.0
+reg_drive_current: 15
+tap_drive_current: 0
+tap_start_z: 3.0
+tap_target_z: -0.350
+tap_mode: butter
+tap_threshold: 250
+tap_speed: 3.0
+tap_adjust_z: 0.000
+tap_samples: 3
+tap_max_samples: 8
+tap_samples_stddev: 0.025
+```
+
+Reboot now!
+
+```
+sudo reboot now
+```
+
+
+## :red_circle: CONFIGURE EDDY NG!
+
+Follow the configuration steps here.
+https://github.com/vvuk/eddy-ng/wiki/Calibration
+
+<br>
+
+### If automatic calibration keeps failing try running these commands top to bottom....
+
+>[!NOTE]
+>You can change the DRIVE_CURRENT from 15 to whatever value you want to calibrate at
+
+```
+SET_HEATER_TEMPERATURE HEATER=heater_bed TARGET=60
+```
+```
+TEMPERATURE_WAIT SENSOR=heater_bed MINIMUM=58 MAXIMUM=62
+```
+```
+G28 X Y
+```
+```
+PROBE_EDDY_NG_CALIBRATE DRIVE_CURRENT=15
+```
+
+<br>
+
+</details>
+
+<br>
+
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - Edit kconfig - NO LONGER REQUIRED
+        </b>
+    </summary>
+<p>
+</p>
+  
+# :red_circle: NOW THE TRICKY BIT! :cold_sweat:
+
+# NOTE THE VERY LATEST VERSION OF KLIPPER DOES NOT REQUIRE THIS STEP - SKIP AHEAD A SECTION!
+
+At the time of writing we need to edit Klipper to let us use a 128kib bootloader for the mainboard MCU! To do this we need to......
+
+```
+sudo service klipper stop
+```
+
+>[!CAUTION]
+>Be EXTREMELY careful with this file & do NOT make any other edits or disrupt it's formatting in any way!
+
+```
+sudo nano ~/klipper/src/stm32/Kconfig
+```
+
+Scroll down to where it says `Bootloader` section surrounded by hashes in blue 
+
+now add...
+
+```
+|| MACH_STM32H750
+```
+
+...to the end of the line that says `bool "128KiB bootloader" so it looks exactly the same as the rest of the section as per the image below.
+
+<br>
+
+<img width="895" height="576" alt="EDIT" src="https://github.com/user-attachments/assets/801e1a3d-1fab-42a1-a32f-d7b68d255568" />
+
+<br>
+<br>
+<br>
+
+Once you have confirmed this is done correctly press `ctrl+X` & press `Y` to save the file & the hit `return` to confirm the name - leave it unchanged!
+
+```
+sudo service klipper start
+```
+
+....& remember to breathe! Phew!
+
+</detials>
