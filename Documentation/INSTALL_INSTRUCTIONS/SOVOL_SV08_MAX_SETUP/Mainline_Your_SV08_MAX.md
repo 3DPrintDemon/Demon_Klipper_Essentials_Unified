@@ -279,7 +279,7 @@ i2c_software_sda_pin: extra_mcu:PB11
 x_offset: -19.8
 y_offset: -0.75
 # tap_threshold:
-tap_z_offset: 0.0
+# tap_z_offset: 0.0
 
 ```
 
