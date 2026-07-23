@@ -288,8 +288,16 @@ i2c_software_scl_pin: extra_mcu:PB10
 i2c_software_sda_pin: extra_mcu:PB11
 x_offset: -19.8
 y_offset: -0.75
-# tap_threshold:
-# tap_z_offset: 0.0
+
+speed: 5
+# samples: 3              #<<<< Uncomment to increase probed samples
+# samples_result: median  #<<<< Uncomment to use middle value sample
+sample_retract_dist: 5.0
+samples_tolerance: 0.0095
+samples_tolerance_retries: 10
+
+# tap_threshold:          #<<<< Uncomment to add custom tap threshold value
+# tap_z_offset: 0.0       #<<<< Uncomment to adjust tap_z offset if needed
 
 ```
 
