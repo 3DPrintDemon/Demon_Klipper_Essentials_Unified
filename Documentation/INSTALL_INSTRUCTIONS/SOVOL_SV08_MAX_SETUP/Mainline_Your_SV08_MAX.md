@@ -96,7 +96,13 @@ git config pull.ff only
 ```
 git pull
 ```
-then 
+then stop the Klipper service
+
+```
+sudo service klipper stop
+```
+
+Now start Kiauh
 
 ```
 ~/kiauh/kiauh.sh
@@ -149,7 +155,11 @@ Now back to the main menu `B`
 
 Now back to the main menu `B`
 
-hit `Q` to exit!
+hit `Q` to exit &...
+
+```
+sudo reboot now
+```
 
 <br>
 
