@@ -1558,12 +1558,12 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 <br>
 
-
+### It is reomemmended to use native Klipper Eddy probe support as of now, or Cartographer or Beacon probes as alternatives.
 
 <details>
     <summary>
         <b>
-        :red_circle: Click To Expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
+        :red_circle: Click To Expand - EDDY NG - PHASING OUT!
         </b>
     </summary>
 <p>
