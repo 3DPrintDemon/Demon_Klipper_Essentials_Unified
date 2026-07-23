@@ -1553,8 +1553,23 @@ Found in the demon_user_settings_v2.9.cfg onwards.
 
 # EDDY NG SUPPORT!! 
 
->[!IMPORTANT]
->Don't add any of the Eddy NG macros, just the printer.cfg sections. Their macros are not required with DKEU.
+>[!NOTE]
+>EDDY NG is looking like an abandoned project right now, new use of this software is no longer recommended & no further support will be given or included in DKEU. It will be phased out as it is causing nothing but issues with new installs & people have to "fix" a load of stuff for it to work with latest Klipper versions. So don't install it unless you want to solve issues.
+
+<br>
+
+
+
+<details>
+    <summary>
+        <b>
+        :red_circle: Click To Expand - Old BTT file setup no Offset adjsutment - Don't use with DKEU!
+        </b>
+    </summary>
+<p>
+</p>
+
+Don't add any of the Eddy NG macros, just the printer.cfg sections. Their macros are not required with DKEU.
 
 Follow the Eddy NG wiki & install Eddy NG, then build & install the MCU firmware, be sure to add the Eddy NG printer.cfg sections to your actual printer.cfg file. Do not use in another included file or the g-code offset adjustment system in Eddy NG will not work & you'll get a conflicting value error!
 
@@ -1569,7 +1584,9 @@ Choose if you wish to disable the bed heater temporarily while tap is in progres
 
 Don't forget to update your [.json file](https://github.com/3DPrintDemon/Demon_Klipper_Essentials_Unified/tree/main/Other_Files/DEMON_Macro_layout_JSON) to add the new EDDY NG setup macro.
 
->[!NOTE]
+</details>
+
+>[!IMORTANT]
 >Do not use Demon Eddy or BTT Eddy files with EDDY NG!
 
 <br>
