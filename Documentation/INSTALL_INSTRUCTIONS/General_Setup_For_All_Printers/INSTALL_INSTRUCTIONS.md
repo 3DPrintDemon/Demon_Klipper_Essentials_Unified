@@ -271,9 +271,16 @@ See the dedictated instructions in the section below how to do that...
 <p>
 </p>
 
-To update Kiauh:
+To update Kiauh: 
+
 ```
-cd kiauh && git pull
+cd kiauh
+```
+```
+git config pull.ff only
+```
+```
+git pull
 ```
 
 HOWEVER be sure NOT to create an example file when asked by Kiauh!
@@ -963,8 +970,15 @@ You must have the latest version of Kiauh installed & be using the latest shell 
 If you updated your include command but the error now says the file/directory can not be found, then you're using an old version of the shell script extension. You need make sure you have the latest version of Kiauh & then uninstall the shell script extension using Kiauh & install the newest version of it from the version you just downloaded!
 
 To update Kiauh:
+
 ```
-cd kiauh && git pull
+cd kiauh
+```
+```
+git config pull.ff only
+```
+```
+git pull
 ```
 
 HOWEVER be sure NOT to create an example file when asked by Kiauh!
