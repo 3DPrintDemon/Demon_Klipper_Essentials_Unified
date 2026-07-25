@@ -94,17 +94,9 @@ Click the link below to see how to do this within the DKEU Troubleshooting secti
 
 <br>
 
-## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.0.5.cfg
+## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.1.2.cfg
 
-Voron users with a Voron style physical Z endstop switch, spelling of the variable has been corrected so the config updater script will not recognise it as the same so user will need to manually re-input the position of their z endstop switch from the previous demon_user_settings_v.x.x.x.cfg file.
-
-<br>
-
-## :red_circle: :warning: CARTOGRAPHER & LATEST KLIPPER USERS READ THIS!! :warning: :red_circle:
-
-Due to the recent changes to how Klipper reads/recalls probed Z values it seems it differs very slightly from how the Cartographer3d software is currently configured. This causes the BED_CHECKER heat soak macro to fail & your print to get cancelled as DKEU sees a problem happening. The latest DKEU posted 24th March 2026 implements a possible workaround for this discrepancy & will hopefully restore BED_CHECKER functionality. Please update DKEU to the latest available version if you have been affected by this issue & let me know if it helped.
-
-We have made the Cartographer3D team aware of this issue & they have now released an update to their plugin to resolve this issue & improve compatibility. Please update your Cartographer3D software!
+Eddy Tap settings have been renamed for this version. Manually check values after using config updater tool for these settings starting line 98
 
 <br>
 
