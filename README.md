@@ -94,7 +94,7 @@ Click the link below to see how to do this within the DKEU Troubleshooting secti
 
 <br>
 
-## :red_circle: VARIABLE CORRECTED - demon_user_settings_v3.1.2.cfg
+## :red_circle: VARIABLES RENAMED - demon_user_settings_v3.1.2.cfg
 
 Eddy Tap settings have been renamed for this version. Manually check values after using config updater tool for these settings starting line 98
 
