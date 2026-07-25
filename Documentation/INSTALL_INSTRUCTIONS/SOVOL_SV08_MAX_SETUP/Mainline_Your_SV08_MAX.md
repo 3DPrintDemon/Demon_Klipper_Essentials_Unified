@@ -316,15 +316,43 @@ Before you start using your new system be sure to disable this macro in the DKEU
 # :red_circle: CONFIGURE EDDY!
 
 Follow the configuration steps here to correctly setup your probe.
-https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md
+
+Full document link: https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md
+
+This file is basically a bit of a deep dive, so start from [this section here](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#configuration)
+
+Even shorter shortcut links for those that need this info fast...
+
+- [Position your probe - Start at step 3](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#performing-initial-calibration-when-homing-with-probe)
+  
+  
+- [Calibrate your drive current](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#calibrating-drive-current)
+
+  Read link above or just use this DKEU macro by sending...
+
+  ```
+  EDDY_CURRENT_CALIBRATION
+  ```
+  
+- [Then Calibrate your Z heights](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#calibrating-z-heights)
+
+  Read link above or just use this DKEU macro by sending...
+
+  ```
+  EDDY_HEIGHT_SETUP
+  ```
+  
+- [Lastly calibrate your tap system](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#tap-calibration)
+
+  This one I'm afriad you gotta read!
 
 <br>
 
 # :red_circle: FINISH!
 
-You should now be on Mainline Klipper running Eddy NG!
+You should now be on Mainline Klipper!
 
-Image below: My SV08 Max converted to mainline with above outlined process with all MCU's updated running Eddy NG & the latest commit of Klipper.
+Image below: My SV08 Max converted to mainline with above outlined process with all MCU's updated running & the latest commit of Klipper at the time of writing.
 
 <img width="839" height="467" alt="DONE!" src="https://github.com/user-attachments/assets/97440e60-9aae-48f9-8906-53c40fc67309" />
 
