@@ -321,10 +321,38 @@ Full document link: https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_P
 
 This file is basically a bit of a deep dive, so start from [this section here](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#configuration)
 
-Even shorter shortcut links for those that need this info fast...
+Even shorter shortcuts & links for those that need this info fast...
 
-- [Position your probe - Start at step 5](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#performing-initial-calibration-when-homing-with-probe)
+<br>
+
+>[!CAUTION]
+>The SET_KINEMATIC_POSITION command below tells your printer that the Z axis is at Z25. It doesn't know any different & will blindly think that this is correct simply because YOU TOLD IT that is was!
+>
+>YOU CAN DAMAGE YOUR PRINTER HERE - BE VERY CAREFUL!!!
+
+<br>
+
+- Set your probe to the correct height. Home X & Y
   
+  ```
+  G28 X Y
+  ```
+  
+  Now send....
+
+  ```
+  SET_KINEMATIC_POSITION Z=25
+  ```
+
+  Now SLOWLY lower your nozzle until it is 20mm off the bed's build surface! BE VERY CAREFUL!! Use a ruler or an object of known size as reference.
+
+  If you need to move down more repeat the above SET_KINEMATIC_POSITION command & continue to lower.
+
+  So you are completely safe disable all steppers, send...
+
+  ```
+  M84
+  ```
   
 - [Calibrate your drive current](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#calibrating-drive-current)
 
