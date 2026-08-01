@@ -344,9 +344,11 @@ Even shorter shortcuts & links for those that need this info fast...
   SET_KINEMATIC_POSITION Z=25
   ```
 
-  Now SLOWLY lower your nozzle until it is 20mm off the bed's build surface! BE VERY CAREFUL!! Use a ruler or an object of known size as reference.
+  Now SLOWLY lower your nozzle until it is 20mm off the bed's build surface! BE VERY CAREFUL!!
 
-  If you need to move down more repeat the above SET_KINEMATIC_POSITION command & continue to lower.
+  DO NOT simply enter Z20 into mainsail & expect it to go to Z20 - IT WILL NOT BE CORRECT!
+
+  Use a ruler or an object of known size as reference. If you need to move down more repeat the above SET_KINEMATIC_POSITION command & continue to lower.
 
   So you are completely safe disable all steppers, send...
 
