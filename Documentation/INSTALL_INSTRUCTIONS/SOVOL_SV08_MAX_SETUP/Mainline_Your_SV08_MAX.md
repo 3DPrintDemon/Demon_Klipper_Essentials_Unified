@@ -323,7 +323,7 @@ This file is basically a bit of a deep dive, so start from [this section here](h
 
 Even shorter shortcut links for those that need this info fast...
 
-- [Position your probe - Start at step 3](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#performing-initial-calibration-when-homing-with-probe)
+- [Position your probe - Start at step 5](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#performing-initial-calibration-when-homing-with-probe)
   
   
 - [Calibrate your drive current](https://github.com/Klipper3d/klipper/blob/master/docs/Eddy_Probe.md#calibrating-drive-current)
