@@ -6,7 +6,6 @@ THIS SECTION IS TOTALLY OPTIONAL - YOUR PRINTER WILL FUNCTION WITH THE MACROS IF
 
 This process is tested & working on the latest SV08 MAX & SV ZERO printer firmware releases. It'll probably also work on the latest SV08 Eddy upgrade firmware also, however that is currently untested.
 
-
 # BACKUP!
 
 First & most IMPORTANTLY backup your entire config directory! 
@@ -23,6 +22,10 @@ Now update to the latest Sovol firmware version for your machine.
 <br>
 
 # UPDATE BACKPORTS CHECK
+
+# :red_circle: Bullseye has now been archived & this part of the guide is probably now much less effective. 
+
+I'd recommend you research alternatives.
 
 SSH into the printer.
 
