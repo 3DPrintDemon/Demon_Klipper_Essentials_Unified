@@ -32,6 +32,13 @@ Be sure to use the website not the IOS app, it's cheaper!
 <br>
 <br>
 
+# :red_circle: Bullseye has now been archived & this guide is probably now much less effective. 
+
+I'd recommend you research alternative means to mainline your Max printer. A Bookworm update is a possibility but there currently are compatibility issues or roadblocks to overcome.
+
+<br>
+<br>
+
 # :red_circle: :warning: WARNING! WITH ANY VERSION OF THE LATEST KLIPPER YOU WILL LOOSE THE ABILITY TO RUN THE BUFFER_STEPPER!!!!
 
 # :red_circle: :warning: YES YOU READ CORRECTLY BY DOING THIS YOU WILL LOOSE YOUR AUX FEEDER!!! STOP NOW IF YOU DON'T WANT THAT!
