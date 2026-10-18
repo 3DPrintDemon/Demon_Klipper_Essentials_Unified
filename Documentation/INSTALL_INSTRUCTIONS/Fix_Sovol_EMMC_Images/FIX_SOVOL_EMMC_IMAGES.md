@@ -21,11 +21,7 @@ Now update to the latest Sovol firmware version for your machine.
 
 <br>
 
-# UPDATE BACKPORTS CHECK
-
-# :red_circle: Bullseye has now been archived & this part of the guide is probably now much less effective. 
-
-I'd recommend you research alternatives.
+# UPDATE BACKPORTS & SECURITY CHECK
 
 SSH into the printer.
 
@@ -37,12 +33,26 @@ update this line from....
 
 ```
 deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+
 ```
 
 to read....
 
 ```
 deb http://archive.debian.org/debian bullseye-backports main contrib non-free
+```
+
+<br>
+
+then change....
+```
+deb http://deb.debian.org/debian-security bullseye-security main contrib non-free
+```
+
+to read....
+
+```
+deb [check-valid-until=no] https://snapshot.debian.org/archive/debian-security/20260903T220410Z/ bullseye-security main contrib non-free
 ```
 
 Save & exit the file.
